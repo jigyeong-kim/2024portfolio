@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* User define */
+body,h1,h2,h3,h4,input,button{font-family:Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;font-size:24px;color:#222;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button{margin:0;padding:0}
+input,select,button{vertical-align:middle}
+
+select{height:60px; padding:0px 50px 0 30px;border:1px solid #424f63;font-size:50px;color:#ebf1f5;background:#424f63 url(../image/mobile/select_btn.png) no-repeat 90% 50%;border:1px solid #29313f;border-radius:5px;-webkit-border-radius:5px;-webkit-appearance:none;}
+select, option{line-height:60px;}
+
+body{background-color:#ebf1f5;}
+iframe{border:0;}
+#wrap{position:absolute;top:0px;right:0px;left:0px;bottom:0px;min-width:320px;}
+/* Header */
+#headerWrap{position:fixed;width:100%;margin:0px auto;z-index:80;background:#fff;top:0px;left:0px;}
+.header_common{position:fixed;left:0px;right:0px;clear:both;min-width:320px; overflow:hidden;}
+.header_fix{height:90px;background:#354052;}
+.header_slideup{height:0px;background:#354052;}
+.header_hide_div{height:120px; text-align:center;}
+#header_hidden #notice, #notice> p {height:90px;background:#354052;opacity:0.6;text-align:center;color:#fff;line-height:90px;font-family:맑은고딕,Helvetica,AppleSDGothicNeo,sans-serif;font-size:24px;}
+#header .title{position:relative;float:left;height:90px;clear:both;}
+#header .title .logo{float:left; margin:5 0 0 20px;}
+#header .title .paging{float:left;position:relative;color:#d4d9e3;font-size:46px;margin:0 0 0 20px;padding:12px 0px;}
+#header .navigation{float:right; margin-right:15px;}
+#header .navigation img{margin:10px 0px;}
+#headRight .btn_close {display:none;}
+
+/* 각 본문에서 표현해야함. margin만 참조 #container .document{background-color:#fff;border:1px solid #d8dfe5;margin:10px 20px 0px 20px;} */
+/* 현재 코드에서 없음 #container .document_cell{position:absolute;top:0px;bottom:0px;left:0px;right:0px;background-color:#fff;} */
+/* 각 본문에서 표현해야함. #container .document img{width:100%;}*/
+.btn_pre{ position:fixed;top:90px;left:0px; z-index:1000;}
+.btn_next{position:fixed;top:90px;right:0px; z-index:1000;}
+
+.select1{min-width:80px; max-width:220px;}
+.shadow{-webkit-box-shadow: 3px 3px 7px #29313f;-moz-box-shadow: 3px 3px 7px #29313f;box-shadow: 3px 3px 7px #29313f;}
+
+/* Contents */
+#container{position:absolute;width:100%;left:0px;right:0px;margin:0px auto;}
+.cell_bg {background-color:#fff;}
+#content_body {position:absolute;width:100%;padding-top:20px;padding-bottom:20px;}
+#fullScreenToolBar {position:absolute;right:0px;top:00px;}
+
+/* body */
+.innerWrap{position:relative;width:100%; height:100%;border:0; overflow:hidden;}
+.containBg{background-color:#ebf1f5;} /* word body */
+
+/* cell */
+#cellContent {position:relative;width:100%;height:100%;}
+#cellContent #innerWrap {width:100%;height:100%;background-color:#fff;}
+
+/* pdf */
+#container .contents_pdf{position:absolute;left:0px;right:0px;top:0;bottom:0;overflow-y: auto;overflow-x: auto; margin:auto;}
+.page-element {
+	margin: 10px 0px 10px 0px;
+	/*text-align:center;*/
+}
+
+/* pdf password UX */
+#modalHeader {
+	z-index: 1000;
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background-color: #354052;
+}
+
+#modalBack {
+	z-index: 999; 
+	position: absolute; 
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+	background-color: #4C4C52;		
+}
+
+#modalContent {
+	width: 490px; 
+	z-index: 999;
+}
+#cancel_h1 {text-align: center;}
+#input1 {width: 470px;}
+
+/* slide */
+#container .contents_slide{position:absolute;left: 0; right:0;top:0;bottom:0;overflow: auto;margin:auto; -webkit-overflow-scrolling:touch;}
+/* select, option{ font-size: 50px;} */
+
+/* img */
+.helper { display: inline-block; height: 100%; vertical-align: middle; }
+
+/*sns popup mobile*/
+.snsModalBack {
+	opacity: 0.6;
+	/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	/* IE-7 */
+	filter: alpha(opacity=60); 
+	/* Netscape */
+  	-moz-opacity: 0.6;
+  	/* Safari 1.x */
+  	-khtml-opacity: 0.6;
+}
+
+.popupM {
+	position:relative;
+	padding:40px 30px;
+	border:1px solid #b2b2b2;
+	margin:40px auto;
+	background-color: white;
+}
+.popupM h1{
+	font-size:32px;
+	color:#2c313b;
+	text-align:center;
+	font-weight:bold;
+	padding:0px 0px 30px;
+}
+.popupM h2{
+	font-size:24px;
+	color:#666666;
+	text-align:center;
+	font-weight:normal;
+}
+.popupM .input1{
+	font-size:20px;
+	padding-left:10px;
+	color:#65748d;
+	height:68px;
+	border:1px solid #b2b2b2;
+	background-color:#f7fafd;
+	font-weight:bold;
+}
+.popupM .inputArea{
+	position:relative;
+	clear:both;
+	padding-top:20px;
+}
+.popupM .inputArea .rBtn{float:right;}
+
+.popupM .closeBtn{ position:absolute; top:30px; right:20px;}
+
+.popupM .snsArea{text-align:center;  padding-top:20px;}
+.popupM .snsArea img{margin-right:20px;}
+
+.popupM .btnArea{text-align:right; padding-top:20px;}
+.popupM .btn{
+	display:inline-block;
+	color:#fff;
+	line-height:100%;
+	text-decoration:none;
+}
+.popupM .btnSt1{
+	padding:16px 36px;
+	border:1px solid #ababab;
+	background-color:#ffffff;
+	color:#354052;
+	font-size:20px;
+}
+.popupM .btnSt2{
+	padding:16px 36px;
+	border:1px solid #354052;
+	background-color:#354052;
+	color:#ffffff;
+	font-size:20px;
+}
+.popupM .btnSt3{
+	padding:25px 30px;
+	border:1px solid #ababab;
+	background-color:#ffffff;
+	color:#333333;
+	font-size:20px;
+}
+
+.pageImg {
+	position: absolute;
+}

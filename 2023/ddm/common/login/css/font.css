@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'NotoKr';
+    font-weight: 200;
+    src: url("../font/SpoqaHanSansNeo-Light.woff2") format('woff2'),
+    url("../font/SpoqaHanSansNeo-Light.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'NotoKr';
+    font-weight: 400;
+    src: url("../font/SpoqaHanSansNeo-Regular.woff2") format('woff2'),
+    url("../font/SpoqaHanSansNeo-Regular.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'NotoKr';
+    font-weight: 600;
+    src: url("../font/SpoqaHanSansNeo-Medium.woff2") format('woff2'),
+    url("../font/SpoqaHanSansNeo-Medium.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'remixicon';
+    src: url("../font/remixicon.woff2") format('woff2'),
+    url("../font/remixicon.woff") format('woff');
+}
+
+/* CoreDream */
+@font-face{
+    font-family:'CoreDream';
+    font-weight: 100;
+    src: url("../font/S-CoreDream-1Thin.woff2") format('woff2'),
+    url("../font/S-CoreDream-1Thin.woff") format('woff');
+}
+
+@font-face{
+    font-family:'CoreDream';
+    font-weight: 300;
+    src: url("../font/S-CoreDream-3Light.woff2") format('woff2'),
+    url("../font/S-CoreDream-3Light.woff") format('woff');
+}
+
+@font-face{
+    font-family:'CoreDream';
+    font-weight: 400;
+    src: url("../font/S-CoreDream-4Regular.woff2") format('woff2'),
+    url("../font/S-CoreDream-4Regular.woff") format('woff');
+}
+
+@font-face{
+    font-family:'CoreDream';
+    font-weight: 600;
+    src: url("../font/S-CoreDream-6Bold.woff2") format('woff2'),
+    url("../font/S-CoreDream-6Bold.woff") format('woff');
+}
+
+@font-face{
+    font-family:'CoreDream';
+    font-weight: 900;
+    src: url("../font/S-CoreDream-9Black.woff2") format('woff2'),
+    url("../font/S-CoreDream-9Black.woff") format('woff');
+}

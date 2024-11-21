@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'Score';
+    font-weight: 400;
+    src: url("/common/font/scdream4.woff2") format('woff2'),
+    url("/common/font/scdream4.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'Score';
+    font-weight: 500;
+    src: url("/common/font/S-CoreDream-5.woff2") format('woff2'),
+    url("/common/font/S-CoreDream-5.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'Score';
+    font-weight: 700;
+    src: url("/common/font/scdream7.woff2") format('woff2'),
+    url("/common/font/scdream7.woff") format('woff');
+}
+
+/*  */
+
+@font-face{
+    font-family: 'Jalnan';
+    font-weight: 700;
+    src: url("/common/font/JalnanOTF.woff") format('woff');
+}

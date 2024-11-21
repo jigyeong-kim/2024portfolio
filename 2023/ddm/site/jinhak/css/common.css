@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body{font-family: 'Score', 'Malgun Gothic', '맑은 고딕', 'Dotum', '돋움', 'Gulim', '굴림', sans-serif;font-weight: 400;}
+
+#header .logo_image{width: 100px;}
+
+@media all and (max-width: 1200px) {
+    #header .logo_image{width: 86px;}
+}
+
+@media all and (max-width: 640px) {
+    #header .logo_image{width: 62px;}
+}
+
+
+#footer{font-family: 'NotoKr', 'Malgun Gothic', '맑은 고딕', 'Dotum', '돋움', 'Gulim', '굴림', sans-serif;}
+
+footer .link_anchor, footer .footer_info .address{word-break: keep-all;}
+footer .footer_info .copyright{word-break: keep-all;}
+
+footer .n1 .link_anchor{color: #9f2e75;}
