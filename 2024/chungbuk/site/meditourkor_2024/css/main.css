@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/* Layout */
+@import url('/2024/chungbuk/common/css/default.css')/* 기본 default */;
+@import url('/2024/chungbuk/common/common2021/css/common_layout.css')/* 상,하단 공통 레이아웃 */;
+@import url('/2024/chungbuk/common/common2021/mediforeign/css/common_layout.css')/* 의료관광 전체공통 상하단 */;
+@import url('/2024/chungbuk/common/common2024/css/common_layout.css')/* 상,하단 공통 레이아웃 */;
+@import url('common_layout.css')/* 의료관광국문 별도 상하단 필요시 */;
+
+/*@import url('/common/common2021/mediforeign/css/main_layout.css')!* 의료관광 전체공통 컨테이너 *!;*/
+
+@import url('/2024/chungbuk/common/common2024/mediforeign/css/main_layout.css')/* 2024 의료관광 전체공통 컨테이너 */;

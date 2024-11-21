@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* 학교안심 지우개 */
+@font-face{
+    font-family:'Jiugae';
+    font-weight:400;
+    src: url("../font/TTHakgyoansimJiugaeR.woff2") format('woff2'),
+    url("../font/TTHakgyoansimJiugaeR.woff") format('woff');
+}
+/*@font-face{*/
+/*    font-family:'NotoCJK';*/
+/*    font-weight: 500;*/
+/*    src:url("../font/NotoSansCJKkr-Medium.woff.woff2") format('woff2'),*/
+/*    url("../font/NotoSansCJKkr-Medium.woff.woff") format('woff');*/
+/*}*/
