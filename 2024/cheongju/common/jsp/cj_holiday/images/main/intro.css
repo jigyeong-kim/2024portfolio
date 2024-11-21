@@ -1,0 +1,58 @@
+/* reset style [start] */
+html,body, iframe,h1, h2, h3, h4, h5, h6, p, blockquote,pre,
+q, s, dl, dt, dd, ol, ul, li, fieldset, form, input, table,tr, th ,td{ margin: 0; padding: 0; border:0; line-height: 1.5em; }
+img, fieldset{border:0 none;}
+
+body{position:relative;font-size:75%;line-height:1.8em;color:#545454; font-family:"돋움", Dotum, "굴림", Gulim, "Lucida Grande", Tahoma, Verdana, AppleGothic, UnDotum, sans-serif;}
+ol, ul, li { list-style:none;}
+
+a:link { color:#3c3c3c; text-decoration:none; }
+a:visited { color:#3c3c3c; text-decoration:none; }
+a:hover { color:#3c3c3c; text-decoration:underline; }
+a:active { color:#3c3c3c; text-decoration:underline; }
+
+.clearfix:after {display:block; clear:both; content:"."; visibility:hidden; height:0;}
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+.skip {position:absolute; overflow:hidden; height:0; width:0; font-size:0; visibility:hidden;}
+.clear{clear: both;}
+
+
+/* 인트로페이지 */
+body{position:relative;}
+
+.intro_bg_left{width:50%; height:866px; position:absolute; top:164px; left:0; background:url('../images/main/intro_bg_left.jpg') repeat-x 0 0}
+.intro_bg_right{width:50%; height:866px; position:absolute; top:164px; right:0; background:url('../images/main/intro_bg_right.jpg') repeat-x 100% 0}
+
+.intro{overflow:hidden; width:992px; margin:0 auto; position:relative; background:url('../images/main/intro_bg.jpg') no-repeat 0 164px}
+.intro .margin_r_0{margin-right:0 !important;}
+.intro h1{padding:38px 0 0 108px}
+
+.intro .site{overflow:hidden; height:866px;}
+.intro .site ul{height:683px; background:#fff; float:left; padding:20px 0 0 21px}
+.intro .site ul li{background:no-repeat 0 50%; padding-left:17px; margin-bottom:7px}
+.intro .site ul li a{font-size:14px; letter-spacing:-0.05em; font-weight:bold;}
+.intro .site_list{overflow:hidden;}
+
+.intro .site p{background:no-repeat 0 0; font-size:14px; color:#fff; font-weight:bold; margin-top:13px; padding-left:24px; letter-spacing:-0.05em;}
+.intro .site p em{color:#fcffd3; text-decoration:underline; font-style:normal;}
+
+.intro .new_site{float:left; width:451px; padding-left:1px;}
+.intro .new_site ul{width:201px; margin-right:7px;}
+.intro .new_site ul li{background-image:url('../images/main/site_bul_01.gif')}
+.intro .new_site ul li a:hover{color:#7a72cc;}
+.intro .new_site p{margin-left:13px; background-image:url('../images/main/icon_file_01.gif')}
+
+.intro .maintenance_site{float:left; width:533px; padding-left:7px}
+.intro .maintenance_site ul{width:249px; margin-right:8px; padding-left:13px;}
+/*
+.intro .maintenance_site ul li{background-image:url('../images/main/site_bul_02.gif')}
+.intro .maintenance_site ul li a:hover{color:#28abc4;}
+*/
+
+.intro .maintenance_site ul li{background-image:url('../images/main/site_bul_02.gif'); font-size:14px; letter-spacing:-0.05em; font-weight:bold; margin-bottom:5px;}
+.intro .maintenance_site ul li:hover{color:#28abc4;}
+.intro .maintenance_site p{margin-left:9px; background-image:url('../images/main/icon_file_02.gif')}
+
+.intro .site h2{text-align:center; padding:21px 0 20px 0}

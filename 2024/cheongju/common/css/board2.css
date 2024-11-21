@@ -1,0 +1,11 @@
+/* 포토게시판 기본 - 썸네일 및 리스트 */
+/*#board #photo_list_t2 {border-top:solid 2px #216fd1; width:100%;}
+#board #photo_list_t2 ul{}
+#board #photo_list_t2 ul li{overflow:hidden;border-bottom:1px solid #ababab; }
+#board #photo_list_t2 .photo{float:left; padding:10px;}
+#board #photo_list_t2 .summary_box{position:relative; float:left; width:75%; padding:10px 5px;}
+#board #photo_list_t2 .summary_box dt{font-weight:700; font-size:14px; padding:0 0 10px 0;}
+#board #photo_list_t2 .info{overflow:hidden;}
+#board #photo_list_t2 .info .tel{position:absolute; right:0; top:10px;}
+#board #photo_list_t2 .info .writer{float:left; padding:10px 0 0 0;}
+#board #photo_list_t2 .info .detail{float:right;}*/

@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* wanted */
+@font-face{
+    font-family:'wanted';
+    font-weight: 400;
+    src:url("../font/WantedSans-Regular.woff2") format('woff2');
+}
+
+@font-face{
+    font-family:'wanted';
+    font-weight: 500;
+    src:url("../font/WantedSans-SemiBold.woff2") format('woff2');
+}
+
+@font-face{
+    font-family:'wanted';
+    font-weight: 600;
+    src:url("../font/WantedSans-Bold.woff2") format('woff2');
+}
+
+/* 아리따부리 */
+@font-face{
+    font-family:'arita';
+    font-weight: 600;
+    src:url("../font/AritaBuri-Bold.woff2") format('woff2'), url("../font/AritaBuri-Bold.woff") format('woff');
+}
+
+/* black ops */
+@font-face{
+    font-family:'BlackOps';
+    font-weight: 400;
+    src:url("../font/BlackOpsOne-Regular.woff2") format('woff2'), url("../font/BlackOpsOne-Regular.woff") format('woff');
+}
+
+/* Gmarket */
+@font-face{
+    font-family:'Gmarket';
+    font-weight: 400;
+    src:url("/common_2018/font/GmarketSans-Medium.woff2") format('woff2'), url("/common_2018/font/GmarketSans-Medium.woff") format('woff');
+}
+
+@font-face{
+    font-family:'Gmarket';
+    font-weight: 600;
+    src:url("/common_2018/font/GmarketSans-Bold.woff2") format('woff2'), url("/common_2018/font/GmarketSans-Bold.woff") format('woff');
+}

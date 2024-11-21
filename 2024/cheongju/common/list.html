@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="http://www.cheongju.go.kr/site/www/css/sub.css" />
+<script type="text/javascript" src="/emwp/js/cmm/jsp/calendar.js"></script>
+<script type="text/javascript" src="/emwp/js/cmm/jsp/common.js"></script> 
+<script type="text/javascript" src="/emwp/js/common.js"></script>
+<script language="javascript" >	
+
+//-------------------------------------------------------------------
+// 설명   : 초기화
+//-------------------------------------------------------------------
+	function init() {
+		var f = document.form1;
+		var ck = '<%=request.getAttribute("pages")%>';
+		if(ck=="null"){
+			srchList();
+		}
+		
+	}
+//-------------------------------------------------------------------
+// 설명   : 고시공고 목록 조회
+//-------------------------------------------------------------------	
+	function search(){
+		var f = document.form1;
+		var key = f.Key.value;
+		var temp = f.temp.value.length;
+		var temp_key ="";
+		if( key == 'B_Subject'){
+			f.not_ancmt_sj.value = f.temp.value; 
+		}else if( key == 'B_Content'){
+			f.not_ancmt_cn.value = f.temp.value;   
+		}else if( key == 'B_Dept'){
+			f.dept_nm.value = f.temp.value;
+		}else if( key == 'B_RegNo'){
+			for(i=0; i<temp; i++){
+				if((f.temp.value.charAt(i)=="1")||(f.temp.value.charAt(i)=="2")||(f.temp.value.charAt(i)=="3")||
+				   (f.temp.value.charAt(i)=="4")||(f.temp.value.charAt(i)=="5")||(f.temp.value.charAt(i)=="6")||
+				   (f.temp.value.charAt(i)=="7")||(f.temp.value.charAt(i)=="8")||(f.temp.value.charAt(i)=="9")||(f.temp.value.charAt(i)=="0")){
+					temp_key = temp_key+""+f.temp.value.charAt(i);
+					}
+			}
+			f.not_ancmt_reg_no.value = temp_key;
+		}
+
+ 
+		f.target = "_self";
+		f.action = "/emwp/gov/mogaha/ntis/web/ofr/action/OfrAction.do";	
+		f.method.value   = 'selectListOfrNotAncmt'; //Action
+		f.methodnm.value = 'selectListOfrNotAncmtHomepage';
+		f.submit();	
+	}		
+//-------------------------------------------------------------------
+// 설명   : 검색버튼 클릭시 페이지정보 초기화 하고 조회
+//-------------------------------------------------------------------
+	function srchList(){
+		 document.form1.pageIndex.value="";    //페이지 인덱스 초기화
+		 search();
+	}
+//-------------------------------------------------------------------
+// 설명   : 페이지 이동시 조회
+//-------------------------------------------------------------------
+	function goPage() {
+		
+		search();
+	}
+//-------------------------------------------------------------------
+// 설명   : 고시공고 상세내용 조회
+//-------------------------------------------------------------------		
+	function searchDetail(not_ancmt_mgt_no) {
+		var f = document.form1;
+		f.not_ancmt_mgt_no.value = not_ancmt_mgt_no ;
+		f.target = "_self";
+		f.action = "/emwp/gov/mogaha/ntis/web/ofr/action/OfrAction.do";	
+		f.method.value   = 'selectOfrNotAncmt'; //Action
+		f.methodnm.value = 'selectOfrNotAncmtRegst';
+		f.submit();		    
+		
+	}
+//-------------------------------------------------------------------
+// 설명   : 엔터 눌렀을 때, 검색버튼 클릭시와 같은 기능 
+//-------------------------------------------------------------------
+	function enterKey(){
+		//var f = document.form1;
+		//var tempKey = f.Key.value;
+		//var temp = f.temp.value;
+		var key = event.keyCode; 
+		/*if(tempKey == "B_RegNo"){
+			if(temp.length == 4){
+				f.temp.value = f.temp.value.substring(0,4)+"-"+f.temp.value.substring(4,f.temp.value.length);
+			}
+		}
+		*/
+		if( key == 13 ){ 
+			srchList();
+		}
+	}  
+</script>
+</head>
+<body>
+
+<div id="board" class="clearfix">
+
+		
+    <div class="boardsearch">
+        <form name="" id="" action="" method="get" class="boardSearchForm">
+            <fieldset>
+            <legend>게시물 검색</legend>
+			<label for="year">시작 검색년도</label>
+            <input name="year" id="year" type="text" class="inputText" title="시작 검색년도" value="" style="width:60px" maxlength="4" />
+			예)2014
+			&nbsp;&nbsp;&nbsp;&nbsp;
+            <label class="skip" for="searchCnd">검색항목선택</label>
+            <select name="Key" id="searchCnd" title="검색항목선택">
+				<option value="B_Subject">제목</option>
+				<option value="B_Content">내용</option>
+				<option value="B_Dept">담당부서</option>
+				<option value="B_RegNo">고시공고번호</option>
+            </select>
+            <label for="searchKrwd" class="skip">검색어 입력</label>
+            <input name="temp" id="searchKrwd" type="text" class="inputText" title="검색" value="" />
+            <a href="#" onclick="javascript:srchList();"><img src="/common/images/board/search_submit.gif" value="검색" /></a>
+            </fieldset>
+        </form>
+    </div>
+    <!-- 리스트 -->
+    <div class="board_top clearfix">
+        <div class="left">
+        </div>
+        <div class="right">
+
+        <span>전체게시물 : <em>7</em></span> &nbsp;&nbsp; <span>페이지 <em>1 / 1</em></span> </div>
+    </div>
+    <table class="bbs_default_list" border="0" summary="고시공고 목록">
+        <caption>
+        고시공고 목록
+        </caption>
+        <thead class="th list">
+            <tr>
+                <th scope="col" width="120px">번호</th>
+                <th scope="col" >제목</th>
+                <th scope="col" width="80px">담당부서</th>
+                <th scope="col" width="80px">등록일</th>
+                <th scope="col" width="50px">조회수</th>
+            </tr>
+        </thead>
+        <tbody class="tb">
+	    <tr>
+			<td>청주시 고시<br />제2014-54호</td>
+			<td class="subject">
+				<a href="./selectBbsNttView.do?key=279&amp;bbsNo=40&amp;nttNo=75&amp;searchCtgry=&amp;searchCnd=all&amp;searchKrwd=&amp;pageIndex=1" >
+				청주시, 호국보훈의 달 나라사랑 되새긴다!
+				</a>
+			</td>
+			<td>복지정책과</td>
+			<td>2014.06.08</td>
+			<td>251</td>
+        </tr>
+	    <tr>
+			<td>청주시 고시<br />제2014-54호</td>
+			<td class="subject">
+				<a href="./selectBbsNttView.do?key=279&amp;bbsNo=40&amp;nttNo=75&amp;searchCtgry=&amp;searchCnd=all&amp;searchKrwd=&amp;pageIndex=1" >
+				청주시, 호국보훈의 달 나라사랑 되새긴다!
+				</a>
+			</td>
+			<td>복지정책과</td>
+			<td>2014.06.08</td>
+			<td>251</td>
+        </tr>
+	    <tr>
+			<td>청주시 고시<br />제2014-54호</td>
+			<td class="subject">
+				<a href="./selectBbsNttView.do?key=279&amp;bbsNo=40&amp;nttNo=75&amp;searchCtgry=&amp;searchCnd=all&amp;searchKrwd=&amp;pageIndex=1" >
+				청주시, 호국보훈의 달 나라사랑 되새긴다!
+				</a>
+			</td>
+			<td>복지정책과</td>
+			<td>2014.06.08</td>
+			<td>251</td>
+        </tr>
+	    <tr>
+			<td>청주시 고시<br />제2014-54호</td>
+			<td class="subject">
+				<a href="./selectBbsNttView.do?key=279&amp;bbsNo=40&amp;nttNo=75&amp;searchCtgry=&amp;searchCnd=all&amp;searchKrwd=&amp;pageIndex=1" >
+				청주시, 호국보훈의 달 나라사랑 되새긴다!
+				</a>
+			</td>
+			<td>복지정책과</td>
+			<td>2014.06.08</td>
+			<td>251</td>
+        </tr>
+	    <tr>
+			<td>청주시 고시<br />제2014-54호</td>
+			<td class="subject">
+				<a href="./selectBbsNttView.do?key=279&amp;bbsNo=40&amp;nttNo=75&amp;searchCtgry=&amp;searchCnd=all&amp;searchKrwd=&amp;pageIndex=1" >
+				청주시, 호국보훈의 달 나라사랑 되새긴다!
+				</a>
+			</td>
+			<td>복지정책과</td>
+			<td>2014.06.08</td>
+			<td>251</td>
+        </tr>
+	    <tr>
+			<td>청주시 고시<br />제2014-54호</td>
+			<td class="subject">
+				<a href="./selectBbsNttView.do?key=279&amp;bbsNo=40&amp;nttNo=75&amp;searchCtgry=&amp;searchCnd=all&amp;searchKrwd=&amp;pageIndex=1" >
+				청주시, 호국보훈의 달 나라사랑 되새긴다!
+				</a>
+			</td>
+			<td>복지정책과</td>
+			<td>2014.06.08</td>
+			<td>251</td>
+        </tr>
+	    <tr>
+			<td>청주시 고시<br />제2014-54호</td>
+			<td class="subject">
+				<a href="./selectBbsNttView.do?key=279&amp;bbsNo=40&amp;nttNo=75&amp;searchCtgry=&amp;searchCnd=all&amp;searchKrwd=&amp;pageIndex=1" >
+				청주시, 호국보훈의 달 나라사랑 되새긴다!
+				</a>
+			</td>
+			<td>복지정책과</td>
+			<td>2014.06.08</td>
+			<td>251</td>
+        </tr>
+	    <tr>
+			<td>청주시 고시<br />제2014-54호</td>
+			<td class="subject">
+				<a href="./selectBbsNttView.do?key=279&amp;bbsNo=40&amp;nttNo=75&amp;searchCtgry=&amp;searchCnd=all&amp;searchKrwd=&amp;pageIndex=1" >
+				청주시, 호국보훈의 달 나라사랑 되새긴다!
+				</a>
+			</td>
+			<td>복지정책과</td>
+			<td>2014.06.08</td>
+			<td>251</td>
+        </tr>
+	    <tr>
+			<td>청주시 고시<br />제2014-54호</td>
+			<td class="subject">
+				<a href="./selectBbsNttView.do?key=279&amp;bbsNo=40&amp;nttNo=75&amp;searchCtgry=&amp;searchCnd=all&amp;searchKrwd=&amp;pageIndex=1" >
+				청주시, 호국보훈의 달 나라사랑 되새긴다!
+				</a>
+			</td>
+			<td>복지정책과</td>
+			<td>2014.06.08</td>
+			<td>251</td>
+        </tr>
+	    <tr>
+			<td>청주시 고시<br />제2014-54호</td>
+			<td class="subject">
+				<a href="./selectBbsNttView.do?key=279&amp;bbsNo=40&amp;nttNo=75&amp;searchCtgry=&amp;searchCnd=all&amp;searchKrwd=&amp;pageIndex=1" >
+				청주시, 호국보훈의 달 나라사랑 되새긴다!
+				</a>
+			</td>
+			<td>복지정책과</td>
+			<td>2014.06.08</td>
+			<td>251</td>
+        </tr>
+		<tr>
+			<td colspan="5" align='center'>조회된 자료가 없습니다.</td>
+		</tr>
+		</tbody>
+    </table>
+
+	<div align="center" style="margin-top:10px">
+		<table border='0' cellspacing='0' cellpadding='0'>
+		<tr>
+		<td><img src='http://eminwon.cheongju.go.kr/emwp/img/icon/icon_prevend.gif' width='13' height='13' border='0' alt='첫 페이지로 이동' ></td>
+		<td width='3'></td>
+		<td width='28'><img src='http://eminwon.cheongju.go.kr/emwp/img/icon/icon_prev.gif' border='0' alt='이전 페이지로 이동' ></td>
+		<td>
+		<span class='page_no'><font><b>1</b></font></span>
+		<span class='page_sep'>|</span>
+		<span class='page_no'><a href='#' onclick='javascript:document.form1.pageIndex.value=2;goPage()'>2</a></span>
+		<span class='page_sep'>|</span>
+		<span class='page_no'><a href='#' onclick='javascript:document.form1.pageIndex.value=3;goPage()'>3</a></span>
+		<span class='page_sep'>|</span>
+		<span class='page_no'><a href='#' onclick='javascript:document.form1.pageIndex.value=4;goPage()'>4</a></span>
+		<span class='page_sep'>|</span>
+		<span class='page_no'><a href='#' onclick='javascript:document.form1.pageIndex.value=5;goPage()'>5</a></span>
+		<span class='page_sep'>|</span>
+		<span class='page_no'><a href='#' onclick='javascript:document.form1.pageIndex.value=6;goPage()'>6</a></span>
+		<span class='page_sep'>|</span>
+		<span class='page_no'><a href='#' onclick='javascript:document.form1.pageIndex.value=7;goPage()'>7</a></span>
+		<span class='page_sep'>|</span>
+		<span class='page_no'><a href='#' onclick='javascript:document.form1.pageIndex.value=8;goPage()'>8</a></span>
+		<span class='page_sep'>|</span>
+		<span class='page_no'><a href='#' onclick='javascript:document.form1.pageIndex.value=9;goPage()'>9</a></span>
+		<span class='page_sep'>|</span>
+		<span class='page_no'><a href='#' onclick='javascript:document.form1.pageIndex.value=10;goPage()'>10</a></span>
+		</td>
+		<td width='28' align='right'><a href='#' onclick='javascript:document.form1.pageIndex.value=2;goPage()'><img src='http://eminwon.cheongju.go.kr/emwp/img/icon/icon_next.gif' border='0' alt='다음 페이지로 이동' ></a></td>
+		<td width='3'></td>
+		<td width='20' ><a href='#' onclick='javascript:document.form1.pageIndex.value=11;goPage()'><img src='http://eminwon.cheongju.go.kr/emwp/img/icon/icon_nextend.gif' width='13' height='13' border='0' alt='마지막 페이지로 이동' ></a></td>
+		</tr>
+		</table>
+	</div>
+
+
+</body>
+
+</html>  

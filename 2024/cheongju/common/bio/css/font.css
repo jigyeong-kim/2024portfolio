@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/* 나눔 */
+@font-face{
+	font-family:'NanumG';
+	font-weight: 400;
+	src:url("../font/NanumBarunGothic.eot");
+	src:url("../font/NanumBarunGothic.eot?#iefix") format('embedded-opentype'),
+	    url("../font/NanumBarunGothic.woff") format('woff');
+}
+@font-face{
+	font-family:'NanumG';
+	font-weight: 600;
+	src:url("../font/NanumGothicBold.eot");
+ 	src:url("../font/NanumGothicBold.eot?#iefix") format('embedded-opentype'),
+	    url("../font/NanumGothicBold.woff") format('woff');
+}
+
+@font-face{
+	font-family:'NanumS';
+	font-weight: 400;
+	src:url("../font/NanumSquareR.eot");
+	src:url("../font/NanumSquareR.eot?#iefix") format('embedded-opentype'),
+		url("../font/NanumSquareR.woff") format('woff');
+}
+@font-face{
+	font-family:'NanumS';
+	font-weight: 600;
+	src:url("../font/NanumSquareB.eot");
+	src:url("../font/NanumSquareB.eot?#iefix") format('embedded-opentype'),
+		url("../font/NanumSquareB.woff") format('woff');
+}	
+@font-face{
+	font-family:'NanumP';
+	font-weight: 400;
+	src:url("../font/NanumPen.eot");
+	src:url("../font/NanumPen.eot?#iefix") format('embedded-opentype'),
+		url("../font/NanumPen.woff") format('woff');
+}
+@font-face{
+	font-family:'NanumM';
+	font-weight: 400;
+	src:url("../font/NanumMyeongjo.eot");
+	src:url("../font/NanumMyeongjo.eot?#iefix") format('embedded-opentype'),
+		url("../font/NanumMyeongjo.woff") format('woff');
+}
+
+
+/* 본고딕 */
+@font-face{
+	font-family:'NotoKr';
+	font-weight: 100;
+	src:url("../font/NotoSansCJKkr-Thin.eot");
+	src:url("../font/NotoSansCJKkr-Thin.eot?#iefix") format('embedded-opentype'),
+		url("../font/NotoSansCJKkr-Thin.woff") format('woff');
+}
+@font-face{
+	font-family:'NotoKr';
+	font-weight: 200;
+	src:url("../font/NotoSansCJKkr-Light.eot");
+	src:url("../font/NotoSansCJKkr-Light.eot?#iefix") format('embedded-opentype'),
+		url("../font/NotoSansCJKkr-Light.woff") format('woff');
+}
+@font-face{
+	font-family:'NotoKr';
+	font-weight: 300;
+	src:url("../font/NotoSansCJKkr-DemiLight.eot");
+	src:url("../font/NotoSansCJKkr-DemiLight.eot?#iefix") format('embedded-opentype'),
+		url("../font/NotoSansCJKkr-DemiLight.woff") format('woff');
+}
+@font-face{
+	font-family:'NotoKr';
+	font-weight: 400;
+	src:url("../font/NotoSansCJKkr-Regular.eot");
+	src:url("../font/NotoSansCJKkr-Regular.eot?#iefix") format('embedded-opentype'),
+		url("../font/NotoSansCJKkr-Regular.woff") format('woff');
+}
+@font-face{
+	font-family:'NotoKr';
+	font-weight: 500;
+	src:url("../font/NotoSansCJKkr-Medium.eot");
+	src:url("../font/NotoSansCJKkr-Medium.eot?#iefix") format('embedded-opentype'),
+	url("../font/NotoSansCJKkr-Medium.woff") format('woff');
+}
+@font-face{
+	font-family:'NotoKr';
+	font-weight: 600;
+	src:url("../font/NotoSansCJKkr-Bold.eot");
+	src:url("../font/NotoSansCJKkr-Bold.eot?#iefix") format('embedded-opentype'),
+		url("../font/NotoSansCJKkr-Bold.woff") format('woff');
+}
+@font-face{
+	font-family:'NotoKr';
+	font-weight: 700;
+	src:url("../font/NotoSansCJKkr-Black.eot");
+	src:url("../font/NotoSansCJKkr-Black.eot?#iefix") format('embedded-opentype'),
+	url("../font/NotoSansCJKkr-Black.woff") format('woff');
+}
+
+/* 서울한강 */
+@font-face{
+	font-family:'SeoulN';
+	font-weight: 400;
+	src:url("../font/SeoulNamsanM.eot");
+	src:url("../font/SeoulNamsanM.eot?#iefix") format('embedded-opentype'),
+	    url("../font/SeoulNamsanM.woff") format('woff');
+}
+@font-face{
+	font-family:'SeoulN';
+	font-weight: 600;
+	src:url("../font/SeoulNamsanB.eot");
+ 	src:url("../font/SeoulNamsanB.eot?#iefix") format('embedded-opentype'),
+	    url("../font/SeoulNamsanB.woff") format('woff');
+}
+
+@font-face{
+	font-family:'SeoulH';
+	font-weight: 400;
+	src:url("../font/SeoulHangangM.eot");
+	src:url("../font/SeoulHangangM.eot?#iefix") format('embedded-opentype'),
+	    url("../font/SeoulHangangM.woff") format('woff');
+}
+@font-face{
+	font-family:'SeoulH';
+	font-weight: 600;
+	src:url("../font/SeoulHangangB.eot");
+ 	src:url("../font/SeoulHangangB.eot?#iefix") format('embedded-opentype'),
+	    url("../font/SeoulHangangB.woff") format('woff');
+}

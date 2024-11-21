@@ -1,0 +1,48 @@
+/* accessibility */
+#accessibility {overflow:hidden; position:relative; width:100%; z-index:1000;}
+#accessibility a {display:block; overflow:hidden; height:1px; width:1px; margin:0 -1px -1px 0; font-size:0; line-height:0; text-align:center;}
+#accessibility a:focus, #accessibility a:hover, #accessibility a:active {width:auto; height:20px; margin:0; padding:8px 0 0 15px; background:#20262c; font-size:12px; font-weight:700; line-height:1; color:#fff;}
+
+/* Layout */
+#wrapper {min-width:1200px;}
+#container {height:900px; font-family:"SpoqaHanSans";}
+.cj_bg {position:relative; z-index:1; background:url('/common/jsp/cj_holiday/images/intro/bg.jpg') no-repeat top center;}
+.wrap {position:relative; margin:0 auto; width:1200px; padding:0;}
+
+.contents .indent {margin:1em 0 0.7em 0.8em;}
+.floatLeft {float:left;}
+.box0 {margin-left:20px;}
+.em_red_m {color:red; margin-left:80px;}
+.blank {display:inline-block; margin-left:10px; vertical-align:text-top;}
+.tit .selected {cursor:pointer; display:block;}
+
+/* Logo */
+.logo {padding-top:21px; padding-bottom:21px; font-size:0; line-height:0; text-align:center;}
+.logo a, .logo img {display:inline-block;}
+
+/* rowgroup */
+.rowgroup {height:560px; box-sizing:border-box;}
+.intro_text {position:relative; z-index:10; padding-top:110px; color:#fff; font-size:20px; line-height:30px; text-align:center; text-shadow:3px 3px 3px rgba(0, 0, 0, 0.3);}
+.intro_text .point {display:inline-block; position:relative;}
+.intro_text .point:before {display:block; z-index:-1; position:absolute; top:8px; left:0; right:0; width:96%; height:15px; margin-left:auto; margin-right:auto; background-color:#162b51; content:'';}
+
+.quick_area {margin-top:40px; font-size:0; line-height:0; text-align:center;}
+.quick_area .cj_btn {display:inline-block; width:300px; height:300px; padding-top:70px; padding-bottom:70px; border-radius:50px; box-shadow:3px 3px 3px rgba(0, 0, 0, 0.3); box-sizing:border-box; vertical-align:top;}
+.quick_area .cj_btn .text {display:inline-block; position:relative; padding-top:80px; color:#fff; font-size:30px; line-height:35px;}
+.quick_area .cj_btn .text:before {display:block; position:absolute; top:0; left:0; right:0; width:60px; height:60px; margin-left:auto; margin-right:auto; background-repeat:no-repeat; background-position:center; content:'';}
+.quick_area .cj_btn .text .small {font-size:16px;}
+.quick_area .cj_btn.n1 {margin-right:50px; background-color:#2362b0;}
+.quick_area .cj_btn.n1 .text:before {background-image:url('/common/jsp/cj_holiday/images/intro/ci_ver1.png');}
+.quick_area .cj_btn.n2 {background-color:#cd6e44;}
+.quick_area .cj_btn.n2 .text:before {background-image:url('/common/jsp/cj_holiday/images/intro/ci_ver2.png');}
+
+/* rowgroup2 */
+.rowgroup2 {height:340px; padding-top:66px; box-sizing:border-box;}
+.rowgroup2 .colgroup {float:left; width:600px; font-size:0; line-height:0; text-align:center;}
+.rowgroup2 .colgroup .tit {position:relative; padding-bottom:11px; color:#fff; font-size:25px; line-height:27px;}
+.rowgroup2 .colgroup .tit:before {display:block; position:absolute; bottom:0; left:0; right:0; width:101px; height:1px; margin-left:auto; margin-right:auto; background-color:rgba(255, 255, 255, 0.2); content:'';}
+.rowgroup2 .colgroup > ul {display:inline-block; margin-top:31px;}
+.rowgroup2 .colgroup > ul > li {float:left; width:110px; height:110px; margin-left:30px; background-color:#fff; border-radius:30px; box-sizing:border-box;}
+.rowgroup2 .colgroup > ul > li:first-child {margin-left:0;}
+.rowgroup2 .colgroup > ul > li a {display:block; width:100%; height:100%; padding-top:24px; color:#222; font-size:20px; line-height:30px; box-sizing:border-box;}
+.rowgroup2 .colgroup > ul > li a strong {color:#162b51; font-size:30px; font-weight:600;}

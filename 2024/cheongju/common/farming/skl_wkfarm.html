@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="농촌진흥청, 농촌, 농업기술" />
+<title>녹색기술 청색마을 함께하는 농촌진흥청(주간농사정보 OpenAip Service)</title>  
+ 
+<link href="http://www.rda.go.kr/css/common.css" rel="stylesheet" type="text/css" media="all"  />
+<link href="http://www.rda.go.kr/css/tec_skl_wkf.css" rel="stylesheet" type="text/css" media="all"  />
+ 
+<script type="text/javascript" src="http://www.rda.go.kr/js/framework.js"></script>
+<script type="text/javascript" src="http://www.rda.go.kr/js/rda.common.js"></script>
+<script type="text/javascript" src="http://www.rda.go.kr/tec/skl/skl_wkfarminfo.js"></script>
+ 
+<script type="text/javascript"> 
+	var oRequestParameter={};
+	oRequestParameter.sys="105020000000"; 
+	oRequestParameter.key="119968444580";  // Api Key
+	oRequestParameter.loginId = "cjddnjsrns";   // 신청자 로그인 아이디
+	oRequestParameter.reqMetaNo  ="";	//상세 페이지 처리 위한 일련번호 setting
+	oRequestParameter.ajxCappPage = "./ajaxCall.jsp";  //Ajax 크로스 도메인 처리를 위한 페이지 (language별로 편집할것.)
+ 
+ 
+ 
+	rda.sklinfo = {
+	  initialize : function() {
+		  var comSklinfoInit = $Fn(rda.ComSklWkfarm.initialize, rda.ComSklWkfarm).bind();
+		  comSklinfoInit();
+	  },
+	  destroy : function() {
+	  	
+	  }
+	};
+	
+	$Fn(rda.sklinfo.initialize, rda.sklinfo).attach(window, "load");
+	$Fn(rda.sklinfo.destroy, rda.sklinfo).attach(window, "unload");
+</script>
+ 
+</head>
+ 
+<body>
+ 
+	<div id="sub_contents">
+		<DIV id="api_load" class="api_load">
+			<DIV class="load_fram">
+			<P>정보를 불러오고 있습니다.</P>
+			<DIV class="loadbg"><IMG title="정보를 불러오고 있습니다." alt="로드 이미지" src="http://www.rda.go.kr/images/pro_bar.gif" width=180 height=3></DIV>
+			</DIV>
+		</DIV>
+	
+		<div id="ac_wrap">
+		<div id="sub_contents_list">
+		</div>
+		<div id="sub_contents_data">
+		</div>
+		</div>
+	</div>
+ 
+</body>
+</html>

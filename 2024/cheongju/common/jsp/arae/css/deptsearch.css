@@ -1,0 +1,37 @@
+/* (주)한신정보기술 송일헌 - 2015.11.27 */
+
+#section2 {margin-top:10px; width: 100%;}
+#section2 div.wrap_dept {padding: 0 20px 20px; width: auto;}
+#section2 .left { display:inline; float: left; position: relative; padding: 4px 0; }
+#section2 .right { display:inline; float: right; position: relative; padding: 4px 0; }
+
+
+/* head */
+#section2 div.head_dept {position:relative;height:60px; width:100%; background: url('../images/sub/sub_head_bg.gif') repeat-x 0 bottom; }
+#section2 div.head_dept > div.title_dept {margin-left:2px; }
+#section2 div.head_dept > div.title_dept h2 {padding:10px 0 0 28px; margin:0; color:#2d3437; font-size:24px;  background: url('../images/sub/sub_title_bg.gif') no-repeat 0 21px; }
+
+
+/* sub_head */
+#section2 div.sub_head {height: 30px; margin: 15px 0 15px 5px;}
+#section2 div.sub_head .result{margin-top: 8px;}
+#section2 div.sub_head #searchWrd {height: 15px; width: 200px; }
+
+
+/* dept_table */
+#section2 div.dept_table {width: auto; height: 410px; overflow-x: hidden; overflow-y: scroll; }
+
+
+/* 테이블 */
+table caption {display:none; }
+#section2 table.table_t1 { border-collapse: collapse; width: 100%; margin: .5em 0px; border-top: 2px solid #cfcfcf; border-bottom: 1px solid #d6d6d6; }
+#section2 table.table_t1 th, table.table_t1 td { border: 1px solid #d6d6d6; padding: 8px 8px 6px 8px; }
+#section2 table.table_t1 thead, table.table_t1 tfoot { background: #f4f4f4; font-weight: normal; font-weight:bold; text-align:center; color: #3c3c3c; }
+#section2 table.table_t1 thead th, table.table_t1 tfoot th { background:#ececec; color: #3c3c3c; font-weight: bold; text-align: center; vertical-align: middle; height:21px; }
+#section2 table.table_t1 thead.alt th, table.table_t1 tfoot.alt th { font-weight: normal; }
+#section2 table.table_t1 th { background: #f6f6f6; font-weight: bold; text-align: center; }
+
+/* dept_footer */
+#section2 div.dept_footer ul {padding-top: 10px; }
+#section2 div.dept_footer ul {}
+#section2 div.dept_footer ul li {float: right; }

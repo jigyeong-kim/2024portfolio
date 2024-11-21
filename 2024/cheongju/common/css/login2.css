@@ -1,0 +1,184 @@
+/* reset style */
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block;}
+audio,canvas,progress,video{display:inline-block;}
+html,body,div,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ol,ul,li,blockquote,pre,button,fieldset,form,legend,table,caption,tbody,tfoot,thead,tr,th,td,iframe,article,aside,canvas,details,embed,figure,figcaption,header,footer,menu,nav,section,summary,audio,video{margin:0; padding:0; border:0; font-size:inherit; font-family:inherit; vertical-align:baseline;}
+
+img,fieldset{border:none;}
+figure,figcaption{margin:0; padding:0;}
+b,strong{font-weight:600;}
+em,dfn,cite,address,i{font-style:normal;}
+mark{background-color:#ff0; color:#000;}
+small{font-size:90%;}
+sup,sub{position:relative; font-size:0.9em; line-height:0; vertical-align:baseline;}
+sub{bottom:-0.25em;}
+sup{top:-0.5em;}
+del{text-decoration:line-through;}
+label{cursor:pointer;}
+
+ol,ul,li{list-style:none;}
+table{border-collapse:collapse; border-spacing:0;}
+caption{position:absolute; width:1px; height:1px; margin:0; padding:0; background:none; color:transparent; font-size:3px; line-height:0;}
+legend{position:absolute; width:1px; height:1px; margin:0; padding:0; background:none; color:transparent; font-size:3px; line-height:0;}
+hr{visibility:hidden; overflow:hidden; position:absolute; width:0; height:0; font-size:0;}
+
+.clearfix:after{display:block; visibility:hidden; overflow:hidden; clear:both; width:0; height:0; content:"."; font-size:0; line-height:0;}
+.clearfix{display:inline-block;}
+.clearfix{display:block;}
+.clear{clear:both;}
+.hide{display:none;}
+.skip{position:absolute; width:1px; height:1px; margin:0; padding:0; background:none; color:transparent; font-size:3px; line-height:0;}
+
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+a:active{text-decoration:none;}
+
+/* font */
+@font-face{font-weight:200; font-family:'NotoKr'; src:url("../font/NotoSansCJKkr-Light.woff2") format('woff2'), url("../font/NotoSansCJKkr-Light.woff") format('woff');}
+@font-face{font-weight:300; font-family:'NotoKr'; src:url("../font/NotoSansCJKkr-DemiLight.woff2") format('woff2'), url("../font/NotoSansCJKkr-DemiLight.woff") format('woff');}
+@font-face{font-weight:400; font-family:'NotoKr'; src:url("../font/NotoSansCJKkr-Regular.woff2") format('woff2'), url("../font/NotoSansCJKkr-Regular.woff") format('woff');}
+@font-face{font-weight:500; font-family:'NotoKr'; src:url("../font/NotoSansCJKkr-Medium.woff2") format('woff2'), url("../font/NotoSansCJKkr-Medium.woff") format('woff');}
+@font-face{font-weight:600; font-family:'NotoKr'; src:url("../font/NotoSansCJKkr-Bold.woff2") format('woff2'), url("../font/NotoSansCJKkr-Bold.woff") format('woff');}
+
+/* 본문바로가기  */
+.accessibility{overflow:hidden; position:relative; z-index:1000; width:100%;}
+.accessibility a{display:block; overflow:hidden; width:1px; height:1px; margin:0 -1px -1px 0; font-size:0; text-align:center; line-height:0;}
+.accessibility a:focus, #accessibility a:hover, #accessibility a:active{width:auto; height:20px; margin:0; padding:8px 0 0 15px; background:#20262c; color:#fff; font-size:12px; font-weight:700; line-height:1;}
+
+/* layout */
+body{background-color:#fff; color:#555; font-size:15px; font-weight:400; font-family:"NotoKr","Malgun Gothic","맑은 고딕","Dotum","돋움","Gulim","굴림",sans-serif; line-height:22px; overflow-x:hidden;letter-spacing:-0.035em;word-wrap:break-word;-webkit-text-size-adjust:none}
+
+/* login */
+#header{position:relative; background:url(../images/login2/login_bg02.jpg) no-repeat center / cover; text-align:center;}
+#header .wrap{position:relative; max-width:1400px; margin-right:auto; margin-left:auto; padding-top:124px; padding-bottom:147px;}
+#header .logo img{display:inline-block; margin-right:20px; vertical-align:top;}
+#header .logo span{display:inline-block; color:#fff; font-size:36px; font-weight:600; line-height:56px; vertical-align:top;}
+#header .header_text{margin-top:26px; color:#fff; font-size:20px; font-weight:300; line-height:22px; word-break:keep-all;text-shadow:0 0 10px rgba(0,0,0,.2);}
+#header .header_link{position:absolute; top:16px; right:0; padding-right:29px; color:#fff; font-size:15px; font-weight:300; line-height:17px;}
+#header .header_link:before,
+#header .header_link:after{display:block; position:absolute; content:'';}
+#header .header_link:before{top:0; right:0; width:17px; height:17px; border:1px solid rgba(255,255,255,.3); border-radius:3px; box-shadow:15px 30px 35px rgba(0,0,0,.1); box-sizing:border-box;}
+#header .header_link:after{top:4px; right:5px; width:8px; height:8px; border-right:2px solid #fff; border-bottom:2px solid #fff; transform:rotate(-45deg) scale(.6);}
+#header .header_link span{position:relative;}
+#header .header_link span:before{display:block; position:absolute; right:0; bottom:0; width:0; height:1px; background-color:#fff; content:''; transition:all .25s ease-in-out;}
+#header .header_link:hover span:before{left:0; right:auto; width:100%;}
+
+#container{padding-bottom:55px;}
+
+#login{position:relative; margin-top:-54px; font-size:0; text-align:center; line-height:0;}
+#login .login_list{display:inline-block; margin-right:auto; margin-left:auto; padding:45px 40px 43px 40px; border-radius:35px; background-color:#f3f4f3; box-shadow:15px 30px 35px rgba(0,0,0,.1); font-size:0; line-height:0;}
+#login .login_item{display:inline-block; width:305px; margin:10px 12px; padding:40px 20px; border-radius:17px; background-color:#fff; vertical-align:top; box-sizing:border-box;}
+#login .login_item .login_title{color:#000; font-size:22px; font-weight:600; line-height:24px;}
+#login .login_item .login_text{height:132px; margin-top:16px; margin-bottom:16px; font-size:15px; font-weight:200; line-height:22px; word-break:keep-all; text-align:left;}
+#login .login_item .login_text > span{display:inline-block; vertical-align:top;}
+#login .login_item .login_text:after{display:inline-block; height:100%; content:''; vertical-align:middle;}
+#login .login_item .login_text > span b{font-weight:400;}
+#login .login_item .login_text > span span{color:#ff0000; font-weight:300;}
+#login .login_item .login_text a{color:#555 !important;}
+#login .login_item .login_btn{width:calc(100% - 30px); height:50px; margin-right:15px; margin-left:15px; border-radius:6px; color:#fff; font-size:16px; font-weight:500; text-align:left; line-height:50px; cursor:pointer; transition:background-color .25s ease-in-out;}
+#login .login_item .login_btn span{display:block; position:relative; padding-top:9px; padding-right:22px; padding-bottom:11px; padding-left:55px; line-height:30px;}
+#login .login_item .login_btn span:before,
+#login .login_item .login_btn span:after{display:block; position:absolute; content:'';}
+#login .login_item .login_btn span:before{top:11px; left:16px; width:29px; height:29px; background-repeat:no-repeat;}
+#login .login_item .login_btn span:after{top:21px; right:20px; width:6px; height:6px; border-right:2px solid #fff; border-bottom:2px solid #fff; transform:rotate(-45deg);}
+#login .login_item.phone .login_btn{background-color:#054d07;}
+#login .login_item.phone .login_btn:hover{background-color:#023b04;}
+#login .login_item.phone .login_btn span:before{background-image:url(../images/login2/login_icon_phone.png);}
+#login .login_item.ipin .login_btn{background-color:#054d07;}
+#login .login_item.ipin .login_btn:hover{background-color:#023b04;}
+#login .login_item.ipin .login_btn span:before{background-image:url(../images/login2/login_icon_ipin.png);}
+#login .login_item.naver .login_btn{background-color:#1da42c;}
+#login .login_item.naver .login_btn:hover{background-color:#138a20;}
+#login .login_item.naver .login_btn span:before{background-image:url(../images/login2/login_icon_naver.png);}
+#login .login_item.kakao .login_btn{background-color:#ffe800; color:#3a2020;}
+#login .login_item.kakao .login_btn:hover{background-color:#f5dc00; color:#3a2020;}
+#login .login_item.kakao .login_btn span:before{background-image:url(../images/login2/login_icon_kakao.png);}
+#login .login_item.kakao .login_btn span:after{border-right-color:#3a2020; border-bottom-color:#3a2020;}
+#login .login_item.onepass .login_btn{background-color:#1c2674;}
+#login .login_item.onepass .login_btn:hover{background-color:#121b59;}
+#login .login_item.onepass .login_btn span:before{background-image:url(../images/login2/login_icon_onepass.png);}
+
+/* 부서로그인 추가 23.11.16 */
+#login .login_item.admin_login{width:auto;padding:16px 51px 15px 36px;margin-top:28px;}
+#login .login_item.admin_login .login_title{display:inline-block;margin-right:47px;color:#000;font-size:22px;line-height:normal;letter-spacing:-.035em;vertical-align:middle}
+#login .login_item.admin_login form{display:inline-block;vertical-align:middle}
+#login .login_item.admin_login form .adminput_box{display:inline-block;margin-right:8px;vertical-align:middle}
+#login .login_item.admin_login form .adminput_box .put:first-child{margin-bottom:7px}
+#login .login_item.admin_login form .adminput_box .put input{display:block;width:365px;height:40px;padding:0 18px;border:1px solid #ccc;border-radius:5px;box-sizing:border-box}
+#login .login_item.admin_login form .btn{display:inline-block;vertical-align:middle}
+#login .login_item.admin_login form .btn button{display:inline-block;width:105px;height:85px;border-radius:6px;box-sizing:border-box;background-color:#003973;color:#fff;font-size:16px;line-height:normal;letter-spacing:-.025em;text-align:center;vertical-align:middle}
+
+@media (max-width:1000px){
+#login .login_item.admin_login{padding:30px 15px}
+#login .login_item.admin_login .login_title{display:block;margin:0;margin-bottom:28px}
+}
+@media (max-width:640px){
+#login .login_item.admin_login form .adminput_box{display:block;margin:0;}
+#login .login_item.admin_login form .adminput_box .put input{width:100%;}
+#login .login_item.admin_login form .btn button{height:40px;margin-top:21px}
+}
+
+#footer{padding:60px 10px; background-color:#1c3e61; color:#fff; font-weight:200; text-align:center;}
+#footer .footer_cs{display:inline-block; margin-right:40px; padding-top:3px; text-align:left; vertical-align:top;}
+#footer .footer_cs .cs_box{display:inline-block; vertical-align:top;}
+#footer .footer_cs .cs_box + .cs_box{margin-left:20px;}
+#footer .footer_cs .cs_title{margin-top:3px; font-size:20px; font-weight:500; line-height:22px; letter-spacing:-0.05em;}
+#footer .footer_cs .cs_num{margin-top:10px; font-size:24px; font-weight:600; line-height:26px;}
+#footer .footer_cs .cs_list li{line-height:26px;}
+#footer .footer_cs .cs_text{margin-top:7px; font-size:14px;}
+#footer .footer_info{display:inline-block; text-align:left; vertical-align:top;}
+#footer .footer_info .info_list{}
+#footer .footer_info .info_list li{line-height:26px;}
+#footer .footer_info .copyright{margin-top:7px; color:#fff; font-size:14px; letter-spacing:0;}
+
+@media (max-width:1782px){
+    #header .wrap{padding-top:70px; padding-bottom:105px;}
+    #header .header_link{right:20px;}
+    #container{min-height:calc(100vh - 426px);}
+    #login{margin-top:-50px; padding-right:20px; padding-left:20px;}
+    #login .login_list{max-width:987px; padding:40px 30px;}
+    #login .login_item.kakao,
+    #login .login_item.onepass{width:469px;}
+    #login .login_item .login_text{height:110px;}
+    #login .login_item .login_text br{display:none; float:left;}
+    #footer{padding-bottom:60px;}
+}
+@media (max-width:1110px){
+    #login{margin-top:-40px;}
+    #login .login_list{width:inherit; max-width:inherit; padding:30px 10px; box-shadow:5px 10px 12px rgba(0,0,0,.1);}
+    #login .login_item{width:calc(50% - 20px); margin-right:10px; margin-left:10px;}
+    #login .login_item.naver,
+    #login .login_item.kakao,
+    #login .login_item.onepass{width:calc(100% - 20px);}
+    #login .login_item .login_text{height:88px;}
+    #login .login_item.naver .login_text,
+    #login .login_item.kakao .login_text,
+    #login .login_item.onepass .login_text{height:inherit;}
+    #login .login_item .login_btn{width:100%; margin-right:0; margin-left:0;}
+    #footer .footer_cs{margin-right:0; padding-top:0;}
+    #footer .footer_info{display:block; margin-top:20px; text-align:center;}
+}
+@media (max-width:640px){
+    #header .wrap{padding-bottom:80px;}
+    #header .logo img{height:46px; margin-right:10px;}
+    #header .logo span{font-size:30px; line-height:46px;}
+    #header .header_text{margin-top:14px; font-size:16px;}
+    #login{margin-top:-30px;}
+    #login .login_list{padding:20px 10px;}
+    #login .login_item{width:calc(100% - 20px); padding:30px 20px;}
+    #login .login_item .login_text{height:inherit;}
+    #footer .footer_cs .cs_box + .cs_box{margin-left:10px;}
+    #footer .footer_cs .cs_title{font-size:18px;}
+    #footer .footer_cs .cs_num{font-size:22px;}
+    #footer .footer_info .info_list li span{display:block;}
+}
+
+/* onepass 활성화시 아래 주석 혹은 삭제 */
+@media (max-width:1782px){
+#login .login_item:not(.admin_login){width:calc(50% - 24px)}
+}
+@media (max-width:640px){
+#login .login_item:not(.admin_login){width:calc(100% - 40px)}
+}
+
+#login .login_list > p {padding-left: 12px; font-size: 15px; line-height: normal; text-align:left;}

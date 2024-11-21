@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="title" content="청주시 즐거운 명절기간 안내" />
+    <meta name="author" content="청주시 즐거운 명절기간 안내" />
+    <meta name="keywords" content="청주시 즐거운 명절기간 안내" />
+    <meta name="description" content="청주시 즐거운 명절기간 안내" />
+    <link rel="stylesheet" href="/common/jsp/cj_holiday/css/main.css" />
+    <link rel="stylesheet" href="../common_2018/css/font.css">
+    <script src="/common/jsp/cj_holiday/js/jquery-1.11.1.min.js"></script>
+    <script src="/common/jsp/cj_holiday/js/main.js"></script>
+    <script src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=iAt_Vo_L7LX9FHL9PkZ9"></script>
+    <title>청주시 즐거운 명절기간 안내</title>
+	<script>
+		$(function(){
+			sessionStorage.setItem('chuSeok',2019);
+		});
+	</script>
+</head>
+
+<body id="main">
+    <div id="wrapper">
+        <header id="header">
+            <div class="wrap">
+                <div id="accessibility">
+                    <a href="#container">본문 바로가기</a>
+                    <a href="#lnb">컨텐츠탭 바로가기</a>
+                </div>
+                <div class="top_left claerfix">
+                    <a href="https://www.cheongju.go.kr/www/index.do" target="_blank" title="새창" class="btn_home"><span>청주시청<br />바로가기</span></a>
+                </div>
+            </div><!-- //wrap-->
+        </header>
+        <hr />
+		<main id="container" class="clearfix">
+			<div class="section rowgroup">
+				<div class="visual_bg">
+					<div class="vi_text clearfix">
+						<p class="period">9.12.(목) ~ 9.15.(일) 4일간</p>
+						<img src="/common/jsp/cj_holiday/images/main/visual_title.png" alt="청주시와 함께, 행복한가득 한가위!" />
+						<p class="text">청주시에서는 <strong>연휴기간 중 자주 찾는 생활정보</strong>를 알려드립니다!</p>
+					</div>
+					<h2 class="skip">탭메뉴</h2>
+					<div class="menu_sub">
+						<div class="nav">
+							<ul class="tap_menu clearfix">
+								<li class="tap1">
+									<a href="#item1" class="tit">
+										<span class="img_area"></span>
+										<span class="text">생활안내</span>
+									</a>
+								</li>
+								<li class="tap2">
+									<a href="#item2" class="tit">
+										<span class="img_area"></span>
+										<span class="text">교통정보</span>
+									</a>
+								</li>
+								<li class="tap3">
+									<a href="#item3" class="tit">
+										<span class="img_area"></span>
+										<span class="text">문화행사/전시/공연</span>
+									</a>
+								</li>
+								<li class="tap4">
+									<a href="#item4" class="tit">
+										<span class="img_area"></span>
+										<span class="text">전통시장</span>
+									</a>
+								</li>
+								<li class="tap5">
+									<a href="#item5" class="tit">
+										<span class="img_area"></span>
+										<span class="text">당직병원/약국</span>
+									</a>
+								</li>
+								<li class="tap6">
+									<a href="#item6" class="tit">
+										<span class="img_area"></span>
+										<span class="text">안전행동요령</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="cts_border"></div>
+			</div>
+			<div class="section rowgroup2">
+				<div class="contents wrap">
+					<div class="sub_cont" id="item1">
+						<h2><img src="/common/jsp/cj_holiday/images/contents/part_tit1.png" alt="2019년 추석 연휴기간 생활안내" /></h2>
+						<h3>청주365민원콜센터 안내</h3>
+						<ul class="bu">
+							<li><strong>대표번호:</strong> <a href="tel:043-201-0001">043-201-0001</a></li>
+							<li><strong>운영시간:</strong> <em class="em_b_red">2019. 9. 12.(목) ~ 9. 15.(일) 09:00 ~ 18:00</em> </li>
+							<li><strong>안내내용:</strong> 교통, 환경, 시정일반, 행정지원 농업정책, 복지, 세무 등 생활불편민원 접수</li>
+						</ul>
+
+						<h3>시민불편 종합신고</h3>
+						<ul class="bu">
+							<li><strong>운영기간:</strong> 2019. 9. 12(목) ~ 9. 15.(일)</li>
+							<li><strong>운영내용:</strong> 연휴기간 중 각종 생활민원 접수, 사건사고, 가축질병 의심신고 등</li>
+						</ul>
+						<h4>연락처</h4>
+						<div class="indent">
+							<table class="table">
+								<caption>시민불편 종합신고 연착처에 관한 표이며, 청주시청, 상당구청, 서원구청, 흥덕구청, 청원구청 등 항목 정보를 제공합니다.</caption>
+								<thead>
+									<tr>
+										<th scope="col">청주시청</th>
+										<th scope="col">상당구청</th>
+										<th scope="col">서원구청</th>
+										<th scope="col">흥덕구청</th>
+										<th scope="col">청원구청</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<td><a href="tel:043-201-5222">043-201-2222</a></td>
+										<td><a href="tel:043-201-5222">043-201-5222</a></td>
+										<td><a href="tel:043-201-6222">043-201-6222</a></td>
+										<td><a href="tel:043-201-7222">043-201-7222</a></td>
+										<td><a href="tel:043-201-8222">043-201-8222</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h3>생활<span>(음식물)</span> 쓰레기 수거안내</h3>
+						<ul class="bu">
+							<li><strong>운영기간:</strong> 2019. 9. 12(목) ~ 9. 15.(일), 4일간</li>
+							<li><strong>수거대상:</strong> 생활쓰레기(일반쓰레기, 재활용 등), 음식물쓰레기</li>
+						</ul>
+						<h4>안내번호</h4>
+						<div class="indent">
+							<table class="table">
+								<caption>생활(음식물) 쓰레기 수거안내 안내번호에 관한 표이며, 생활쓰레기 수거, 음식쓰레기 수거, 상당구청, 서원구청, 흥덕구청, 청원구청 등 항목 정보를 제공합니다.</caption>
+								<thead>
+									<tr>
+										<th scope="col">생활쓰레기 수거</th>
+										<th scope="col">음식쓰레기 수거</th>
+										<th scope="col">상당구청</th>
+										<th scope="col">서원구청</th>
+										<th scope="col">흥덕구청</th>
+										<th scope="col">청원구청</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<td><a href="tel:043-201-4663">043-201-4663</a></td>
+										<td><a href="tel:043-201-4674">043-201-4674</a></td>
+										<td><a href="tel:043-201-5302">043-201-5302</a></td>
+										<td><a href="tel:043-201-6303">043-201-6303</a></td>
+										<td><a href="tel:043-201-7303">043-201-7303</a></td>
+										<td><a href="tel:043-201-8333">043-201-8333</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h4>일자별 수거 일정<span>(상당구, 서원구, 흥덕구, 청원구)</span></h4>
+						<div class="indent">
+							<table class="table">
+								<caption>일자별 수거 일정(상당구, 서원구, 흥덕구, 청원구)에 관한 표이며, 구분, 9.12.(목), 9.13.(금), 9.14.(토), 9.15.(일), 비고 등 항목 정보를 제공합니다.</caption>
+								<thead>
+									<tr>
+										<th scope="col">구분</th>
+										<th scope="col">9.12.(목)</th>
+										<th scope="col">9.13.(금)</th>
+										<th scope="col">9.14.(토)</th>
+										<th scope="col">9.15.(일)</th>
+										<th scope="col">비고</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<th scope="row">생활</th>
+										<td>○</td>
+										<td>×</td>
+										<td>○</td>
+										<td>×</td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">음식물</th>
+										<td>○</td>
+										<td>×</td>
+										<td>○</td>
+										<td>×</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h3>장사(장묘) 안내</h3>
+						<h4>시설안내</h4>
+						<div class="indent">
+							<table class="table">
+								<caption>장사(장묘) 시설안내에 관한 표이며, 시설명, 연락처, 소재지 등 항목 정보를 제공합니다.</caption>
+								<thead>
+									<tr>
+										<th scope="col">시설명</th>
+										<th scope="col">연락처</th>
+										<th scope="col">소재지</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<th scope="row">목련공원</th>
+										<td><a href="tel:043-270-8574">043-270-8574</a></td>
+										<td>상당구 목련로 731(월오동)</td>
+									</tr>
+									<tr>
+										<th scope="row">매화공원</th>
+										<td><a href="tel:043-270-7320">043-270-7320</a></td>
+										<td>상당구 가덕면 상장인차로 460</td>
+									</tr>
+									<tr>
+										<th scope="row">장미공원</th>
+										<td><a href="tel:043-270-7330">043-270-7330</a></td>
+										<td>청원구 오창읍 양청3길 88</td>
+									</tr>
+									<tr>
+										<th scope="row">청주시 장례식장</th>
+										<td><a href="tel:043-291-4444">043-291-4444</a></td>
+										<td>상당구 목련로 731(월오동)</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<ul class="bu">
+							<li><strong>추석 연휴기간 장사시설 운영:</strong> 9월 13일 화장장 휴관, 민원실 업무만 가능</li>
+							<li><strong>추석 연휴기간 장사시설 추모객 안내사항:</strong> 장사시설을 이용하시는 추모객께서는 추석연휴기간 공설묘지내 주차장시설이 협소하고 도로 및 진입로에 불법주정차로 인해 교통정체가 예상되므로 대중교통 이용을 당부 드리며 또한 안내 도우미 지시에 따라 차량 질서유지로 안전하고 즐거운 성묘가 되시기를 바랍니다.</li>
+						</ul>
+						<h3>상수도 생활민원안내</h3>
+						<h4>안내 전화번호</h4>
+						<ul class="bu">
+							<li><strong>단수, 누수, 출수불량 안내:</strong><a href="tel:043-257-7979">043-257-7979</a>(상수도사업본부 시설과)</li>
+							<li><strong>계량기 고장, 파손, 부동 안내:</strong><a href="tel:043-201-4466">043-201-4466</a>(상수도사업본부 당직실)</li>
+						</ul>
+						<h3>연휴기간 중 무인민원 발급창구 운영 현황</h3>
+						<h4>상당구</h4>
+						<div class="indent">
+							<table class="table">
+								<caption>연휴기간 중 무인민원 발급창구 운영 현황(상당구)에 관한 표이며, 설치장소, 주소, 운영시간, 비고 등 항목 정보를 제공합니다.</caption>
+								<thead>
+									<tr>
+										<th scope="col">설치장소</th>
+										<th scope="col">주소</th>
+										<th scope="col">운영시간</th>
+										<th scope="col">비고</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<td>상당구청 민원실</td>
+										<td>상당구 단재로 466(효촌리)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>남일면사무소</td>
+										<td>상당구 남일면 단재로 501(효촌리)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>성안동주민센터 민원실 앞</td>
+										<td>상당구 대성로 72(문화동)</td>
+										<td>05:00~23:00</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>영운동주민센터 민원실 앞</td>
+										<td>상당구 단재로 129(영운동)</td>
+										<td>05:00~23:00</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>탑대성동주민센터 민원실 입구</td>
+										<td>상당구 당산로 9(대성동)</td>
+										<td>05:00~23:00</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>금천동주민센터 민원실 앞</td>
+										<td>상당구 쇠내로 50(금천동)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>용담명암산성동주민센터 민원실 앞</td>
+										<td>상당구 교동로 149(용담동)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>용암1동주민센터 민원실외</td>
+										<td>상당구 중흥로 29(용암동)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>용암2동주민센터 민원실 앞</td>
+										<td>상당구 무농정로 47(용암동)</td>
+										<td>05:00~23:00</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>청주시청 제2청사</td>
+										<td>상당구 상당로69번길 38(북문로1가)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>청주시청 농협</td>
+										<td>상당구 상당로 155(북문로3가)</td>
+										<td>07:00~22:00</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>홈플러스청주성안점 지하1층 엘리베이터 앞</td>
+										<td>상당구 사직대로 346(서문동)</td>
+										<td>10:00~23:00</td>
+										<td>추석당일 제외 정상운영</td>
+									</tr>
+									<tr>
+										<td>청주상당신협 본점</td>
+										<td>상당구 산성로 56(금천동)</td>
+										<td>07:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>청주상당신협 용정지점</td>
+										<td>상당구 용정로 25 상가동 103호(용정동)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>으뜸신협방서지점</td>
+										<td>상당구 단재로 316 (방서동)</td>
+										<td>06:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>롯데마트 상당점 1층 CD기 옆</td>
+										<td>상당구 용암북로160번길 60(용암동)</td>
+										<td>10:00~23:00</td>
+										<td>추석당일 제외 정상운영</td>
+									</tr>
+									<tr>
+										<td>목련공원 관리사무실 내</td>
+										<td>상당구 목련로 731(월오동)</td>
+										<td>07:00~19:00</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h4>서원구</h4>
+						<div class="indent">
+							<table class="table">
+								<caption>연휴기간 중 무인민원 발급창구 운영 현황(서원구)에 관한 표이며, 설치장소, 주소, 운영시간, 비고 등 항목 정보를 제공합니다.</caption>
+								<thead>
+									<tr>
+										<th scope="col">설치장소</th>
+										<th scope="col">주소</th>
+										<th scope="col">운영시간</th>
+										<th scope="col">비고</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<td>서원구청 민원실 앞</td>
+										<td>서원구 사직동 888(사직대로 227)</td>
+										<td>09:00~18:00</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>수곡1동 행정복지센터 민원실 앞</td>
+										<td>서원구 수곡동 구룡산로322</td>
+										<td>05:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>사직1동 행정복지센터 현관입구</td>
+										<td>충청북도 청주시 서원구 대원로 45(사직동)</td>
+										<td>05:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>사직2동 행정복지센터 민원실 앞</td>
+										<td>청주시 서원구 충렬로 53번길 31(사직동 641-41)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>산남동 행정복지센터 민원실 앞</td>
+										<td>서원구 분평동 안뜸로12번길 42</td>
+										<td>05:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>수곡2동 행정복지센터 민원실 앞 </td>
+										<td>서원구 수곡로 61 (수곡동 845)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>사창동 행정복지센터 민원실 앞</td>
+										<td>서원구 내수동로 108(사창동)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>모충동 행정복지센터 민원실 내</td>
+										<td>서원구 모충동124번길 25(모충동 405-7)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>성화개신동 행정복제센터 현관</td>
+										<td>서원구 성봉로 128(개신동)</td>
+										<td>01:00∼23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>분평동 행정복지센터 민원실앞</td>
+										<td>서원구 분평로 35(분평동</td>
+										<td>01:00∼23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>충북대병원원무과앞</td>
+										<td>서원구 1순환로 776,1층(개신동)</td>
+										<td>01:00∼23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>이마트청주점(1층)</td>
+										<td>서원구 청남로 1853(산남동)</td>
+										<td>09:00~23:00</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>청주성동신용협동조합(개신동)</td>
+										<td>서원구 모충로 25(개신동)</td>
+										<td>09:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>청주창신 신용협동조합(사창동)</td>
+										<td>서원구 사직대로 144번길 22</td>
+										<td>08:00~23:00</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>남이면 행정복지센터</td>
+										<td>서원구 남이면 척산길7(척산리 608)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>현도면 행정복지센터</td>
+										<td>서원구 현도면 선동1길 9(선동리 499-3)</td>
+										<td>09:00~18:00</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h4>흥덕구</h4>
+						<div class="indent">
+							<table class="table">
+								<caption>연휴기간 중 무인민원 발급창구 운영 현황(흥덕구)에 관한 표이며, 설치장소, 주소, 운영시간, 비고 등 항목 정보를 제공합니다.</caption>
+								<thead>
+									<tr>
+										<th scope="col">설치장소</th>
+										<th scope="col">주소</th>
+										<th scope="col">운영시간</th>
+										<th scope="col">비고</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<td>롯데마트 청주점 1층입구 CD기옆</td>
+										<td>흥덕구 풍산로 15 (가경동) </td>
+										<td>10:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>복대2동 행정복지센터 민원실 앞</td>
+										<td>흥덕구 신율로 103번길 42(복대동 2010) </td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>봉명2송정동 행정복지센터 민원실 앞</td>
+										<td>흥덕구 봉명동 1601번지(주현로41번길18)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>가경동 행정복지센터 민원실 앞</td>
+										<td>흥덕구 풍년로 180번길 25-2(가경동) </td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>복대1동 행정복지센터 민원실 앞</td>
+										<td>흥덕구 증안로 86 (복대1동 행정복지센터) </td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>하이닉스 제1공장 현관 앞</td>
+										<td>흥덕구 직지대로307번길 1, c1동(향정동) </td>
+										<td>06:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>홈플러스 청주가경점 고객센터 옆</td>
+										<td>흥덕구 서부로 1291(가경동)</td>
+										<td>10:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>LG화학 복지관 비흡연실내</td>
+										<td>흥덕구 2순환로 765(송정동)</td>
+										<td>06:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>강서1동 행정복지센터 민원실 앞</td>
+										<td>흥덕구 가로수로 1164(강서동) </td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>하이닉스 제3공장 식당 앞</td>
+										<td>흥덕구 직지대로 337(송정동) </td>
+										<td>06:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>중소기업지원센터 현관</td>
+										<td>흥덕구 풍산로 50, 1층 (가경동) </td>
+										<td>08:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>운천신봉동 행정복지센터 민원실 앞</td>
+										<td>흥덕구 사운로 216(운천동) </td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>청주산업단지비즈니스센터 1층 농협 앞</td>
+										<td>충청북도 청주시 흥덕구 대신로 132(송정동)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>봉명1동 행정복지센터 민원실 앞</td>
+										<td>흥덕구 직지대로620번길 70(봉명동) </td>
+										<td>05:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>지웰시티몰</td>
+										<td>흥덕구 대농로 43(복대동)</td>
+										<td>08:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>서청주 새마을금고(복대1동) </td>
+										<td>흥덕구 대신로 70(복대동) </td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>강내면 행정복지센터</td>
+										<td>흥덕구 강내면 태성탑연로 433(탑연리 304-1) </td>
+										<td>01:00 ~ 23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>오송읍 행정복지센터</td>
+										<td>흥덕구 오송읍 가로수로 174(오송리 274-1) </td>
+										<td>01:00 ~ 23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>오창 LG화학 3층 휴게실 내</td>
+										<td>흥덕구 옥산면 과학산업3로 29 (남촌리 1114-1)</td>
+										<td>06:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>오송산단관리 사무소 옥외</td>
+										<td>흥덕구 오송읍 오송생명로 150</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>오송역사 2층</td>
+										<td>흥덕구 오송읍 오송가락로 123</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>흥덕구청 민원실 앞</td>
+										<td>흥덕구 대농로 88(복대동) </td>
+										<td>05:00~23:00</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h4>청원구</h4>
+						<div class="indent">
+							<table class="table">
+								<caption>연휴기간 중 무인민원 발급창구 운영 현황(청원구)에 관한 표이며, 설치장소, 주소, 운영시간, 비고 등 항목 정보를 제공합니다.</caption>
+								<thead>
+									<tr>
+										<th scope="col">설치장소</th>
+										<th scope="col">주소</th>
+										<th scope="col">운영시간</th>
+										<th scope="col">비고</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<td>율량사천동 행정복지센터 출입구 왼쪽</td>
+										<td>청주시 청원구 충청대로 107번길 52(율량동)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>청원구청 민원실 앞</td>
+										<td>청원구 직지대로 871(우암동)</td>
+										<td>06:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>하나로클럽 율량점 입구 CD옆</td>
+										<td>청원구 사뜸로61번길 52-1(율량동)</td>
+										<td>09:00~23:00</td>
+										<td>추석 당일 13:00~20:00</td>
+									</tr>
+									<tr>
+										<td>내덕1동 행정복지센터 옥외부스</td>
+										<td>청원구 새터로 71(내덕동)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>내덕2동 행정복지센터 입구 앞</td>
+										<td>청원구 충청대로 28(내덕동)</td>
+										<td>05:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>청주성모병원 원무과 앞</td>
+										<td>청원구 주성로 173-19(주중동)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>홈플러스 동청주점</td>
+										<td>청원구 충청대로 114(율량동)</td>
+										<td>08:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>우암새마을금고 율량지점 365코너</td>
+										<td>청원구 율량로 96(주성동)</td>
+										<td>07:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>오창 LG화학 3층 휴게실 내</td>
+										<td>흥덕구 옥산면 과학산업3로 29 (남촌리 1114-1)</td>
+										<td>01:00~23:30</td>
+										<td>사원만 출입가능</td>
+									</tr>
+									<tr>
+										<td>청주국제공항 여객청사 내</td>
+										<td>청원구 내수읍 오창대로 980</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>내수읍사무소 출입구 옆</td>
+										<td>청원구 내수읍 마산3길 49 (마산리 149-2)</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>오창읍사무소 옥외 부스</td>
+										<td>청원구 오창읍 두릉유리로 1137-1 (장대리 324-6)</td>
+										<td>01:00~23:00</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>내수1004마트 앞 옥외주차장 내 부스</td>
+										<td>청원구 내수읍 내수로 704</td>
+										<td>01:00~23:00</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>오창산단관리사무소 건물 내부 입구 앞</td>
+										<td>청원구 오창읍 과학산업3로 238</td>
+										<td>01:00~23:30</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="sub_cont" id="item2">
+						<h2><img src="/common/jsp/cj_holiday/images/contents/part_tit2.png" alt="2019년 추석 연휴기간 교통정보" /></h2>
+						<h3>교통종합상황실</h3>
+						<ul class="bu">
+							<li><strong>운영기간:</strong> 2019. 9. 12.(목) ∼ 9. 15.(일) 09:00∼18:00</li>
+							<li><strong>안내번호:</strong> <a href="tel:043-201-2865">043-201-2865~7</a></li>
+						</ul>
+						<h3>청주해피콜 운행안내</h3>
+						<ul class="bu">
+							<li><strong>운영기간:</strong> 2019. 9. 12.(목) ∼ 9. 15.(일)</li>
+							<li><strong>운행내용:</strong> 28대/ 06:30 ∼ 익일 01:00까지 운행</li>
+							<li><strong>예약 및 문의:</strong> <a href="tel:1588-8488">1588-8488</a> (07:00~22:00)</li>
+						</ul>
+						<h3>견인보관소 안내</h3>
+						<ul class="bu">
+							<li><strong>운영기간:</strong> 2019. 9. 12.(목) ∼ 9. 15.(일) 09:00∼18:00(상황근무)</li>
+							<li><strong>안내번호:</strong> <a href="tel:043-270-8518">043-270-8518~21 (청주시시설관리공단)</a></li>
+						</ul>
+						<h3>공영주차장 이용 안내</h3>
+						<div class="indent">
+							<table class="table">
+								<caption>공영주차장 이용 안내에 관한 표이며, 번호, 주차장명, 위치, 개방시간, 비고 등 항목 정보를 제공합니다.</caption>
+								<thead>
+									<tr>
+										<th scope="col">번호</th>
+										<th scope="col">주차장명</th>
+										<th scope="col">위치</th>
+										<th scope="col">개방시간</th>
+										<th scope="col">비고</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<th scope="row">1</th>
+										<td>충청북도 부설주차장</td>
+										<td>청주시 상당구 상당로 82</td>
+										<td>9.12. ~ 9.15. <br />06:00∼22:00</td>
+										<td>043-220-2515</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>가경동 환승주차장</td>
+										<td>청주시 흥덕구 가경동 풍산로 14</td>
+										<td>24시간 정상근무</td>
+										<td>유료운영 <br />043-232-7296</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>청주시 도매시장 주차장</td>
+										<td>청주시 흥덕구 백봉로 254</td>
+										<td>9.12. ~ 9.15.</td>
+										<td>043-272-7297~8</td>
+									</tr>
+									<tr>
+										<th scope="row">4</th>
+										<td>대농3지구 공영주차장</td>
+										<td>청주시 흥덕구 복대동 288-22</td>
+										<td>9.12. ~ 9.15.</td>
+										<td>043-221-3591</td>
+									</tr>
+									<tr>
+										<th scope="row">5</th>
+										<td>청주시 시내 공영주차장</td>
+										<td>청주시내 일원</td>
+										<td>9.12. ~ 9.15.</td>
+										<td>043-270-8518∼21</td>
+									</tr>
+									<tr>
+										<th scope="row">6</th>
+										<td>청주시청</td>
+										<td>청주시 상당구 상당고 155(북문로3가)</td>
+										<td>2.2.(토)~2.6.(수)</td>
+										<td>043-201-2222</td>
+									</tr>
+									<tr>
+										<th scope="row">7</th>
+										<td>청주시청(제2청사)</td>
+										<td>청주시 상당구 상당로69번길 38(북문로1가)</td>
+										<td>9.12. ~ 9.15.</td>
+										<td>043-201-2222</td>
+									</tr>
+									<tr>
+										<th scope="row">8</th>
+										<td>상당구청</td>
+										<td>청주시 상당구 남일면 단재로 466(효촌리)</td>
+										<td>9.12. ~ 9.15.</td>
+										<td>043-201-5222</td>
+									</tr>
+									<tr>
+										<th scope="row">9</th>
+										<td>서원구청</td>
+										<td>청주시 서원구 사직대로 227</td>
+										<td>9.12. ~ 9.15.</td>
+										<td>043-201-6222</td>
+									</tr>
+									<tr>
+										<th scope="row">10</th>
+										<td>흥덕구청</td>
+										<td>청주시 흥덕구 대농로 88(복대동)</td>
+										<td>9.12. ~ 9.15.</td>
+										<td>043-201-7222</td>
+									</tr>
+									<tr>
+										<th scope="row">11</th>
+										<td>청원구청</td>
+										<td>청주시 청원구 직지대로 871</td>
+										<td>9.12. ~ 9.15.</td>
+										<td>043-201-8222</td>
+									</tr>
+									<tr>
+										<th scope="row">12</th>
+										<td>어린이회관</td>
+										<td>청주시 상당구 명암동 73-4</td>
+										<td>9.12. ~ 9.15.</td>
+										<td>043-201-4863</td>
+									</tr>
+									<tr>
+										<th scope="row">13</th>
+										<td>청주시립미술관</td>
+										<td>청주시 서원구 충렬로18번길 50</td>
+										<td>오픈시간(추석휴관)</td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">14</th>
+										<td>농업기술센터 야외운동장</td>
+										<td>청주시 상당구 남일면 단재로 480</td>
+										<td>9.12. ~ 9.15.</td>
+										<td></td>
+									</tr>
+									<tr>
+										<th scope="row">15</th>
+										<td>청주 체육시설 부설 주차장</td>
+										<td>청주시 서원구 사직동 808번지 일대</td>
+										<td>9.12. ~ 9.15.</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h3>심야운행버스정보(터미널-오송역간)</h3>
+						<ul class="bu">
+							<li><strong>노선명:</strong> 747</li>
+							<li><strong>경로:</strong> 오송역-터미널-청주공항</li>
+						</ul>
+						<div class="indent">
+							<table class="table">
+								<caption>심야운행버스정보(터미널-오송역간)에 관한 표이며, 출발지, 출발시간, 도착지, 도착시간 등 항목 정보를 제공합니다</caption>
+								<thead>
+									<tr>
+										<th scope="col">출발지</th>
+										<th scope="col">시각</th>
+										<th scope="col">도착지</th>
+										<th scope="col">시각</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<td rowspan="4">오송역</td>
+										<td>22:10</td>
+										<td>청주공항</td>
+										<td>23:20</td>
+									</tr>
+									<tr>
+										<td>22:20</td>
+										<td rowspan="3">시외버스터미널</td>
+										<td>22:40</td>
+									</tr>
+									<tr>
+										<td>23:00</td>
+										<td>23:20</td>
+									</tr>
+									<tr>
+										<td>00:35</td>
+										<td>00:55</td>
+									</tr>
+									<tr>
+										<td>고속버스터미널</td>
+										<td>22:40</td>
+										<td>오송역</td>
+										<td>23:00</td>
+									</tr>
+									<tr>
+										<td>청주공항</td>
+										<td>23:20</td>
+										<td>오송역</td>
+										<td>00:30</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<h3>고속/시외버스 증회 운영<span>(청주발 기준)</span></h3>
+						<h4>시외버스</h4>
+						<ul class="bu">
+							<li><strong>운행기간:</strong> 2019. 9. 11.(수) ~ 9. 15.(일) (5일간)</li>
+							<li><strong>주요노선 증회 운행계획:</strong> 9노선 72회 ⇒ 118회 (증 46회, 64%)</li>
+						</ul>
+						<h4>시외버스 주요노선 증회 운영계획</h4>
+						<div class="indent">
+							<table class="table">
+								<caption>시외버스 주요노선 증회 운영계획에 관한 표이며, 노선, 현행, 증회, 합계, 비고(경유) 등 항목 정보를 제공합니다.</caption>
+								<thead>
+									<tr>
+										<th scope="col">노선</th>
+										<th scope="col">현행</th>
+										<th scope="col">증회</th>
+										<th scope="col">합계</th>
+										<th scope="col">비고(경유)</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<td>유성 ~ 충북혁신도시</td>
+										<td>7</td>
+										<td>5</td>
+										<td>12</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>천안 ~ 강릉</td>
+										<td>2</td>
+										<td>2</td>
+										<td>4</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>속리산 ~ 서울(센트럴)</td>
+										<td>4</td>
+										<td>4</td>
+										<td>8</td>
+										<td>보은, 청주</td>
+									</tr>
+									<tr>
+										<td>북청주 ~ 서울(센트럴)</td>
+										<td>28</td>
+										<td>20</td>
+										<td>48</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>청주 ~ 서울(센트럴)</td>
+										<td>17</td>
+										<td>7</td>
+										<td>24</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>대전(동부) ~ 삼척</td>
+										<td>4</td>
+										<td>2</td>
+										<td>6</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>청주 ~ 여수</td>
+										<td>1</td>
+										<td>2</td>
+										<td>3</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>동서울 ~ 포항</td>
+										<td>6</td>
+										<td>2</td>
+										<td>8</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>전주 ~ 강릉</td>
+										<td>3</td>
+										<td>2</td>
+										<td>5</td>
+										<td></td>
+									</tr>
+								</tbody>
+								<tfoot class="text_center">
+									<tr>
+										<td>합계</td>
+										<td>72</td>
+										<td>46</td>
+										<td>118</td>
+										<td></td>
+									</tr>
+								</tfoot>
+							</table>
+							<p class="point indent">수송수요에 따라 탄력적 조정 운영</p>
+						</div>
+						<h4>고속버스</h4>
+						<ul class="bu">
+							<li><strong>운영기간:</strong> 2019. 9. 11.(수) ∼ 9. 15.(일), 5일간</li>
+							<li><strong>주요노선 증회 운행계획:</strong> 8노선 275회 ⇒ 355회(증 80회, 29%)</li>
+						</ul>
+						<h4>고속버스 주요노선 증회 운행계획</h4>
+						<div class="indent">
+							<table class="table">
+								<caption>고속버스 주요노선 증회 운행 안내에 관한 표이며, 노선, 현행, 증회, 합계, 업체명 등 항목 정보를 제공합니다.</caption>
+								<thead>
+									<tr>
+										<th scope="col">노선</th>
+										<th scope="col">현행</th>
+										<th scope="col">증회</th>
+										<th scope="col">합계</th>
+										<th scope="col">업체명</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<td>청주 ~ 서울(강남)</td>
+										<td>111</td>
+										<td>17</td>
+										<td>128</td>
+										<td>속리산, 중앙</td>
+									</tr>
+									<tr>
+										<td>청주 ~ 동서울</td>
+										<td>25</td>
+										<td>4</td>
+										<td>29</td>
+										<td>속리산, 중앙</td>
+									</tr>
+									<tr>
+										<td>청주 ~ 상봉 </td>
+										<td>2</td>
+										<td>3</td>
+										<td>5</td>
+										<td>중앙</td>
+									</tr>
+									<tr>
+										<td>청주 ~ 부산 </td>
+										<td>9</td>
+										<td>5</td>
+										<td>14</td>
+										<td>속리산, 한일</td>
+									</tr>
+									<tr>
+										<td>청주 ~ 대구</td>
+										<td>12</td>
+										<td>4</td>
+										<td>16</td>
+										<td>속리산, 삼화</td>
+									</tr>
+									<tr>
+										<td>청주 ~ 광주</td>
+										<td>16</td>
+										<td>5</td>
+										<td>21</td>
+										<td>속리산, 금호</td>
+									</tr>
+									<tr>
+										<td>충주 ~ 서울</td>
+										<td>80</td>
+										<td>30</td>
+										<td>110</td>
+										<td>경기대원</td>
+									</tr>
+									<tr>
+										<td>제천 ~ 서울</td>
+										<td>20</td>
+										<td>12</td>
+										<td>32</td>
+										<td>동부고속</td>
+									</tr>
+								</tbody>
+								<tfoot class="text_center">
+									<tr>
+										<td>합계</td>
+										<td>275</td>
+										<td>80</td>
+										<td>355</td>
+										<td></td>
+									</tr>
+								</tfoot>
+							</table>
+							<p class="point indent">수송수요에 따라 탄력적 조정 운영</p>
+						</div>
+						<h4>불법 주&middot;정차 특별 지도단속 소통관리</h4>
+						<ul class="bu">
+							<li><strong>운영기간:</strong> 2019. 9. 12.(목) ∼ 9. 15.(일), 4일간</li>
+							<li><strong>단속반:</strong> 구청 교통지도팀</li>
+							<li><strong>단속방법:</strong> 주요 간선도로, 대형쇼핑몰 및 터미널 등 혼잡지역 지도단속</li>
+							<li><strong>단속문의:</strong> 상당구청 <a href="tel:043-201-5401">043-201-5401</a>, 서원구청 <a href="tel:043-201-6401">043-201-6401</a>, 흥덕구청 <a href="tel:043-201-7401">043-201-7401</a>, 청원구청 <a href="tel:043-201-8401">043-201-8401</a></li>
+						</ul>
+						<h4>공원묘지 경유 안내</h4>
+						<ul class="bu">
+							<li><strong>연휴기간:</strong> 2019. 9. 12.(목) ∼ 9. 15.(일), 4일간</li>
+						</ul>
+						<div class="indent">
+							<table class="table">
+								<caption>공원묘지 경유 안내에 관한 표이며, 공원묘지명, 노선번호, 노선경로, 운행횟수 등 항목 정보를 제공합니다.</caption>
+								<thead>
+									<tr>
+										<th scope="col">공원묘지명</th>
+										<th scope="col">노선번호</th>
+										<th scope="col">노선경로</th>
+										<th scope="col">운행횟수</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<td>목련공원</td>
+										<td>921-1</td>
+										<td>청주대예술대-시청-상당공원-월오동-청주시장례식장</td>
+										<td>15</td>
+									</tr>
+									<tr>
+										<td>매화공원</td>
+										<td>212, 212-1, 212-2, 212-3</td>
+										<td>오동육교(또는 청주대예술대)-시청-상당구청-매화공원-삼항리</td>
+										<td>9</td>
+									</tr>
+									<tr>
+										<td rowspan="3">장미공원</td>
+										<td>713</td>
+										<td>분평종점-성모병원-오창프라자-장미공원-오창과학단지</td>
+										<td>50</td>
+									</tr>
+									<tr>
+										<td>713-1</td>
+										<td>분평종점-성모병원-오창읍사무소-장미공원-오창과학단지</td>
+										<td>22</td>
+									</tr>
+									<tr>
+										<td>717</td>
+										<td>동부종점-터미널-형제빌라-장미공원-오창과학단지</td>
+										<td>21</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="sub_cont" id="item3">
+						<h2><img src="/common/jsp/cj_holiday/images/contents/part_tit3.png" alt="2019년 추석 연휴기간 주요 문화행사/전시/공연" /></h2>
+						<h3>청주시립미술관<span class="blank"><a href="http://cmoa.cheongju.go.kr" target="_blank" title="청주시립미술관 바로가기"><img src="/common/jsp/cj_holiday/images/contents/icon_go.gif" alt="바로가기" /></a></span></h3>
+						<ul class="bu">
+							<li><strong>운영기간:</strong> 2019.9.12.(목)∼9. 15.(일) <em class="em_b_red">▸추석연휴 기간 중 추석당일 휴관</em></li>
+							<li><strong>운영안내:</strong> <a href="tel:043-201-2650">043-201-2650</a>(본관) / <a href="tel:043-201-0914">043-201-0914</a>(대청호미술관)</li>
+							<li><strong>장소:</strong> 청주시립미술관 본관(사직동), 대청호미술관</li>
+						</ul>
+						<h4>운영내용: <span>미술관 기획전시 운영</span></h4>
+						<div class="indent">
+							<table class="table">
+								<caption>청주시립미술관 운영내용: 미술관 기획전시 운영에 관한 표이며, 전시명, 관람기간, 장소, 관람료, 비고 등 항목 정보를 제공합니다.</caption>
+								<thead>
+									<tr>
+										<th scope="col">전시명</th>
+										<th scope="col">관람시간</th>
+										<th scope="col">장소</th>
+										<th scope="col">관람료</th>
+										<th scope="col">비고</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<td>기획전 《놓아라!》</td>
+										<td rowspan="2">10:00~19:00</td>
+										<td rowspan="2">청주시립미술관(본관)</td>
+										<td rowspan="2">
+											<ul class="bu">
+												<li>어른: 1,000원</li>
+												<li>청소년: 700원</li>
+												<li>어린이: 500원</li>
+											</ul>
+										</td>
+										<td rowspan="3">추석당일휴관</td>
+									</tr>
+									<tr>
+										<td>로컬프로젝트《줍/픽》</td>
+									</tr>
+									<tr>
+										<td>전시지원 공모선정전시 《점유》</td>
+										<td>10:00~19:00</td>
+										<td>대청호미술관(분관)</td>
+										<td>무료 (문의문화재단지 입장객 대상)</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h3>청주고인쇄박물관<span class="blank"><a href="https://www.cheongju.go.kr/jikjiworld/index.do" target="_blank" title="청주고인쇄박물관 바로가기"><img src="/common/jsp/cj_holiday/images/contents/icon_go.gif" alt="바로가기" /></a></span></h3>
+						<ul class="bu">
+							<li><strong>운영기간:</strong> 2019.9.12.(목) ∼ 9. 15.(일) / 09:00 ~18:00</li>
+							<li><strong>운영안내:</strong> <a href="tel:043-201-4266">043-201-4266</a>(본관) / <a href="tel:043-260-2503">043-260-2503</a></li>
+						</ul>
+						<h4>운영내용</h4>
+						<div class="indent">
+							<table class="table">
+								<caption>청주고인쇄박물관 운영내용에 관한 표이며, 관람/체험, 일시, 장소, 관람비, 비고 등 항목 정보를 제공합니다.</caption>
+								<thead>
+									<tr>
+										<th scope="col">관람/체험</th>
+										<th scope="col">일시</th>
+										<th scope="col">장소</th>
+										<th scope="col">관람비</th>
+										<th scope="col">비고</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<td>박물관 관람</td>
+										<td>09:00~18:00</td>
+										<td>청주고인쇄물관</td>
+										<td>무료</td>
+										<td rowspan="3">추석 당일휴관</td>
+									</tr>
+									<tr>
+										<td>인쇄체험</td>
+										<td>09:00~18:00</td>
+										<td>근현대 인쇄전시관</td>
+										<td>무료</td>
+									</tr>
+									<tr>
+										<td>옛책, 북아트, 죽간만들기 체험</td>
+										<td>09:00~18:00</td>
+										<td>금속활자 전수교육관</td>
+										<td>유료</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<h3>국립청주박물관<span class="blank"><a href="http://cheongju.museum.go.kr" target="_blank" title="국립청주박물관 바로가기"><img src="/common/jsp/cj_holiday/images/contents/icon_go.gif" alt="바로가기" /></a></span></h3>
+						<ul class="bu">
+							<li><strong>행사명:</strong> 2019년 추석 한마당 &lt;희희낙락(喜喜樂樂), 추석&gt;</li>
+							<li><strong>기간:</strong> 9. 12.(목) ~ 9. 15.(일) <em class="em_red">※ 9. 13.(금) 추석 당일 휴관</em>
+							</li>
+						</ul>
+						<p class="point indent">각 체험프로그램 마다 일정이 다르니, 각각의 일정을 참고해주세요.</p>
+						<h4>세부내용</h4>
+						<div class="indent">
+							<table class="table">
+								<caption>국립청주박물관 세부내용에 관한 표이며, 체험명, 기간, 장소, 대상, 비고 등 항목 정보를 제공합니다.</caption>
+								<thead>
+									<tr>
+										<th scope="col">체험명</th>
+										<th scope="col">기간</th>
+										<th scope="col">장소</th>
+										<th scope="col">대상</th>
+										<th scope="col">비고</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<td>전통놀이 및 악기체험</td>
+										<td>9.12.(목)~9.15.(일) 10시~17시 <br /><em class="em_red">* 13일 휴관</em></td>
+										<td>어린이박물관 앞뜰</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>가족영화상영</td>
+										<td>9.12.(목)~9.15.(일) 13시 30분, 16시 <br /><em class="em_red">* 13일 휴관</em></td>
+										<td>문화사랑채 소강당</td>
+										<td></td>
+										<td>
+											<ul class="bu">
+												<li>9.12.(목)
+													<ul>
+														<li>잠베지아: 신비한 나무섬의 비밀</li>
+													</ul>
+												</li>
+												<li>9.14.(토)
+													<ul>
+														<li>스페이스 독 2</li>
+													</ul>
+												</li>
+												<li>9.15.(일)
+													<ul>
+														<li>피터래빗</li>
+													</ul>
+												</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>행운의 보름달을 잡아라!</td>
+										<td>9월 14일 (토) ~ 9월 15일 (일) <br />10시 ~ 소진 시</td>
+										<td>어린이박물관 로비</td>
+										<td>어린이, 청소년<br />(1일 500명)</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>옥새 체험 <br />- 나만의 도장 만들기</td>
+										<td>9월 14일 (토) ~ 9월 15일 (일) <br />10시 ~ 소진 시</td>
+										<td>어린이박물관 앞뜰</td>
+										<td>어린이, 청소년</td>
+										<td>석고 방향제와 내가 직접 새겨보는 <br />도장 만들기</td>
+									</tr>
+									<tr>
+										<td>전통 문양 문신 새기기 <br />(일회용 문신)</td>
+										<td>9월 14일 (토) ~ 9월 15일 (일) <br />10시 ~ 17시</td>
+										<td>어린이박물관 앞뜰</td>
+										<td></td>
+										<td>지워지는 전통 문양 문신 새겨보기</td>
+									</tr>
+									<tr>
+										<td>국궁 체험 (활쏘기)</td>
+										<td>9월 14일 (토) ~ 9월 15일 (일) <br />10시 ~ 17시</td>
+										<td>야외 잔디밭</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>지휘소 앞에서 찰칵!</td>
+										<td>9월 14일 (토) ~ 9월 15일 (일) <br />10시 ~ 17시</td>
+										<td>야외 잔디밭</td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<h3>예술의전당<span class="blank"><a href="http://www.cheongju.go.kr/ac/index.do" target="_blank" title="예술의전당 바로가기"><img src="/common/jsp/cj_holiday/images/contents/icon_go.gif" alt="바로가기" /></a></span></h3>
+						<div class="clearfix">
+							<div class="detail_info">
+								<div class="cont_left">
+									<div class="cont_img">
+										<img src="/common/jsp/cj_holiday/images/contents/munwha_img1.gif" alt="2019 추석명절 특별공연 &lt;한가위만 같아라&gt; 포스터" />
+									</div>
+								</div>
+								<div class="cont_right">
+									<strong class="tit">2019 추석명절 특별공연 &lt;한가위만 같아라&gt;</strong>
+									<ul class="bu">
+										<li><strong>일시:</strong> 2019. 9. 13.(금) 17시</li>
+										<li><strong>장소:</strong> 대공연장</li>
+										<li><strong>프로그램:</strong> 국악관현악 &lt;월광&gt; 등 7작품</li>
+										<li><strong>관람비:</strong> 전석무료(전 연령 입장가능) <br /> * 16시부터 선착순 좌석권 배부(예술의전당 로비)</li>
+										<li><strong>공연문의:</strong> 청주시립국악단, <a href="tel:043-201-0970">043-201-0970~0972</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="detail_info">
+								<div class="cont_left">
+									<div class="cont_img">
+										<img src="/common/jsp/cj_holiday/images/contents/munwha_img2.gif" alt="제37회 청주사생회 정기전과 6인의 공로작가전 &lt;전시&gt; 포스터" />
+									</div>
+								</div>
+								<div class="cont_right">
+									<strong class="tit">제37회 청주사생회 정기전과 6인의 공로작가전 &lt;전시&gt;</strong>
+									<ul class="bu">
+										<li><strong>일시:</strong> 2019. 9. 14(토) ~ 9. 18.(수)</li>
+										<li><strong>장소:</strong> 대전시실</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<h3>어린이회관, 동물원<span class="blank"><a href="http://www.cheongju.go.kr/land/index.do" target="_blank" title="청주랜드사업소 바로가기"><img src="/common/jsp/cj_holiday/images/contents/icon_go.gif" alt="바로가기" /></a></span></h3>
+						<ul class="bu">
+							<li><strong>운영기간:</strong> 2019. 9. 12.(목) ~ 9. 15.(수), 3일간 <em class="em_red">※ 9. 13.(금) 휴관</em></li>
+							<li><strong>운영안내</strong> <a href="tel:043-201-4863">043-201-4863</a>, 청주랜드관리사업소</li>
+							<li><strong>운영내용</strong> 기후변화체험, 신재생에너지체험, 청주의 과거와 미래, 어린이 체험관, 환상여행, 놀이동산, 동물관람</li>
+						</ul>
+						<h3>기타문의</h3>
+						<div class="indent">
+							<table class="table">
+								<caption>
+									기타 관람 문의 안내
+								</caption>
+								<thead>
+									<tr>
+										<th scope="col">관광지</th>
+										<th scope="col">연락처</th>
+										<th scope="col">비고</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<td>문의문화재단지</td>
+										<td><a href="tel:043-201-0915">043-201-0915</a></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>손병희선생 유허지</td>
+										<td><a href="tel:043-201-0920">043-201-0920</a></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>단재신채호 기념관</td>
+										<td><a href="tel:043-201-0931">043-201-0931</a></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>청주백제유물전시관</td>
+										<td><a href="tel:043-263-0107">043-263-0107</a></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="sub_cont" id="item4">
+						<h2><img src="/common/jsp/cj_holiday/images/contents/part_tit4.png" alt="2019년 추석 연휴기간 전통시장" /></h2>
+						<h3>전통시장 주변 주&middot;정차 일부허용</h3>
+						<div class="indent">
+							<table class="table">
+								<caption>전통시장 주변 주&middot;정차 일부허용에 관한 표이며, 시장명, 주소/구간, 주차면수, 운영시간/기간 등 항목 정보를 제공합니다.</caption>
+								<thead>
+									<tr>
+										<th scope="col">시장명</th>
+										<th scope="col">주소/구간</th>
+										<th scope="col">주차면수</th>
+										<th scope="col">운영시간/기간</th>
+									</tr>
+								</thead>
+								<tbody class="text_center">
+									<tr>
+										<th scope="row">미원시장</th>
+										<td>청주시 상당구 미원면 미원시내2길 미원파출소 ~ 미원사거리</td>
+										<td>도로양측</td>
+										<td>상시허용</td>
+									</tr>
+									<tr>
+										<th rowspan="3">육거리시장</th>
+										<td>상당구 석교동 60-4(1주차장)</td>
+										<td>41</td>
+										<td>09:00~18:00</td>
+									</tr>
+									<tr>
+										<td>상당구 석교동 125-88(주차타워)</td>
+										<td>151</td>
+										<td>09:00~18:00</td>
+									</tr>
+									<tr>
+										<td>청주시 상당구 청남로2197번길 청남교 ~ 탑웨딩홀</td>
+										<td>도로양측</td>
+										<td>9.6. ~ 9.15. 2시간</td>
+									</tr>
+									<tr>
+										<th scope="row">서문시장</th>
+										<td>상당구 서문동 166-60</td>
+										<td>30</td>
+										<td>무료개방</td>
+									</tr>
+									<tr>
+										<th scope="row">성안길상점가</th>
+										<td>상당구 서문동 100-1</td>
+										<td>121</td>
+										<td>10:00~21:30</td>
+									</tr>
+									<tr>
+										<th scope="row">사창시장</th>
+										<td>서원구 사창동 290-9</td>
+										<td>46</td>
+										<td>09:00~21:00</td>
+									</tr>
+									<tr>
+										<th scope="row">사직시장</th>
+										<td>서원구 사직동 558-38</td>
+										<td>25</td>
+										<td>09:00~18:00</td>
+									</tr>
+									<tr>
+										<th scope="row">원마루시장</th>
+										<td>청주시 서원구 원마루로 14번길 2 용평교사거리 ~ 방서교삼거리</td>
+										<td>도로양측</td>
+										<td>상시허용</td>
+									</tr>
+									<tr>
+										<th scope="row">두꺼비시장</th>
+										<td>청주시 서원구 수곡로58번길 한마음약국 ~ 한마음1차(아)</td>
+										<td>도로양측</td>
+										<td>9.12. ~ 9.15. 2시간</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="2">복대가경</th>
+										<td>청주시 흥덕구 복대동 1102</td>
+										<td>31</td>
+										<td>09:00~18:00</td>
+									</tr>
+									<tr>
+										<td>청주시 흥덕구 복대로 더페이스샵 ~ KT대리점</td>
+										<td>도로양측</td>
+										<td>9.6. ~ 9.15.</td>
+									</tr>
+									<tr>
+										<th scope="row">농산물시장</th>
+										<td>청주시 흥덕구 백봉로 한우식당 ~ 부흥유통</td>
+										<td>도로양측</td>
+										<td>9.6. ~ 9.15.</td>
+									</tr>
+									<tr>
+										<th scope="row">직지시장</th>
+										<td>흥덕구 봉명동 472-12</td>
+										<td>33</td>
+										<td>09:00~21:00</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="2">가경터미널 시장</th>
+										<td>흥덕구 가경동 1286</td>
+										<td>52</td>
+										<td>09:00~18:00</td>
+									</tr>
+									<tr>
+										<td>청주시 흥덕구 풍산로 백두산원예 ~ 흥덕한의원</td>
+										<td>도로양측</td>
+										<td>9.6. ~ 9.15.</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="2">내수시장</th>
+										<td>청원구 내수읍 내수리 36-11</td>
+										<td>77</td>
+										<td rowspan="2">상시허용</td>
+									</tr>
+									<tr>
+										<td>청주시 청원구 내수읍 내수로 1004마트 ~ 내수지하차도</td>
+										<td>도로양측</td>
+									</tr>
+									<tr>
+										<th scope="row">오창시장</th>
+										<td>청주시 청원구 오창읍 팔결로</td>
+										<td>64</td>
+										<td>상시허용</td>
+									</tr>
+									<tr>
+										<th scope="row" rowspan="3">북부시장</th>
+										<td>청원구 우암동 347-7(2주차장)</td>
+										<td>22</td>
+										<td>09:00~20:00</td>
+									</tr>
+									<tr>
+										<td>청원구 우암동 344-10(1주차장)</td>
+										<td>11</td>
+										<td>09:00~20:00</td>
+									</tr>
+									<tr>
+										<td>청주시 청원구 우암동 직지대로 (서원목재 ~ 우암사거리) <br />청주시 청원구 우암동 향군로 (우암사거리 ~ 한국국토정보공사)</td>
+										<td>도로편측</td>
+										<td>9.6. ~ 9.15. 2시간</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="sub_cont" id="item5">
+						<h2><img src="/common/jsp/cj_holiday/images/contents/part_tit5.png" alt="2019년 추석 연휴기간 당직 약국/병원 안내" /></h2>
+						<div class="medicalbox">
+							<div class="textbox">
+								<h3>명절 연휴 <br />병의원&middot;약국 비상진료 안내</h3>
+								<p>반드시 전화로 진료시간 확인 후 방문해주시기 바랍니다. <br />명절 연휴 비상진료 병의원, 약국 안내는 119, 129에서도 확인 가능합니다.</p>
+							</div>
+							<div class="medibtns">
+								<ol class="clearfix">
+									<li class="n1"><a href="http://www.e-gen.or.kr/egen/holiday_medical.do?searchType=general&lat=36.6379&lon=127.4927&sidoCode=43&gugunCode=111&dongCode=&loca=23&emogdstr=2310&addrhosp=&emogemdv=&trtPrtCod=&holiday=&hospitalY=Y" target="_blank" title="상당구 당직약국/병원 검색 바로가기">상당구 당직약국/병원</a></li>
+									<li class="n2"><a href="http://www.e-gen.or.kr/egen/holiday_medical.do?searchType=general&lat=36.6379&lon=127.4927&sidoCode=43&gugunCode=112&dongCode=&loca=23&emogdstr=2311&addrhosp=&emogemdv=&trtPrtCod=&holiday=&hospitalY=Y&emogdesc=" target="_blank" title="상당구 당직약국/병원 검색 바로가기">서원구 당직약국/병원</a></li>
+									<li class="n3"><a href="http://www.e-gen.or.kr/egen/holiday_medical.do?searchType=general&lat=36.6379&lon=127.4927&sidoCode=43&gugunCode=113&dongCode=&loca=23&emogdstr=2313&addrhosp=&emogemdv=&trtPrtCod=&holiday=&hospitalY=Y&emogdesc=" target="_blank" title="상당구 당직약국/병원 검색 바로가기">흥덕구 당직약국/병원</a></li>
+									<li class="n4"><a href="http://www.e-gen.or.kr/egen/holiday_medical.do?searchType=general&lat=36.6379&lon=127.4927&sidoCode=43&gugunCode=114&dongCode=&loca=23&emogdstr=2312&addrhosp=&emogemdv=&trtPrtCod=&holiday=&hospitalY=Y&emogdesc=" target="_blank" title="상당구 당직약국/병원 검색 바로가기">청원구 당직약국/병원</a></li>
+								</ol>
+							</div>
+						</div>
+					</div>
+
+					<div class="sub_cont" id="item6">
+						<h2><img src="/common/jsp/cj_holiday/images/contents/part_tit6.png" alt="2019년 추석 연휴기간 안전행동 요령" /></h2>
+						<h3>멀리 떠날 때, 우리집 안전관리</h3>
+						<p class="indent">&quot;집을 나설 때, 비워둔 집으로 다시 들어갈 때는 꼼꼼히 살펴봅시다!&quot;</p>
+						<h4>집을 나서기 전</h4>
+						<ul class="bu">
+							<li>가스밸브와 잠금장치를 확인하세요!</li>
+							<li>비누방울을 이용하여 가스가 새는지 사전점검!</li>
+							<li>불필요한 플러그나 콘센트, 전기코드를 뽑았는지 확인하세요!</li>
+						</ul>
+						<h4>집에 돌아온 후</h4>
+						<ul class="bu">
+							<li>가스냄새가 나는지 확인해주세요!</li>
+							<li>창문을 열어 충분히 환기시켜 주세요!</li>
+						</ul>
+						<h4>우리집 방범</h4>
+						<ul class="bu">
+							<li>대문(현관문), 창문 등 모든 출입문 문단속 철저!</li>
+							<li>신문, 우유 등 배달되는 것들은 연휴기간 잠시 중단!</li>
+						</ul>
+						<h3>귀성운전 휴식은 자주자주</h3>
+						<p class="indent">&quot;양보와 여유 있는 운전이 생명과 재산을 지킵니다!&quot;</p>
+						<h4>출발 전 안전점검 필요!</h4>
+						<ul class="bu">
+							<li>TV, 라디오 등 방송을 통해 교통 상황을 확인하세요!</li>
+						</ul>
+						<h4>교통사고 발생 시 응급조치</h4>
+						<ul class="bu">
+							<li>119나 병원, 보험회사에 신속히 연락</li>
+							<li>부상자를 구출 후 안전한 장소로 이동하여 응급처리!</li>
+							<li>심한 부상자는 함부로 움직이지 말고 119에 신고하세요!</li>
+						</ul>
+						<h4>교통법규를 준수하며 운전은 편안하게!</h4>
+						<ul class="bu">
+							<li>운전 중에는 안전밸트 필수 착용, 휴대폰 사용 금지!</li>
+							<li>시간마다 10분 정도 휴식해주고, 휴식 중에는 스트레칭을 해주세요!</li>
+							<li>자동차의 실내 공기를 자주 환기하세요!</li>
+						</ul>
+						<h3>벌초할 때는 조심 또 조심 !</h3>
+						<p class="indent">&quot;안전한 복장과 사전 점검으로 사고예방하세요!&quot;</p>
+						<h4>진드기, 뱀, 벌 주의하기!</h4>
+						<ul class="bu">
+							<li>벌초할 때 긴팔과 긴바지 착용은 필수 ! 벌레가 몸에 들어가지 않도록 옷을 잘 여미고 스카프 등으로 목을 감싸주세요.</li>
+							<li>벌을 자극할 수 있는 향수, 화장품 등의 사용을 자제 합니다.</li>
+							<li>뱀에 물리지 않기 위해서는 두꺼운 등산화나 장화를 착용하는 것이 좋으며 뱀에 물리면 바로 119에 연락을 해야 합니다.</li>
+						</ul>
+						<h4>예초기 사고 예방하기!</h4>
+						<ul class="bu">
+							<li>사전에 예초기를 미리 점검하는 일은 필수!</li>
+							<li>기계에 빨려 들어갈 위험이 있는 소매가 크거나 펄럭이는 옷은 피해주세요.</li>
+							<li>무릎보호대나 안전모, 보호안경 등 안전장비를 갖춘 후 사용하세요.</li>
+							<li>사람이나 동물 등과 15m이상 거리를 두고 작업하며, 사고에 대비하여 2인 이상이 함께 작업하세요!</li>
+							<li>칼날에 문제가 있을 시 반드시 시동을 끄고 점검하시고, 작업종료 후 칼날에 보호덮개를 부착하여 다치지 않게 주의하셔야 합니다.</li>
+						</ul>
+						<h3>안전사고 발생 시 이렇게!</h3>
+						<p class="indent">&quot;사고가 발생하면 침착하고, 질서 있게 행동합시다!&quot;</p>
+						<h4>건물에서 화재 발생 시</h4>
+						<ul class="bu">
+							<li>&quot;불이야!&quot; 라고 소리쳐 주위 사람들에게 알려주세요!</li>
+							<li>미리 파악해둔 비상구나 계단을 이용하여 신속히 대피하세요!</li>
+							<li>주소와 주변 큰 건물의 이름 등으로 119 신고하세요!</li>
+							<li>수건 등을 물에 적셔 입과 코를 가리고 숨은 짧게 쉬면서 낮은 자세로 신속히 대피하세요!</li>
+							<li>계단이나 복도로 피난이 불가능할 경우 베란다 등으로 가서 구조를 요청하세요!</li>
+							<li>엘레베이터는 정전으로 멈추거나 질식할 우려가 있으므로 비상계단이나 완강기를 이용하세요!</li>
+							<li>대피 시 계단의 방화문을 꼭 닫고 대피하세요!</li>
+						</ul>
+						<h4>지하철 화재 발생 시</h4>
+						<ul class="bu">
+							<li>노약자, 장애인 석 옆에 있는 비상버튼을 눌러 승무원과 연락하세요!</li>
+							<li>객차마다 비치된 소화기를 이용하여 진화하세요!</li>
+							<li>출입문이 열리지 않으며 비상용 망치나 소화기를 이용하여 유리창을 깨주세요!</li>
+							<li>코와 입을 손수건이나 티슈로 막고 신속히 대피하세요!</li>
+							<li>정전 시에는 유도등, 시각장애인용 보도블록을 따라 대피하세요!</li>
+						</ul>
+						<h4>항공기 사고 발생 시</h4>
+						<ul class="bu">
+							<li>침착하게 승무원의 안내를 따르세요!</li>
+							<li>산소마스크가 내려올 경우 보호자가 먼저 착용하고 어린이나 노약자를 도와주세요!</li>
+							<li>안전밸트 착용 후 부상을 최소화 할 수 있는 자세를 취하세요!</li>
+						</ul>
+						<h3>건강한 명절나기!</h3>
+						<p class="indent">&quot;생체생체 리듬을 유지해 건강한 명절을 보냅시다!&quot;</p>
+						<h4>명절음식 건강하게 섭취하기</h4>
+						<ul class="bu">
+							<li>구입한 명절음식 재료들은 바로 냉장고나 냉동고에 보관하세요!</li>
+							<li>명절음식은 많은 양을 미리 조리하여 보관하는 경우가 많으므로 2시간 내로 식혀서 덮개를 덮어 냉장고에 보관합니다.</li>
+							<li>명절음식 중 튀김, 전과 같이 기름지거나 열량이 높은 음식보다는 나물이나 채소 위주로 섭취하세요!</li>
+						</ul>
+						<h4>생체 리듬 유지</h4>
+						<ul class="bu">
+							<li>밤에 무리했더라도 기상시간을 꼭 지키고 가벼운 낮잠으로 보충하세요!</li>
+							<li>연휴 마지막 날 일상으로 미리 귀경하여 편안한 휴식을 취하세요!</li>
+						</ul>
+						<h3>의식은 있으나 스스로 뱉어내지 못할 경우</h3>
+						<ul class="num type2">
+							<li><span class="item">1</span> 환자 뒤에 서서 환자 허리를 두 팔로 감싸 안는다.</li>
+							<li><span class="item">2</span> 한쪽 주먹을 다른 한 손으로 감아 쥐고, 안쪽 손은 엄지 쪽이 신체 정중앙 배꼽 위로 가게 한다.</li>
+							<li><span class="item">3</span> 안쪽 손을 환자 등 뒤와 위쪽으로 빠르게 밀어준다.</li>
+							<li><span class="item">4</span> 복부 밀어주기는 기도 폐색을 해소할 만큼 충분한 힘으로 실시한다.</li>
+						</ul>
+					</div>
+					<img src="/common/jsp/cj_holiday/images/contents/img_endline.png" alt="endline" />
+
+				</div>
+			</div>
+			<div class="rowgroup3">
+				<div class="wrap">
+					<div class="box">
+						<div class="box_wrap">
+							<h3 class="h3_title">교통정보 안내 전화 및 인터넷 주소</h3>
+							<h4>응급환자 수송</h4>
+							<p class="blt">응급환자 수송 : 119, 질병관리본부 콜센터(병원진료 안내) : 1339</p>
+							<h4>종합교통정보 안내<span>(고속도로, 국도) </span> ARS 1333</h4>
+							<p class="blt">인터넷 실시간 교통정보제공 : <a href="http://www.its.go.kr/" target="_blank" title="새창" class="blank">http://www.its.go.kr</a></p>
+							<h4>전국 대중교통정보</h4>
+							<ul class="bu">
+								<li>전국대중교통정보 : <a href="https://www.tago.go.kr/" target="_blank" title="새창" class="blank">http://www.tago.go.kr</a></li>
+								<li>고속도로 교통정보 안내
+									<ul>
+										<li>콜센터 : 1588-2504(ARS)</li>
+										<li>홈페이지 : <a href="http://www.ex.co.kr/" target="_blank" title="새창" class="blank">http://www.ex.co.kr</a></li>
+									</ul>
+								</li>
+								<li>철도 ARS 1544-7788, 홈페이지 : <a href="http://www.korail.com" target="_blank" title="새창" class="blank">http://www.korail.com</a></li>
+								<li>고속버스 통합예매 : <a href="https://www.kobus.co.kr/spexp/main.do" target="_blank" title="새창" class="blank">http://www.kobus.co.kr</a></li>
+								<li>항공기 홈페이지 주소
+									<ul>
+										<li>국토교통부 항공정보포털시스템 : <a href="http://www.airportal.go.kr/index.jsp" target="_blank" title="새창" class="blank">http://www.airportal.go.kr</a></li>
+										<li>대한항공  ARS 1588-2001, 홈페이지 : <a href="https://www.koreanair.com/korea/ko.html" target="_blank" title="새창" class="blank">http://www.koreanair.com</a></li>
+										<li>아시아나 항공 ARS 1588-8000, 홈페이지 : <a href="https://www.flyasiana.com/C/KR/KO/index" target="_blank" title="새창" class="blank">http://www.flyasiana.com</a></li>
+									</ul>
+								</li>
+								<li>여객선 한국해운조합  홈페이지 : <a href="http://www.haewoon.or.kr/ksa/main/main.do" target="_blank" title="새창" class="blank">http://www.haewoon.or.kr</a></li>
+							</ul>
+							<h4>전국 기상정보 안내</h4>
+							<p class="blt">기상청 ARS 131(해당지역 DDD+131) : <a href="http://www.kma.go.kr/" target="_blank" title="새창" class="blank">http://www.kma.go.kr</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+        <!-- //container -->
+        <hr />
+        <footer id="footer" class="clearfix">
+            <div class="wrap">
+                <div class="footer_info">
+                    <address>
+                        [28542] 청주시 상당구 상당로 155(북문로3가) <span class="tel">대표전화 <a href="tel:043-201-0001">043-201-0001</a> </span>
+                    </address>
+                    <p class="copy">Copyright ⓒ 2019 Cheongju City. All Rights Reserved.</p>
+                </div>
+                <div class="foot_btn"><a href="#accessibility"><img src="/common/jsp/cj_holiday/images/main/footer_btn.png" alt="" /></a></div>
+            </div>
+        </footer><!-- //footer -->
+    </div>
+    <!--//wrappper-->
+</body>
+
+</html>

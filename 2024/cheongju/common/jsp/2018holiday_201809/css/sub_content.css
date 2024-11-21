@@ -1,0 +1,11 @@
+/* 표*/
+.contents #item1 .table_t1 {width:100%; margin:10px 0 20px; border-top:2px solid #005183; border-right:1px solid #d2d2d2; border-bottom:2px solid #d2d2d2; border-collapse:separate; line-height:1.5em;font-size:15px;}
+.contents #item2 .table_t1 {width:100%; margin:10px 0 20px; border-top:2px solid #FBA529; border-right:1px solid #d2d2d2; border-bottom:2px solid #d2d2d2; border-collapse:separate; line-height:1.5em;font-size:15px;}
+.contents #item3 .table_t1 {width:100%; margin:10px 0 20px; border-top:2px solid #FF273B; border-right:1px solid #d2d2d2; border-bottom:2px solid #d2d2d2; border-collapse:separate; line-height:1.5em;font-size:15px;}
+.contents #item4 .table_t1 {width:100%; margin:10px 0 20px; border-top:2px solid #7B0C0E; border-right:1px solid #d2d2d2; border-bottom:2px solid #d2d2d2; border-collapse:separate; line-height:1.5em;font-size:15px;}
+.contents #item5 .table_t1 {width:100%; margin:10px 0 20px; border-top:2px solid #307B19; border-right:1px solid #d2d2d2; border-bottom:2px solid #d2d2d2; border-collapse:separate; line-height:1.5em;font-size:15px;}
+.contents .table_t1 .text_center {text-align: center;}
+.contents .table_t1 thead th, .table_t1 tbody th, tfoot {text-align: center; color:#333; font-weight:600;background:#f9f9f9;}
+.contents .table_t1  th, table.table_t1 td {padding:16px 8px 13px;border-top:1px solid #d2d2d2;border-left:1px solid #D7D7D7;vertical-align:middle;}
+
+em.em_red {font-weight: normal; color:red;}

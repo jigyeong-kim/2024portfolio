@@ -1,0 +1,193 @@
+/* Layout */
+#container {font-family:"SpoqaHanSans";}
+#wrapper {min-width:1200px;}
+.wrap{position:relative;margin:0 auto;width:1200px;padding:0;}
+
+
+/*header 영역*/
+#header {position:relative; z-index:50; padding:0; width:100%;}
+#header .top_left {position:absolute; top:0; left:5px;}
+#header .top_left .btn_home {display:block; position:relative; width:119px; height:122px; background:url(/common/jsp/cj_holiday/images/main/btn_home.png) no-repeat center top; text-align:center;}
+#header .top_left .btn_home:after {display:block; position:absolute; left:47px; bottom:-59px; width:25px; height:63px; background:url(/common/jsp/cj_holiday/images/main/btn_home_deco.png) no-repeat center; content:'';}
+#header .top_left .btn_home span {display:inline-block; position:relative; margin-top:22px; padding-top:22px; color:#fff; font-size:16px; height:22px; letter-spacing:-0.025em; transition:0.5s;}
+#header .top_left .btn_home span:before {display:block; position:absolute; top:0; left:0; right:0; width:14px; height:15px; margin-right:auto; margin-left:auto; background:url(/common/jsp/cj_holiday/images/main/logo.png) no-repeat left top; content:'';}
+
+/*footer 영역*/
+#footer {position:relative; z-index:11;min-width:1200px;background:#4a4c56;}
+#footer .wrap {width:1200px;text-align:center;}
+#footer .footer_info {padding:40px 0}
+#footer .footer_info address {padding:2px 0; color:#fff; font-size:13px;}
+#footer .footer_info address .tel {display:inline-block; margin-left:30px; padding-left:20px; background:url('/common/jsp/cj_holiday/images/main/foot_tekl.gif') no-repeat left center;}
+#footer .footer_info address .tel a{color:#fff;}
+#footer .footer_info .copy {margin-bottom:20px;font-size:13px; color:#bdc1d6;}
+#footer .footer_info .warning {font-size:12px; color:#848799;}
+/*#footer .foot_btn {position: fixed;right: 80px;bottom: 35px; cursor: pointer;}*/
+
+/* accessibility */
+#accessibility {overflow:hidden;position:relative;width:100%;z-index:1000}
+#accessibility a{display:block;overflow:hidden;height:1px;width:1px;margin:0 -1px -1px 0;font-size:0;line-height:0;text-align:center}
+#accessibility a:focus, #accessibility a:hover, #accessibility a:active {width:auto;height:20px;margin:0;padding:8px 0 0 15px;background:#20262c;font-size:12px;font-weight:700;line-height:1;color:#fff;}
+
+/* @media only screen and (max-width: 800px) {
+#header .top_left {top:0px;left:0px;position:relative;background:rgb(0,0,0,0.5);height: 50px;}
+#header .top_left button.btn_home span {padding:10px; display:inline-block; font-family: "NanumS"; font-size:18px; font-weight:600;color:#fff;}
+#header .top_left button.btn_home {border:none;}
+#header .top_left button.btn_home:hover span {color:#FAFA00;}
+#header .top_left:hover button.btn_home {border:none;}
+
+} */
+
+
+/* 컨텐츠 그룹 */
+/* #container .wrap{padding:10px 0 0;} */
+/* #container .section.rowgroup {padding:495px 0 0; } */
+/* #container .section {padding:50px 0;} */
+/*.menu_sub {position:absolute;background: url('/common/jsp/cj_holiday/images/main/icon_bg.png') no-repeat center top;height:260px;min-width:1200px;top:400px;left:0;z-index:15;width:100%;vertical-align: middle;}*/
+.menu_sub {position:relative; padding-top:60px;}
+/* .menu_sub:after {display:block; position:absolute; left:0; right:0; top:50px; width:52px; height:1px; margin-right:auto; margin-left:auto; background-color:rgba(255, 255, 255, 0.2); content:'';} */
+.menu_sub .nav {position:relative; width:1200px; height:269px; margin-top:55px; margin-right:auto; margin-left:auto; padding-top:52px; box-sizing:border-box;}
+.menu_sub .nav:before, .menu_sub .nav:after {display:block; position:absolute; width:329px; height:146px; background-repeat:no-repeat; background-position:left top; content:'';}
+.menu_sub .nav:before {top:0; left:0; background-image:url(/common/jsp/cj_holiday/images/main/icon_bg_left.png);}
+.menu_sub .nav:after {bottom:0; right:0; background-image:url(/common/jsp/cj_holiday/images/main/icon_bg_right.png);}
+.nav .tap_menu {width:90%; margin-right:auto; margin-left:auto;}
+.nav .tap_menu li {position:relative; float:left; width:16.66%; text-align:center; box-sizing:border-box;}
+.nav .tap_menu li a {position:relative; display:block; width:130px; margin-right:auto; margin-left:auto;}
+.nav .tap_menu li a:after {display:block; position:absolute; top:42px; left:-15.6px; width:176px; height:50px; background:url('/common/jsp/cj_holiday/images/main/item_deco.png') no-repeat center; content:''; opacity:0; transition:0.5s;transition-timing-function:linear;}
+.nav .tap_menu li a:hover:after{opacity:1; transition:1s;}
+
+.nav .tap_menu li a span {display:block; transition:all 300ms ease-in-out;}
+.nav .tap_menu li a span.img_area {position:relative; width:130px; height:130px; border:5px solid #fff08c; border-radius:100%; background-color:#fff; background-repeat:no-repeat; background-position:center; box-sizing:border-box; box-shadow:0 5px 20px rgba(255, 255, 255, 0);  transition-timing-function:linear;}
+.nav .tap_menu li a:hover span.img_area {border:65px solid #fff08c; box-shadow:0 5px 20px rgba(255, 255, 255, 0.75);}
+
+
+.nav .tap_menu li a:before {display:block; z-index:30; position:absolute; top:2px; left:0; width:130px; height:130px; background-repeat:no-repeat; background-position:center; content:''; opacity:0; transition-timing-function:linear;}
+.nav .tap_menu li a:hover:before {opacity:1; transition:1s;}
+
+.nav .tap_menu li.tap1 a:before{background-image:url('/common/jsp/cj_holiday/images/main/item1_hover.png');}
+.nav .tap_menu li.tap2 a:before{background-image:url('/common/jsp/cj_holiday/images/main/item2_hover.png');}
+.nav .tap_menu li.tap3 a:before{background-image:url('/common/jsp/cj_holiday/images/main/item3_hover.png');}
+.nav .tap_menu li.tap4 a:before{background-image:url('/common/jsp/cj_holiday/images/main/item4_hover.png');}
+.nav .tap_menu li.tap5 a:before{background-image:url('/common/jsp/cj_holiday/images/main/item5_hover.png');}
+.nav .tap_menu li.tap6 a:before{background-image:url('/common/jsp/cj_holiday/images/main/item6_hover.png');}
+
+.nav .tap_menu li.tap1 a span.img_area{background-image:url('/common/jsp/cj_holiday/images/main/item1.png');}
+.nav .tap_menu li.tap2 a span.img_area{background-image:url('/common/jsp/cj_holiday/images/main/item2.png');}
+.nav .tap_menu li.tap3 a span.img_area{background-image:url('/common/jsp/cj_holiday/images/main/item3.png');}
+.nav .tap_menu li.tap4 a span.img_area{background-image:url('/common/jsp/cj_holiday/images/main/item4.png');}
+.nav .tap_menu li.tap5 a span.img_area{background-image:url('/common/jsp/cj_holiday/images/main/item5.png');}
+.nav .tap_menu li.tap6 a span.img_area{background-image:url('/common/jsp/cj_holiday/images/main/item6.png');}
+
+.nav .tap_menu li a span.text {margin-top:15px; color:#fff; font-size:18px; line-height:24px; letter-spacing:-0.025em;}
+.nav .tap_menu li:nth-child(3) a span.text {letter-spacing:-0.1em;}
+.nav .tap_menu li a:hover span.text {color:#6e767a;}
+
+.web_move .menu_sub .nav .tap_menu {position:relative;}
+.web_move .menu_sub .nav:before {display:block; position:fixed; width:100%; height:11px; background:url(/common/jsp/cj_holiday/images/main/visual_bg_top.png) no-repeat center top; content:'';}
+
+.web_move .menu_sub .nav:before, .web_move .menu_sub .nav:after {display:none;}
+.web_move .nav .tap_menu li a:before, .web_move .nav .tap_menu li a:after {display:none;}
+.web_move .nav {position:fixed; z-index:100; left:0; top:-55px; width:100%; height:140px; padding:0; background:url('/common/jsp/cj_holiday/images/main/visual_bg_m_v2.jpg') no-repeat center top; background-size:cover;}
+.web_move .nav ul {width:900px; margin:90px auto 0;}
+.web_move .nav .tap_menu li {display:table; width:16.66%; height:50px; color:#fff;}
+.web_move .nav .tap_menu li a {display:table-cell; width:100%; vertical-align:middle;}
+.web_move .nav .tap_menu li a:hover, .web_move .nav .tap_menu li a:focus, .web_move .nav .tap_menu li a:checked, .web_move .nav .tap_menu li.on a {height:50px; border-top-left-radius:30px; border-top-right-radius:30px;}
+.web_move .nav .tap_menu li.tap1 a:hover, .web_move .nav .tap_menu li.tap1 a:focus, .web_move .nav .tap_menu li.tap1 a:checked, .web_move .nav .tap_menu li.tap1.on a{background-color:#68bbc0; color:#fff;}
+.web_move .nav .tap_menu li.tap2 a:hover, .web_move .nav .tap_menu li.tap2 a:focus, .web_move .nav .tap_menu li.tap2 a:checked, .web_move .nav .tap_menu li.tap2.on a{background-color:#9080a1; color:#fff;}
+.web_move .nav .tap_menu li.tap3 a:hover, .web_move .nav .tap_menu li.tap3 a:focus, .web_move .nav .tap_menu li.tap3 a:checked, .web_move .nav .tap_menu li.tap3.on a{background-color:#a17059; color:#fff;}
+.web_move .nav .tap_menu li.tap4 a:hover, .web_move .nav .tap_menu li.tap4 a:focus, .web_move .nav .tap_menu li.tap4 a:checked, .web_move .nav .tap_menu li.tap4.on a{background-color:#6b90bf; color:#fff;}
+.web_move .nav .tap_menu li.tap5 a:hover, .web_move .nav .tap_menu li.tap5 a:focus, .web_move .nav .tap_menu li.tap5 a:checked, .web_move .nav .tap_menu li.tap5.on a{background-color:#eb6a5c; color:#fff;}
+.web_move .nav .tap_menu li.tap6 a:hover, .web_move .nav .tap_menu li.tap6 a:focus, .web_move .nav .tap_menu li.tap6 a:checked, .web_move .nav .tap_menu li.tap6.on a{background-color:#acac67; color:#fff;}
+
+.web_move .nav .tap_menu li a span.img_area {display:none;}
+.web_move .nav .tap_menu li a span.text {margin-top:0; color:#5c5150;}
+.web_move .nav .tap_menu li.on a span.text, .web_move .nav .tap_menu li a:hover span.text {color:#fff !important;}
+.web_move .foot_btn {position: fixed;right: 80px;bottom: 35px; cursor: pointer;}
+
+.rowgroup {min-width:1200px;}
+.rowgroup .visual_bg {height:1100px; background:url('/common/jsp/cj_holiday/images/main/visual_bg.jpg') no-repeat center top; width:100%; text-align:center;}
+.rowgroup .visual_bg:before {display:block; width:100%; height:11px; background:url(/common/jsp/cj_holiday/images/main/visual_bg_top.png) no-repeat center top; content:'';}
+.rowgroup .visual_bg .vi_text {position:relative; margin-top:100px; font-size:0; line-height:0; text-align:center;}
+.rowgroup .visual_bg .vi_text .period {margin-bottom:15px; padding-top:37px; padding-bottom:7px; background:url(/common/jsp/cj_holiday/images/main/period_bg.png) no-repeat center; color:#000; font-size:17px; text-align:center; line-height:22px;}
+.rowgroup .visual_bg .vi_text img {margin-bottom:22px;}
+.rowgroup .visual_bg .vi_text .text {color:#fff; font-size:21px; line-height:23px; letter-spacing:-0.025em;}
+.rowgroup .cts_border {position:relative; background:url('/common/jsp/cj_holiday/images/main/ctsbox_hr.gif') repeat-x; height:35px; top:10px; margin-top:-10px; z-index:10;}
+.rowgroup2 {position:relative; background-color:#fff; }
+.rowgroup2 .contents {position:relative; background-color:#fff; width:1000px; padding:50px 20px; overflow-x: hidden;}
+
+/*  @media only screen and (max-width: 1200px) {
+ .rowgroup .visual_bg:before {content:"";background: url('/common/jsp/cj_holiday/images/main/visual_deco.png') no-repeat center top 50%;position:absolute;display:block;min-width:1200px;height:600px;}
+ .rowgroup .visual_bg:after {content:"";background: url('/common/jsp/cj_holiday/images/main/visual-btm.png') no-repeat center bottom;position:absolute;display:block;min-width:1200px;height:680px;}
+ }  */
+
+/* 
+ul.bu {margin-left:5px;}
+ul.bu li {position:relative; padding:0 0 1px 30px; list-style:none; background:url('/common/jsp/cj_holiday/images/contents/bu_li.gif') 10px 12px no-repeat;}
+ul.bu li ul li, ul.bu2 li {margin-left: 20px;}
+ul.bu li ul li, ul.bu2 li {position:relative; padding:0 0 1px 20px; list-style:none; background:url('/common/jsp/cj_holiday/images/contents/bu_li2.gif') 0 12px no-repeat;}
+ */
+.contents .indent {margin:1em 0 0.7em 0.8em;}
+.floatLeft {float:left;}
+.box0 {margin-left:20px;}
+.em_red_m {color:red; margin-left:80px;}
+.blank {display:inline-block;margin-left:10px;vertical-align:text-top;}
+.tit .selected {cursor:pointer; display:block;}
+
+.trad_box {text-align:center;margin:20px 30px;}
+
+.detail_info {position:relative; min-height:220px; margin-bottom:30px;}
+.detail_info .cont_left {position:absolute; left:0; top:0;}
+.detail_info .cont_left .cont_img {line-height:0;margin:0 30px; border:1px solid #ddd; box-sizing:border-box;}
+.detail_info .cont_right {margin-left:200px;}
+.detail_info .cont_right ul {margin-top:10px;}
+
+/*구분*/
+.contents .sub_cont {font-family: 'NanumS'; font-size:16px; line-height:1.9em;}
+.contents .sub_cont h2 {text-align:center;margin:0 0 40px; padding-top:70px;}
+.contents #item1 > h3{color:#4a8487;}
+.contents #item2 > h3{color:#796b87;}
+.contents #item3 > h3{color:#a17059;}
+.contents #item4 > h3{color:#6b90bf;}
+.contents #item5 > h3{color:#eb6a5c;}
+.contents #item6 > h3{color:#8e8e55;}
+.contents .sub_cont strong.tit {font-size:19px;font-weight:600; margin:10px 0; line-height:1.9em; color:#333;}
+.contents .sub_cont h4 {color:#333;}
+.contents .medicalbox {position:relative; width:100%; height:486px; background:url('/common/jsp/cj_holiday/images/contents/medical_bg.jpg') no-repeat center;}
+.contents .medicalbox .textbox {width:740px; margin-left:auto; margin-right:auto; padding-top:20px;}
+.contents .medicalbox .textbox > h3 {margin-top:0;}
+.contents .medicalbox .textbox > p {font-weight:600; line-height:20px;}
+.contents .medicalbox .medibtns ol {position:absolute; left:0; right:0; top:50%; width:752px; margin-left:auto; margin-right:auto;}
+.contents .medicalbox .medibtns ol li {float:left; text-align:center;}
+.contents .medicalbox .medibtns ol li:nth-child(2n) {margin-left:10px;}
+.contents .medicalbox .medibtns ol li:nth-child(n+3) {margin-top:10px;}
+.contents .medicalbox .medibtns ol li a {display:block; width:371px; height:71px; background:url('/common/jsp/cj_holiday/images/contents/medibtn_bg.png') no-repeat center; color:#888; font-size:20px; font-weight:600; line-height:71px; transition-timing-function:linear;}
+.contents .medicalbox .medibtns ol li a:hover {color:#eb6a5c; transition:0.5s;}
+
+.contents .dorobox {background:rgb(217,255,212,0.3); padding: 45px;}
+/* 표*/
+.contents #item1 .table, .contents #item1 .table thead tr:first-child th {border-top:2px solid #4a8487 !important;}
+.contents #item2 .table, .contents #item2 .table thead tr:first-child th {border-top:2px solid #796b87 !important;}
+.contents #item3 .table, .contents #item3 .table thead tr:first-child th {border-top:2px solid #a17059 !important;}
+.contents #item4 .table, .contents #item4 .table thead tr:first-child th {border-top:2px solid #6b90bf !important;}
+.contents #item5 .table, .contents #item5 .table thead tr:first-child th {border-top:2px solid #eb6a5c !important;}
+.contents #item6 .table, .contents #item6 .table thead tr:first-child th {border-top:2px solid #8e8e55 !important;}
+
+.contents #item1 .table thead th {color:#4a8487 !important;}
+.contents #item2 .table thead th {color:#796b87 !important;}
+.contents #item3 .table thead th {color:#a17059 !important;}
+.contents #item4 .table thead th {color:#6b90bf !important;}
+.contents #item5 .table thead th {color:#eb6a5c !important;}
+.contents #item6 .table thead th {color:#8e8e55 !important;}
+
+h3.h3_title {color:#333; font-size:30px; line-height:32px; text-align:center;}
+ 
+/* IE10+ */
+/* @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+.contents .medicalbox .medibtns ol{position:absolute;left: 130px; width:500px; height:235px;margin-top: 190px;padding: 10px 10px 20px 20px;}
+.contents .dorobox {background-color:#e2f6e2; padding: 45px;}
+#footer {position:relative; z-index:11;max-width:100%;background:#4a4c56;} */
+}
+
+ /* @media only screen and (max-width: 800px) {
+ 	#header .top_left {left:30px;}
+ 	.contents .table th, table.table td {word-break: break-all;font-size:14px;}
+ } */

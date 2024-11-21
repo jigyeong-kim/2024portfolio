@@ -1,0 +1,33 @@
+#edu-schedule {width: 720px;padding: 50px 0 50px 0; margin:0px;}
+#edu-schedule .wrap {width: 720px; margin: 0 auto;}
+
+#edu-schedule .detail_schedule h2 {color: #010101; font-weight: 700; font-size: 16px; margin-bottom: 15px;}
+
+#edu-schedule .scheduler_top .calendar_selector div { float: left; font-size: 17px; color: #262625; font-weight: 400; margin: 1px 0 0 17px; }
+#edu-schedule .scheduler_top .calendar_selector div.year, #edu-schedule .scheduler_top .calendar_selector div.day {padding-top: 5px;}
+#edu-schedule .scheduler_top .btn_np img { float: left; margin: 5px 0 0 0;}
+
+#edu-schedule #scheduler_sch {overflow: hidden; padding: 0px 0 0 40px; height: 130px; background: #f7f7f7; border: 1px solid #d0d0d0; border-top: none; margin-bottom: 13px;}
+#edu-schedule #scheduler_sch select { border: 1px solid #abadb3; font-size: 13px; font-family: 'Nanum Gothic'; color: #171717; width: 190px; margin-right: 12px; height: 21px;}
+#edu-schedule #scheduler_sch h2 {color: #212529; font-size: 15px; background: url('/common/images/calendar/icon_sch.gif') no-repeat 0 50%; padding-left: 35px; margin-right: 35px;}
+#edu-schedule #scheduler_sch .icon_list {margin-left: -40px; text-align: center; background: #dee9f5; height: 55px; padding: 10px 0px; margin-bottom: 15px; border: 1px solid #d0d0d0; width: 720px; border-left: none;}
+#edu-schedule #scheduler_sch .icon_list span {margin-right: 8px; padding: 4px 0 0 50px; color:#444;}
+#edu-schedule #scheduler_sch .icon_list span.all {background: url('/common/images/calendar/edu_i_all.png') no-repeat 0 50%;}
+#edu-schedule #scheduler_sch .icon_list span.simin1 {background: url('/common/images/calendar/edu_i_simin1.png') no-repeat 0 50%;}
+#edu-schedule #scheduler_sch .icon_list span.simin2 {background: url('/common/images/calendar/edu_i_simin2.png') no-repeat 0 50%;}
+#edu-schedule #scheduler_sch .icon_list span.north {background: url('/common/images/calendar/edu_i_north.png') no-repeat 0 50%;}
+#edu-schedule #scheduler_sch .icon_list span.south {background: url('/common/images/calendar/edu_i_south.png') no-repeat 0 50%;}
+#edu-schedule #scheduler_sch .icon_list span.naesu {background: url('/common/images/calendar/edu_i_naesu.png') no-repeat 0 50%;}
+#edu-schedule #scheduler_sch .icon_list span.osong {background: url('/common/images/calendar/edu_i_osong.png') no-repeat 0 50%;}
+#edu-schedule #scheduler_sch .icon_list span.nami {background: url('/common/images/calendar/edu_i_nami.png') no-repeat 0 50%;}
+
+#edu-schedule .calendar {width:100%;}
+#edu-schedule .calendar th {height: 30px; border: 1px solid #e0e0e0; border-top: 2px solid #6f6f6f; font-weight: 700; color: #424242; font-size: 14px; border-bottom: none;}
+#edu-schedule .calendar thead th.red {border-top: 2px solid #c95039;}
+#edu-schedule .calendar th.red, #edu-schedule .calendar td.red, #edu-schedule .calendar td.red span {color: #bc2408;}
+#edu-schedule .calendar thead th.blue {border-top: 2px solid #1b5ea9;}
+#edu-schedule .calendar th.blue, #edu-schedule .calendar td.blue, #edu-schedule .calendar td.blue span {color: #1b5ea9;}
+#edu-schedule .scheduler_box .calendar td span.day {font-size: 14px;display: block;padding: 5px;}
+#edu-schedule .calendar td { position: relative; height: 40px; border: 1px solid #e0e0e0; vertical-align: top; padding: 3px 3px 0 3px; font-size: 11px; font-weight: 700; color: #424242;}
+
+#today_detail_schedule {margin-bottom: 20px;}

@@ -1,0 +1,63 @@
+
+/* 사이트맵 */
+#contents #sitemap h2{margin:0;padding:15px 0;background-color:#0c55b1;
+    background:url(/common/board/images/sitemap_ico_depth.png) no-repeat center top,linear-gradient(to bottom, #0e66be 20%,#0c55b1 83%);
+    color:#fff;text-align:center;}
+#contents #sitemap h2 a{color:#fff;}
+.sitemap_row {display:block;margin:0 0 50px -3.33333%;}
+.sitemap_row .sitemap_item {display:block;float:left;width:30%;margin:0 0 0 3.33333%;}
+*:first-child+html .sitemap_row .sitemap_item {margin-left:3.22222%}
+.sitemap_item > ul > li{border-bottom:1px solid #e9e9e9;}
+.sitemap_item > ul > li > a{display:block;margin:15px 0 5px 10px;padding-left:15px;background:url(/common/board/images/sitemap_ico_depth2.png) no-repeat left 5px;color:#326298;font-weight:600;}
+.sitemap_item ul ul{padding:15px 20px;background-color:#f9f9f9;border:1px solid #e9e9e9;border-bottom:0;}
+.sitemap_item ul ul li a{display:block;margin:0;padding:0 0 0 10px;background:url(/common/board/images/sitemap_ico_depth3.png) no-repeat left 7px;}
+@media all and (max-width: 640px) {
+    .sitemap_row {margin:0 0 20px 0;}
+    .sitemap_row .sitemap_item {float:none;width:100%;margin-left:0;box-sizing: border-box}
+}
+
+/* 베너존 */
+.bannerzone{margin-top:3px;padding:15px 0;border-top:1px solid #e4e4e4;border-bottom:1px solid #e4e4e4}
+.bannerzone .banner_list li{display:inline;float:left;width:21%;margin:15px 2%;font-size:0;line-height:0;text-align: center;}
+.bannerzone .banner_list li img{width:136px;height:43px;border:1px solid  #e9e9e9}
+@media all and (max-width: 640px) {
+    .bannerzone .banner_list li{width:29.3333%}
+}
+@media all and (max-width: 440px) {
+    .bannerzone .banner_list li{width:46%}
+}
+
+/* 뷰어 */
+.viewer .viewer_list li{position: relative;padding:15px 0;border-bottom:1px solid #ccc;}
+.viewer .viewer_list .logo{position:absolute;top:20px;left:5px;font-size:0;line-height:0;}
+.viewer .viewer_list .logo img{}
+.viewer .viewer_list .explan{display:block;margin: 0 0 0 150px;}
+.viewer .viewer_list .explan strong{display:block;margin:0 0 5px;font-size:1.05em;color:#333}
+.viewer .viewer_list .download{display:block;margin: 15px 0 0 150px;}
+.viewer .viewer_list .download a{display: inline-block;margin-right:5px;padding:4px 15px 2px;border:1px solid #ccc;border-radius:4px;background:#fafafa;font-size:0.9em}
+.viewer .viewer_list .download a i{display:inline-block;width:16px;height:14px;margin:3px 0 0 6px;background:url(/common/board/images/ico_down.png) no-repeat right center;font-size:0;text-indent:-9999px;vertical-align: top;}
+
+/* 베너존 */
+.popupzone{margin-top:3px;padding:15px 0;border-top:1px solid #e4e4e4;border-bottom:1px solid #e4e4e4}
+.popupzone .popup_list li{display:inline;float:left;width:29.333%;margin:15px 2%;font-size:0;line-height:0;text-align: center;}
+.popupzone .popup_list li img{max-width:100%;height:auto;border:1px solid  #ccc}
+@media all and (max-width: 550px) {
+    .popupzone .popup_list li{width:46%}
+}
+
+/* 이메일 수집 거부 */
+.email_refuse{}
+.email_refuse .email_refuse_box{margin:15px 0;padding:5px 0 20px;border-bottom:1px solid #e4e4e4}
+.email_refuse .email_refuse_box .title{margin-bottom:25px;font-size:1.3em;color:#000;font-weight:600;text-align: center;}
+.email_refuse .email_refuse_box .title i{display:inline-block;width:80px;height:57px;margin-right:20px;background:  url(/common/board/images/ico_email_refuse.png) no-repeat;vertical-align: middle}
+.email_refuse .email_refuse_box .point{color:#0c55b1}
+.email_refuse .email_refuse_box small{display:block;margin-top:4px;color:#222}
+@media all and (max-width: 450px) {
+    .email_refuse .email_refuse_box .title{
+        font-size:1.2em;}
+    .email_refuse .email_refuse_box .title i{margin-right:14px;width:65px;height:45px;background-size:100% auto;}
+}
+
+
+
+

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/* reset style [start] */
+html, body, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, q, s, dl, dt, dd, ol, ul, li, fieldset, form, input, table, tr, th ,td { margin: 0; padding: 0; border:0; line-height: 1.5em; }
+
+img, fieldset {border:0 none;}body {position:relative;font-size:75%;line-height:1.8em;color:#545454; font-family:"NanumG","나눔고딕","나눔고딕굵게",NanumGothicbold,"돋움",Dotum,"굴림",Gulim,"Lucida Grande",Tahoma,Verdana,AppleGothic,UnDotum,"sans-serif";}
+/*img, fieldset {border:0 none;}body {position:relative;font-size:75%;line-height:1.8em;color:#545454; font-family:"Nanum Gothic","나눔고딕","나눔고딕굵게",NanumGothicbold,"돋움",Dotum,"굴림",Gulim,"Lucida Grande",Tahoma,Verdana,AppleGothic,UnDotum,"sans-serif";}
+*/
+strong { font-weight: bold; }
+em, dfn, cite, address { font-style:normal; }
+sup, sub { font-size:0.92em; }
+del { text-decoration:line-through; }
+button {cursor:pointer; border:none; background:none}
+span.button, img.button, a.button {vertical-align:middle;}
+ol, ul, li { list-style:none;}
+table {border-collapse: separate; border-spacing:0;}
+/* legend {position:absolute; visibility:hidden; overflow:hidden; width:0; height:0; font-size:0%;} */
+/* caption {position:absolute; visibility:hidden; overflow:hidden; width:0; height:0; font-size:0%;} */
+legend {display:block; position:absolute; top:0; left:0; width:100%; height:1px; font-size:0; line-height:0;}
+caption {height:1px; font-size:0; line-height:0;}
+hr {display:none;}
+
+a:link { color:#636363; text-decoration:none; }
+a:visited { color:#636363; text-decoration:none; }
+a:hover { color:#0030ae; text-decoration:underline; }
+a:active { color:#0030ae; text-decoration:underline; }
+
+.clearfix:after {display:block; visibility:hidden; clear:both; content:'.'; overflow:hidden; width:0; height:0; font-size:0; line-height:0; text-indent:-9999px;}
+.clearfix {display:inline-block;}
+.clearfix {display:block;}
+
+/* .skip {position:absolute; overflow:hidden; height:0; width:0; font-size:0; visibility:hidden;} */
+.skip {display:block; overflow:hidden; position:absolute; top:0; left:0; width:1px; height:1px; background-color:transparent; font-size:0; line-height:0;}
+.clear{clear: both;}
+
+
+/* 입력 form */
+input[type="text"]{padding:3px;border:solid 1px #ccc;}
+input[type="password"]{padding:3px;border:solid 1px #ccc;}
+
+/* 가상요소 content */
+
+
+/* 공통파일지정되면 파일넣기 */
+/* 
+ * Nanum Gothic (Korean) http://www.google.com/webfonts/earlyaccess
+ */
+
+/*2017-11-23*/
+/*
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: normal;
+  src:url(font/NanumGothic.eot);src:local('dddd.ttf'),url(font/NanumGothic.woff) format('woff')
+}
+@font-face {
+  font-family: 'Nanum Gothic bold';
+  font-style: normal;
+  font-weight: 400;
+src:url(font/NanumGothicBold.eot);src:local('dddd.ttf'),url(font/NanumGothicBold.woff) format('woff')
+}
+@font-face {
+  font-family: 'Nanum Gothic Extra Bold';
+  font-style: normal;
+  font-weight: 800;
+  src:url(font/NanumGothicExtraBold.eot);src:local('dddd.ttf'),url(font/NanumGothicExtraBold.woff) format('woff')
+} 
+@font-face {
+  font-family: 'Nanum Barun Gothic';
+  font-style: normal;
+  font-weight: normal;
+ src:url(font/NanumBarunGothic.eot);src:local("※"),url(font/NanumBarunGothic.woff) format('woff')
+}
+
+@font-face{
+	font-family:'NanumS';
+	font-weight: 400;
+	src:url("font/NanumSquareR.eot");
+	src:url("font/NanumSquareR.eot?#iefix") format('embedded-opentype'),
+		url("font/NanumSquareR.woff") format('woff');
+}
+@font-face{
+	font-family:'NanumS';
+	font-weight: 600;
+	src:url("font/NanumSquareB.eot");
+	src:url("font/NanumSquareB.eot?#iefix") format('embedded-opentype'),
+		url("font/NanumSquareB.woff") format('woff');
+}	
+*/

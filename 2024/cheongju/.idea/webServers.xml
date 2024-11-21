@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a39b68de-bcda-48fb-bf28-7e99b8f8c006" name="청주시10주년 (222)">
+        <fileTransfer rootFolder="/home/webapps/nodejs/" accessType="SFTP" host="192.168.0.222" port="22" sshConfigId="ef622b8c-b9f0-4475-bbc5-8efce87b82a0" sshConfig="222">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

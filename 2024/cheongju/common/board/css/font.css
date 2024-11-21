@@ -1,0 +1,14 @@
+@font-face{
+	font-family:'NanumG';
+	font-weight: 400;
+	src:url("/common/board/font/NanumBarunGothic.eot");
+	src:url("/common/board/font/NanumBarunGothic.eot?#iefix") format('embedded-opentype'),
+	     url("/common/board/font/NanumBarunGothic.woff") format('woff');
+}
+@font-face{
+	font-family:'NanumG';
+	font-weight: 600;
+	src:url("/common/board/font/NanumGothicBold.eot");
+ 	src:url("/common/board/font/NanumGothicBold.eot?#iefix") format('embedded-opentype'),
+	     url("/common/board/font/NanumGothicBold.woff") format('woff');
+}	

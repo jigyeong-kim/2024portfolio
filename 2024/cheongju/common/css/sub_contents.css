@@ -1,0 +1,193 @@
+/* ==== 템플릿 추가수정 ==== */
+#contents h2 { width: auto; height: auto; margin: 1em 0 0.5em 0; padding: 0 0 0 21px; background: url('../images/sub/h2bg.gif') no-repeat 0 5px; color: #010101; font-weight:bold; font-size: 16px; text-align: left; line-height: 1.3; clear:both; }
+#contents h3 { width: auto; height: auto; margin: 1.2em 0 0.8em 0; padding: 0 0 0 37px; background: url('../images/sub/h3bg.gif') no-repeat 23px 50%; color: #1b8b5b; font-weight: bold; font-size: 15px; text-align: left; line-height: 1.25; clear:both;}
+
+.padding_r_10{padding-right:10px }
+.padding_r_15{padding-right:15px }
+
+.table_t1{border-top:2px solid #359577 !important}
+.table_t1 th{font-family: "나눔고딕","Nanum Gothic"}
+#contents .em_b_pink {color:rgb(229,71,179); font-weight:600;}
+
+.box5{border:none !important; padding:5px 10px !important; background:#ebfcff !important;}
+
+/* 열린마당_동에바란다(주민센터공통) */
+.cts_dong_bg {position:relative; background: url('../images/contents/dong_bg.jpg') no-repeat 0px 0px; width:698px; height:533px; margin-left:10px;}
+.cts_dong_bg h2{position:absolute; top:61px; left:35px;}
+.cts_dong_bg ul{position:absolute; top:440px; left:100px;}
+.cts_dong_bg ul li {float:left; padding-right:45px;}
+
+/* ====== 금천동 주민센터 ====== */
+
+/* 금천동 주민센터_동주민센터안내_동장인사말 */
+.cts_3441_greeting{overflow:hidden; margin-bottom:15px;}
+.cts_3441_greeting p.cts_3441_img{float:left; width:153px;}
+.cts_3441_greeting div{float:left; width:560px}
+.cts_3441_greeting div .indent{margin-left:0 !important;}
+
+/* 금천동 주민센터_동주민센터_시설안내 */
+.cts_3444_img{overflow:hidden;}
+.cts_3444_img div{overflow:hidden;}
+.cts_3444_img dl{float:left; margin:0 30px 15px 0;}
+.cts_3444_img dl dt{text-align:center;}
+.cts_3444_img dl dd{text-align:center; padding-top:10px}
+
+/* 금천동 주민센터_우리동소개_쇠내골행복축제 */
+.cts_3458_img{overflow:hidden;}
+.cts_3458_img div{overflow:hidden;}
+.cts_3458_img dl{float:left; margin:0 30px 15px 0;}
+.cts_3458_img dl dt{text-align:center;}
+.cts_3458_img dl dd{text-align:center; padding-top:10px}
+
+/* 금천동 주민센터_우리동소개_아름다운꽃길조성 */
+.cts_3461_img{overflow:hidden;}
+.cts_3461_img div{overflow:hidden;}
+.cts_3461_img dl{float:left; margin:0 20px 15px 0;}
+.cts_3461_img dl dt{text-align:center;}
+.cts_3461_img dl dd{text-align:center; padding-top:10px}
+
+/* 금천동 주민센터_열린마당_동에바란다 */
+.cts_3483_bg{background:url('../images/contents/cts_3483_bg.gif') no-repeat 0 0; width:698px; height:500px; border:1px solid #a1a1a1; position:relative;}
+.cts_3483_bg h2{text-align:center !important; padding-top:30px !important;}
+.cts_3483_btn{position:absolute; top:420px; left:55px; overflow:hidden;}
+.cts_3483_btn li{float:left; margin-right:20px;}
+
+
+/* ====== 용암2동 주민센터 ====== */
+
+/* 공통부분 css */
+.yongam2_group{overflow:hidden;}
+.yongam2_group img{float:left; margin-right:10px;}
+
+/* 용암2동 주민센터_동사무소안내_동장인사말 */
+#contents .cts_4471_greeting{ margin-bottom:15px;}
+#contents .cts_4471_greeting .cts_4471_img { float:left; margin-right:20px;padding:5px;border:1px solid #bbbbbb; }
+#contents .cts_4471_greeting p img{ margin-bottom:20px; }
+
+/* 용암2동 주민센터_동주민센터_시설안내 */
+.cts_4474_img{overflow:hidden;}
+.cts_4474_img div{overflow:hidden;}
+.cts_4474_img dl{float:left; margin:0 4px 15px 0;}
+.cts_4474_img dl dt{text-align:center;}
+.cts_4474_img dl dd{text-align:center; padding-top:10px}
+
+/* 용암2동 주민센터_우리동소개_문화재안내 */
+/*
+.cts_4478_text dl{overflow:hidden;}
+.cts_4478_text dl dt{float:left; font-weight:bold; color:#038381;}
+.cts_4478_text dl dd{float:left; padding-left:2px;}
+*/
+
+.cts_4478_group{overflow:hidden;}
+.cts_4478_group .cts_4478_img{float:left; width:27%}
+.cts_4478_group .cts_4478_text{float:right; width:73%}
+.cts_4478_group .cts_4478_text .bu{margin-left:0 !important; margin-top:0 !important;}
+
+
+
+/* ====== 오근장동 주민센터 ====== */
+
+/* 공통부분 css */
+.ogeunjang_group{overflow:hidden;}
+.ogeunjang_group img{float:left; margin-right:10px;}
+
+/* 오근장동 주민센터_동주민센터안내_동장인사말 */
+.cts_5011_greeting{overflow:hidden; margin-bottom:15px;}
+.cts_5011_greeting p.cts_5011_img{float:left; width:180px; text-align:center;}
+.cts_5011_greeting div{float:left; width:533px}
+.cts_5011_greeting div .indent{margin-left:0 !important;}
+
+/* 오근장동 주민센터_동주민센터_내부시설안내 */
+.cts_5014_img{overflow:hidden;}
+.cts_5014_img img{float:left;width:438px;}
+.cts_5014_img .bu{float:left; margin-top:120px !important}
+
+.cts_5014_img2{overflow:hidden; float:left; width:340px;}
+.cts_5014_img2 img{float:left; width:196px; margin-right:10px;}
+.cts_5014_img2 div{float:left; padding-top:15px; width:130px}
+.cts_5014_img2 div .bu{margin-left:0 !important}
+
+/* 오근장동 주민센터_우리동소개_문화재안내 */
+.cts_5019_group{overflow:hidden;}
+.cts_5019_group .cts_5019_img{float:left; width:180px;}
+.cts_5019_group div{float:right; width:490px;}
+.cts_5019_group div .bu,.cts_5019_group div .indent{margin-left:0 !important;}
+
+/* 오근장동 주민센터_우리동소개_관내안내 */
+.cts_5020_img{overflow:hidden;}
+.cts_5020_img img{float:left;width:293px;}
+.cts_5020_img .bu{float:left; margin:15px 0 0.5em 15px !important; }
+
+
+/* ====== 사직2동 주민센터 ====== */
+
+/* 사직2동 주민센터_동주민센터안내_동장인사말 */
+.cts_4681_greeting{overflow:hidden; margin-bottom:15px;}
+.cts_4681_greeting p.cts_4681_img{float:left; width:180px; text-align:center;}
+.cts_4681_greeting div{float:left; width:533px}
+.cts_4681_greeting div .indent{margin-left:0 !important;}
+
+
+/* 사직2동 주민센터_우리동소개_주소통계 */
+.cts_4689_box{background:url('../images/contents/cts_4689_bg.gif') no-repeat 0 0; height:203px;}
+.cts_4689_box h2{padding-top:32px !important;}
+.cts_4689_box p{padding-top:14px !important;}
+
+/* 사직2동 주민센터_우리동소개_지도 및 유래 */
+.cts_4692_map{border:1px }
+
+/*popup*/
+.popup {width:500px; background:#fcfcf4; min-height:700px; }
+.popup h2 { padding:17px 0 4px 13px;}
+.popup h3 { width:275px; background:#e98331; color:#fff; font-weight:bold; font-size:1.4em; padding:4px 0 4px 0; text-align:center; margin-left:13px;}
+.popup .img_pop { padding:8px 0 20px 0;}
+.popup  p{ width:400px; padding-left:50px;}
+
+/* ====== 산남동 주민센터 ====== */
+
+/* 산남동 주민센터_동주민센터안내_동장인사말 */
+.cts_4731_greeting{overflow:hidden; margin-bottom:15px;}
+.cts_4731_greeting p.cts_4731_img{float:left;}
+.cts_4731_greeting div{float:left; width:533px}
+.cts_4731_greeting div .indent{margin-left:0 !important;}
+
+/* 산남동 주민센터_동주민센터_내부시설안내 */
+.cts_4735_img{overflow:hidden; float:left;}
+.cts_4735_img img{float:left; width:159px;}
+.cts_4735_img div{float:left; width:514px;}
+
+/* 산남동 주민센터_우리동소개_주소통계 */
+.cts_4740_box{background:url('../images/contents/cts_4740_bg.gif') no-repeat 0 0; height:203px;}
+.cts_4740_box h2{padding-top:32px !important;}
+.cts_4740_box p{padding-top:14px !important;}
+
+/* ====== 복대1동 주민센터 ======= */
+
+/* 복대1동 주민센터_동주민센터안내_동장인사말 */
+.cts_5341_greeting{overflow:hidden; margin-bottom:15px;}
+.cts_5341_greeting p.cts_5341_img{float:left; width:180px; text-align:center;}
+.cts_5341_greeting div{float:left; width:533px}
+.cts_5341_greeting div .indent{margin-left:0 !important;}
+
+/* 복대1동 주민센터_동주민센터안내_청사안내 */
+.cts_5345_img{overflow:hidden;}
+.cts_5345_img img{float:left;width:304px; margin-right:10px;}
+.cts_5345_img div{float:left; margin-top:90px}
+
+/* 복대1동 주민센터_우리동소개_주소통계 */
+.cts_5351_box{background:url('../images/contents/cts_5351_bg.gif') no-repeat 0 0; height:203px;}
+.cts_5351_box h2{padding-top:32px !important;}
+.cts_5351_box p{padding-top:14px !important;}
+
+/* 복대1동 주민센터_우리동소개_재래시장안내 */
+.cts_5352_img{overflow:hidden;}
+.cts_5352_img img{float:left;width:250px;}
+.cts_5352_img .bu{float:left}
+
+
+body .sub_4depth_box ul li a:hover, .sub_4depth_box ul li.on a {background-color:#498013}
+body #board .pagination strong  {background:#498013; border:2px solid #498013 !important}
+body #board table.bbs_default_list {border-top:2px solid #498013;}
+body #contents h3 {color:#498013}
+a.blue_btn {background:#498013; border: 1px solid #4b7735}
+

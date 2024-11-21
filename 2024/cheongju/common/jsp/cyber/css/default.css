@@ -1,0 +1,70 @@
+﻿@charset "UTF-8";
+
+/* reset style */
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block;}
+audio,canvas,progress,video{display:inline-block;}
+html,body,div,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ol,ul,li,blockquote,pre,button,fieldset,form,legend,table,caption,tbody,tfoot,thead,tr,th,td,iframe,article,aside,canvas,details,embed,figure,figcaption,header,footer,menu,nav,section,summary,audio,video{margin:0;padding:0;border:0;font-size:inherit;font-family:inherit;vertical-align:baseline;}
+
+img,fieldset{border:none;}
+figure,figcaption{margin:0;padding:0;}
+b,strong{font-weight:600;}
+em,dfn,cite,address{font-style:normal;}
+mark{background-color:#ff0;color:#000;}
+small{font-size:80%;}
+sup,sub{position:relative;font-size:0.9em;line-height:0;vertical-align:baseline;}
+sub{bottom:-0.25em;}
+sup{top:-0.5em;}
+del{text-decoration:line-through;}
+label{cursor:pointer;}
+
+ol,ul,li{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+legend{visibility:hidden;overflow:hidden;position:absolute;width:0;height:0;font-size:0;}
+caption{visibility:hidden;overflow:hidden;position:absolute;width:0;height:0;font-size:0;}
+label{cursor:pointer;}
+hr{display:none;}
+
+.clearfix:after{display:block;visibility:hidden;clear:both;content:".";overflow:hidden;width:0;height:0;font-size:0;line-height:0;text-indent:-9999px;}
+.clearfix{display:inline-block;}
+.clearfix{display:block;}
+.clear{clear:both;}
+.hide{display:none;}
+.skip{visibility:hidden;overflow:hidden;position:absolute;height:0;width:0;font-size:0;}
+
+/* 입력 form */
+input{height:24px;margin:1px;padding:1px 3px;border:solid 1px #dedede;font-size:inherit;font-family:inherit;color:inherit;line-height:24px;vertical-align:middle;}
+input[type="file"]{border:none;}
+input[type="submit"]{height:28px;background:none;line-height:24px;}
+input[type="radio"],input[type="checkbox"]{width:14px;height:14px;border:none;}
+input[type="number"]{}
+button{text-transform:none;vertical-align:middle;}
+button,[type="button"],[type="reset"],[type="submit"]{background:none;cursor:pointer;}
+
+select{height:28px;padding:1px 0 1px 3px;border:solid 1px #dedede;background:#fff;font-size:inherit;font-family:inherit;color:inherit;line-height:24px;text-transform:none;vertical-align:middle;}
+textarea{min-height:80px;padding:1px 3px;border:solid 1px #dedede;font-size:inherit;font-family:inherit;color:inherit;line-height:25px;vertical-align:middle;}
+input[disabled="disabled"]{background:#ebebeb;color:#959595;}
+select[disabled="disabled"]{background:#ebebeb;color:#959595;}
+
+/* 나눔고딕 */
+@font-face{
+	font-family:'NanumG';
+	font-weight:400;
+	src:url("../font/NanumBarunGothic.eot");
+	src:url("../font/NanumBarunGothic.eot?#iefix") format('embedded-opentype'),
+	    url("../font/NanumBarunGothic.woff") format('woff');
+}
+@font-face{
+	font-family:'NanumG';
+	font-weight:600;
+	src:url("../font/NanumBarunGothicBold.eot");
+ 	src:url("../font/NanumBarunGothicBold.eot?#iefix") format('embedded-opentype'),
+	    url("../font/NanumBarunGothicBold.woff") format('woff');
+}
+
+@font-face{
+	font-family:'NanumS';
+	font-weight:400;
+	src:url("../font/NanumSquareR.eot");
+ 	src:url("../font/NanumSquareR.eot?#iefix") format('embedded-opentype'),
+	    url("../font/NanumSquareR.woff") format('woff');
+}

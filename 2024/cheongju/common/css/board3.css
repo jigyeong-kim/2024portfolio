@@ -1,0 +1,6 @@
+/* 달력부분 */
+#cal_box .cal .schedule{display:block; margin-top:10px}
+#cal_box .cal .schedule input{float:none;}
+
+#cal_box .cal tfoot td{height:auto !important; text-align:center;}
+#cal_box .cal tfoot td a{font-weight:bold;}

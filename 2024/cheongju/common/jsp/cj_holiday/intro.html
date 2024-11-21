@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+response.setHeader("Cache-Control","no-cache");
+response.setHeader("Pragma","no-cache");
+response.setDateHeader("Expires",0);
+-->
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, minimum-scale=1.0, user-scalable=yes" />
+    <meta name="title" content="청주시청" />
+    <meta name="author" content="청주시청" />
+    <meta name="keywords" content="청주시청" />
+    <meta name="description" content="청주시청" />
+    <link rel="stylesheet" href="/common/jsp/covid-19/css/default.css" />
+    <link rel="stylesheet" href="/common/jsp/cj_holiday/css/temp_intro.css" />
+    <link rel="stylesheet" href="/common/jsp/covid-19/css/font.css">
+    <script src="/common/jsp/covid-19/js/jquery-1.11.1.min.js"></script>
+	<script src="/site/www_2019/js/jquery.responsive.min.js"></script>
+    <script src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=iAt_Vo_L7LX9FHL9PkZ9"></script>
+	<script src="/site/ticket/js/netfunnel.js"></script>
+    <title>청주시청</title>
+</head>
+
+<body id="main" onload="openWin()">
+    <div id="wrapper">
+        <header id="header">
+			<div id="accessibility">
+				<a href="#container">본문 바로가기 </a>
+				<a href="#lnb">컨텐츠탭 바로가기</a>
+			</div>
+			<div class="logo">
+				<a href="/www/index.do" target="_blank" title="새창">
+					<img src="/common/jsp/covid-19/images/logo.png" alt="청주시 - CHEONGJU CITY" />
+				</a>
+			</div>
+        </header>
+        <hr />
+		<main id="container">
+            <div class="cj_bg">
+				<div class="rowgroup">
+					<div class="wrap">
+						<div class="quick_area">
+							<a onclick="NetFunnel_Action({action_id:'intro'},'http://cheongju.go.kr/common/jsp/covid-19/index.html');return false" href="http://cheongju.go.kr/common/jsp/covid-19/index.html" target="_blank" title="새창" class="cj_btn n1"><span class="text"><em>청주시</em> 코로나19<br />비상대책</span></a>
+							<a onclick="NetFunnel_Action({action_id:'intro'},'http://cheongju.go.kr/common/jsp/covid-19/index.html#tab5');return false" href="http://cheongju.go.kr/common/jsp/covid-19/index.html#tab5" target="_blank" title="새창" class="cj_btn n2"><span class="text"><em>청주시</em> 확진자<br />이동경로</span></a>
+						</div>
+					</div><!-- //wrap-->
+				</div>
+				<div class="rowgroup2 clearfix">
+					<div class="wrap">
+						<div class="colgroup">
+							<!-- <p class="tit">바로가기</p> -->
+							<ul class="clearfix">
+								<li>
+									<a onclick="NetFunnel_Action({action_id:'intro'},'/www/index.do?introCheck=check');return false"  href="/www/index.do?introCheck=check" class="view" target="_blank" title="새창"><strong>청주시청</strong> 홈페이지</a>
+								</li>
+								<li>
+									<a onclick="NetFunnel_Action({action_id:'intro'},'/sdhealth/index.do?introCheck=check');return false"  href="/sdhealth/index.do?introCheck=check" class="view" target="_blank" title="새창"><strong>상당보건소</strong> 홈페이지</a>
+								</li>
+								<li>
+									<a onclick="NetFunnel_Action({action_id:'intro'},'/swhealth/index.do?introCheck=check');return false"  href="/swhealth/index.do?introCheck=check" class="view" target="_blank" title="새창"><strong>서원보건소</strong> 홈페이지</a>
+								</li>
+								<li>
+									<a onclick="NetFunnel_Action({action_id:'intro'},'/hdhealth/index.do?introCheck=check');return false"  href="/hdhealth/index.do?introCheck=check" class="view" target="_blank" title="새창"><strong>흥덕보건소</strong> 홈페이지</a>
+								</li>
+								<li>
+									<a onclick="NetFunnel_Action({action_id:'intro'},'/cwhealth/index.do?introCheck=check');return false"  href="/cwhealth/index.do?introCheck=check" class="view" target="_blank" title="새창"><strong>청원보건소</strong> 홈페이지</a>
+								</li>
+							</ul>
+						</div>
+					</div><!-- //wrap-->
+				</div>
+			</div>
+		</main>
+        <!-- //container -->
+    </div>
+    <!--//wrappper-->
+</body>
+
+</html> 

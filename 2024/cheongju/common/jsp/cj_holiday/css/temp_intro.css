@@ -1,0 +1,96 @@
+/* accessibility */
+#accessibility {overflow:hidden; position:relative; width:100%; z-index:1000;}
+#accessibility a {display:block; overflow:hidden; height:1px; width:1px; margin:0 -1px -1px 0; font-size:0; line-height:0; text-align:center;}
+#accessibility a:focus, #accessibility a:hover, #accessibility a:active {width:auto; height:20px; margin:0; padding:8px 0 0 15px; background:#20262c; font-size:12px; font-weight:700; line-height:1; color:#fff;}
+
+/* Layout */
+#wrapper {min-width:1200px;}
+#container {height:900px; font-family:"SpoqaHanSans";}
+.cj_bg {position:relative; z-index:1; background:url('/common/jsp/covid-19/images/intro_bg.jpg') no-repeat top center; background-size:cover;}
+.wrap {position:relative; margin:0 auto; width:1280px; padding:0;}
+
+a {text-decoration:none;}
+a:link {color:#636363; text-decoration:none;}
+a:visited {color:#636363; text-decoration:none;}
+a:hover {color:#0030ae; text-decoration:none;}
+a:active {color:#0030ae; text-decoration:none;}
+
+#scrollbar {display:none;}
+
+.contents .indent {margin:1em 0 0.7em 0.8em;}
+.floatLeft {float:left;}
+.box0 {margin-left:20px;}
+.em_red_m {color:red; margin-left:80px;}
+.blank {display:inline-block; margin-left:10px; vertical-align:text-top;}
+.tit .selected {cursor:pointer; display:block;}
+
+/* Logo */
+.logo {padding-top:21px; padding-bottom:21px; font-size:0; line-height:0; text-align:center;}
+.logo a, .logo img {display:inline-block;}
+
+/* rowgroup */
+.rowgroup {padding-top:130px; padding-bottom:100px; box-sizing:border-box;}
+.intro_text {position:relative; z-index:10; padding-top:110px; color:#fff; font-size:20px; line-height:30px; text-align:center; text-shadow:3px 3px 3px rgba(0, 0, 0, 0.3);}
+.intro_text .point {display:inline-block; position:relative;}
+.intro_text .point:before {display:block; z-index:-1; position:absolute; top:8px; left:0; right:0; width:96%; height:15px; margin-left:auto; margin-right:auto; background-color:#162b51; content:'';}
+
+.quick_area {margin-left:auto; margin-right:auto; font-size:0; line-height:0; text-align:center;}
+.quick_area img {width:100%;}
+.quick_area .cj_btn {display:inline-block; width:300px; height:300px; padding-top:70px; padding-bottom:70px; border-radius:100%; box-shadow:3px 3px 3px rgba(0, 0, 0, 0.3); box-sizing:border-box; vertical-align:top;}
+.quick_area .cj_btn .text {display:inline-block; position:relative; padding-top:80px; color:#fff; font-size:30px; font-weight:600; line-height:35px;}
+.quick_area .cj_btn .text:before {display:block; position:absolute; top:0; left:0; right:0; width:60px; height:60px; margin-left:auto; margin-right:auto; background-repeat:no-repeat; background-position:center; content:'';}
+.quick_area .cj_btn .text .small {font-size:16px;}
+.quick_area .cj_btn.n1 {margin-right:10%; background-color:#FDB341;}
+.quick_area .cj_btn.n1 .text {color:#111;}
+.quick_area .cj_btn.n1 .text:before {background-image:url('/common/jsp/covid-19/images/intro_ico1.png');}
+.quick_area .cj_btn.n2 {background-color:#B62243;}
+.quick_area .cj_btn.n2 .text:before {background-image:url('/common/jsp/covid-19/images/intro_ico2.png');}
+
+/* rowgroup2 */
+.rowgroup2 {padding-top:80px; padding-bottom:100px; background-color:rgba(255, 255, 255, 0.5); box-sizing:border-box;}
+.rowgroup2 .colgroup {font-size:0; line-height:0; text-align:center;}
+
+.rowgroup2 .colgroup .tit {position:relative; padding-bottom:11px; color:#fff; font-size:25px; line-height:27px;}
+.rowgroup2 .colgroup .tit:before {display:block; position:absolute; bottom:0; left:0; right:0; width:101px; height:1px; margin-left:auto; margin-right:auto; background-color:rgba(255, 255, 255, 0.2); content:'';}
+
+.rowgroup2 .colgroup > ul {display:inline-block; text-align:center;}
+.rowgroup2 .colgroup > ul > li {display:inline-block; width:300px; margin-right:20px; margin-bottom:9px; background-color:#fff; box-sizing:border-box;}
+.rowgroup2 .colgroup > ul > li:first-child {display:block; margin-left:auto; margin-right:auto; margin-bottom:20px;}
+.rowgroup2 .colgroup > ul > li a {display:block; position:relative; width:100%; height:100%; padding:20px 0; border:10px solid #2a58ae; color:#2a58ae; font-size:20px; line-height:22px; box-sizing:border-box;}
+.rowgroup2 .colgroup > ul > li a:before {display:block; position:absolute; right:-17px; bottom:-19px; width:62px; height:62px; background-repeat:no-repeat; background-position:right bottom; background-image:url('/common/jsp/covid-19/images/intro_btn2.jpg'); background-size:40px; content:'';}
+.rowgroup2 .colgroup > ul > li:first-child a {border-color:#453f9f; color:#453f9f;}
+.rowgroup2 .colgroup > ul > li:first-child a:before {background-image:url('/common/jsp/covid-19/images/intro_btn1.jpg');}
+
+
+@media screen and (max-width:1280px) {
+	#wrapper {overflow-y:hidden; overflow-x:hidden; min-width:0;}
+	#container {height:100%;}
+	.wrap {width:800px;}
+	.rowgroup2 .colgroup > ul {width:100%;}
+	.rowgroup2 .colgroup > ul > li {margin-bottom:20px;}
+}
+@media screen and (max-width:1000px) {
+	.wrap {width:94%;}	
+}
+@media screen and (max-width:720px) {
+	.logo a, .logo img {width:100px;}
+	.cj_bg {background-position:top -30px center; background-size:contain;}
+	.rowgroup {height:auto; padding-top:50px; padding-bottom:50px;}
+	.rowgroup2 {height:auto; padding-top:10px; padding-bottom:20px; background-color:#fff;}
+	.rowgroup2 .colgroup {width:100%;}
+	.rowgroup2 .colgroup .tit {display:none; font-size:18px; line-height:20px;}
+	.rowgroup2 .colgroup > ul {display:block; margin-top:10px;}
+	.rowgroup2 .colgroup > ul > li {width:100%; height:auto; margin-left:0; border-top:1px solid #162b51; border-radius:0;}
+	.rowgroup2 .colgroup > ul > li a {padding:10px 0; font-size:18px; line-height:20px;}
+	.rowgroup2 .colgroup > ul > li a:before {background-size:30px;}
+	.rowgroup2 .colgroup > ul > li a strong {font-size:20px;}
+	.rowgroup2 .colgroup > ul > li:first-child {width:100%;}
+	.rowgroup2 .colgroup > ul > li:first-child a strong {font-size:23px; line-height:25px;}
+	.rowgroup2 .colgroup > ul > li a br {display:none;}
+	.quick_area {width:auto; height:auto;}
+	.quick_area .cj_btn {width:150px; height:auto; padding-top:28px; padding-bottom:38px;}
+	.quick_area .cj_btn .text {padding-top:30px; font-size:25px; line-height:27px; font-weight:600;}
+	.quick_area .cj_btn .text:before {width:25px; height:25px; background-size:25px;}
+	/* .quick_area .cj_btn .text:before {display:none;} */
+	.quick_area .cj_btn .text em {display:none;}
+}

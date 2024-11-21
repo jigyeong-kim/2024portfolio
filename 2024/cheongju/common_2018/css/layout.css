@@ -1,0 +1,56 @@
+a:link{color:#636363;text-decoration:none;}
+a:visited{color:#636363;text-decoration:none;}
+a:hover{color:#0030ae;text-decoration:underline;}
+a:active{color:#0030ae;text-decoration:underline;}
+
+/* 본문바로가기  */
+.accessibility{overflow:hidden;position:relative;z-index:1000;width:100%;}
+.accessibility a{display:block;overflow:hidden;height:1px;width:1px;margin:0 -1px -1px 0;font-size:0;line-height:0;text-align:center;}
+.accessibility a:focus, #accessibility a:hover, #accessibility a:active {width:auto;height:20px;margin:0;padding:8px 0 0 15px;background:#20262c;font-size:12px;font-weight:700;line-height:1;color:#fff;}
+
+/* 입력 form */
+input{height:24px;margin:1px;padding:1px 3px;border:solid 1px #dedede;line-height:24px;}
+input[type="submit"]{height:45px;line-height:24px;}
+input[type="radio"],input[type="checkbox"]{width:15px;height:15px;}
+input[type="image"]{height:auto;margin:0;padding:0;border:none;}
+button{height:28px;padding:1px 3px;}
+select{height:28px;padding:1px 0 1px 3px;border:solid 1px #dedede;background-color:#fff;line-height:24px;}
+textarea{min-height:80px;padding:1px 3px;border:solid 1px #dedede;line-height:25px;}
+
+/* 만족도조사 및 담당자 정보 */
+.satisfaction{margin:20px 0;padding:0;}
+.satisfaction .manager_info{position:relative;border:1px solid #aeaeae;/*border-bottom:none;*/}
+.satisfaction .manager_info ul{padding:10px 0;}
+.satisfaction .manager_info ul li{float:left;margin-left:20px;font-size:15px;color:#555;}
+.satisfaction .manager_info ul li span{display:inline-block;font-weight:600;color:#333;}
+.satisfaction .manager_info ul li span:before{content:'';display:inline-block;width:4px;height:4px;margin-right:8px;vertical-align:middle;background-color:#333;}
+.satisfaction .satisfaction_list{position:relative;padding:20px 3% 0;font-size:14px;color:#565656;border:1px solid #aeaeae;/*border-top:none;*/background:url(../images/template/satisfaction_bg.gif) right top no-repeat #f4f4f4;}
+.satisfaction .satisfaction_list:before{position:absolute;left:0;top:0;display:inline-block;width:123px;height:108px;content:'';background:url(../images/template/satisfaction_bg02.gif) left top no-repeat;}
+.satisfaction .question{position:relative;margin-bottom:10px;}
+.satisfaction form{position:relative;}
+.satisfaction .satisfaction_list label{vertical-align:middle;}
+.satisfaction .satisfaction_list .input_radio{display:block;}
+.satisfaction .satisfaction_list .input_radio span{display:inline-block;}
+.satisfaction .satisfaction_list label{display:inline-block;margin-right:20px;}
+.satisfaction .satisfaction_list .opinion{position:relative;display:block;padding-bottom:20px;margin-top:10px;background:url(../images/template/satisfaction_arrow.gif) right 47px no-repeat;}
+.satisfaction .satisfaction_list .opinion input[type="text"]{width:99%;height:42px;padding:0 2%;border:1px solid #bebebe;border-right:none;box-sizing:border-box;}
+.satisfaction .satisfaction_list .opinion input[type="submit"]{position:absolute;right:0;top:0;width:23%;height:42px;font-size:16px;line-height:42px;border:none;background-color:#005097;color:#fff;box-sizing:border-box;}
+.satisfaction .satisfaction_put{padding:10px 0;font-size:15px;text-align:right;}
+.satisfaction .satisfaction_put span{display:inline-block;padding-left:25px;font-weight:600;color:#333;background:url(../images/template/satisfaction.png) left 1px no-repeat;}
+@media all and (max-width:640px) {
+    .satisfaction {margin:5px 0 35px;}
+    .satisfaction .manager_info h3{display:inline-block;left:2%;float:none;padding:0 5px;border-right:none;}
+    .satisfaction .manager_info ul{margin-left:110px;}
+    .satisfaction .manager_info ul li{float:none;margin-left:10px;}
+    .satisfaction .satisfaction_list .input_radio,.satisfaction .satisfaction_list .opinion{float:none;width:100%;margin:0 0 5px 0;}
+}
+@media all and (max-width:400px) {
+    .satisfaction .manager_info h3{display:block;position:relative;}
+    .satisfaction .manager_info h3 span{display: inline-block;}
+    .satisfaction .manager_info ul{margin-left:2%;border-left:none;}
+    .satisfaction .satisfaction_list .opinion{background-position:right 92px;}
+    .satisfaction .satisfaction_list .opinion input[type="text"]{width:100%;border:1px solid #bebebe;}
+    .satisfaction .satisfaction_list .opinion input[type="submit"]{position:static;display:block;width:100%;}
+}
+
+.satisfaction input[type="radio"], .satisfaction input[type="checkbox"]{width:auto;height:auto;}

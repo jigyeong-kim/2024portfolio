@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="http://www.cheongju.go.kr/site/www/css/main.css" />
+<script type="text/javascript" src="/emwp/js/cmm/jsp/calendar.js"></script>
+<script type="text/javascript" src="/emwp/js/cmm/jsp/common.js"></script> 
+<script type="text/javascript" src="/emwp/js/common.js"></script>
+<script language="javascript" >	
+//-------------------------------------------------------------------
+// 설명   : 고시공고 목록 조회
+//-------------------------------------------------------------------
+	function search(){
+		var f = document.form1;
+ 	    var chker = f.initValue.value;
+
+ 	    if(chker =="Y")return;
+		f.target = "_self";
+		f.action = "/emwp/gov/mogaha/ntis/web/ofr/action/OfrAction.do";	
+		f.method.value   = 'selectListOfrNotAncmtMini'; //Action
+		f.methodnm.value = 'selectListOfrNotAncmtHomepage';
+		f.submit();	
+	}			
+	
+//-------------------------------------------------------------------
+// 설명   : 고시공고 상세내용 조회
+//-------------------------------------------------------------------	
+	function searchDetail(not_ancmt_mgt_no) {
+		window.open('','mini','width=640,height=391,left=350,top=180,scrollbars=yes');
+		var f = document.form1;
+		f.not_ancmt_mgt_no.value = not_ancmt_mgt_no ;
+		f.target = "mini";
+		f.action = "/emwp/gov/mogaha/ntis/web/ofr/action/OfrAction.do";	
+		//f.method.value   = 'selectOfrNotAncmt'; //Action
+		f.method.value = 'selectOfrNotAncmtMini';
+		f.methodnm.value = 'selectOfrNotAncmtRegst';
+		f.submit();	
+	}
+</script>
+</head>
+<body>
+
+	<div class="board_ifbox">
+	    <ul>
+	        <li><a href="./selectBbsNttView.do?key=280&amp;bbsNo=41&amp;nttNo=92">2014 인천아시아경기대회 성화봉송주...</a> <span>2014.06.08</span></li>
+	        <li><a href="./selectBbsNttView.do?key=280&amp;bbsNo=41&amp;nttNo=91">2014년 06월 05일 부여할 차량번호입니다.</a> <span>2014.06.08</span></li>
+	        <li><a href="./selectBbsNttView.do?key=280&amp;bbsNo=41&amp;nttNo=90">청주시립교향악단 '영 아티스트 시리...</a> <span>2014.06.08</span></li>
+	        <li><a href="./selectBbsNttView.do?key=280&amp;bbsNo=41&amp;nttNo=85">석면해체·제거작업 공개 [풍년로180...</a> <span>2014.06.08</span></li>
+	        <li><a href="./selectBbsNttView.do?key=280&amp;bbsNo=41&amp;nttNo=84">석면해체·제거작업장 석면비산 측정...</a> <span>2014.06.08</span></li>
+	        <li><a href="./selectBbsNttView.do?key=280&amp;bbsNo=41&amp;nttNo=83">상당보건소 모자보건실 이전합니다.</a> <span>2014.06.08</span></li>
+	        <li><a href="./selectBbsNttView.do?key=280&amp;bbsNo=41&amp;nttNo=84">석면해체·제거작업장 석면비산 측정...</a> <span>2014.06.08</span></li>
+	        <li><a href="./selectBbsNttView.do?key=280&amp;bbsNo=41&amp;nttNo=83">상당보건소 모자보건실 이전합니다.</a> <span>2014.06.08</span></li>
+	    </ul>
+	</div>
+
+</body>
+
+</html>  
