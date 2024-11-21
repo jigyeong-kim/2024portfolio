@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* 한신정보기술 김지경 - 2023.12.04 */
+
+html:not(.fixed):not(.lnb_open) body.visualtype3 #header .header_top .right_area .family_btn{color: #fff;}
+
+html:not(.fixed):not(.lnb_open) body.visualtype3 #header .header_top .right_area .family_btn:before{background: url('/site/public/images/common/btn_icons.png') no-repeat -29px -1px;}
+html:not(.fixed):not(.lnb_open):not(.search_open) body.visualtype3[data-transparent="Y"] #header .header_top .right_area .family_box{background-color: transparent;}
+
+#header .logo .image{width: 44px;height: 41px;background-image: url("/2023/eumseong/site/forest/images/common/logo.png");background-size: contain;}
+
+@media all and (min-width: 1001px) {
+    html:not(.fixed):not(.lnb_open):not(.search_open) body[data-transparent="Y"] #header .header_top .right_area .right:first-child:before{display: none;}
+
+    html:not(.fixed):not(.lnb_open):not(.search_open) body[data-transparent="Y"] #header .header_top .right_area .family_box{border-color: rgba(244, 244, 249, 0.3);}
+
+    html:not(.fixed):not(.lnb_open):not(.search_open) body[data-transparent="Y"] #header .logo .image{width: 44px;height: 41px;background-image: url("/2023/eumseong/site/forest/images/common/logo.png");background-size: contain;}
+
+    .lnb .menu .depth1_list{padding-left: 340px;}
+}
+
+@media all and (max-width: 1660px) and (min-width: 1401px) {
+    .lnb .menu .depth1_text{margin: 0 19px;}
+}
+
+@media all and (max-width: 1400px) and (min-width: 1001px) {
+    html:not(.fixed):not(.lnb_open):not(.search_open) body[data-transparent="Y"] #header .logo .image{width: 32px;height: 30px;}
+
+    #header .logo{top: 29px;}
+    #header .logo .image{width: 36px;height: 34px;}
+    #header .logo .text{font-size: 20px;height: 30px;}
+
+    .lnb .menu .depth1_list{padding-left: 240px;}
+    .lnb .menu .depth1_text{margin: 0 6px;}
+
+    .lnb .menu .depth1_text > span{font-size: 16px;}
+}
+
+@media all and (max-width: 1000px) {
+    body.main.visualtype3[data-transparent="Y"] #header .logo .image{width: 30px;height: 28px;background-image: url("/2023/eumseong/site/forest/images/common/logo.png");background-size: contain;}
+    body.sub.visualtype3[data-transparent="Y"] #header .logo .image{width: 30px;height: 28px;background-image: url("/2023/eumseong/site/forest/images/common/logo.png");background-size: contain;}
+}
+
+/*body.visualtype3 .sub_head .sub_top .path_box .home .text{border: none;}*/
+/*body.visualtype3 .sub_head .sub_top .path_box > ul:before{border: none;}*/

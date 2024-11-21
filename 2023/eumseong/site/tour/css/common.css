@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* (주)한신정보기술 김지경 - 2023.10 */
+
+/* web */
+@media all and (max-width:1200px){
+
+}
+
+/* tablet */
+@media all and (max-width:1000px){
+
+}
+
+/* mobile */
+@media all and (max-width:640px){
+
+}
+
+#wrapper{padding-top: 0;}
+
+html:not(.fixed):not(.lnb_open):not(.search_open) body[data-transparent="Y"] #header .header_top .right_area .family_box{background-color: #fff;color: #26293d;}
+html:not(.fixed):not(.lnb_open) #header .header_top .right_area .family_btn{color: #26293d;}
+html:not(.fixed):not(.lnb_open) #header .header_top .right_area .family_btn:before{background-image: url("/2023/eumseong/site/tour/images/common/family_icon.png");background-position: 0 0;}
+
+body[data-transparent="Y"] #container{background-color: #fff;}
+
+@media all and (min-width: 1001px) {
+    html:not(.fixed):not(.lnb_open):not(.search_open) body[data-transparent="Y"] .lnb .menu:before{background-color: rgba(117, 123, 142, 0.3);}
+}
+
+/*@media all and (max-width: 1000px) {*/
+/*    body.main.visualtype3[data-transparent="Y"] #header{position: absolute;width: 100%;}*/
+/*    body.main.visualtype3[data-transparent="Y"] #header .logo .image{background-image: url('/site/public/images/common/logo_bk.png');}*/
+/*    body.main.visualtype3[data-transparent="Y"] #header .logo .text{color: #fff;}*/
+
+/*    body.main.visualtype3[data-transparent="Y"] .header_bottom .bot_list .bot_item .search_btn:before{background: url('/site/public/images/common/btn_icons_bk.png') no-repeat -113px -1px;}*/
+/*    body.main.visualtype3[data-transparent="Y"] #header .menu_show .menu_button:before{background: url('/site/public/images/common/btn_icons_bk.png') no-repeat -181px 0}*/
+/*    body.main.visualtype3[data-transparent="Y"] #header:before{display: block;position: absolute;bottom: 0;left: 0;width: 100%;height: 1px;background-color: rgba(117, 123,142, 0.3);}*/
+/*}*/

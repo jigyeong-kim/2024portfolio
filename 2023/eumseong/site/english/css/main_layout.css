@@ -1,0 +1,776 @@
+@charset "utf-8";
+
+/* 한신정보기술 - 김지경 2023.11 */
+
+/*Nexen */
+@font-face{
+    font-family:'Nexen';
+    font-weight: 400;
+    src:url("../font/NexenTireRegular.woff2") format('woff2'),
+    url("../font/NexenTireRegular.woff") format('woff');
+}
+
+@font-face{
+    font-family:'Nexen';
+    font-weight: 600;
+    src:url("../font/NexenTireBold.woff") format('woff2'),
+    url("../font/NexenTireBold.woff") format('woff');
+}
+
+@keyframes visual_ani {
+    0%{transform: scale(1);}
+    100%{transform: scale(1.2);}
+}
+
+@keyframes split_ani {
+    0%{
+        opacity:0;
+        transform:translateY(100%);
+    }
+    100%{
+        opacity:1.0;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fade_ani {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/* 텍스트 애니메이션 */
+
+.split_ani.splitting{overflow:hidden;}
+.split_ani.splitting .char{opacity:0;transform:translateY(100%);}
+
+.scroll_ani[data-on="on"] .split_ani.splitting .char{animation: split_ani 1s both;}
+
+/* rowgroup1 */
+.rowgroup1{position: relative;}
+.rowgroup1 .visual_box{position: relative;}
+
+.rowgroup1 .visual_list .visual_item{position: relative;}
+.rowgroup1 .visual_list .visual_item .visual_img{width: 100%;height: 940px;background-repeat: no-repeat;background-size: cover;}
+.rowgroup1 .visual_list .slick-active .visual_item .visual_img{animation: visual_ani 7500ms ease-in-out both;}
+
+.rowgroup1 .visual_list .visual_item .visual_contents{position: absolute;top: 0;left: 0;height: 100%;margin-left: calc((100% - 1660px) / 2);padding-top: 280px;}
+
+.rowgroup1 .visual_list .visual_item .visual_text{margin-bottom: 60px;font-family: 'Nexen';font-size: 86px;line-height: 90px;color: #fff;font-weight: 600;}
+.rowgroup1 .visual_list .slick-active .visual_text .word{overflow: hidden;}
+
+.rowgroup1 .visual_list .visual_item .visual_text .whitespace{width: 30px;}
+
+.rowgroup1 .visual_list .slick-active .visual_text.split_ani.splitting .char{animation: split_ani 1s both;}
+
+.rowgroup1 .visual_list .visual_item .visual_weather{position: relative;opacity: 0;}
+.rowgroup1 .visual_list .slick-active .visual_item .visual_weather{animation: fade_ani 2s 1.8s both;}
+
+.rowgroup1 .visual_list .visual_item .visual_weather:before{display: block;position: absolute;top: 50%;right: 0;width: calc(100% - 205px);height: 1px;background: #fff;
+    opacity: 0.5;}
+.rowgroup1 .visual_list .visual_item .visual_weather .weather_icon{position: absolute;top: 0;left: 0;width: 90px;height: 90px;background: url("/2023/eumseong/site/english/images/main/weather_icon.png") no-repeat;border-radius: 50%;border: 1px solid rgba(255, 255, 255, 0.5);box-sizing: border-box;background-size: 800%;font-size: 0;line-height: 0;}
+
+.rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w2{background-position-x: -88px}
+.rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w3{background-position-x: -176px}
+.rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w4{background-position-x: -264px}
+.rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w5{background-position-x: -350px}
+.rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w6{background-position-x: -438px}
+.rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w7{background-position-x: -526px}
+.rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w8{background-position-x: -614px}
+
+.rowgroup1 .visual_list .visual_item .visual_weather .weather_temperature{padding-left: 110px;font-size:30px;line-height: 90px;font-family: 'Nexen';font-weight: 400;color: #fff;}
+
+.rowgroup1 .visual_list .visual_item p{position: absolute;bottom: 67px;left: 0;font-size: 18px;line-height: 26px;color: rgba(255, 255, 255, 0.6);opacity: 0;word-break: keep-all;}
+.rowgroup1 .visual_list .slick-active .visual_item p{animation: fade_ani 2s 2.2s both;}
+
+.rowgroup1 .visual_control{position: absolute;bottom: 67px;left: 0;width: 100%;font-size: 0;line-height: 0;z-index: 50;text-align: center;}
+.rowgroup1 .visual_control .control_item{vertical-align: top;line-height: 26px;}
+
+.rowgroup1 .visual_control .control_item.arrow_btn{width: 40px;height: 100%;background: url("/2023/eumseong/site/english/images/main/visual_arrow.png") no-repeat;border: none;}
+.rowgroup1 .visual_control .control_item.arrow_btn.next_btn{transform: rotate(180deg);}
+
+.rowgroup1 .visual_control .control_item.control_text{width: 20px;padding: 0 2px;font-size: 18px;line-height: 26px;font-family: 'Nexen';font-weight: 400;color: #fff;transform: skew(-0.1deg);}
+
+.visual_scroll{position: absolute;bottom: 80px;right: calc((100% - 1660px) / 2);width: 49px;height: 43px;background: url("/2023/eumseong/site/english/images/main/visual_scroll.png") no-repeat;font-size: 0;line-height: 0;z-index: 50;}
+.visual_scroll:before{display: block;position: absolute;bottom: calc(100% + 21px);left: 50%;width: 1px;height: 54px;background-color: #fff;opacity: 0.2;}
+
+@media all and (max-width: 1660px) {
+    .rowgroup1 .visual_list .visual_item .visual_contents{margin-left: calc((100% - 1400px) / 2);}
+
+    .visual_scroll{right: calc((100% - 1400px) / 2);}
+}
+
+@media all and (max-width: 1400px) {
+    .rowgroup1 .visual_list .visual_item .visual_img{height: 800px;}
+
+    .rowgroup1 .visual_list .visual_item .visual_contents{margin-left: calc((100% - 1000px) / 2);}
+
+    .rowgroup1 .visual_list .visual_item .visual_text{margin-bottom: 40px;font-size: 72px;line-height: 74px;}
+    .rowgroup1 .visual_list .visual_item .visual_text .whitespace{width: 20px;}
+
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_temperature{padding-left: 86px;font-size: 26px;line-height: 70px;}
+    .rowgroup1 .visual_list .visual_item .visual_weather:before{width: calc(100% - 160px);}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon{width: 70px;height: 70px;}
+
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w2{background-position-x: -66px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w3{background-position-x: -136px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w4{background-position-x: -204px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w5{background-position-x: -270px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w6{background-position-x: -338px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w7{background-position-x: -408px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w8{background-position-x: -476px}
+
+    .rowgroup1 .visual_list .visual_item p{font-size: 16px;line-height: 24px;}
+
+    .rowgroup1 .visual_control{left: auto;right: calc((100% - 1000px) / 2);width: auto;}
+    .rowgroup1 .visual_control .control_item.control_text{width: auto;font-size: 16px;line-height: 24px;}
+    .rowgroup1 .visual_control .control_item.arrow_btn{width: 36px;height: 23px;background-size: 200%;}
+
+    .visual_scroll{display: none;}
+}
+
+@media all and (max-width: 1000px) {
+    .rowgroup1 .visual_list .visual_item .visual_img{height: 650px;}
+
+    .rowgroup1 .visual_list .visual_item .visual_contents{padding-top: 160px;margin-left: 3%;}
+
+    .rowgroup1 .visual_list .visual_item .visual_text{margin-bottom: 30px;font-size: 56px;line-height: 58px;}
+    .rowgroup1 .visual_list .visual_item .visual_text .whitespace{width: 10px;}
+
+    .rowgroup1 .visual_list .visual_item .visual_weather:before{width: calc(100% - 120px);}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon{width: 52px;height: 52px;}
+
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w2{background-position-x: -50px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w3{background-position-x: -100px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w4{background-position-x: -150px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w5{background-position-x: -200px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w6{background-position-x: -250px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w7{background-position-x: -300px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w8{background-position-x: -350px}
+
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_temperature{padding-left: 65px;font-size: 20px;line-height: 52px;}
+
+    .rowgroup1 .visual_list .visual_item p{font-size: 14px;line-height: 20px;}
+
+    .rowgroup1 .visual_control{right: 3%;}
+    .rowgroup1 .visual_control .control_item.control_text{font-size: 14px;line-height: 22px}
+    .rowgroup1 .visual_control .control_item.arrow_btn{width: 30px;height: 20px;}
+}
+
+@media all and (max-width: 640px) {
+    .rowgroup1 .visual_list .visual_item .visual_contents{padding-top: 90px;margin-left: 3%;}
+
+    .rowgroup1 .visual_list .visual_item .visual_text{margin-bottom: 40px;font-size: 20px;line-height: 22px;}
+    .rowgroup1 .visual_list .visual_item .visual_text .whitespace{width: 5px;}
+
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon{width: 24px;
+        height: 24px;}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w2{background-position-x: -22px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w3{background-position-x: -44px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w4{background-position-x: -66px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w5{background-position-x: -88px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w6{background-position-x: -110px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w7{background-position-x: -132px}
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_icon.w8{background-position-x: -154px}
+
+    .rowgroup1 .visual_list .visual_item .visual_weather .weather_temperature{padding-left: 32px;font-size: 12px;line-height: 24px;}
+
+    .rowgroup1 .visual_list .visual_item .visual_weather:before{width: calc(100% - 65px);}
+
+    .rowgroup1 .visual_list .visual_item p{display: none;}
+
+    .rowgroup1 .visual_list .visual_item .visual_img{height: 240px;}
+    .rowgroup1 .visual_control{bottom: 22px;right: 3%;}
+    .rowgroup1 .visual_control .control_item.arrow_btn{display: none;}
+    .rowgroup1 .visual_control .control_item.control_text{font-size: 10px;line-height: 18px}
+}
+
+
+/* rowgroup2 */
+.row_title{font-family: 'Nexen';font-weight: 600;font-size: 30px;line-height: 40px;color: #26293d;}
+
+.row_title .whitespace{width: 10px;}
+
+@media all and (max-width: 640px) {
+    .row_title{font-size: 18px;line-height: 26px;}
+
+    .row_title .whitespace{width: 5px;}
+}
+
+.rowgroup2{position: relative;padding-top: 113px;margin-bottom: 177px;}
+.rowgroup2:before{display: block;position: absolute;top: 8px;right: calc(50% + 56px);width: 1137px;height: 512px;background: url("/2023/eumseong/site/english/images/main/row2_bg.png") no-repeat;background-size: contain;}
+
+.rowgroup2 .row_title{margin-bottom: 82px;text-align: center;}
+
+.rowgroup2 .about_list{font-size: 0;line-height: 0;text-align: center;}
+.rowgroup2 .about_list .about_item{display: inline-block;width: 260px;vertical-align: top;}
+.rowgroup2 .about_list .about_item .about_btn{position: relative;width: 100%;font-size: 18px;line-height: 26px;color: #26293d;text-align: center;vertical-align: top;word-break: keep-all;transition: transform 250ms ease-in-out;}
+
+.rowgroup2 .about_list .about_item .about_btn i{display: block;position: relative;top: 0;left: calc(50% - 50px);width: 100px;height: 100px;margin-bottom: 25px;border-radius: 45px;background: transparent;box-shadow: 16px 26px 80px 0 rgba(32, 54, 121, 0.15);transition: background 250ms ease-in-out;}
+
+.rowgroup2 .about_list .about_item .about_btn i:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #fff url("/2023/eumseong/site/english/images/main/about_icon.png") no-repeat;background-size: 600%;border-radius: 45px;transition: background-color 250ms ease-in-out;}
+.rowgroup2 .about_list .about_item.a2 .about_btn i:before{background-position-x: -100px;}
+.rowgroup2 .about_list .about_item.a3 .about_btn i:before{background-position-x: -200px;}
+.rowgroup2 .about_list .about_item.a4 .about_btn i:before{background-position-x: -300px;}
+.rowgroup2 .about_list .about_item.a5 .about_btn i:before{background-position-x: -400px;}
+.rowgroup2 .about_list .about_item.a6 .about_btn i:before{background-position-x: -500px;}
+
+.rowgroup2 .about_list .about_item .about_btn[target="_blank"] i:after, .rowgroup2 .about_list .about_item .about_btn.down i:after{display: block;position: absolute;bottom: 0;right: -6px;width: 33px;height: 33px;background: #4a4f66 url("/2023/eumseong/site/english/images/main/about_new.png") no-repeat;box-sizing: border-box;border: none;border-radius: 50%;background-size: 200%;}
+.rowgroup2 .about_list .about_item .about_btn.down i:after{background-position-x: -33px;}
+
+.rowgroup2 .about_list .about_item .about_btn span{width: 100%;}
+
+@media all and (max-width: 1660px) {
+    .rowgroup2 .about_list .about_item{width: 230px;}
+}
+
+@media all and (min-width:1401px) {
+    .rowgroup2 .about_list .about_item .about_btn:hover i:before{background-position-y: -100px;}
+}
+
+@media all and (max-width: 1400px) {
+    .rowgroup2{padding-top: 80px;margin-bottom: 140px;}
+    .rowgroup2:before{width: 840px;height: 378px;}
+
+    .rowgroup2 .row_title{margin-bottom: 60px;}
+
+    .rowgroup2 .about_list .about_item{width: 165px;}
+
+    .rowgroup2 .about_list .about_item .about_btn{font-size: 15px;line-height: 23px;}
+
+    .rowgroup2 .about_list .about_item .about_btn i{left: calc(50% - 40px);width: 80px;height: 80px;margin-bottom: 20px;}
+
+    .rowgroup2 .about_list .about_item.a2 .about_btn i:before{background-position-x: -80px;}
+    .rowgroup2 .about_list .about_item.a3 .about_btn i:before{background-position-x: -160px;}
+    .rowgroup2 .about_list .about_item.a4 .about_btn i:before{background-position-x: -240px;}
+    .rowgroup2 .about_list .about_item.a5 .about_btn i:before{background-position-x: -320px;}
+    .rowgroup2 .about_list .about_item.a6 .about_btn i:before{background-position-x: -400px;}
+
+    .rowgroup2 .about_list .about_item .about_btn[target="_blank"] i:after, .rowgroup2 .about_list .about_item .about_btn.down i:after{width: 28px;height: 28px;}
+    .rowgroup2 .about_list .about_item .about_btn.down i:after{background-position-x: -28px;}
+}
+
+@media all and (max-width: 1400px) and (min-width: 1001px) {
+    .rowgroup2 .about_list .about_item .about_btn:hover i:before{background-position-y: -80px;}
+}
+
+@media all and (min-width: 1001px) {
+
+    .rowgroup2 .about_list .about_item .about_btn:hover{transform: translateY(-10px);transition: transform 250ms ease-in-out;}
+
+    .rowgroup2 .about_list .about_item .about_btn:hover i{background: linear-gradient(125deg, #4265cf, #22b69d);transition: background 250ms ease-in-out;}
+    .rowgroup2 .about_list .about_item .about_btn:hover i:before{background-color: transparent;transition: background-color 250ms ease-in-out;}
+}
+
+@media all and (max-width: 1000px) {
+    .rowgroup2{padding-top: 60px;margin-bottom: 100px;}
+    .rowgroup2:before{width: 520px;height: 235px;}
+
+    .rowgroup2 .row_title{margin-bottom: 40px;}
+
+    .rowgroup2 .about_list{width: 500px;margin: 0 auto;}
+
+    .rowgroup2 .about_list .about_item:nth-child(3n){margin-right: 0;}
+    .rowgroup2 .about_list .about_item:nth-child(n + 4){margin-top: 35px;}
+}
+
+@media all and (max-width: 640px) {
+    .rowgroup2{padding-top: 40px;margin-bottom: 54px;}
+    .rowgroup2:before{right: calc(50% - 100px);width: 345px;height: 155px;}
+
+    .rowgroup2 .row_title{margin-bottom: 25px;}
+
+    .rowgroup2 .about_list{width: 340px;}
+    .rowgroup2 .about_list .about_item{width: 90px;margin-right: 34px;}
+    .rowgroup2 .about_list .about_item:nth-child(3n){margin-right: 0;}
+    .rowgroup2 .about_list .about_item:nth-child(n + 4){margin-top: 20px;}
+
+    .rowgroup2 .about_list .about_item .about_btn{font-size: 12px;line-height: 16px;}
+    .rowgroup2 .about_list .about_item .about_btn i{left: calc(50% - 34px);width: 68px;height: 68px;margin-bottom: 16px;}
+    .rowgroup2 .about_list .about_item.a2 .about_btn i:before{background-position-x: -68px;}
+    .rowgroup2 .about_list .about_item.a3 .about_btn i:before{background-position-x: -136px;}
+    .rowgroup2 .about_list .about_item.a4 .about_btn i:before{background-position-x: -204px;}
+    .rowgroup2 .about_list .about_item.a5 .about_btn i:before{background-position-x: -272px;}
+    .rowgroup2 .about_list .about_item.a6 .about_btn i:before{background-position-x: -340px;}
+
+    .rowgroup2 .about_list .about_item .about_btn[target="_blank"] i:after, .rowgroup2 .about_list .about_item .about_btn.down i:after{right: -3px;width: 23px;height: 23px;}
+    .rowgroup2 .about_list .about_item .about_btn.down i:after{background-position-x: -23px;}
+
+}
+
+/* rowgroup3 */
+
+.more_btn{position: relative;width: 70px;height: 70px;border-radius: 50%;font-size: 0;line-height: 0;background: linear-gradient(145deg, #4265cf, #22b69d);}
+.more_btn:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: url("/2023/eumseong/site/english/images/main/tourism_more.png") no-repeat center;}
+
+@media all and (max-width: 800px) {
+    .more_btn{width: 50px;height: 50px;}
+    .more_btn:before{background-size: 40%;}
+}
+
+@media all and (max-width: 640px) {
+    .more_btn{width: 30px;height: 30px;}
+}
+
+.rowgroup3{margin-bottom: 220px;}
+.rowgroup3 .tourism_title{position: absolute;top: 195px;left: 0;width: 490px;}
+.rowgroup3 .tourism_title:before{display: block;position: absolute;top: -90px;left: -337px;width: 732px;height: 140px;background: url("/2023/eumseong/site/english/images/main/row3_bg.png") no-repeat;background-size: contain;}
+
+.rowgroup3 .tourism_title .row_title em{color: #3f65d9;}
+.rowgroup3 .tourism_title p{word-break: keep-all;font-size: 18px;line-height: 28px;color: #757b8e;}
+
+.rowgroup3 .tourism_wrap{margin-left: 605px;font-size: 0;line-height: 0;}
+
+.rowgroup3 .tourism_list{display: inline-block;width: 452px;margin-right: 133px;vertical-align: top;}
+.rowgroup3 .tourism_list .slick-list{overflow: unset;}
+
+.rowgroup3 .tourism_list .tourism_item{position: relative;width: 100%;height: 460px;}
+.rowgroup3 .tourism_list .tourism_item img{border-radius: 60px;box-shadow: 25px 17px 50px 0px rgba(74, 79, 102, 0.1);vertical-align: top;}
+
+.rowgroup3 .tourism_list .tourism_item .tourism_more{position: absolute;bottom: 30px;right: -34px;}
+
+.rowgroup3 .tourism_dot{display: inline-block;position: relative;width: calc(100% - 590px);/*margin-top: 60px;*/margin-top: 30px;vertical-align: top;}
+.rowgroup3 .tourism_dot:before{display: block;position: absolute;top: 50%;right: calc(100% + 33px);width: 730px;height: 1px;background-color: #d5d7dd;}
+
+.rowgroup3 .tourism_dot .slick-list{padding: 160px 0 !important;}
+/*.rowgroup3 .tourism_dot .slick-list{padding: 130px 0 !important;}*/
+
+.rowgroup3 .tourism_dot .slick-list .slick-slide{border: none;}
+
+.rowgroup3 .tourism_dot .dot_item{position: relative;padding-left: 47px;vertical-align: top;}
+.rowgroup3 .tourism_dot .slick-active .dot_item:before{display: block;position: absolute;top: calc(50% - 8px);left: 0;width: 16px;height: 16px;border-radius: 50%;background-color: #26293d;}
+
+.rowgroup3 .tourism_dot .dot_item .dot_btn{display: table;width: 100%;height: 80px;/*height: 58px;*/font-size: 18px;line-height: 28px;color: #d5d7dd;font-family: 'Nexen';text-align: left;vertical-align:top;border: none;}
+.rowgroup3 .tourism_dot .dot_item .dot_btn span{display: table-cell;vertical-align: middle;word-break: keep-all;transform: skew(-0.1deg);}
+
+.rowgroup3 .tourism_dot .slick-active .dot_item .dot_btn{/*height: 80px;*/font-size: 28px;line-height: 34px;color: #26293d;}
+
+@media all and (max-width: 1660px) {
+    .rowgroup3 .tourism_wrap{margin-left: 440px;}
+    .rowgroup3 .tourism_title{top: 170px;width: 410px;}
+
+    .rowgroup3 .tourism_list{margin-right: 60px;}
+
+    .rowgroup3 .tourism_dot:before{width: 430px;}
+}
+
+@media all and (max-width: 1660px) and (min-width: 1401px) {
+    .rowgroup3 .tourism_list{width: 380px;}
+    .rowgroup3 .tourism_list .tourism_item{height: 400px;}
+
+    .rowgroup3 .tourism_dot{width: calc(100% - 490px);margin-top: 0;}
+}
+
+@media all and (max-width: 1400px) {
+    .rowgroup3{margin-bottom: 150px;}
+    .rowgroup3 .tourism_wrap{margin-left: 0;}
+    .rowgroup3 .tourism_title{position: relative;top: auto;left: auto;width: 100%;margin-bottom: 50px;}
+
+    .rowgroup3 .tourism_list{margin-right: 60px;}
+    .rowgroup3 .tourism_dot{width: calc(100% - 512px);}
+    .rowgroup3 .tourism_dot:before{width: 520px;}
+
+}
+
+@media all and (max-width: 1000px) {
+    .rowgroup3 .tourism_title:before{top: -30px;left: -5%;width: 360px;height: 70px;}
+
+    .rowgroup3 .tourism_list{width: 355px;margin-right: 45px;}
+    .rowgroup3 .tourism_list .tourism_item{height: 360px;}
+
+    .rowgroup3 .tourism_dot{width: calc(100% - 400px);}
+    .rowgroup3 .tourism_dot:before{right: calc(100% + 20px);width: 400px;}
+    .rowgroup3 .tourism_dot .slick-list{padding: 120px 0 !important;}
+    .rowgroup3 .tourism_dot .dot_item .dot_btn{height: 60px;font-size: 16px;line-height: 26px;}
+    .rowgroup3 .tourism_dot .slick-active .dot_item .dot_btn{font-size: 24px;line-height: 30px;}
+}
+
+@media  all and (max-width: 800px) {
+    .rowgroup3{margin-bottom: 100px;}
+
+    .rowgroup3 .tourism_list{display: block;width: 56vw;margin: 0 auto;}
+    .rowgroup3 .tourism_list .tourism_item{height: 57vw;}
+    .rowgroup3 .tourism_list .tourism_item img{border-radius: 35px;}
+
+    .rowgroup3 .tourism_list .tourism_item .tourism_more{right: -25px;}
+
+    .rowgroup3 .tourism_dot{display: block;width: 100%;}
+    .rowgroup3 .tourism_dot .slick-list{padding: 80px 0 !important;}
+    .rowgroup3 .tourism_dot .dot_item{padding-left: 0;}
+
+    .rowgroup3 .tourism_dot .slick-active .dot_item:before{display: none;}
+
+    .rowgroup3 .tourism_dot .dot_item .dot_btn{width: auto;height: auto;font-size: 16px;line-height: 40px;margin: 0 auto}
+    .rowgroup3 .tourism_dot .slick-active .dot_item .dot_btn{font-size: 18px;line-height: 40px;text-align: center;}
+}
+
+@media all and (min-width: 1001px) {
+    .rowgroup3 .tourism_title .row_title{margin-bottom: 26px;font-size: 60px;line-height: 70px}
+    .rowgroup3 .tourism_title .row_title .whitespace{width: 25px;}
+}
+
+@media all and (max-width: 1000px) and (min-width: 641px) {
+    .rowgroup3 .tourism_title .row_title{font-size: 40px;line-height: 50px;}
+}
+
+@media  all and (max-width: 640px) {
+    .rowgroup3{margin-bottom: 75px;}
+    .rowgroup3 .tourism_title{margin-bottom: 12px;text-align: center;}
+    .rowgroup3 .tourism_title:before{top: -12px;left: calc(50% - 73px);width: 147px;height: 28px;background-image: url("/2023/eumseong/site/english/images/main/row3_m_bg.png")}
+
+    .rowgroup3 .tourism_title p{display: none;}
+
+    .rowgroup3 .tourism_list .tourism_item img{border-radius: 20px;}
+    .rowgroup3 .tourism_list .tourism_item .tourism_more{bottom: 25px;right: -13px;}
+
+    .rowgroup3 .tourism_dot{margin-top: 12px;}
+    .rowgroup3 .tourism_dot .slick-list{padding: 44px 0 !important;}
+
+    .rowgroup3 .tourism_dot .dot_item .dot_btn{font-size: 11px;line-height: 22px;}
+    .rowgroup3 .tourism_dot .slick-active .dot_item .dot_btn{font-size: 13px;line-height: 22px;}
+}
+
+/* rowgroup4 */
+.rowgroup4{margin-bottom: 185px;}
+.rowgroup4 .festival_wrap{position: relative;}
+.rowgroup4 .festival_contents{position: absolute;top: 133px;left: 0;width: 810px;}
+.rowgroup4 .festival_contents:before{display: block;position: absolute;top: -86px;left: -130px;width: 1439px;height: 140px;background: url("/2023/eumseong/site/english/images/main/row4_bg.png") no-repeat;background-size: contain;}
+
+.rowgroup4 .festival_contents .row_title{padding-right: 50px;margin-bottom: 77px;text-align: right;}
+.rowgroup4 .festival_contents .row_title em{color: #dd496c;}
+
+.rowgroup4 .festival_dot .slick-list{padding-right: 540px;}
+
+.rowgroup4 .festival_dot .dot_item{padding-right: 45px;text-align: center;}
+.rowgroup4 .festival_dot .dot_item .dot_btn{border: none;transition: transform 250ms ease-in-out;}
+.rowgroup4 .festival_dot .dot_item .dot_btn img{height: 182px;border-radius: 60px;object-fit: cover;}
+
+.rowgroup4 .festival_dot .dot_item .dot_btn .dot_text{position: relative;margin-top: 58px;padding: 0 5px;font-size: 18px;line-height: 28px;word-break: keep-all;font-family: 'Nexen';color: #26293d;transform: skew(-0.1deg);}
+.rowgroup4 .festival_dot .dot_item .dot_btn .dot_text:before{display: block;position: absolute;top: -36px;left: calc(50% - 5px);width: 10px;height: 10px;border-radius: 50%;background-color: #e3e5e8;}
+
+.rowgroup4 .festival_dot .slick-active .dot_item .dot_btn .dot_text:before{left: calc(50% - 8px);width: 16px;height: 16px;background-color: #26293d;}
+
+.rowgroup4 .festival_control, .rowgroup5 .culture_control{position: relative;margin-top: 60px;margin-right: 45px;text-align: center;font-size: 0;line-height: 0;}
+.rowgroup4 .festival_control:before, .rowgroup5 .culture_control:before{display: block;position: absolute;top: 50%;left: 0;width: 100%;height: 1px;background-color: #d5d7dd;}
+.rowgroup4 .festival_control:after, .rowgroup5 .culture_control:after{display: block;position: absolute;top: 0;left: calc(50% - 125px);width: 250px;height:100%;background-color: #fff;}
+.rowgroup4 .festival_control .festival_arrow, .rowgroup5 .culture_control .culture_arrow{position: relative;width: 80px;height: 80px;border: 1px solid #d5d7dd;border-radius: 50%;background: url("/2023/eumseong/site/english/images/main/festival_arrow.png") no-repeat;z-index: 1;transition: border-color 250ms ease-in-out;}
+.rowgroup4 .festival_control .festival_arrow.next_btn, .rowgroup5 .culture_control .culture_arrow.next_btn{margin-left: 24px;transform: rotate(180deg);}
+
+.rowgroup4 .festival_list{margin-left: 845px;}
+.rowgroup4 .festival_list .slick-list{overflow: unset;}
+
+.rowgroup4 .festival_list .festival_item .festival_img{position: relative;margin-bottom: 63px;}
+.rowgroup4 .festival_list .festival_item .festival_img:before{display: block;position: absolute;bottom: -50px;right: 225px;width: 196px;height: 184px;background: url("/2023/eumseong/site/english/images/main/festival_character.png") no-repeat;background-size: contain;}
+.rowgroup4 .festival_list .festival_item.f1 .festival_img:before{bottom: -63px;right: 81px;width: 207px;height: 208px;background-image: url("/2023/eumseong/site/english/images/main/festival_character3.png");}
+.rowgroup4 .festival_list .festival_item.f2 .festival_img:before{bottom: -60px;right: 56px;width: 270px;height: 230px;background-image: url("/2023/eumseong/site/english/images/main/festival_character2.png");}
+.rowgroup4 .festival_list .festival_item.f3 .festival_img:before{bottom: -60px;right: 30px;width: 165px;height: 173px;background-image: url("/2023/eumseong/site/english/images/main/festival_character1.png");}
+
+
+.rowgroup4 .festival_list .festival_item .festival_img .festival_num{position: absolute;bottom: -60px;left: 50px;font-size: 120px;line-height: 130px;color: #fff;font-family: 'Nexen';font-weight: 600;}
+
+.rowgroup4 .festival_list .festival_item .festival_img img{border-radius: 30px;box-shadow: 25px 17px 50px 0px rgba(74, 79, 102, 0.1);}
+
+.rowgroup4 .festival_list .festival_item .festival_con{padding: 0 50px;}
+.rowgroup4 .festival_list .festival_item .festival_con .festival_title{display: inline-block;position: relative;margin-bottom: 30px;padding-right: 85px;font-size: 24px;line-height: 40px;font-family: 'Nexen';font-weight: 600;color: #26293d;}
+.rowgroup4 .festival_list .festival_item .festival_con .festival_title span{vertical-align: top;}
+.rowgroup4 .festival_list .festival_item .festival_con .festival_title .whitespace{width: 10px;}
+
+.rowgroup4 .festival_list .festival_item .festival_con .festival_title .festival_more{position: absolute;top: -20px;right: 0;background: linear-gradient(145deg, #9b67c4, #ce4c6b);opacity: 0;transform: translateY(30%);}
+
+.rowgroup4 .festival_list .slick-active .festival_item .festival_con .festival_title .festival_more{opacity: 1;transform: translateY(0);transition: opacity 1s ease-in-out, transform .7s ease-in-out;}
+
+.rowgroup4 .festival_list .slick-active .festival_item.f1 .festival_con .festival_title .festival_more{transition-delay: 2.2s;}
+.rowgroup4 .festival_list .slick-active .festival_item.f2 .festival_con .festival_title .festival_more{transition-delay: 2.5s;}
+.rowgroup4 .festival_list .slick-active .festival_item.f3 .festival_con .festival_title .festival_more{transition-delay: 2.5s;}
+
+.rowgroup4 .festival_list .festival_item .festival_con p{font-size: 18px;line-height: 30px;color: #757b8e;word-break: keep-all;}
+
+/* 애니메이션 */
+.rowgroup4 .festival_list .festival_item .festival_ani.splitting{overflow:hidden;}
+.rowgroup4 .festival_list .festival_item  .festival_ani.splitting .char{opacity:0;transform:translateY(100%);}
+
+.rowgroup4 .festival_list .slick-active .festival_ani.splitting .char{animation: split_ani 1s both;}
+
+@media all and (max-width: 1660px) {
+    .rowgroup4 .festival_contents{width: 700px;}
+    .rowgroup4 .festival_dot .slick-list{padding-right: 460px;}
+
+    .rowgroup4 .festival_list{margin-left: 750px;}
+}
+
+@media all and (max-width: 1400px) {
+    .rowgroup4{margin-bottom: 140px;}
+
+    .rowgroup4 .festival_contents{position: relative;top: auto;left: auto;max-width: 750px;width: 100%;margin: 0 auto;}
+    .rowgroup4 .festival_contents .row_title{margin-bottom: 40px;padding-right: 0;text-align: center;}
+
+    .rowgroup4 .festival_dot .slick-list{padding-right: 490px;}
+    .rowgroup4 .festival_dot .dot_item{padding-right: 30px;}
+    .rowgroup4 .festival_dot .dot_item .dot_btn .dot_text{margin-top: 40px;}
+    .rowgroup4 .festival_dot .dot_item .dot_btn .dot_text:before{top: -25px;}
+
+    .rowgroup4 .festival_control, .rowgroup5 .culture_control{margin-top: 10px;margin-right: 0;margin-bottom: 20px;}
+
+    .rowgroup4 .festival_list{width: 100%;max-width: 815px;margin: 0 auto;}
+
+    
+}
+
+@media all and (min-width: 1001px) {
+    .rowgroup4 .festival_contents .row_title{font-size: 60px;line-height: 70px;}
+
+    .rowgroup4 .festival_dot .dot_item{margin-top: 10px;}
+    .rowgroup4 .festival_dot .dot_item .dot_btn:hover{transform: translateY(-10px);transition: transform 250ms ease-in-out;}
+
+    .rowgroup4 .festival_control .festival_arrow:hover, .rowgroup5 .culture_control .culture_arrow:hover{border-color: #26293d;transition: border-color 250ms ease-in-out;}
+}
+
+@media all and (max-width: 1000px) {
+    .rowgroup4 .festival_contents:before{top: -30px;left: calc(50% - 350px);width: 700px;height: 70px;}
+
+    .rowgroup4 .festival_dot .dot_item .dot_btn img{height: 150px;border-radius: 30px;}
+    .rowgroup4 .festival_dot .dot_item .dot_btn .dot_text{margin-top: 30px;font-size: 16px;line-height: 26px;}
+    .rowgroup4 .festival_dot .dot_item .dot_btn .dot_text:before, .rowgroup4 .festival_dot .slick-active .dot_item .dot_btn .dot_text:before{top: -15px;width: 10px;height: 10px;}
+
+    .rowgroup4 .festival_control:after, .rowgroup5 .culture_control:after{left: calc(50% - 90px);width: 180px;}
+    .rowgroup4 .festival_control .festival_arrow, .rowgroup5 .culture_control .culture_arrow{width: 50px;height: 50px;background-size: contain;}
+    .rowgroup4 .festival_control .festival_arrow.next_btn, .rowgroup5 .culture_control .culture_arrow.next_btn{margin-left: 15px;}
+
+}
+
+@media all and (max-width: 800px) {
+    .rowgroup4{margin-bottom: 100px;}
+    .rowgroup4 .festival_dot .slick-list{padding-right: 66%;}
+
+    .rowgroup4 .festival_dot .dot_item .dot_btn img{height: 130px;}
+
+    .rowgroup4 .festival_dot .dot_item .dot_btn .dot_text{font-size: 14px;line-height: 24px;}
+
+    .rowgroup4 .festival_list .festival_item .festival_img{margin-bottom: 40px;}
+
+    .rowgroup4 .festival_list .festival_item .festival_img .festival_num{left: 30px;bottom: -40px;font-size: 80px;line-height: 90px;}
+
+    .rowgroup4 .festival_list .festival_item .festival_img:before{right: 10%;bottom: -30px;width: 140px;height: 130px;}
+
+    .rowgroup4 .festival_list .festival_item.f1 .festival_img:before{bottom: -30px;right: 10%;width: 140px;height: 145px;}
+    .rowgroup4 .festival_list .festival_item.f2 .festival_img:before{bottom: -30px;right: 10%;width: 180px;height: 153px;}
+    .rowgroup4 .festival_list .festival_item.f3 .festival_img:before{right: 5%;bottom: -30px;width: 140px;height: 140px;}
+
+
+    .rowgroup4 .festival_list .festival_item .festival_con{padding: 0 30px;}
+
+    .rowgroup4 .festival_list .festival_item .festival_con .festival_title{padding-right: 60px;margin-bottom: 20px;font-size: 20px;line-height: 30px;}
+    .rowgroup4 .festival_list .festival_item .festival_con .festival_title .festival_more{top: -10px;}
+
+    .rowgroup4 .festival_list .festival_item .festival_con p{font-size: 16px;line-height: 26px;}
+
+}
+
+@media all and (max-width: 1000px) and (min-width: 641px) {
+
+    .rowgroup4 .festival_contents .row_title{font-size: 40px;line-height: 50px;text-align: center;}
+}
+
+@media all and (max-width: 640px) {
+    .rowgroup4{margin-bottom: 60px;}
+
+    .rowgroup4 .festival_contents:before{top: -8px;left: calc(50% - 145px);width: 289px;height: 28px;background-image: url("/2023/eumseong/site/english/images/main/row4_m_bg.png");}
+    .rowgroup4 .festival_contents .row_title{margin-bottom: 40px;text-align: center;}
+
+    .rowgroup4 .festival_dot{margin-bottom: 22px;}
+    .rowgroup4 .festival_dot .slick-list{padding-right: 67%;}
+
+    .rowgroup4 .festival_dot .dot_item{padding: 0 5%;}
+
+    .rowgroup4 .festival_dot .dot_item .dot_btn img{display: none;}
+    .rowgroup4 .festival_dot .dot_item .dot_btn .dot_text{margin-top: 0;padding: 15px 0 0;font-size: 11px;line-height: 17px;}
+    .rowgroup4 .festival_dot .dot_item .dot_btn .dot_text:before, .rowgroup4 .festival_dot .slick-active .dot_item .dot_btn .dot_text:before{top: 0;left: calc(50% - 3px);width: 7px;height: 7px;}
+
+    .rowgroup4 .festival_control, .rowgroup5 .culture_control{display: none;}
+
+    .rowgroup4 .festival_list .festival_item .festival_img{margin-bottom: 28px;}
+    .rowgroup4 .festival_list .festival_item .festival_img img{border-radius: 17px;}
+
+    .rowgroup4 .festival_list .festival_item .festival_img .festival_num{left: 30px;bottom: -23px;font-size: 40px;line-height: 50px;}
+
+    .rowgroup4 .festival_list .festival_item .festival_img:before{right: 20px;bottom: -20px;width: 70px;height: 66px;}
+
+    .rowgroup4 .festival_list .festival_item.f1 .festival_img:before{bottom: -20px;right: 20px;width: 70px;height: 73px;}
+    .rowgroup4 .festival_list .festival_item.f2 .festival_img:before{bottom: -20px;right: 20px;width: 94px;height: 80px;}
+    .rowgroup4 .festival_list .festival_item.f3 .festival_img:before{right: 0;bottom: -20px;width: 69px;height: 70px;}
+
+    .rowgroup4 .festival_list .festival_item .festival_con{padding: 0;}
+
+    .rowgroup4 .festival_list .festival_item .festival_con .festival_title{margin-bottom: 12px;padding-right: 42px;font-size: 12px;line-height: 18px;}
+    .rowgroup4 .festival_list .festival_item .festival_con .festival_title .whitespace{width: 3px;}
+    .rowgroup4 .festival_list .festival_item .festival_con .festival_title .festival_more{top: -7px;}
+
+    .rowgroup4 .festival_list .festival_item .festival_con p{font-size: 12px;line-height: 20px;}
+}
+
+/* rowgroup5 */
+.rowgroup5{position: relative;margin-bottom: 140px;}
+.rowgroup5:before{display: block;position: absolute;top: 30px;left: calc(50% - 335px);width: 1291px;height: 140px;background: url("/2023/eumseong/site/english/images/main/row5_bg.png") no-repeat;background-size: contain;}
+
+.rowgroup5 .row_title{margin-bottom: 32px;margin-left: calc((100% - 1660px) / 2);}
+.rowgroup5 .row_title em{color: #0da98f;}
+
+.rowgroup5 .culture_list{padding-left: calc((100% - 1660px) / 2);}
+.rowgroup5 .culture_list .slick-slide{width: 556px}
+
+.rowgroup5 .culture_list .culture_item{padding-right: 50px;}
+.rowgroup5 .culture_list .culture_item .culture_link{width: 100%;vertical-align: top;transition: transform 250ms ease-in-out;}
+.rowgroup5 .culture_list .culture_item .culture_img{position: relative;margin-bottom: 30px;}
+.rowgroup5 .culture_list .culture_item .culture_img:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: linear-gradient(to top, #19a18a 0%, rgba(63, 101, 217, 0.98) 31%, transparent 58%);opacity: 0;border-radius: 60px;transition: opacity 0.5s ease-in-out;}
+
+.rowgroup5 .culture_list .culture_item .culture_img img{border-radius: 60px;box-shadow: 25px 17px 50px 0px rgba(74, 79, 102, 0.1);}
+.rowgroup5 .culture_list .culture_item .culture_img .culture_more{position: absolute;bottom: -14px;right: 0;opacity: 0;z-index: 1;}
+.rowgroup5 .culture_list .culture_item .culture_text{padding: 0 5px;text-align: center;font-size: 18px;line-height: 30px;font-family: 'Nexen';word-break: keep-all;transform: skew(-0.1deg);}
+
+.rowgroup5 .culture_control{margin-left: calc((100% - 1660px) / 2);margin-right: calc((100% - 1660px) / 2);}
+
+@media all and (max-width: 1660px) {
+    .rowgroup5 .row_title{margin-left: calc((100% - 1400px) / 2);}
+
+    .rowgroup5 .culture_list{padding-left: calc((100% - 1400px) / 2);}
+
+    .rowgroup5 .culture_control{margin-left: calc((100% - 1400px) / 2);margin-right: calc((100% - 1400px) / 2);}
+}
+
+@media all and (max-width: 1400px) {
+    .rowgroup5{margin-bottom: 100px;}
+    .rowgroup5 .row_title{margin-left: calc((100% - 1000px) / 2);}
+    .rowgroup5 .culture_list{padding-left: calc((100% - 1000px) / 2);}
+
+    .rowgroup5 .culture_list .slick-slide{width: 450px;}
+
+    .rowgroup5 .culture_control{margin-left: calc((100% - 1000px) / 2);margin-right: calc((100% - 1000px) / 2);}
+}
+
+@media all and (min-width: 1001px) {
+    .rowgroup5 .row_title{font-size: 60px;line-height: 70px;}
+
+    .rowgroup5 .culture_list .culture_item{margin-top: 10px;}
+    .rowgroup5 .culture_list .culture_item .culture_link:hover{transform: translateY(-10px);transition: transform 250ms ease-in-out;}
+
+    .rowgroup5 .culture_list .culture_item .culture_link:hover .culture_img:before{
+        opacity: 0.5;transition: opacity 0.5s ease-in-out;}
+    .rowgroup5 .culture_list .culture_item .culture_link:hover .culture_img .culture_more{opacity: 1;}
+}
+
+@media all and (max-width: 1000px) {
+    .rowgroup5:before{width: 620px;height: 70px;margin-bottom: 80px}
+
+    .rowgroup5 .row_title{margin-left: 3%;margin-right: 3%;margin-bottom: 35px;}
+
+    .rowgroup5 .culture_list{padding-left: 3%;}
+    .rowgroup5 .culture_list .slick-slide{width: 315px;}
+    .rowgroup5 .culture_list .culture_item{padding-right: 35px;}
+    .rowgroup5 .culture_list .culture_item .culture_img img{border-radius: 40px;}
+
+    .rowgroup5 .culture_list .culture_item .culture_text{font-size: 15px;line-height: 25px;}
+
+    .rowgroup5 .culture_control{margin-left: 3%;margin-right: 3%;}
+}
+
+@media all and (max-width: 1000px) and (min-width: 641px) {
+    .rowgroup5 .row_title{font-size: 40px;line-height: 50px;}
+}
+
+@media all and (max-width: 640px) {
+    .rowgroup5{margin-bottom: 60px;}
+    .rowgroup5:before{top: -6px;left: calc(50% - 140px);width: 258px;height: 28px;background-image: url("/2023/eumseong/site/english/images/main/row5_m_bg.png");}
+
+    .rowgroup5 .row_title{margin-bottom: 30px;text-align: center;}
+
+    .rowgroup5 .culture_list .slick-slide{width: 275px;}
+    .rowgroup5 .culture_list .culture_item{padding-right: 20px;}
+
+    .rowgroup5 .culture_list .culture_item .culture_img{margin-bottom: 20px;}
+    .rowgroup5 .culture_list .culture_item .culture_img img{border-radius: 20px;}
+
+    .rowgroup5 .culture_list .culture_item .culture_text{font-size: 12px;line-height: 20px;}
+}
+
+/* rowgroup6 */
+
+.rowgroup6{margin-bottom: 115px;}
+.rowgroup6 .useful_box{position: relative;margin-bottom: 180px;padding-top: 60px;}
+.rowgroup6 .useful_box:before{display: block;position: absolute;top: calc(100% + 50px);left: 50%;width: 1px;height: 68px;background-color: #d5d7dd;}
+
+.rowgroup6 .useful_box .useful_title{position: absolute;top: 0;left: calc(50% - 200px);width: 400px;padding: 30px;text-align: center;border-radius: 50px;background-color: #fff;}
+
+.rowgroup6 .useful_box .useful_list{border-radius: 60px 60px 30px 30px;padding: 40px 25px 20px;background: linear-gradient(145deg, rgba(228, 238, 255, 0.8), rgba(241, 232, 236, 0.8));font-size: 0;line-height: 0;}
+.rowgroup6 .useful_box .useful_list .useful_item{display: inline-block;position: relative;width: 25%;vertical-align: top;}
+.rowgroup6 .useful_box .useful_list .useful_item:before{display: block;position: absolute;top: calc(50% - 5px);right: 0;width: 10px;height: 10px;border-radius: 50%;background-color: #fff;}
+.rowgroup6 .useful_box .useful_list .useful_item:nth-child(4n):before{display: none;}
+
+.rowgroup6 .useful_box .useful_list .useful_item .useful_link{width: 100%;height: 150px; vertical-align: top;background: url("/2023/eumseong/site/english/images/main/row6_icon.png") no-repeat center;}
+.rowgroup6 .useful_box .useful_list .useful_item.u2 .useful_link{background-image: url("/2023/eumseong/site/english/images/main/row6_icon2.png");}
+.rowgroup6 .useful_box .useful_list .useful_item.u3 .useful_link{background-image: url("/2023/eumseong/site/english/images/main/row6_icon3.png");}
+.rowgroup6 .useful_box .useful_list .useful_item.u4 .useful_link{background-image: url("/2023/eumseong/site/english/images/main/row6_icon4.png");}
+
+.rowgroup6 .sns_list{font-size: 0;line-height: 0;text-align: center;}
+.rowgroup6 .sns_list .sns_item{display: inline-block;margin: 0 35px;vertical-align: top;}
+.rowgroup6 .sns_list .sns_item .sns_link{vertical-align: top;width: 80px;height: 80px;border-radius: 50%;border: 1px solid #d5d7dd;background: url("/2023/eumseong/site/english/images/main/row6_sns.png") no-repeat;background-size: 400%;transition: border-color 250ms ease-in-out;}
+.rowgroup6 .sns_list .sns_item.s2 .sns_link{background-position-x: -76px;}
+.rowgroup6 .sns_list .sns_item.s3 .sns_link{background-position-x: -156px;}
+.rowgroup6 .sns_list .sns_item.s4 .sns_link{background-position-x: -234px;}
+
+@media all and (min-width: 1001px) {
+    .rowgroup6 .sns_list .sns_item .sns_link:hover{border-color: #26293d;transition: border-color 250ms ease-in-out;}
+}
+
+@media all and (max-width: 1000px) {
+    .rowgroup6{margin-bottom: 70px;}
+    .rowgroup6 .useful_box{padding-top: 45px;margin-bottom: 100px;}
+    .rowgroup6 .useful_box:before{top: calc(100% + 40px);height: 45px;}
+    .rowgroup6 .useful_box .useful_title{left: calc(50% - 150px);width: 300px;padding: 20px;}
+
+    .rowgroup6 .useful_box .useful_list{text-align: center;border-radius: 40px 40px 20px 20px;}
+    .rowgroup6 .useful_box .useful_list .useful_item{max-width: 180px;}
+    .rowgroup6 .useful_box .useful_list .useful_item .useful_link{height: 100px;background-size: 60%;}
+
+    .rowgroup6 .sns_list .sns_item{margin: 0 10px;}
+    .rowgroup6 .sns_list .sns_item .sns_link{width: 50px;height: 50px;}
+    .rowgroup6 .sns_list .sns_item.s2 .sns_link{background-position-x: -48px;}
+    .rowgroup6 .sns_list .sns_item.s3 .sns_link{background-position-x: -96px;}
+    .rowgroup6 .sns_list .sns_item.s4 .sns_link{background-position-x: -144px;}
+}
+
+@media  all and (max-width: 800px) {
+    .rowgroup6 .useful_box .useful_list .useful_item .useful_link{background-size: 70%;}
+}
+
+@media all and (max-width: 640px) {
+    .rowgroup6{margin-bottom: 45px;}
+    .rowgroup6 .useful_box{padding-top: 22px;margin-bottom: 75px;}
+    .rowgroup6 .useful_box:before{top: calc(100% + 30px);height: 25px;}
+
+    .rowgroup6 .useful_box .useful_title{left: calc(50% - 80px);width: 160px;padding: 12px 10px;font-size: 16px;}
+
+    .rowgroup6 .useful_box .useful_list{padding: 40px 5% 15px;border-radius: 20px 20px 10px 10px;}
+    .rowgroup6 .useful_box .useful_list .useful_item{width: 50%;max-width: 185px;}
+    .rowgroup6 .useful_box .useful_list .useful_item:before{display: none;}
+    .rowgroup6 .useful_box .useful_list .useful_item .useful_link{height: 50px;background-size: 50%;}
+
+    .rowgroup6 .sns_list .sns_item{margin: 0 8px 0 7px;}
+    .rowgroup6 .sns_list .sns_item .sns_link{width: 36px;height: 36px;}
+    .rowgroup6 .sns_list .sns_item.s2 .sns_link{background-position-x: -34px;}
+    .rowgroup6 .sns_list .sns_item.s3 .sns_link{background-position-x: -68px;}
+    .rowgroup6 .sns_list .sns_item.s4 .sns_link{background-position-x: -102px;}
+}
+
+/* footer */
+
+#footer .footer_box{border: none;}
+#footer .footer_box .footer_logo{margin-bottom: 0;}
+#footer .footer_box .link_list{display: none;}
+
+#footer .footer_info{padding-top: 0;}
+#footer .footer_info .info_list{margin-bottom: 15px;}
+#footer .footer_info .info_item{margin-bottom: 0;}
+#footer .footer_info .footer_copyright{line-height: 22px;}
+
+@media all and (max-width: 640px) {
+    #footer .footer_info .footer_copyright{line-height: 20px;}
+}

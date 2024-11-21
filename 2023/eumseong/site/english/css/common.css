@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* 한신정보기술 - 김지경 2023.11 */
+
+body{font-family: 'NotoKr', 'Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;letter-spacing: 0;}
+
+html:not(.fixed):not(.lnb_open):not(.search_open) body[data-transparent="Y"] #header .header_top .right_area .right:first-child:before{display: none;}
+#header .header_top .right_area .right:first-child:before{display: none;}
+
+#header .header_top .right_area{margin-right: 40px;}
+.header_bottom{position: absolute;top: 13px;right: 0;width: 100%;z-index: 10;transition: margin-top 0.3s ease-in-out;}
+.header_bottom .bot_list{top: 0;right: 0;}
+.header_bottom .bot_list .bot_item{margin-left: 0;}
+
+.lnb .menu .depth1_list{padding-right: 0;}
+
+
+.fixed .header_bottom{margin-top: -48px;}
+
+.lnb .menu .depth1_item:last-child .depth1_text{margin-right: 0;}
+
+.lnb .menu .depth2 .menu_title .innerbox{padding: 0 10px;word-break: keep-all;}
+
+@media all and (min-width: 1661px) {
+    .lnb .menu .depth1_list{padding-left: 600px;}
+    .lnb .menu .depth1_text{margin: 0 10px;}
+    .lnb .menu .depth1_text > span{font-size: 17px;}
+}
+
+@media all and (max-width: 1660px) and (min-width: 1401px) {
+    .lnb .menu .depth1_list{padding-left: 380px;}
+    .lnb .menu .depth1_text{margin: 0 12px;}
+    .lnb .menu .depth1_text > span{font-size: 16px;}
+}
+
+@media all and (min-width: 1401px) {
+    #header .logo .image{width:169px;height: 52px;background-size: 169px 52px;}
+}
+
+@media all and (max-width: 1400px) and (min-width: 1001px) {
+    #header .header_top .right_area{margin-right: 30px;}
+
+    #header .logo{top: 26px;}
+    #header .logo .image{width: 90px;height: 30px;background-size: contain;}
+    #header .logo .text{font-size: 18px;}
+
+    .lnb .menu .depth1_list{padding-left: 170px;}
+    .lnb .menu .depth1_text{margin: 0 5px;}
+    .lnb .menu .depth1_text > span{font-size: 14px;}
+}
+
+@media all and (min-width: 1001px) {
+    #header .logo .image{background-image: url("/2023/eumseong/site/english/images/common/logo.png");}
+    html:not(.fixed):not(.lnb_open):not(.search_open) body[data-transparent="Y"] #header .logo .image{background-image:url("/2023/eumseong/site/english/images/common/logo_bk.png");}
+
+    .lnb .menu .depth1_text > span{font-family: 'Nexen', 'SBAggro', 'NotoKr', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;transform: skew(-0.1deg);}
+}
+
+@media all and (max-width: 1000px) {
+    body.main.visualtype3[data-transparent="Y"] #header .logo .image{background-image: url("/2023/eumseong/site/english/images/common/logo_bk.png");}
+    body.sub.visualtype3[data-transparent="Y"] #header .logo .image{background-image: url("/2023/eumseong/site/english/images/common/logo.png");}
+}

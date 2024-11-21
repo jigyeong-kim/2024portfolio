@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* (주)한신정보기술 김지경 - 2023.10 */
+
+/* web */
+@media all and (max-width:1200px){
+
+}
+
+/* tablet */
+@media all and (max-width:1000px){
+
+}
+
+/* mobile */
+@media all and (max-width:640px){
+
+}
+
+/*#header .header_top .right_area .family_btn{background-color: #fff;}*/
+
+body.visualtype1 .sub_visual{background-image: url("/2023/eumseong/site/tour/images/sub/sub_visual1.jpg");}
+body.visualtype1[data-menu-index="1"] .sub_visual{background-image: url("/2023/eumseong/site/tour/images/sub/sub_visual2.jpg");}
+body.visualtype1[data-menu-index="2"] .sub_visual{background-image: url("/2023/eumseong/site/tour/images/sub/sub_visual3.jpg");}
+body.visualtype1[data-menu-index="3"] .sub_visual{background-image: url("/2023/eumseong/site/tour/images/sub/sub_visual4.jpg");}
+body.visualtype1[data-menu-index="4"] .sub_visual{background-image: url("/2023/eumseong/site/tour/images/sub/sub_visual5.jpg");}
+
+body.visualtype1 .sub_head .sub_top .path_box{position: absolute;bottom: 0;margin-top: 0;text-align: left;z-index: 31;}
+
+.sub_head .sub_top .path_box li:before{width: 1px;height: 20px;opacity: 50%;background-color: #f7f7fc;}
+
+
+.sub_head .sub_top .path_box > ul{position: relative;}
+.sub_head .sub_top .path_box > ul:before{display: block;position: absolute;top: 0;right: 0;width: calc(100% - 80px);height: 100%;border: 1px solid rgba(255, 255, 255, 0.3);border-left: none;border-bottom: none;border-radius: 22px 22px 0 0;box-sizing: border-box;}
+
+.sub_head .sub_top .path_box .home{width: 80px;height: 75px;margin-right: 0;}
+.sub_head .sub_top .path_box .home:before{display: none;}
+.sub_head .sub_top .path_box .home .text{width: 100%;height: 100%;border-radius: 22px 22px 0 0;border: 1px solid rgba(255, 255, 255, 0.3);border-bottom: none;}
+body.visualtype1 .sub_head .sub_top .path_box .home .text:before{background-image: url("/2023/eumseong/site/tour/images/sub/path_home.png");background-position: 0 0;}
+.path_btn{border: none;}
+
+.sub_head .sub_top .path_box .path_item{width: 300px;margin-right: 0;}
+.sub_head .sub_top .path_box .path_item:before{right: 0;}
+
+.sub_head .sub_top .path_box .path_item:after{display: block;position: absolute;top: -5px;left: 0;width: 100%;height: calc(100% + 5px);background-color: transparent;z-index: -1;}
+.sub_head .sub_top .path_box .path_item.active:after{background-color: #fff;border-radius: 22px 22px 0 0;}
+
+.sub_head .sub_top .path_box .path_item .path_btn{position: relative;width: 100%;height: 75px;padding: 0 50px 0 20px;text-align: left;z-index: 1;font-weight: 500;transition: padding 250ms ease-in-out;}
+.sub_head .sub_top .path_box .path_item .path_btn:before{display: block;position: absolute;top: calc(50% - 10px);right: 16px;width: 20px;height: 20px;background: url("/2023/eumseong/site/tour/images/sub/path_arrow.png") no-repeat;transition: right 250ms ease-in-out;}
+
+.sub_head .sub_top .path_box .path_item.active .path_btn{position: relative;padding-left: 30px;color: #26293d;transition: padding 250ms ease-in-out;}
+.sub_head .sub_top .path_box .path_item.active .path_btn:before{right: 30px;background-position-x: -20px;transition: right 250ms ease-in-out;}
+.sub_head .sub_top .path_box .path_item.active .path_btn:after{display: block;position: absolute;top: calc(100% - 4px);left: 30px;width: calc(100% - 60px);height: 1px;background-color: #757b8e;opacity: 0.3;}
+
+.sub_head .sub_top .path_box .path_selectlist{display: none;position: absolute;top: 100%;width: 100%;padding: 7px 30px 20px;overflow: unset;background-color: #fff;box-shadow: 8px 6px 20px 0 rgba(32, 54, 121, 0.07);border-radius: 0 0 22px 22px;}
+
+.sub_head .sub_top .path_box .path_selectitem{display: block;margin-right: 0;}
+.sub_head .sub_top .path_box .path_selectitem .path_link{width: 100%;height: 100%;font-size: 16px;line-height: 36px;color: #757b8e;}
+.sub_head .sub_top .path_box .path_selectitem.on .path_link{position: relative;padding-right: 20px;color: #26293d;}
+.sub_head .sub_top .path_box .path_selectitem.on .path_link:before{display: block;position: absolute;top: calc(50% - 7px);right: 3px;width: 15px;height: 15px;background: url("/2023/eumseong/site/tour/images/sub/path_check.png") no-repeat;}
+
+@media all and (max-width: 1400px) {
+    .sub_head .sub_top .path_box{width: 100%;}
+    .sub_head .sub_top .path_box > ul{width: 100%;}
+    .sub_head .sub_top .path_box .path_item{width: calc((100% - 81px) / 3);}
+}
+
+@keyframes sub_visual {
+    0%{background-size: 110%;}
+    100%{background-size: 100%;}
+}
+
+@media all and (min-width: 1001px) {
+    body.visualtype1 .sub_visual{height: 480px;border-bottom-right-radius: 160px;/*animation: sub_visual 3s ease-in-out;*/background-position: center;}
+    body.visualtype1 .sub_head .sub_top{position: relative;height: 480px;padding-top: 220px;}
+
+    .sub_head .sub_top .path_box .path_selectitem .path_link:hover{color: #26293d;}
+}
+
+@media all and (max-width: 1000px) and (min-width: 641px) {
+    body.visualtype1 .sub_head .share_box{top: 50px;}
+
+    body.visualtype1 .sub_head .sub_top{padding: 55px 0 88px;}
+
+    .sub_head .sub_top .path_box > ul:before{width: calc(100% - 60px);border-radius: 10px 10px 0 0;}
+    .sub_head .sub_top .path_box .home{width: 60px;height: 55px;}
+    .sub_head .sub_top .path_box .home .text{border-radius: 10px 10px 0 0;}
+
+    .sub_head .sub_top .path_box .path_item{width: calc((100% - 61px) / 3);}
+
+    .sub_head .sub_top .path_box .path_item.active:after{border-radius: 10px 10px 0 0;}
+    .sub_head .sub_top .path_box .path_item .path_btn{height: 55px;padding: 0 30px 0 15px;}
+    .sub_head .sub_top .path_box .path_item .path_btn:before{right: 5px;}
+
+    .sub_head .sub_top .path_box .path_item.active .path_btn{padding-left: 20px;}
+    .sub_head .sub_top .path_box .path_item.active .path_btn:before{right: 10px;}
+    .sub_head .sub_top .path_box .path_item.active .path_btn:after{left: 20px;width: calc(100% - 40px);}
+
+    .sub_head .sub_top .path_box .path_selectlist{padding: 5px 20px 10px;border-radius: 0 0 10px 10px;}
+    .sub_head .sub_top .path_box .path_selectitem .path_link{font-size: 14px;line-height: 30px;}
+
+}
