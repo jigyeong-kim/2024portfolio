@@ -1,0 +1,559 @@
+@charset "UTF-8";
+
+.red_box{width: 100%; height:30px; background-color: #e72525; color: #fff; font-size: 30px; text-align: center;}
+
+/*진료기관2개일때*/
+@media all and (max-width: 1400px){
+    .hos_wrap.type2 > ul > li{width:calc((100% - 20px)/2); min-height: 450px; }
+}
+@media all and (max-width: 1000px){
+    .hos_wrap.type2 > ul > li{width:calc((100% - 20px)/2); min-height: 490px; }
+}
+@media all and (max-width: 640px){
+    .hos_wrap.type2 > ul > li{width:100%; min-height:auto; }
+    .hos_wrap.type2 > ul > li:nth-child(2){margin-top: 10px;}
+}
+
+/*진료기관1개일때*/
+.hos_wrap.type3 > ul > li{width:calc((100% - 20px)/2); min-height:auto; }
+@media all and (max-width: 640px){
+    .hos_wrap.type3 > ul > li{width:100%;}
+}
+
+/*충북해외의료 소개*/
+.intro_wrap .intro_box{margin-bottom:100px;}
+.intro_wrap .intro_box:last-child{margin-bottom: 0;}
+.intro_wrap .intro_box.one .left_box{display: inline-block; width: 400px; vertical-align: top;}
+.intro_wrap .intro_box.one .right_box{display: inline-block; width: calc(100% - 404px); padding-left:40px;}
+.intro_wrap > ul > li{word-break: keep-all;}
+
+.intro_wrap .intro_box.two .left_box{display: inline-block; width: calc(100% - 404px); vertical-align: top;}
+.intro_wrap .intro_box.two .right_box{display: inline-block; float: right; width: 400px; padding-left:40px;}
+
+@media all and (max-width: 1400px){
+    .intro_wrap .intro_box h3{margin-top: 20px;}
+    .intro_wrap .intro_box.one .left_box{width: 300px;}
+    .intro_wrap .intro_box.one .right_box{width:calc(100% - 304px);}
+    .intro_wrap .intro_box.two .left_box{width:calc(100% - 304px);}
+    .intro_wrap .intro_box.two .right_box{width: 300px;}
+}
+
+@media all and (max-width: 640px){
+    .intro_wrap .intro_box{margin-bottom: 30px;}
+    .intro_wrap .intro_box.one .left_box{display: block; width: 100%; text-align: center;}
+    .intro_wrap .intro_box.one .left_box img{width: 300px;}
+    .intro_wrap .intro_box.one .right_box{width: 100%; padding-left: 0;}
+    .intro_wrap .intro_box.two .right_box{float: none; width: 100%; padding-left: 0; text-align: center;}
+    .intro_wrap .intro_box.two .right_box img{width: 300px;}
+    .intro_wrap .intro_box.two .left_box{width: 100%;}
+}
+
+/* 정보수집 및 상담 */
+.info_wrap .reference .title span{padding-right: 13px;}
+
+/*내용없는 링크*/
+.info_wrap .em_red{color: #e72525;}
+@media all and (max-width: 1400px){
+    .info_wrap .col_box .col_item{float:none !important;width:100% !important;margin-left:0 !important;}
+    .info_wrap .col_box .col_item + .col_item{margin-top:10px;}
+}
+
+/* 진료기관 > 종합병원 */
+.hos_wrap > ul > li{float: left; width: calc((100% - 41px)/3); min-height:540px; margin-right: 20px;  padding: 40px 30px 37px; border: 1px solid #9bd0bf; border-radius: 5px; background-color: #fff;  transition: .1s;}
+.hos_wrap > ul > li:nth-child(3n){margin-right: 0;}
+.hos_wrap > ul > li:nth-child(n + 4){margin-top: 20px;}
+.hos_wrap > ul > li > a{width:100%;}
+.hos_wrap .text_box .title{margin:10px 0; }
+.hos_wrap .text_box .title a{font-size: 20px; font-weight: 600; color: #0f644d;}
+.hos_wrap .text_box .sub_title{font-size: 15px;}
+
+@media all and (max-width: 1400px){
+    .hos_wrap > ul > li{width:calc((100% - 20px)/3); min-height:517px; margin-right: 10px; padding: 30px 10px 20px;}
+}
+
+@media all and (max-width: 800px){
+    .hos_wrap > ul > li{width: calc((100% - 20px)/2); }
+    .hos_wrap > ul > li:nth-child(2n){margin-right:0;}
+    .hos_wrap > ul > li:nth-child(3){margin-right:10px; margin-top: 10px;}
+    .hos_wrap > ul > li:nth-child(n + 4){margin-top: 10px;}
+}
+
+@media all and (max-width: 640px){
+    .hos_wrap > ul > li{min-height: 500px; padding: 30px 3% 20px;}
+    .hos_wrap .text_box .title a{font-size: 18px; word-break: keep-all;}
+}
+
+@media all and (max-width: 480px){
+    .hos_wrap > ul > li{width: 100%; min-height: auto; margin-right: 0;}
+    .hos_wrap > ul > li:nth-child(2){margin-top: 10px;}
+}
+
+/* 종합병원*/
+.hos_box .hospital_box{position: relative;}
+.hos_box .hospital_box .left_box{display: inline-block; width: 537px; vertical-align: top;}
+.hos_box .hospital_box .left_box .hospital{position: relative;}
+.hos_box .hospital_box .left_box button.slick-prev,
+.hos_box .hospital_box .left_box button.slick-next{display:none; font-size: 0; line-height: 0}
+.hos_box .hospital_box .left_box .control_box{position: absolute; bottom:10px; width: 537px; text-align: center;}
+.hos_box .hospital_box .left_box .control_box .thumbnail_box{display: inline-block; position: relative; z-index: 60;}
+.hos_box .hospital_box .left_box .control_box button{position: relative; z-index:50;}
+.hos_box .hospital_box .left_box .control_box button.auto{width:12px; height: 15px; margin-right: 5px; border: 0; background: url('/site/meditourkor/images/contents/btn_vis_stop.png') no-repeat; font-size: 0; color: transparent; vertical-align: middle;}
+.hos_box .hospital_box .left_box .control_box button.auto.slick-play{ background: url('/site/meditourkor/images/contents/btn_vis_play.png') no-repeat;}
+.hos_box .hospital_box .left_box .control_box .thumbnail_box .slick-dots li{float: left; margin-right:8px;}
+.hos_box .hospital_box .left_box .control_box .thumbnail_box .slick-dots li.slick-active button{background-color: #41af96;}
+.hos_box .hospital_box .left_box .control_box .thumbnail_box .slick-dots li button{position: relative; width:12px; height:12px; border-radius: 50%; border: 0; background-color: #fff; font-size: 0; color: transparent; transition: .4s; vertical-align: bottom;}
+.hos_box .hospital_box .right_box{display: inline-block; width: calc(100% - 541px); padding-left: 20px;}
+@media all and (max-width: 1400px){
+    .hos_box .hospital_box .left_box{display:block; width:auto;}
+    .hos_box .hospital_box .left_box .control_box{bottom: auto; top: 252px;}
+    .hos_box .hospital_box .right_box{display: block; width:100%; padding-left:0;}
+}
+@media all and (max-width: 1000px){
+    .hos_box .hospital_box .left_box{width: 537px; margin:0 auto;}
+}
+@media all and (max-width: 640px){
+    .hos_box .hospital_box .left_box{width: 400px;}
+    .hos_box .hospital_box .left_box .control_box{top: 190px; width: 400px; }
+}
+@media all and (max-width: 480px){
+    .hos_box .hospital_box .left_box{width:330px;}
+    .hos_box .hospital_box .left_box .control_box{top:150px; width: 330px;}
+}
+
+/* 진료기관 > 치과 */
+.cts3005_wrap.hos_wrap > ul > li{width: calc((100% - 20px)/3);}
+.cts3005_wrap.hos_wrap > ul > li:nth-child(2n){margin-right: 0;}
+@media all and (max-width: 500px){
+    .cts3005_wrap.hos_wrap > ul > li{width:100%; margin-right: 0;}
+    .cts3005_wrap.hos_wrap > ul > li:nth-child(2n){margin-top: 20px;}
+}
+
+/* 진료기관 > 성형피부과 */
+.cts3006_wrap.hos_wrap > ul > li{min-height: 536px;}
+
+@media all and (max-width: 640px){
+    .cts3006_wrap.hos_wrap > ul > li{min-height: 470px;}
+}
+
+/* 진료기관 > 안과 */
+@media all and (max-width: 1400px){
+    .cts3007_wrap.hos_wrap > ul >li{width: 50%;}
+}
+@media all and (max-width: 640px){
+    .cts3007_wrap.hos_wrap > ul >li{width: 100%;}
+}
+
+/* 진료기관 > 산부인과 */
+@media all and (max-width: 1400px){
+    .cts3008_wrap.hos_wrap > ul >li{width: 50%;}
+}
+@media all and (max-width: 640px){
+    .cts3008_wrap.hos_wrap > ul >li{width: 100%;}
+}
+
+/* 진료기관 > 한방 */
+@media all and (max-width: 1400px){
+    .cts3010_wrap.hos_wrap > ul >li{width: 50%;}
+}
+@media all and (max-width: 640px){
+    .cts3010_wrap.hos_wrap > ul >li{width: 100%;}
+}
+
+/* 진료기관 > 정형외과 */
+@media all and (max-width: 1400px){
+    .cts3011_wrap.hos_wrap > ul >li{width: 50%;}
+}
+@media all and (max-width: 640px){
+    .cts3011_wrap.hos_wrap > ul >li{width: 100%;}
+}
+
+/* 진료기관 > 유지업체 */
+.cts3012_wrap.hos_wrap > ul > li{position:relative; width: calc((100% - 20px)/2); padding: 40px 0 30px;}
+.cts3012_wrap.hos_wrap > ul > li:nth-child(2n){margin-right: 0;}
+.cts3012_wrap.hos_wrap > ul > li:nth-child(3){margin-top: 20px; margin-right:20px;}
+.cts3012_wrap.hos_wrap .text_box{border-top: 1px solid #9bd0bf; padding: 0 30px;}
+.cts3012_wrap.hos_wrap .text_box .title{margin:30px 0 10px; font-size: 20px; font-weight: 600; color: #0f644d;}
+
+@media all and (max-width: 1400px){
+    .cts3012_wrap.hos_wrap .text_box{padding: 0 20px;}
+    .cts3012_wrap.hos_wrap > ul > li:nth-child(3){margin-top: 10px; margin-right:10px;}
+    .cts3012_wrap.hos_wrap > ul > li:nth-child(n + 4){margin-top: 10px;}
+}
+
+@media all and (max-width: 1000px){
+    .cts3012_wrap.hos_wrap > ul > li{min-height: 445px;}
+
+}
+@media all and (max-width: 640px){
+    .cts3012_wrap.hos_wrap > ul > li{min-height: 418px;}
+    .cts3012_wrap.hos_wrap .text_box{padding: 0 10px;}
+    .cts3012_wrap.hos_wrap .text_box .title{margin:10px 0; font-size: 18px;}
+
+}
+@media all and (max-width: 480px){
+    .cts3012_wrap.hos_wrap > ul > li{width: 100%; min-height: auto; margin-right: 0;}
+}
+
+/* 관광정보 > 테마관광 */
+.experience_wrap .box_img{margin: 40px 0;}
+.experience_wrap .ex_box .box.basic2 .box_wrap{padding: 30px;}
+.experience_wrap .ex_box .box.basic2 .box_wrap:after{display: none;}
+.experience_wrap .ex_box .box.basic2 .box_wrap .left_box{display: inline-block; width: 286px; vertical-align: top; }
+.experience_wrap .ex_box .box.basic2 .box_wrap .right_box{display: inline-block; width: calc(100% - 290px); padding-left: 30px; }
+.experience_wrap .ex_box .box.basic2 .box_wrap .right_box .box_title{font-size: 22px; line-height: 26px; color: #026447;}
+.experience_wrap .ex_box .box.basic2 .box_wrap .right_box p{word-break: keep-all;}
+.experience_wrap .ex_box .box.basic2 .box_wrap .right_box > ul > li{word-break: keep-all;}
+@media all and (max-width: 800px){
+    .experience_wrap .ex_box .box.basic2 .box_wrap .left_box{width: 230px;}
+    .experience_wrap .ex_box .box.basic2 .box_wrap .right_box{width:calc(100% - 234px); }
+}
+
+@media all and (max-width: 640px){
+    .experience_wrap .ex_box .box + .box{margin-top: 20px;}
+    .experience_wrap .ex_box .box.basic2 .box_wrap{padding: 20px;}
+    .experience_wrap .ex_box .box.basic2 .box_wrap .left_box{text-align: center;}
+    .experience_wrap .ex_box .box.basic2 .box_wrap .right_box{display: block; width: 100%; padding-left: 0; text-align: left;}
+    .experience_wrap .ex_box .box.basic2 .box_wrap .right_box .box_title{margin-top: 10px; font-size: 18px; line-height: 20px;}
+
+}
+
+/* 생활정보 > 출입국 > 비자 */
+.cts3044_wrap .reference .cont_box{width:calc(100% - 250px); }
+@media all and (max-width: 480px){
+    .cts3044_wrap .reference .cont_box{width:100%; }
+}
+
+/* 생활정보 > 출입국 > 출국 */
+.cts3049_wrap .reference .cont_box{width:calc(100% - 315px); }
+@media all and (max-width: 640px){
+    .cts3049_wrap .reference .cont_box{width:100%; }
+}
+
+/* 생활정보 > 의료 > 의료체계 */
+.medi_box .box.type2.center p{word-break: keep-all;}
+.medi_box .box.point_text{text-align: left;}
+.medi_box .box.point_text span{word-break: keep-all;}
+
+/**********************중국***************************/
+/* 진료기관 > 종합병원  */
+.cts3074_wrap.hos_wrap > ul > li{min-height: 500px;}
+
+@media all and (max-width: 640px){
+    .cts3074_wrap.hos_wrap > ul > li{width: 100%; min-height: auto; margin-right: 0; text-align: center;}
+    .cts3074_wrap.hos_wrap > ul > li:nth-child(2){margin-top: 10px;}
+    .cts3074_wrap.hos_wrap > ul > li .text_box{text-align: left;}
+}
+
+
+
+
+
+/* 진료기관 > 치과 */
+/* .cts3075_wrap.hos_wrap > ul > li{width: calc((100% - 20px)/2);}
+.cts3075_wrap.hos_wrap > ul > li:nth-child(2n){margin-right: 0;} */
+.cts3075_wrap.hos_wrap > ul > li{min-height: 460px;}
+@media all and (max-width: 500px){
+    .cts3075_wrap.hos_wrap > ul > li{width:100%; margin-right: 0;}
+    .cts3075_wrap.hos_wrap > ul > li:nth-child(2n){margin-top: 20px;}
+}
+
+/* 진료기관 > 성형피부과 */
+.cts3076_wrap.hos_wrap > ul > li{min-height:auto;}
+
+@media all and (max-width: 640px){
+    .cts3076_wrap.hos_wrap > ul > li{min-height: 395px;}
+}
+@media all and (max-width: 480px){
+    .cts3076_wrap.hos_wrap > ul > li{min-height: auto;}
+}
+
+/* 진료기관 > 안과 */
+.cts3077_wrap.hos_wrap > ul > li{min-height:auto;}
+@media all and (max-width: 1400px){
+    .cts3077_wrap.hos_wrap > ul >li{width: 50%;}
+}
+@media all and (max-width: 640px){
+    .cts3077_wrap.hos_wrap > ul >li{width: 100%;}
+}
+
+/* 진료기관 > 산부인과 */
+.cts3078_wrap.hos_wrap > ul > li{min-height:auto;}
+@media all and (max-width: 1400px){
+    .cts3078_wrap.hos_wrap > ul >li{width: 50%;}
+}
+@media all and (max-width: 640px){
+    .cts3078_wrap.hos_wrap > ul >li{width: 100%; }
+}
+
+/* 진료기관 > 한방 */
+.cts3079_wrap.hos_wrap > ul > li{min-height:auto;}
+@media all and (max-width: 1400px){
+    .cts3078_wrap.hos_wrap > ul >li{width: 50%;}
+}
+@media all and (max-width: 640px){
+    .cts3079_wrap.hos_wrap > ul >li{width: 100%;}
+}
+
+/* 진료기관 > 정형외과 */
+.cts3080_wrap.hos_wrap > ul > li{min-height:auto;}
+@media all and (max-width: 1400px){
+    .cts3080_wrap.hos_wrap > ul >li{width: 50%;}
+}
+@media all and (max-width: 640px){
+    .cts3080_wrap.hos_wrap > ul >li{width: 100%;}
+}
+
+
+/* 진료기관 > 유지업체 */
+.cts3081_wrap.hos_wrap > ul > li{position:relative; width: calc((100% - 20px)/2); padding: 40px 0 30px;}
+.cts3081_wrap.hos_wrap > ul > li:nth-child(2n){margin-right: 0;}
+.cts3081_wrap.hos_wrap > ul > li:nth-child(3){margin-top: 20px; margin-right:20px;}
+.cts3081_wrap.hos_wrap .text_box{border-top: 1px solid #9bd0bf; padding: 0 30px;}
+.cts3081_wrap.hos_wrap .text_box .title{margin:30px 0 10px; font-size: 20px; font-weight: 600; color: #0f644d;}
+
+@media all and (max-width: 1400px){
+    .cts3081_wrap.hos_wrap .text_box{padding: 0 20px;}
+    .cts3081_wrap.hos_wrap > ul > li{min-height: 422px;}
+    .cts3081_wrap.hos_wrap > ul > li:nth-child(3){margin-top: 10px; margin-right:10px;}
+    .cts3081_wrap.hos_wrap > ul > li:nth-child(n + 4){margin-top: 10px;}
+}
+
+@media all and (max-width: 1000px){
+    .cts3081_wrap.hos_wrap > ul > li{min-height: 416px;}
+
+}
+@media all and (max-width: 640px){
+    .cts3081_wrap.hos_wrap > ul > li{min-height: 377px;}
+    .cts3081_wrap.hos_wrap .text_box{padding: 0 10px;}
+    .cts3081_wrap.hos_wrap .text_box .title{margin:10px 0; font-size: 18px;}
+
+}
+@media all and (max-width: 480px){
+    .cts3081_wrap.hos_wrap > ul > li{width: 100%; min-height: auto; margin-right: 0;}
+}
+
+/* 관광정보 > 테마관광 > 사계절체험 */
+.experience_wrap.chn .ex_box .box.basic2 .box_wrap .right_box p{word-break: break-all;}
+
+/*생활정보 > 출입국 > 사증(비자) */
+@media all and (max-width: 1400px){
+    .cts3110_wrap .col_box.col2 .col_item{width: 100%; margin-left: 0;}
+}
+
+
+/**********************일본***************************/
+/* 진료기관 > 종합병원 */
+@media all and (max-width: 1400px){
+    .cts3142_wrap.hos_wrap > ul > li{min-height: 475px;}
+}
+@media all and (max-width: 1000px){
+    .cts3142_wrap.hos_wrap > ul > li{min-height: 500px;}
+}
+@media all and (max-width: 800px){
+    .cts3142_wrap.hos_wrap > ul > li{min-height: 480px;}
+}
+@media all and (max-width: 640px){
+    .cts3142_wrap.hos_wrap > ul > li{min-height: 460px;}
+}
+@media all and (max-width: 480px){
+    .cts3142_wrap.hos_wrap > ul > li{min-height:auto;}
+}
+
+
+
+/* 진료기관 > 유지업체 */
+.cts3149_wrap.hos_wrap > ul > li{position:relative; width: calc((100% - 20px)/2); padding: 40px 0 30px;}
+.cts3149_wrap.hos_wrap > ul > li:nth-child(2n){margin-right: 0;}
+.cts3149_wrap.hos_wrap > ul > li:nth-child(3){margin-top: 20px; margin-right:20px;}
+.cts3149_wrap.hos_wrap .text_box{border-top: 1px solid #9bd0bf; padding: 0 30px;}
+.cts3149_wrap.hos_wrap .text_box .title{margin:30px 0 10px; font-size: 20px; font-weight: 600; color: #0f644d;}
+
+@media all and (max-width: 1400px){
+    .cts3149_wrap.hos_wrap .text_box{padding: 0 20px;}
+    .cts3149_wrap.hos_wrap > ul > li{min-height: 455px;}
+    .cts3149_wrap.hos_wrap > ul > li:nth-child(3){margin-top: 10px; margin-right:10px;}
+    .cts3149_wrap.hos_wrap > ul > li:nth-child(n + 4){margin-top: 10px;}
+}
+
+@media all and (max-width: 1000px){
+    .cts3149_wrap.hos_wrap > ul > li{min-height: 460px;}
+
+}
+@media all and (max-width: 640px){
+    .cts3149_wrap.hos_wrap > ul > li{min-height: 400px;}
+    .cts3149_wrap.hos_wrap .text_box{padding: 0 10px;}
+    .cts3149_wrap.hos_wrap .text_box .title{margin:10px 0; font-size: 18px;}
+
+}
+@media all and (max-width: 480px){
+    .cts3149_wrap.hos_wrap > ul > li{width: 100%; min-height: auto; margin-right: 0;}
+}
+
+/* 관광정보 > 테마관광 > 사계절체험 */
+.experience_wrap.jpn .ex_box .box.basic2 .box_wrap .right_box p{word-break: break-all;}
+
+/*생활정보 > 출입국 > 사증(비자) */
+@media all and (max-width: 1400px){
+    .cts3178_wrap .col_box.col2 .col_item{width: 100%; margin-left: 0;}
+}
+
+/* 생활정보 > 출입국 > 출국 */
+.cts3183_wrap .reference .cont_box{width: calc(100% - 220px);}
+
+@media all and (max-width: 640px){
+    .cts3183_wrap .reference .cont_box{width:100%;}
+}
+
+
+/**********************러시아***************************/
+.col_item.rus .box_line{margin-bottom: 15px;}
+.col_item.rus .box_line + .box_line{margin-bottom: 0;}
+.col_item.rus + .col_box{margin: 15px 0;}
+
+@media all and (max-width: 1400px){
+    .col_item.rus .box_line{margin-bottom: 10px;}
+    .col_item.rus + .col_box{margin: 10px 0;}
+}
+
+/* 진료기관 > 종합병원 */
+.cts3205_wrap.hos_wrap > ul > li{min-height: 525px;}
+
+@media all and (max-width: 1400px){
+    .cts3205_wrap.hos_wrap > ul > li{min-height: 550px;}
+}
+@media all and (max-width: 480px){
+    .cts3205_wrap.hos_wrap > ul > li{min-height:auto;}
+}
+
+
+/* 진료기관 > 치과 */
+@media all and (max-width: 1400px){
+    .cts3206_wrap.hos_wrap.type2 > ul > li{min-height: 490px;}
+}
+@media all and (max-width: 1000px){
+    .cts3206_wrap.hos_wrap.type2 > ul > li{min-height: 515px;}
+}
+@media all and (max-width: 640px){
+    .cts3206_wrap.hos_wrap.type2 > ul > li{min-height:auto;}
+}
+
+
+/* 진료기관 > 유지업체 */
+.cts3213_wrap.hos_wrap > ul > li{position:relative; width: calc((100% - 20px)/2); padding: 40px 0 30px;}
+.cts3213_wrap.hos_wrap > ul > li:nth-child(2n){margin-right: 0;}
+.cts3213_wrap.hos_wrap > ul > li:nth-child(3){margin-top: 20px; margin-right:20px;}
+.cts3213_wrap.hos_wrap .text_box{border-top: 1px solid #9bd0bf; padding: 0 30px;}
+.cts3213_wrap.hos_wrap .text_box .title{margin:30px 0 10px; font-size: 20px; font-weight: 600; color: #0f644d;}
+
+@media all and (max-width: 1400px){
+    .cts3213_wrap.hos_wrap .text_box{padding: 0 20px;}
+    .cts3213_wrap.hos_wrap > ul > li{min-height: 447px;}
+    .cts3213_wrap.hos_wrap > ul > li:nth-child(3){margin-top: 10px; margin-right:10px;}
+    .cts3213_wrap.hos_wrap > ul > li:nth-child(n + 4){margin-top: 10px;}
+}
+
+@media all and (max-width: 1000px){
+    .cts3213_wrap.hos_wrap > ul > li{min-height: 480px;}
+
+}
+@media all and (max-width: 640px){
+    .cts3213_wrap.hos_wrap > ul > li{width: 100%; min-height: auto; margin-right: 0;}
+    .cts3213_wrap.hos_wrap > ul > li:nth-child(2){margin-top: 10px;}
+    .cts3213_wrap.hos_wrap .text_box{padding: 0 10px;}
+    .cts3213_wrap.hos_wrap .text_box .title{margin:10px 0; font-size: 18px;}
+
+}
+
+/* 생활정보 > 출입국 > 사증(비자) */
+@media all and (max-width: 1400px){
+    .cts3234_wrap .col_box.col2 .col_item{width: 100%; margin-left: 0;}
+}
+
+
+/* 생활정보 > 출입국 > 사증(비자) */
+.cts3239_wrap .reference .cont_box{width:calc(100% - 220px);}
+@media all and (max-width: 640px){
+    .cts3239_wrap .reference .cont_box{width:100%;}
+}
+
+/**********************베트남***************************/
+.col_item.vnm .box_line{margin-bottom: 10px;}
+.col_item.vnm .box_line + .box_line{margin-bottom: 0;}
+.col_item.vnm + .col_box{margin: 10px 0;}
+
+/* 진료기관 > 종합병원 */
+.cts3265_wrap.hos_wrap > ul > li{min-height: 610px;}
+@media all and (max-width: 1400px){
+    .cts3265_wrap.hos_wrap > ul > li{min-height: 562px;}
+}
+@media all and (max-width: 640px){
+    .cts3265_wrap.hos_wrap > ul > li{min-height: 550px;}
+}
+@media all and (max-width: 480px){
+    .cts3265_wrap.hos_wrap > ul > li{min-height:auto;}
+}
+
+
+
+/* 진료기관 > 치과 */
+.cts3266_wrap.hos_wrap > ul > li{min-height: 560px;}
+@media all and (max-width: 1000px){
+    .cts3266_wrap.hos_wrap.type2 > ul > li{min-height: 525px;}
+}
+@media all and (max-width: 640px){
+    .cts3266_wrap.hos_wrap.type2 > ul > li{min-height: auto;}
+}
+
+
+
+/* 진료기관 > 성형피부과 */
+@media all and (max-width: 1400px){
+     .cts3267_wrap.hos_wrap > ul > li{min-height: 550px;}
+}
+@media all and (max-width: 640px){
+    .cts3267_wrap.hos_wrap > ul > li{width: 100%; min-height: auto;}
+    .cts3267_wrap.hos_wrap > ul > li:nth-child(2){margin-top: 10px;}
+}
+
+
+/* 진료기관 > 유지업체 */
+.cts3273_wrap.hos_wrap > ul > li{position:relative; width: calc((100% - 20px)/2); min-height: 550px; padding: 40px 0 30px;}
+.cts3273_wrap.hos_wrap > ul > li:nth-child(2n){margin-right: 0;}
+.cts3273_wrap.hos_wrap > ul > li:nth-child(3){margin-top: 20px; margin-right:20px;}
+.cts3273_wrap.hos_wrap .text_box{border-top: 1px solid #9bd0bf; padding: 0 30px;}
+.cts3273_wrap.hos_wrap .text_box .title{margin:30px 0 10px; font-size: 20px; font-weight: 600; color: #0f644d;}
+
+@media all and (max-width: 1400px){
+    .cts3273_wrap.hos_wrap .text_box{padding: 0 20px;}
+    .cts3273_wrap.hos_wrap > ul > li{min-height: 477px;}
+    .cts3273_wrap.hos_wrap > ul > li:nth-child(3){margin-top: 10px; margin-right:10px;}
+    .cts3273_wrap.hos_wrap > ul > li:nth-child(n + 4){margin-top: 10px;}
+}
+
+@media all and (max-width: 1000px){
+    .cts3273_wrap.hos_wrap > ul > li{min-height: 500px;}
+
+}
+@media all and (max-width: 640px){
+    .cts3273_wrap.hos_wrap > ul > li{width: 100%; min-height: auto; margin-right: 0;}
+    .cts3273_wrap.hos_wrap > ul > li:nth-child(2){margin-top: 10px;}
+    .cts3273_wrap.hos_wrap .text_box{padding: 0 10px;}
+    .cts3273_wrap.hos_wrap .text_box .title{margin:10px 0; font-size: 18px;}
+
+}
+
+/* 생활정보 > 출입국 > 사증(비자) */
+.cts3301_wrap .reference .cont_box{width:calc(100% - 200px); }
+@media all and (max-width: 1400px){
+    .cts3301_wrap .col_box.col2 .col_item{width: 100%; margin-left: 0;}
+}
+@media all and (max-width: 640px){
+    .cts3301_wrap .reference .cont_box{width:100%; }
+}
+
+/* 생활정보 > 출입국 > 출국 */
+.cts3306_wrap .reference .cont_box{width:calc(100% - 200px); }
+@media all and (max-width: 640px){
+    .cts3306_wrap .reference .cont_box{width:100%; }
+}
+

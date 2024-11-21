@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+.www_btn_box{padding-top:10px; padding-bottom:10px;}
+.www_btn_box a{height:29px;background-image:url(../images/common_layout/www_btn_icon.png);}
+
+/* 비주얼 서브 2024-03-29 */
+#main.visual_type #header{position: absolute;width: 100%;transition: all 250ms ease-in-out;}
+.menu_active #main.visual_type #header{background-color: #fff;}
+
+#main.visual_type .header_top .gnb ul li a:hover, #main.visual_type .header_top .gnb ul li a:hover:before, #main.visual_type .header_top .gnb ul li a:hover:after{background-color: transparent;}
+
+html:not(.menu_active) #main.visual_type .header_top .site_link ul li a, html:not(.menu_active) #main.visual_type .header_top .gnb ul li a{color: #fff;}
+
+#main.visual_type .header_top, #main.visual_type.language{border-color: rgba(255, 255, 255, 0.2);}
+html:not(.menu_active) #main.visual_type .language:not(.active) .language_btn span{color: #fff;}
+
+#main.visual_type .language{border-left-color: rgba(255, 255, 255, 0.2)}
+#main.visual_type .header_top .wrap:before{height: 100%;}
+
+#main.visual_type .www_btn_box{background-color: #fff;}
+#main.visual_type .www_btn_box:before{background-color: #fff;}
+#main.visual_type .www_btn_box a{background-position-y: bottom;}
+#main.visual_type .header_top .wrap:before{background-color: #fff;}
+
+html:not(.menu_active) #main.visual_type .header_box .wrap .logo a .logo_image{background-image: url("/2024/chungbuk/common/common2024/images/common_layout/logo.png");}
+html:not(.menu_active) #main.visual_type .header_box .wrap .logo a .logo_text{color: #fff;}
+
+html:not(.menu_active) #main.visual_type #lnb .nav .depth1 .depth1_list .depth1_item .depth1_text{color: #fff;}
+
+html:not(.menu_active) #main.visual_type #lnb .nav .depth1 .add_box .btn, html:not(.menu_active) #main.visual_type #lnb .nav .depth1 .add_box .btn:hover{background-image: url("/common/common2024/images/common_layout/add_box_icon.png");background-position: 0;}
+
+@media (min-width: 1001px) {
+    #main.visual_type .language .language_btn{vertical-align: top;}
+    #main.visual_type .language.active .language_btn{background-color: #fff;transition: background-color 250ms ease-in-out;}
+
+    html:not(.menu_active) #main.visual_type .language:not(.active) .language_btn span:before, html:not(.menu_active) #main.visual_type .language:not(.active) .language_btn span:after{background-image: url("/common/common2024/images/common_layout/language_icon.png");background-position: -1px -2px;}
+    html:not(.menu_active) #main.visual_type .language:not(.active) .language_btn span:after{background-position: -24px -6px;opacity: 0.6;}
+
+    html:not(.menu_active) #lnb .nav:before{background-color: transparent;}
+}
+
+@media (max-width: 1000px) {
+    #main.visual_type .language .language_btn{width: 20px;height: 21px;}
+    #main.visual_type .language .language_btn span:before{width: 100%;height: 100%;background-image: url("/2024/chungbuk/common/common2024/images/common_layout/language_icon_m.png");background-position: 0;transform: scale(1);}
+
+    #main.visual_type .language .layer{left: -36px;}
+
+    #main.visual_type .header_box .menuopenbox .lnb_open{background-image: url("/2024/chungbuk/common/common2024/images/common_layout/add_box_icon.png");}
+
+    #main.visual_type .language .language_btn span:before{}
+
+    .header_box .menuopenbox .lnb_open:hover{background-position: 0;}
+    
+}

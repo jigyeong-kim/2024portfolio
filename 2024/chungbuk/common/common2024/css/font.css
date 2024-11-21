@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/* Tangerine */
+@font-face{
+    font-family: 'Tangerine';
+    font-weight: 300;
+    src: url("/common/common2024/font/Tangerine-Regular.woff2") format('woff2'),
+    url("/common/common2024/font/Tangerine-Regular.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'Tangerine';
+    font-weight: 400;
+    src: url("/common/common2024/font/Tangerine-Bold.woff2") format('woff2'),
+    url("/common/common2024/font/Tangerine-Bold.woff") format('woff');
+}
+
+/* Segoe */
+@font-face{
+    font-family: 'Segoe';
+    font-weight: 200;
+    src: url("/common/common2024/font/SegoeUI-Light.woff2") format('woff2'),
+    url("/common/common2024/font/SegoeUI-Light.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'Segoe';
+    font-weight: 400;
+    src: url("/common/common2024/font/SegoeUI.woff2") format('woff2'),
+    url("/common/common2024/font/SegoeUI.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'Segoe';
+    font-weight: 500;
+    src: url("/common/common2024/font/SegoeUI-Semibold.woff2") format('woff2'),
+    url("/common/common2024/font/SegoeUI-Semibold.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'Segoe';
+    font-weight: 600;
+    src: url("/common/common2024/font/SegoeUI-Bold.woff2") format('woff2'),
+    url("/common/common2024/font/SegoeUI-Bold.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'Segoe';
+    font-weight: 800;
+    src: url("/common/common2024/font/SegoeUIBlack.woff2") format('woff2'),
+    url("/common/common2024/font/SegoeUIBlack.woff") format('woff');
+}
+
+
+/* 잘난 */
+@font-face {
+    font-family: 'Jalnan';
+    font-weight: 400;
+    src: url("/common/common2024/font/JalnanGothic-Regular.woff2") format('woff2'),
+    url("/common/common2024/font/JalnanGothic-Regular.woff") format('woff');
+}

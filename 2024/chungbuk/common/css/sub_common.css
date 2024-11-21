@@ -1,0 +1,83 @@
+/* (주)한신정보기술 김예지 - 2017.07 */
+
+#container > .wrap{padding-bottom:40px;}
+/* 사이드 메뉴 */
+#side{float:left;width:250px;}
+#side .side_menu{}
+.side_menu .side_title{height:170px;margin-bottom:10px;background:#3b5fae url('/common/images/layout/side_title_bg.png') no-repeat left top;font-size:35px;line-height:40px;font-weight:600;color:#fff;letter-spacing:-1px;text-align:center;}
+.side_menu .side_title i{display:inline-block;height:170px;line-height:170px;vertical-align:middle;}
+.side_menu .side_title span{display:inline-block;vertical-align:middle;}
+.side_depth1 li.on > a,.side_depth1 a:hover{font-weight:600;}
+.side_depth1 > li.on > a, .side_depth1 > li > a:hover{font-weight:normal;}
+.side_depth1 > li{margin:0;padding:0;border-bottom:1px dashed #bebebe;}
+.side_depth1 > li:first-child{border-top:1px solid #bebebe;}
+.side_depth1 > li:last-child{border-bottom:1px solid #bebebe;}
+.side_depth1 > li a{display:block;padding:17px 35px 17px 20px;font-size:18px;line-height:20px;color:#000;text-decoration:none;}
+.side_depth1 > li > a{background:url('/common/images/layout/side_depth1_off.png') no-repeat 218px 23px;}
+.side_depth1 > li > a .blank{display:inline-block;width:21px;height:17px;margin-left:7px;background:url('/common/images/sub/template.png') no-repeat left top;vertical-align:middle;}
+.side_depth1 > li.on > a, .side_depth1 > li > a:hover{background:#19377a url('/common/images/layout/side_depth1_on.png') no-repeat 218px 23px;color:#fff;}
+.side_depth1 > li.on > a .blank, .side_depth1 > li > a:hover .blank{background-position:-40px top;}
+.side_depth2{display:none;padding:20px;background:#f6f6f6;}
+.side_depth2 > li{margin-top:7px;}
+.side_depth2 > li:first-child{margin:0;}
+.side_depth2 > li a{display:block;position:relative;padding:0 0 0 10px;font-size:15px;line-height:19px;color:#282828;}
+.side_depth2 > li > a:before{display:block;position:absolute;left:0;top:8px;width:2px;height:2px;background-color:#000;content:'';}
+.side_depth1 li.on .side_depth2{display:block;}
+.side_depth2 > li.on a, .side_depth2 > li a:hover{color:#000;}
+.side_depth3{padding:8px 0 8px 14px;}
+.side_depth3 > li{line-height:0;}
+.side_depth3 > li a{display:inline-block;padding:0 15px 0 10px;font-size:14px;text-decoration:underline;}
+.side_depth3 a:before{display:block;position:absolute;left:0;top:9px;width:5px;height:1px;background-color:#000;content:'';}
+.side_depth3 > li.on a, .side_depth3 > li a:hover{background:url('/common/images/layout/side_depth3_on.png') no-repeat right 3px;}
+
+.colgroup{float:left;width:900px;min-height:700px;margin-left:50px;}
+
+/* 콘텐츠 제목 */
+.sub_head{position:relative;padding:50px 0 20px;border-bottom:1px solid #bebebe;}
+.sub_title{}
+.sub_title h2{margin-bottom:12px;color:#000;font-size:35px;line-height:40px;font-weight:normal;letter-spacing:-1px;}
+
+.path{vertical-align:middle;}
+.path span{display:inline-block;padding-right:15px;margin-right:10px;background:url('/common/images/layout/path_arrow.png') no-repeat right 6px;color:#4f4f4f;}
+.path strong{color:#000;}
+
+.cnt_link{position:absolute;right:0;bottom:20px;}
+.cnt_link li{float:left;}
+.cnt_link > li:before{display:inline-block;width:1px;height:11px;background-color:#cacaca;vertical-align:middle;content:'';}
+.cnt_link .share:before{display:none;}
+.cnt_link a,.cnt_link button{display:inline-block;width:26px;height:26px;font-size:0;line-height:0;vertical-align:middle;}
+.cnt_link .share{position:relative;}
+.cnt_link .share .share_button{margin-left:7px;background:url('/common/images/layout/share.png') no-repeat left 5px;transition:all .4s;}
+.cnt_link .share .share_button.open{background-position:left -104px;}
+.cnt_link .print a{background:url('/common/images/layout/print.png') no-repeat right center;}
+.sns_list{display:none;position:absolute;top:0;left:0;width:0;height:30px;overflow:hidden;}
+.sns_list ul{width:100px;}
+.sns_list li a{width:30px;height:30px;background-repeat:no-repeat;background-position:50%;}
+.sns_list .facebook{margin-right:5px;}
+.sns_list .facebook a{background-image:url('/common/images/layout/facebook_icon.png');}
+.sns_list .twitter a{background-image:url('/common/images/layout/twitter_icon.png');}
+
+/* 콘텐츠 */
+#contents{margin:30px 0;}
+#contents .prepare{padding:70px 0;text-align:center;}
+
+/* 지도 */
+.mapapi{padding:1px 0 1px 1px;margin:40px 0;background-repeat:repeat;background-image:url('/common/images/sub/dot_line.png');}
+.mapapi .map_area{padding-right:1px;background-repeat:repeat;background-position:8px 0;background-image:url('/common/images/sub/dot_line.png');}
+.mapapi .map_area .inner_box{background-color:#fff;padding:9px;}
+.mapapi .root_daum_roughmap{max-width:100%;}
+@media screen and (max-width:640px) {
+	.reactive_form .mapapi .root_daum_roughmap .wrap_map{height:300px !important;}
+}
+
+/* 반응형 공통 */
+@media only screen and (max-width:1000px) {
+    .reactive_form #side{display:none;}
+	.reactive_form .colgroup{float:none;margin-left:0;width:100%;}
+}
+@media only screen and (max-width:640px) {
+	.reactive_form .colgroup{padding:0 1.5%;box-sizing:border-box;}
+
+	/* 컨텐츠 */
+	.cnt_link .print{display:none;}
+}

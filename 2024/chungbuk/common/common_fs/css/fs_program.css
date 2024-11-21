@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/* neo board */
+.p-wrap .skip{position:absolute;width:1px;height:1px;background:0 0;font-size:0 !important;color:transparent !important;line-height:0;overflow:hidden;}
+.p-wrap :after,.p-wrap :before{display:none;content:''}
+.p-wrap fieldset{border:none;}
+.p-wrap legend{overflow:hidden;position:absolute;width:1px;height:1px;background:0 0;font-size:0;color:transparent;line-height:0}
+.p-wrap .row:after{display:block;content:'';}
+.p-table.block{display:table;}
+.bbs .p-button.write{color:#fff !important;}
+.p-form-checkbox__label:before, .p-form-radio__label:before{display:block;content:'';}
+.p-form-checkbox__label:after, .p-form-radio__label:after{display:block;content:'';}
+.p-page__control .prev-one:before{display:inline-block;width:8px;height:18px;margin:0 10px 5px 0;background-image:url(/common/images/program/p-icon-view.svg#angle-left);background-repeat:no-repeat;background-position:center center;background-size:16px 18px;vertical-align:middle;content:'';}
+.p-page__control .next-one:after{display:inline-block;width:8px;height:18px;margin:0 0 5px 10px;background-image:url(/common/images/program/p-icon-view.svg#angle-right);background-repeat:no-repeat;background-position:center center;background-size:16px 18px;vertical-align:middle;content:'';}
+.p-wrap .add-head{display:none;}
+.p-wrap .p-form-checkbox__input, .p-form-radio__input{top:6px;left:6px;}
+.p-wrap .boardSearchForm{height:auto;}
+.p-wrap .boardSearchForm input{width:100%;}
+.p-wrap .p-table.block{display:table;}
+@media all and (max-width:765px){
+    .p-table.simple .tds{display:inline-block;vertical-align:middle;}
+    .p-table .p-empty .add-head{display:none;}
+    .p-table .p-empty .tds{width:100%;}
+    .p-table.simple tbody tr.p-empty{display:block;width:100%;padding:20px 0 !important;border-bottom:1px solid #a2a2a2;}
+    .p-table.simple tbody tr.p-empty td{display:block;width:100%;text-align:center;}
+    .p-table.simple tbody tr.p-empty td:last-child{border-bottom:none;}
+}
+
+/* fs 사이트들 페이지네이션 조정 https://www.chungbuk.go.kr/child/selectBbsNttList.do?bbsNo=481&key=2892 2021-06-07 서정한 */
+.p-page__link{vertical-align:middle !important;}
+.p-page__control .p-page__link{box-sizing:content-box;}
+.p-table tbody td table{width:100%;}

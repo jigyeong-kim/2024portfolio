@@ -1,0 +1,308 @@
+@charset "utf-8";
+
+/* 민원안내 > 예약하기 > BCG 예방접종 */
+.temp_calendar{border-top:#0053a0 solid 2px; padding-top:16px;}
+.temp_calendar .calendarbox{float:left; width:66%; margin-top:11px;}
+.temp_calendar .calendarbox .datebox{margin-bottom:22px; line-height:0; text-align:center; font-size:0;}
+.temp_calendar .calendarbox .datebox a{display:inline-block; width:28px; height:24px; vertical-align:middle; background-repeat:no-repeat; background-image:url(/site/health/images/contents/temp_calendar_control.png); color:transparent; font-size:0;}
+.temp_calendar .calendarbox .datebox a.prev{background-position:left center;}
+.temp_calendar .calendarbox .datebox a.next{background-position:right center;}
+.temp_calendar .calendarbox .datebox p{display:inline-block; margin:0 24px; line-height:24px; vertical-align:middle; color:#252525; font-family:'Opensans'; font-size:24px; font-weight:600; letter-spacing:2px;}
+.temp_calendar .calendarbox .calendar table.calendar_table{border-collapse:collapse; width:100%;}
+.temp_calendar .calendarbox .calendar table.calendar_table colgroup col{width:14.28%;}
+.temp_calendar .calendarbox .calendar table.calendar_table thead th{background-color:#778495; border:#778495 solid 1px; height:30px; padding:10px;vertical-align:middle; text-align:center; color:#FFF; font-family:'Opensans'; font-size:14px; font-weight:200;}
+.temp_calendar .calendarbox .calendar table.calendar_table thead th:first-child{color:#fccdcd;}
+.temp_calendar .calendarbox .calendar table.calendar_table thead th:last-child{color:#a9d3ff;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td{border:#d2d2d2 solid 1px; vertical-align:top;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody tr:first-child td{border-top:none;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td.today{background-color:#f4f8fb;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent{position:relative; height:84px;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent .date{position:absolute; top:7px; left:11px; display:inline-block; line-height:16px; padding-bottom:2px; border-bottom:transparent solid 1px; color:#474e61; font-family:'Opensans'; font-size:14px; z-index:1;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td.today .date_parent .date{border-bottom-color:#7a7c7d;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td:first-child .date_parent .date{color:#912323;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td:last-child .date_parent .date{color:#084896;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent .todaytext{display:none; color:transparent; font-size:0;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td.today .date_parent .todaytext{position:absolute; display:inline;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent p{position:relative; display:none; height:84px; z-index:2;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent p span{position:absolute; bottom:0; right:0; display:block; width:59px; padding:3px 0; line-height:20px; text-align:center; color:rgba(255, 255, 255, 0.85); font-size:14px; z-index:3;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent .close span{background-color:#ce0d14;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent .unavailable span{background-color:#7d7d7d;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent p:before{position:absolute; top:-1px; left:-1px; display:block; width:100%; height:100%; border-color:transparent; border-style:solid; border-width:1px; content:'';}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent .close:before{border-color:#ce0d14;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent .unavailable:before{border-color:#7d7d7d;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td.closed .date_parent .close{display:block;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td.disabled .date_parent .unavailable{display:block;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent button{position:relative; display:none; width:100%; height:84px; overflow:visible; z-index:2;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent button:before{position:absolute; top:-1px; left:-1px; display:block; width:100%; height:100%; border:#0f822a solid 1px; content:''; z-index:1;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td.enable .date_parent button{display:block;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent button span{position:absolute; bottom:0; right:0; display:block; width:59px; padding:3px 0; background-color:#1b8b35; line-height:20px; text-align:center; color:rgba(255, 255, 255, 0.85); font-size:14px; z-index:3;}
+
+.temp_calendar .timebox{position:relative; float:right; width:32%; padding-top:57px;}
+.temp_calendar .timebox .titlebox{position:absolute; top:0; left:calc(50% - 66px); width:132px; padding:24px 23px 15px 24px; box-sizing:border-box; background:url(/site/health/images/contents/temp_calendar_titlebox.png) no-repeat center center; text-align:center;}
+.temp_calendar .timebox .titlebox .date{margin-bottom:11px; border-bottom:rgba(255, 255, 255, 0.5) solid 1px; padding-bottom:14px; line-height:29px; color:#FFF; font-family:'Opensans'; font-size:30px; font-weight:600; letter-spacing:1px;}
+.temp_calendar .timebox .titlebox p{line-height:20px; color:#FFF; font-size:15px;}
+.temp_calendar .timebox .conbox{border:#d2d2d2 solid 1px; padding:75px 13px 20px 29px;}
+.temp_calendar .timebox .conbox .innerbox{height:380px; overflow-y:auto; padding-right:14px;}
+.temp_calendar .timebox .conbox .innerbox ul li{position:relative; border-bottom:#d2d2d2 solid 1px; padding:6px 74px 7px 6px;}
+.temp_calendar .timebox .conbox .innerbox ul li input[type="checkbox"]{position:absolute; top:12px; left:6px; z-index:1;}
+.temp_calendar .timebox .conbox .innerbox ul li label{position:relative; display:block; line-height:24px; border-color:transparent; border-style:dashed; border-width:1px; padding-left:39px; font-size:15px; z-index:2;}
+.temp_calendar .timebox .conbox .innerbox ul li input[type="checkbox"]:focus + label{border-color:#000;}
+.temp_calendar .timebox .conbox .innerbox ul li label:before{position:absolute; top:5px; left:0; display:block; width:18px; height:18px; background-repeat:no-repeat; content:''; transition:background-position 200ms ease-in-out 0s;}
+.temp_calendar .timebox .conbox .innerbox ul li.disabled label:before{background-color:#cccccc;}
+.temp_calendar .timebox .conbox .innerbox ul li.enable label:before{background-position:center top; background-image:url(/site/health/images/contents/temp_calendar_checkbox.gif);}
+.temp_calendar .timebox .conbox .innerbox ul li.enable input[type="checkbox"]:checked + label:before{background-position:center bottom;}
+.temp_calendar .timebox .conbox .innerbox ul li.disabled label{color:#7d7d7d;}
+.temp_calendar .timebox .conbox .innerbox ul li.enable label{color:#111111;}
+.temp_calendar .timebox .conbox .innerbox ul li .disable_button{position:absolute; top:6px; right:6px; display:none; width:60px; padding:3px 0; line-height:20px; text-align:center; background-color:#ce0d14; color:rgba(255, 255, 255, 0.85); font-size:14px;}
+.temp_calendar .timebox .conbox .innerbox ul li.disabled .disable_button{display:inline-block;}
+.temp_calendar .timebox .conbox .innerbox ul li button{position:absolute; top:6px; right:6px; display:none; width:60px; height:26px; margin:0; padding:0; border:none; text-align:center; background-color:#1b8b35; color:rgba(255, 255, 255, 0.85); font-size:14px;}
+.temp_calendar .timebox .conbox .innerbox ul li.enable button{display:inline-block;}
+.cts1482_descriptionbox{position:relative; margin-top:14px; margin-bottom:40px; padding-right:160px;}
+.cts1482_descriptionbox .btn{position:absolute; top:6px; right:0;}
+.cts1482_tabbox .tab_item{margin-bottom:20px;}
+.cts1482_tabbox .tab_obj ul li{float:none;}
+
+.cts1482_agreebox .temp_box .box_wrap h4{line-height:24px;}
+.cts1482_agreebox .temp_box .box_wrap p{line-height:22px; margin-bottom:10px; color:#515151;}
+.cts1482_agreebox .temp_box .box_wrap p.indent{margin:20px 0 10px 25px;}
+.cts1482_agreebox .temp_box .box_wrap ul.bu li{line-height:25px;}
+.cts1482_agreebox .agreebox{margin:24px 0 40px; padding-left:20px;}
+.cts1482_agreebox .agreebox input[type="checkbox"]{width:21px; height:21px; margin:0 8px 0 0; vertical-align:middle;}
+.cts1482_agreebox .submitbox{text-align:center; font-size:0;}
+.cts1482_agreebox .submitbox .btn{width:100px; margin:0 5px; box-sizing:border-box;}
+
+
+@media screen and (max-width:1240px){
+.temp_calendar .timebox .conbox{padding:75px 2% 20px 4%;}
+.temp_calendar .timebox .conbox .innerbox{padding-right:12px;}
+}
+
+@media screen and (max-width:900px){
+.temp_calendar .calendarbox{float:none; width:auto; margin-bottom:20px;}
+.temp_calendar .timebox{float:none; width:auto;}
+.temp_calendar .timebox .conbox .innerbox{height:240px;}
+.cts1482_descriptionbox{padding-right:0;}
+.cts1482_descriptionbox .btn{position:static; display:block; width:120px; margin:10px auto 0;}
+}
+
+@media screen and (max-width:480px){
+.temp_calendar .calendarbox .calendar table.calendar_table thead th{padding:10px 2%;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent{height:56px;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent button{height:56px;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent p{height:56px;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent p span{width:100%; font-size:12px; letter-spacing:-1px;}
+.temp_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent button span{width:100%; font-size:12px; letter-spacing:-1px;}
+.cts1482_tabbox .tab_menu.type1 ul.tab_item li{width:50%;}
+.cts1482_tabbox .tab_menu.type1 ul.tab_item li a{min-width:0;}
+}
+
+/* 동영상관리 */
+.button{display:inline-block; border-color:#0053a0; border-style:solid; border-width:1px; padding:4px 12px; line-height:22px; color:#033486;}
+.button:link{color:#033486;}
+.button:hover{color:#033486;}
+.button:active{color:#033486;}
+.button:visited{color:#033486;}
+.button.blue{background-color:#022a6d; border-color:#022a6d; color:#FFF;}
+ul.album_list{margin-top:20px;}
+ul.album_list li{float:left; width:23.95%; margin-right:1.4%; margin-bottom:20px;}
+ul.album_list li:nth-child(4n){margin-right:0;}
+ul.album_list li .cont_img{margin-bottom:6px;}
+ul.album_list li .cont_img a{display:block; line-height:0;}
+ul.album_list li .cont_img a img{max-width:100%;}
+ul.album_list li .cont_img + a{display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+@media screen and (max-width:1000px){
+ul.album_list li{width:32.4%;}
+ul.album_list li:nth-child(4n){margin-right:1.4%;}
+ul.album_list li:nth-child(3n){margin-right:0;}
+}
+
+@media screen and (max-width:640px){
+ul.album_list li{width:49.3%;}
+ul.album_list li:nth-child(3n){margin-right:1.4%;}
+ul.album_list li:nth-child(2n){margin-right:0;}
+}
+
+
+/* 통합예약 - 시설대관 */
+.rent.list .bbs_search{margin-top:0; padding:15px 4%;}
+.rent.list .bbs_search .listbox{text-align:left; font-size:0;}
+.rent.list .bbs_search .listbox .itembox{float:left;}
+.rent.list .bbs_search .listbox .itembox.item01{margin-right:40px;}
+.rent.list .bbs_search .listbox .itembox label{margin-right:10px; line-height:24px; vertical-align:middle; font-size:15px;}
+.rent.list .bbs_search .listbox .itembox.item02 select.select{margin-right:10px;}
+.rent.list .bbs_search .listbox .itembox.item02 input[type="text"].temp_textbox{width:288px; height:30px;}
+.rent.list .bbs_search .listbox .itembox.item02 input[type="submit"]{width:68px; height:34px; margin-left:10px; padding:0; background-color:#555555; border:none; color:#FFF; font-size:15px;}
+.rent.list table td a.subject{color:#000;}
+
+@media screen and (max-width:1240px) {
+.rent.list .bbs_search .listbox .itembox.item01{width:30%; margin-right:4%;}
+.rent.list .bbs_search .listbox .itembox.item01 label{display:inline-block; width:56px; vertical-align:middle;}
+.rent.list .bbs_search .listbox .itembox.item01 select.select{width:calc(100% - 66px);}
+.rent.list .bbs_search .listbox .itembox.item02{width:66%;}
+.rent.list .bbs_search .listbox .itembox.item02 select.select{width:78px;}
+.rent.list .bbs_search .listbox .itembox.item02 input[type="text"].temp_textbox{width:calc(100% - 180px);}
+}
+
+@media screen and (max-width:640px) {
+.rent.list .bbs_search .listbox .itembox{float:none;}
+.rent.list .bbs_search .listbox .itembox.item01{width:auto; margin-right:0; margin-bottom:10px;}
+.rent.list .bbs_search .listbox .itembox.item02{width:auto;}
+}
+
+@media screen and (max-width:480px) {
+.rent.list .bbs_search .listbox .itembox.item02 input[type="text"].temp_textbox{width:calc(100% - 102px);}
+.rent.list .bbs_search .listbox .itembox.item02 input[type="submit"]{display:block; width:100%; margin-left:0; margin-top:10px;}
+}
+
+/* 통합예약 - 시설대관 - 상세보기 */
+.rent.view .rent_photobox{border-top:#000 solid 2px; margin:20px 0 30px; padding:30px 20px 0;}
+.rent.view .rent_photobox .photo_slide{float:left; width:372px;}
+.rent.view .rent_photobox .photo_slide .photo_list{margin-bottom:5px;}
+.rent.view .rent_photobox .photo_slide .photo_list .photo_item{border:#dddddd solid 1px; padding:5px;}
+.rent.view .rent_photobox .photo_slide .photo_list .photo_item .photobox{position:relative; background-color:#f7f8fb;}
+.rent.view .rent_photobox .photo_slide .photo_list .photo_item .photobox:before{position:absolute; top:calc(50% - 13px); left:calc(50% - 18px); display:block; width:35px; height:26px; background-repeat:no-repeat; background-position:center center; background-image:url(/common/images/program/rent_noimage.png); content:''; z-index:1;}
+.rent.view .rent_photobox .photo_slide .photo_list .photo_item .photobox .inner_photo{position:relative; height:238px; background-repeat:no-repeat; background-position:center center; background-size:cover; z-index:2;}
+.rent.view .rent_photobox .photo_slide .photo_list .photo_item .photobox .photo{position:absolute; top:0; left:0; width:0; height:0;}
+.rent.view .rent_photobox .photo_slide .photo_list .photo_item .photobox .photo img{width:0; height:0;}
+.rent.view .rent_photobox .photo_slide .controlbox{text-align:right; font-size:0;}
+.rent.view .rent_photobox .photo_slide .controlbox .page{display:inline-block; margin-right:12px; line-height:30px; vertical-align:middle; color:#252525; font-family:'Opensans'; font-size:14px;}
+.rent.view .rent_photobox .photo_slide .controlbox .photo_control{display:inline-block; vertical-align:middle;}
+.rent.view .rent_photobox .photo_slide .controlbox .photo_control button{border-color:#d7d7d7; border-style:solid; border-width:1px 1px 1px 0; width:29px; height:30px; background-color:#f2f4f7; background-repeat:no-repeat; background-image:url(/common/images/program/rent_slide_control.png); color:transparent; font-size:0;}
+.rent.view .rent_photobox .photo_slide .controlbox .photo_control button.prev{width:30px; border-width:1px; background-position:left center;}
+.rent.view .rent_photobox .photo_slide .controlbox .photo_control button.next{background-position:-28px center;}
+.rent.view .rent_photobox .photo_slide .controlbox .photo_control button.play{background-position:-56px center;}
+.rent.view .rent_photobox .photo_slide .controlbox .photo_control button.pause{background-position:right center;}
+.rent.view .rent_photobox .rightbox{float:right; width:478px; margin-top:10px;}
+.rent.view .rent_photobox .rightbox .titlebox .state{display:inline-block; background-color:#0053a0; margin-right:15px; padding:6px 12px; line-height:20px; vertical-align:top; color:#FFF; font-size:14px; letter-spacing:-0.07em;}
+.rent.view .rent_photobox .rightbox .titlebox{margin-bottom:17px;}
+.rent.view .rent_photobox .rightbox .titlebox .title_text{display:inline-block; line-height:28px; vertical-align:top; color:#1f1f1f; font-size:22px;}
+.rent.view .rent_photobox .rightbox .textbox{margin-bottom:25px;}
+.rent.view .rent_photobox .rightbox .textbox ul li{position:relative; margin-top:6px; padding-left:15px;}
+.rent.view .rent_photobox .rightbox .textbox ul li:first-child{margin-top:0;}
+.rent.view .rent_photobox .rightbox .textbox ul li:before{position:absolute; top:9px; left:0; display:block; width:7px; height:7px; background:url(/common/images/program/exhibit_list_icon.png) no-repeat; content:'';}
+.rent.view .rent_photobox .rightbox .textbox ul li em{display:block; float:left; width:64px; color:#3b5fae;}
+.rent.view .rent_photobox .rightbox .textbox ul li .text{float:right; width:calc(100% - 72px);}
+
+@media screen and (max-width:1240px) {
+.rent.view .rent_photobox{padding:30px 2% 0;}
+.rent.view .rent_photobox .photo_slide{width:38%;}
+.rent.view .rent_photobox .photo_slide .photo_list .photo_item .photobox .inner_photo{height:0; padding:33% 0;}
+.rent.view .rent_photobox .rightbox{width:58%;}
+}
+
+@media screen and (max-width:640px) {
+.rent.view .rent_photobox .photo_slide{float:none; width:auto;}
+.rent.view .rent_photobox .rightbox{float:none; width:auto; margin-top:20px;}
+}
+
+/* 통합예약 - 시설대관 - 신청 */
+.rent.form table.rent_formtable .smsbox{margin-top:10px;}
+.rent.form table.rent_formtable .must{margin-right:4px; margin-left:0;}
+.rent.form table.rent_formtable input.numberof{width:30px;}
+.rent.form table.rent_formtable textarea{width:calc(100% - 6px); height:80px; padding:2px;}
+.rent.form table.rent_formtable .radiobox .temp_checkbox:first-child{margin-right:10px;}
+
+@media screen and (max-width:480px) {
+.rent.form table.rent_formtable input[type="text"].temp_textbox.type3{width:calc(100% - 14px);}
+}
+
+/* 통합예약 - 시설대관 - 나의예약관리 */
+.my_reservation.view table .must{margin-right:4px; margin-left:0;}
+.my_reservation.view table td.total{background-color:#f7f8fb; text-align:center;}
+.my_reservation.cancel .temp_box.type2 .box_wrap:before{background-image:url(/common/images/program/reservation_cancel_icon.png);}
+.cancel_form textarea{width:calc(100% - 6px); height:80px; padding:2px;}
+.cancel_form input[type="text"].temp_textbox.type3{width:calc(100% - 14px);}
+
+
+/* 공통캘린더 */
+.program_calendar{margin-top:20px;}
+.program_calendar .calendarbox{float:left; width:605px;}
+.program_calendar .calendarbox .datebox{margin-bottom:20px; line-height:0; text-align:center; font-size:0;}
+.program_calendar .calendarbox .datebox a{display:inline-block; width:28px; height:24px; vertical-align:middle; background-repeat:no-repeat; background-image:url(/common/images/program/program_calendar_control.png); color:transparent; font-size:0;}
+.program_calendar .calendarbox .datebox a.prev{background-position:left center;}
+.program_calendar .calendarbox .datebox a.next{background-position:right center;}
+.program_calendar .calendarbox .datebox p{display:inline-block; margin:0 24px; line-height:24px; vertical-align:middle; color:#252525; font-family:'Opensans'; font-size:24px; font-weight:600; letter-spacing:2px;}
+.program_calendar .calendarbox .calendar table.calendar_table{border-collapse:collapse; width:100%;}
+.program_calendar .calendarbox .calendar table.calendar_table colgroup col{width:14.28%;}
+.program_calendar .calendarbox .calendar table.calendar_table thead th{background-color:#778495; border:#778495 solid 1px; height:30px; padding:10px;vertical-align:middle; text-align:center; color:#FFF; font-family:'Opensans'; font-size:14px; font-weight:200;}
+.program_calendar .calendarbox .calendar table.calendar_table thead th:first-child{color:#fccdcd;}
+.program_calendar .calendarbox .calendar table.calendar_table thead th:last-child{color:#a9d3ff;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td{border:#d2d2d2 solid 1px; vertical-align:top;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody tr:first-child td{border-top:none;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td.today{background-color:#f4f8fb;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent{position:relative; height:79px;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent .date{position:absolute; top:7px; left:11px; display:inline-block; line-height:16px; padding-bottom:2px; border-bottom:transparent solid 1px; color:#474e61; font-family:'Opensans'; font-size:14px; z-index:1;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td.today .date_parent .date{border-bottom-color:#7a7c7d;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td:first-child .date_parent .date{color:#912323;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td:last-child .date_parent .date{color:#084896;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent .todaytext{position:absolute; display:none; color:transparent; font-size:0;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td.today .date_parent .todaytext{display:inline;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent p{position:relative; display:none; height:79px; z-index:2;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent p span{position:absolute; bottom:0; right:0; display:block; width:59px; padding:3px 0; line-height:20px; text-align:center; color:rgba(255, 255, 255, 0.85); font-size:14px; z-index:3;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent .close span{background-color:#ce0d14;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent .unavailable span{background-color:#7d7d7d;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent p:before{position:absolute; top:-1px; left:-1px; display:block; width:100%; height:100%; border-color:transparent; border-style:solid; border-width:1px; content:'';}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent .close:before{border-color:#ce0d14;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent .unavailable:before{border-color:#7d7d7d;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td.closed .date_parent .close{display:block;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td.disabled .date_parent .unavailable{display:block;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent button{position:relative; display:none; width:100%; height:79px; overflow:visible; z-index:2;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent button:before{position:absolute; top:-1px; left:-1px; display:block; width:100%; height:100%; border:#0f822a solid 1px; content:''; z-index:1;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td.enable .date_parent button{display:block;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent button span{position:absolute; bottom:0; right:0; display:block; width:59px; padding:3px 0; background-color:#1b8b35; line-height:20px; text-align:center; color:rgba(255, 255, 255, 0.85); font-size:14px; z-index:3;}
+
+.program_calendar .timebox{float:right; width:330px; margin-top:44px;}
+.program_calendar .timebox .titlebox{background-color:#778495; padding:14px 0; text-align:center;}
+.program_calendar .timebox .titlebox p{line-height:23px; color:#FFF; font-size:16px; font-weight:600;}
+.program_calendar .timebox .conbox{border-color:#d2d2d2; border-style:solid; border-width:0 1px 1px; padding:20px;}
+.program_calendar .timebox .conbox .innerbox{height:360px; overflow-y:auto; padding-right:14px;}
+.program_calendar .timebox .conbox .innerbox ul li{position:relative; border-bottom:#d2d2d2 solid 1px; padding:9px 74px 9px 6px;}
+.program_calendar .timebox .conbox .innerbox ul li input[type="checkbox"]{position:absolute; top:12px; left:6px; z-index:1;}
+.program_calendar .timebox .conbox .innerbox ul li label{position:relative; display:block; line-height:24px; border-color:transparent; border-style:dashed; border-width:1px; padding-left:39px; font-size:15px; z-index:2;}
+.program_calendar .timebox .conbox .innerbox ul li input[type="checkbox"]:focus + label{border-color:#000;}
+.program_calendar .timebox .conbox .innerbox ul li label:before{position:absolute; top:3px; left:0; display:block; width:18px; height:18px; background-repeat:no-repeat; content:''; transition:background-position 200ms ease-in-out 0s;}
+.program_calendar .timebox .conbox .innerbox ul li.disabled label:before{background-color:#cccccc;}
+.program_calendar .timebox .conbox .innerbox ul li.enable label:before{background-position:center top; background-image:url(/common/images/program/program_calendar_checkbox.gif);}
+.program_calendar .timebox .conbox .innerbox ul li.enable input[type="checkbox"]:checked + label:before{background-position:center bottom;}
+.program_calendar .timebox .conbox .innerbox ul li.disabled label{color:#7d7d7d;}
+.program_calendar .timebox .conbox .innerbox ul li.enable label{color:#111111;}
+.program_calendar .timebox .conbox .innerbox ul li .disable_button{position:absolute; top:9px; right:0; display:none; width:60px; padding:3px 0; line-height:20px; text-align:center; background-color:#ce0d14; color:rgba(255, 255, 255, 0.85); font-size:14px;}
+.program_calendar .timebox .conbox .innerbox ul li.disabled .disable_button{display:inline-block;}
+.program_calendar .timebox .conbox .innerbox ul li button{position:absolute; top:9px; right:0; display:none; width:60px; height:26px; margin:0; padding:0; border:none; text-align:center; background-color:#1b8b35; color:rgba(255, 255, 255, 0.85); font-size:14px;}
+.program_calendar .timebox .conbox .innerbox ul li.enable button{display:inline-block;}
+
+@media screen and (max-width:1240px){
+.program_calendar .calendarbox{width:66%;}
+.program_calendar .timebox{width:32%;}
+.program_calendar .timebox .conbox{padding:20px 2%;}
+.program_calendar .timebox .conbox .innerbox ul li label{padding-left:30px;}
+}
+
+@media screen and (max-width:640px){
+.program_calendar .calendarbox{float:none; width:auto;}
+.program_calendar .timebox{float:none; width:auto; margin-top:30px;}
+.program_calendar .timebox .conbox .innerbox{height:240px;}
+}
+
+@media screen and (max-width:480px){
+.program_calendar .calendarbox .calendar table.calendar_table thead th{padding:10px 2%;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent{height:56px;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent button{height:56px;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent p{height:56px;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent p span{width:100%; font-size:12px; letter-spacing:-1px;}
+.program_calendar .calendarbox .calendar table.calendar_table tbody td .date_parent button span{width:100%; font-size:12px; letter-spacing:-1px;}
+}
+
+/* 교육강좌관리 > 결제계좌 등록하기 팝업 */
+table.bbs_default.write.notresponsive.ecsregistpopup th{width:32%;}
+table.ecsregistpopup input#setleMemo{width:calc(100% - 8px); margin:0;}
+table.ecsregistpopup input[type="text"].fullsize{width:calc(100% - 8px); margin:0;}
+
+/* 교육관리 > 교육강좌관리 */
+table.bbs_default.write.eduApplcntView th{width:auto;}
+table.bbs_default a.btn.nowrap{white-space:nowrap;}
+
+
+
+

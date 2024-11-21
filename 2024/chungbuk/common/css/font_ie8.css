@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+/* 나눔 */
+@font-face{
+	font-family:'NanumG';
+	font-weight: 400;
+	src:url("../font/NanumBarunGothic.eot");
+	src:url("../font/NanumBarunGothic.eot?#iefix") format('embedded-opentype');
+}
+@font-face{
+	font-family:'NanumG';
+	font-weight: 600;
+	src:url("../font/NanumGothicBold.eot");
+	src:url("../font/NanumGothicBold.eot?#iefix") format('embedded-opentype');
+}
+
+@font-face{
+	font-family:'NanumS';
+	font-weight: 400;
+	src:url("../font/NanumSquareR.eot");
+	src:url("../font/NanumSquareR.eot?#iefix") format('embedded-opentype');
+}
+@font-face{
+	font-family:'NanumS';
+	font-weight: 600;
+	src:url("../font/NanumSquareB.eot");
+	src:url("../font/NanumSquareB.eot?#iefix") format('embedded-opentype');
+}
+
+@font-face{
+	font-family:'NanumSR';
+	font-weight: 400;
+	src:url("../font/NanumSquareRoundR.eot");
+	src:url("../font/NanumSquareRoundR.eot?#iefix") format('embedded-opentype');
+}
+@font-face{
+	font-family:'NanumSR';
+	font-weight: 600;
+	src:url("../font/NanumSquareRoundB.eot");
+	src:url("../font/NanumSquareRoundB.eot?#iefix") format('embedded-opentype');
+}
+@font-face{
+	font-family:'NanumR';
+	src:url("../font/NanumSquareR.eot");
+	src:url("../font/NanumSquareR.eot?#iefix") format('embedded-opentype');
+}
+@font-face{
+	font-family:'NanumP';
+	font-weight: 400;
+	src:url("../font/NanumPen.eot");
+	src:url("../font/NanumPen.eot?#iefix") format('embedded-opentype');
+}
+@font-face{
+	font-family:'NanumM';
+	font-weight: 400;
+	src:url("../font/NanumMyeongjo.eot");
+	src:url("../font/NanumMyeongjo.eot?#iefix") format('embedded-opentype');
+}
+
+/* 본고딕*/
+@font-face{
+	font-family:'NotoKr';
+	font-weight: 400;
+	src:url("../font/SpoqaHanSans-Regular.eot");
+	src:url("../font/SpoqaHanSans-Regular.eot?#iefix") format('embedded-opentype');
+}
+@font-face{
+	font-family:'NotoKr';
+	font-weight: 600;
+	src:url("../font/SpoqaHanSans-Bold.eot");
+	src:url("../font/SpoqaHanSans-Bold.eot?#iefix") format('embedded-opentype');
+}
+
+/* 서울한강 */
+@font-face{
+	font-family:'SeoulN';
+	font-weight: 400;
+	src:url("../font/SeoulNamsanM.eot");
+	src:url("../font/SeoulNamsanM.eot?#iefix") format('embedded-opentype');
+}
+@font-face{
+	font-family:'SeoulN';
+	font-weight: 600;
+	src:url("../font/SeoulNamsanB.eot");
+	src:url("../font/SeoulNamsanB.eot?#iefix") format('embedded-opentype');
+}
+
+@font-face{
+	font-family:'SeoulH';
+	font-weight: 400;
+	src:url("../font/SeoulHangangM.eot");
+	src:url("../font/SeoulHangangM.eot?#iefix") format('embedded-opentype');
+}
+@font-face{
+	font-family:'SeoulH';
+	font-weight: 600;
+	src:url("../font/SeoulHangangB.eot");
+	src:url("../font/SeoulHangangB.eot?#iefix") format('embedded-opentype');
+}
+
+/* OpenSans */
+@font-face{
+	font-family:'Opensans';
+	src:url("../font/OpensansR.eot");
+	src:url("../font/OpensansR.eot?#iefix") format('embedded-opentype');
+}
+
+@font-face{
+	font-family:'Opensans';
+	font-weight: 600;
+	src:url("../font/OpensansB.eot");
+	src:url("../font/OpensansB.eot?#iefix") format('embedded-opentype');
+}
+
+/* Binggrae */
+@font-face {
+	font-family: 'Binggrae';
+	font-weight: bold;
+	src:url("../font/Binggrae.eot");
+	src:url("../font/Binggrae.eot?#iefix") format('embedded-opentype');
+}
+
+/* gmarket */
+@font-face {
+	font-family: 'gmarket_light';
+	font-weight: lighter;
+    src: url("../font/GmarketSansTTFLight.eot");
+    src: url("../font/GmarketSansTTFLight.eot?#iefix") format('embedded-opentype');
+}
+
+@font-face {
+	font-family: 'gmarket_bold';
+	font-weight: bold;
+    src: url("../font/GmarketSansTTFBold.eot");
+    src: url("../font/GmarketSansTTFBold.eot?#iefix") format('embedded-opentype');
+}

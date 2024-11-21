@@ -1,0 +1,163 @@
+/* CBFEZ 소개 > 비전 및 추진전략 */
+.visionbox{max-width:900px; margin:0 auto 40px;}
+.visionbox .p_bar {width:100%; height:81px; color:#1e5095; font-weight:600; font-size:15px; margin-bottom:20px; background:url("../images/contents/img_010401_01.jpg") 50% 0px no-repeat; line-height:81px; text-align:center;}
+.visionbox .pur_box ul {margin-top:20px; text-align:center;}
+/* .visionbox .pur_box ul li {float:left; margin-left:50px; padding:0px 10px 20px 0;} */
+.visionbox .pur_box ul li {display:inline-block; margin:0 50px; padding:0px 10px 20px 0;}
+.visionbox .pur_box ul li:after {clear:both; display:block; content:"";}
+.visionbox .pur_box ul li p {text-align:center; margin-top:20px; color:#1e5095; font-weight:600;}
+.visionbox .border_bit { width:100%;  margin-bottom:20px; text-align:center; font-size:16px; color:#1e5095; font-weight:600; font-size:17px;}
+.visionbox .border_bit p{ margin:0 5%; text-align:center;  border:10px solid #1e5095; padding:15px 0; box-sizing:border-box;}
+
+@media all and (max-width:1400px) {
+.visionbox .pur_box{margin-bottom:30px;}
+.visionbox .pur_box ul li{padding:0; text-align:center;}
+.visionbox .pur_box ul li{width:32%; margin:auto;}
+.visionbox .pur_box ul li p{padding:0 2%;}
+}
+
+@media all and (max-width:640px) {
+.visionbox .pur_box ul li {float:none; width:auto; text-align:center; margin-bottom:40px; margin-left:0px;}
+.visionbox .pur_box ul li p br{display:none;}
+}
+
+/* 투자정보 > 투자안내 > 투자절차 */
+.step_box {float:left; width:100%; margin-top:70px;}
+.step_box:after {clear:both; display:block; content:"";}
+.step_box .step { float:left; width:30%; }
+.table_align { float:left;width:70%;}
+
+@media all and (max-width:600px) {
+.step_box {float:none; margin-top:40px;}
+.table_align {float:none; width:100%; margin-top:20px;}
+.step_box .step {float:none; width:100%; text-align:center; }
+.step_box .step img {width:40%;}
+}
+
+/* 개발계획 > 개발계획 > 단계별 개발계획 */
+.dev_box {}
+.dev_box .dev_tit {padding:115px 10px 10px 10px; margin:10px 20px; border-bottom:1px solid rgba(255,255,255,0.3); font-size:16px;}
+.dev_box .dev_con {position:relative; width:235px; margin:0 auto;}
+.dev_box li { float:left; width:33.33%; text-align:center; color:#fff;}
+.dev_box .bg1 {background:url(../images/contents/bg_develop_01.jpg) no-repeat center top;}
+.dev_box .bg2 {background:url(../images/contents/bg_develop_02.jpg) no-repeat center top;}
+.dev_box .bg3 {background:url(../images/contents/bg_develop_03.jpg) no-repeat center top;}
+.dev_box .bg1 p {border:1px solid #45a304; border-radius:5px; box-sizing:content-box; color:#45a304; font-size:16px; height:90px; line-height:90px; margin:110px auto 0 auto; width:80%;}
+.dev_box .bg2 p {border:1px solid #099172; border-radius:5px; box-sizing:content-box; color:#099172; font-size:16px; height:90px; line-height:90px; margin:110px auto 0 auto; width:80%;}
+.dev_box .bg3 p {border:1px solid #2386c0; border-radius:5px; box-sizing:content-box; color:#2386c0; font-size:16px; height:90px; line-height:90px; margin:110px auto 0 auto; width:80%;}
+.dev_box .step_01 {position:absolute; top:12px; right:37px; line-height:20px;}
+.dev_box .step_02 {position:absolute; top:12px; right:33px; line-height:20px;}
+.dev_box .step_03 {position:absolute; top:12px; right:36px; line-height:20px;}
+.dev_box:after {clear:both; display:block; content:"";}
+.dev_box p span{display:inline-block; line-height:21px; vertical-align:middle;}
+
+@media all and (min-width:640px) and (max-width:800px) {
+    .dev_box .bg1{background-size:contain; background-position:center 13%;}
+    .dev_box .bg2{background-size:contain; background-position:center 13%;}
+    .dev_box .bg3{background-size:contain; background-position:center 13%;}
+    .dev_box .dev_con{width:auto;}
+    .dev_box .dev_tit{margin:10px 2%;}
+    .dev_box .step_01{top:15%; right:16%; font-size:13px;}
+    .dev_box .step_02{top:15%; right:16%; font-size:13px;}
+    .dev_box .step_03{top:15%; right:16%; font-size:13px;}
+    .dev_box .bg2 p br{display:none;}
+}
+
+@media all and (max-width:640px) {
+.dev_box li {width:100%; margin-bottom:30px;}
+}
+
+/* Home > Development Plan > Osong Biomedical > Overview of the project  */
+.investment_img{max-width:900px; margin:auto;}
+.investment_img ul li {float:left; padding:20px 6px 20px; text-align:center;}
+.investment_img ul li img {margin-bottom:8px;}
+.investment_img:after {clear:both; display:block; content:"";}
+
+@media all and (max-width:1400px) {
+.investment_img ul li{width:32.54%; margin-right:1.19%;}
+.investment_img ul li:nth-child(3n){margin-right:0;}
+}
+
+/* Home > Development Plan > Osong Biomedical > Attraction of foreign direct investment */
+.bio_box2 {width:100%;}
+.bio_box2:after {clear:both; content:""; display:block;}
+.bio_box2 .img_text_box2 {float:left; width:28%; margin-top:20px;}
+.bio_box2 .text_align2 {float:left; width:70%; margin-top:30px; margin-left:2%;  }
+.bio_box2 .text_align2 li {margin-left:10px; }
+
+@media all and (max-width:640px) {
+.bio_box2 .img_text_box2 {width:100%; float:none;}
+.bio_box2 .img_text_box2 img{width:100%;}
+.bio_box2 .text_align2 {float:none; width:auto; margin-top:20px; margin-left:0;}
+}
+
+/* Home > CBfez Public Relations Center > Cyber location visit > Ground VR > Osong Biovalley */
+.list_vr > ul > li { float:left; margin-right:30px; margin-bottom:40px;}
+.list_vr > ul > li.last { margin-right:0;}
+.list_vr > ul > li .box_list { border:1px solid #cdcdcd; width:278px; text-align:center;}
+.list_vr > ul > li .box_list p { padding:10px 0; min-height:50px; box-sizing:content-box;}
+.list_vr > ul > li .box_list .btnbox a { border-top:1px solid #cdcdcd; display:inline-block; width:50%; box-sizing:border-box; padding-bottom:3px; line-height:30px;}
+.list_vr > ul > li .box_list .btnbox a img { vertical-align:top; margin-top:7px;}
+.list_vr > ul > li .box_list .btnbox a:first-child { border-right:1px solid #cdcdcd;}
+.list_vr > ul > li .box_list .btnbox a.btn_all { border-left:1px solid #cdcdcd;}
+
+.view_vr_img .swiper-wrapper { width:740px; height:450px; margin:0 auto;}
+.view_vr_img .swiper-button-prev { text-indent:-9999px;}
+.view_vr_img .swiper-button-next { text-indent:-9999px;}
+
+@media all and (max-width:1400px) {
+.list_vr > ul > li { width:30%; margin-right:5%;}
+.list_vr > ul > li .box_list { width:100%; box-sizing:border-box;}
+.list_vr > ul > li .box_list .img img { width:100%;}
+}
+
+@media all and (max-width:900px) {
+.list_vr > ul > li { width:46%; margin:0 2% 20px 2%;}
+.list_vr > ul > li.last { margin:0 2% 20px 2%;}
+}
+
+@media all and (max-width:500px) {
+.list_vr > ul > li { width:100%; margin:0 0 20px 0;}
+.list_vr > ul > li.last { margin:0 0 20px 0;}
+.list_vr > ul > li .box_list p{min-height:0;}
+}
+
+/* Home > Administrative Services > Organization chart  */
+.org_box {background:url(../images/contents/bg_org_line.png) no-repeat center top; background-size:100% 369px;}
+.org_box .top {background:#fff; text-align:center; border:6px solid #1e5095; border-radius:50px; width:25%; margin:0 auto; margin-bottom:35px;}
+.org_box .top a {padding:10px; display:block; text-align:center; font-size:18px; font-weight:bold; color:#1e5095; letter-spacing:-2px; line-height:18px;}
+.org_box .mid li {background:#fff; float:left; width:33.3%;}
+.org_box .mid .head_tit1 { margin:0; margin-bottom:70px;}
+.org_box .mid .head_tit1 a { width:100%; margin:0 auto; border:4px solid #45a304; border-radius:50px;padding:8px; display:block; text-align:center; font-size:17px; font-weight:bold; color:#45a304;}
+.org_box .mid .head_tit2 { width:25%; margin:0 0 0 25%; margin-bottom:70px;}
+.org_box .mid .head_tit2 a { width:50%; margin:0 auto; border:4px solid #45a304; border-radius:50px; padding:8px; display:block; text-align:center; font-size:17px; font-weight:bold; color:#45a304;}
+.org_box .bottom {width:100%; box-sizing:border-box; }
+.org_box .bottom > ul {width:100%; }
+.org_box .bottom > ul > li {float:left; margin:0 auto; box-sizing:border-box; width:33.3%; padding:0 12px;}
+.org_box .bottom .org_depart .depart_tit {background-color:#2386c0; border-radius:11px; margin-bottom:20px;}
+.org_box .bottom .org_depart .depart_tit a {color:#fff; display:block; padding:16px; text-align:center; font-weight:bold; font-size:17px; line-height:17px; }
+.org_box .bottom .org_depart .team_tit {background-color:#f7f7f7; border:1px solid #cfcfcf; margin-bottom:5px; color:#666; display:block; padding:11px; text-align:center; font-weight:bold; font-size:16px; line-height:16px;}
+.org_box .mid:after {clear:both; display:block; content:"";}
+.org_box .bottom:after {clear:both; display:block; content:"";}
+
+@media all and (max-width:600px) {
+.org_box {background:url(../images/contents/bg_org_line.png) no-repeat center top; background-size:100% 200px;}
+.org_box .top {border:3px solid #1e5095; width:100%; margin-bottom:5px;}
+.org_box .top a {font-size:16px;letter-spacing:-2.5px;}
+.org_box .mid .head_tit1 { margin-bottom:30px;}
+.org_box .mid .head_tit1 a { border:2px solid #45a304; width:90%; font-size:15px;}
+.org_box .mid .head_tit2 { width:25%; margin:0 0 0 22%; margin-bottom:30px;}
+.org_box .mid .head_tit2 a { border:2px solid #45a304; width:100%; font-size:15px;}
+.org_box .bottom > ul > li {padding:0 3px;}
+.org_box .bottom .org_depart .depart_tit {border-radius:7px; width:100%; margin-bottom:10px;}
+.org_box .bottom .org_depart .depart_tit a {padding:10px 0; font-size:13px; width:100%; box-sizing:border-box; line-height:13px;}
+.org_box .bottom .org_depart .team_tit {padding:3px; font-size:12px; line-height:12px;}
+}
+
+#contents .root_daum_roughmap{width:100%;}
+
+/* Home > Homepage Guide > Sitemap */
+#newsitemap .depth1 h3:before{top:auto;}
+
+
+

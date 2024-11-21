@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/*중국어 폰트 추가*/
+/*각 언어별 폰트 깨짐이 있어서 여러 폰트 삽입함*/
+@import "../font/noto_sans_sc_light/css.css";
+@import "../font/noto_sans_sc_regular/css.css";
+@import "../font/noto_sans_sc_bold/css.css";
+
+
+/* Monterrat */
+
+@font-face {
+    font-family: 'Mstrat';
+    font-weight: 200;
+    src: url("../font/Montserrat-ExtraLight.woff2") format('woff2'),
+        url("../font/Montserrat-ExtraLight.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Mstrat';
+    font-weight: 400;
+    src: url("../font/Montserrat-Regular.woff2") format('woff2'),
+        url("../font/Montserrat-Regular.woff") format('woff');
+}
+
+/* 지마켓 */
+@font-face {
+    font-family: 'Gmark';
+    font-weight: 200;
+    src: url("../font/GmarketSans-Light.woff2") format('woff2'),
+        url("../font/GmarketSans-Light.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Gmark';
+    font-weight: 400;
+    src: url("../font/GmarketSansMedium.woff") format('woff'),
+        url("../font/GmarketSansMedium.eot") format('eot');
+}
+
+@font-face {
+    font-family: 'Gmark';
+    font-weight: 600;
+    src: url("../font/GmarketSansBold.woff") format('woff'),
+        url("../font/GmarketSansBold.eot") format('eot');
+}
+
+/*일본어 폰트*/
+
+@font-face {
+    font-family: 'NotoCJKKr';
+    font-weight: 200;
+    src: url("../font/NotoSansCJKjp-Light.woff2") format('woff2'),
+        url("../font/NotoSansCJKjp-Light.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'NotoCJKKr';
+    font-weight: 400;
+    src: url("../font/NotoSans.woff2") format('woff2'),
+        url("../font/NotoSans.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'NotoCJKKr';
+    font-weight: 600;
+    src: url("../font/NotoSansCJKjp-Bold.woff2") format('woff2'),
+        url("../font/NotoSansCJKjp-Bold.woff") format('woff');
+}
+
+
+/*베트남, 러시아*/
+@font-face {
+    font-family: 'Noto';
+    font-weight: 400;
+    src: url("../font/NotoSans.woff2") format('woff2'),
+        url("../font/NotoSans.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'Noto';
+    font-weight: 600;
+    src: url("../font/NotoSans-Bold.woff2") format('woff2'),
+        url("../font/NotoSans-Bold.woff") format('woff');
+}

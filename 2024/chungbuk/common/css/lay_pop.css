@@ -1,0 +1,10 @@
+#pop .wrap {width:990px; margin:0 auto; position:relative;}
+#pop {z-index:999; width:100%; display:inline-block; position:relative;}
+#divpopup {float:left; z-index:999; position:absolute;}
+#divpopup .divpopup_form {background:white; padding:5px; float:left; width:342px; margin:-5px 0 0 0;}
+#divpopup .divpopup_form .divpopup_chk {float:left;}
+#divpopup .divpopup_form .divpopup_close {float:right}
+
+@media screen and (max-width:1000px){
+.main_popup {top:1%; left:3%; width:94%;}
+}
