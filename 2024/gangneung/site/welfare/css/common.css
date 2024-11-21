@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@media (min-width: 1501px) {
+    .lnb .menu .depth1_text{margin: 0 90px;}
+}
+
+@media (max-width: 1500px) and (min-width: 1201px) {
+    .lnb .menu .depth1_text{margin: 0 60px;}
+}
+
+@media (min-width: 1001px) {
+    .lnb .menu .depth1_list{text-align: center;}
+    .lnb .menu .depth1_text{margin: 0 40px;}
+}

@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>웹 표준 접근성의 차세대 HTML5 솔루션, DEXT5</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="웹에디터, 웹표준, 웹접근성, HTML5, HTML편집기, 크로스브라우저, cross browser, XSS, 업로드, UPLOAD">
+    <meta name="description" content="웹 접근성 및 웹 표준을 준수하는 HTML5 기반의 솔루션입니다.">
+    <link href="css/sample.common.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function fn_click(obj) {
+            var elementsA = document.getElementsByTagName('a')
+            var elementsALength = document.getElementsByTagName('a').length;
+            
+            for (var idx = 0; idx < elementsALength; idx++) {
+                if (elementsA[idx] == obj)
+                    elementsA[idx].className = "on";
+                else
+                    elementsA[idx].className = "";
+            }
+
+            var contentTitle = document.getElementById("contentTitle");
+            contentTitle.innerHTML = obj.innerHTML;
+
+            var iframeObj = document.getElementById("contentFrame");
+            iframeObj.src = obj.href;
+
+            return false;
+        }
+
+        function fn_load() {
+            var currLocation = window.location.href;
+            currLocation = currLocation.substring(0, currLocation.lastIndexOf('/'));
+            currLocation = currLocation.substring(0, currLocation.lastIndexOf('/'));
+
+            var helpRoot = currLocation;
+            var mainPageDev = helpRoot + '/help/index_dev.html';
+            var indexDevObj = document.getElementById("indexDev");
+
+            // 개발자 가이드   
+            var xhr;
+            if (window.ActiveXObject) {
+                xhr = new ActiveXObject("Microsoft.XMLHTTP");
+            } else if (window.XMLHttpRequest) {
+                xhr = new XMLHttpRequest();
+            }
+
+            var sendComplete = function () {
+                if (xhr.readyState == 4) {
+                    if (xhr.status == 200) {
+                        indexDevObj.href = mainPageDev;
+                    } else {
+                        indexDevObj.href = 'http://www.dext5.com/dext5upload/help/index_dev.html';
+                    }
+                }
+            }
+
+            xhr.onreadystatechange = sendComplete;
+            xhr.open("GET", mainPageDev, true);
+            xhr.send(null);
+
+        }
+    </script>
+</head>
+<body onload="fn_load()">
+    <div id="wrap">
+        <div id="head">
+            <h1><a href="index.html">DEXT5 Upload Sample</a></h1>
+            <span class="btn_info"><a target="_blank" id="indexDev" href="">설치 및 개발자 가이드</a></span>
+        </div>
+        <div id="container">
+            <div id="snb">
+                <h2 class="blind">DEXT5 Upload Sample list</h2>
+                <ul>
+                    <li><span>&gt;</span> <a href="html/sample_description.html" class="on" onclick="return fn_click(this);">Sample 설명</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_upload.html" onclick="return fn_click(this);">기본 업로드</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_download.html" onclick="return fn_click(this);">기본 다운로드</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_ajax.html" onclick="return fn_click(this);">동적 생성</a></li>
+                    <!--<li><span>&gt;</span> <a href="html/sample_ajax_multi.html" onclick="return fn_click(this);">동적생성 (멀티)</a></li>-->
+                    <li><span>&gt;</span> <a href="html/sample_custom_download.html" onclick="return fn_click(this);">보안컨텐츠 다운로드</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_multi_upload.html" onclick="return fn_click(this);">다중 업로드</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_download_mode.html" onclick="return fn_click(this);">다운로드 모드 설정</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_edit_event.html" onclick="return fn_click(this);">편집모드 이벤트</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_view_event.html" onclick="return fn_click(this);">보기모드 이벤트</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_inputfile_upload.html" onclick="return fn_click(this);">File 테그 연동</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_folder_upload.html" onclick="return fn_click(this);">폴더 구조로 업로드</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_folder_download.html" onclick="return fn_click(this);">폴더 구조로 다운로드</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_img_preview.html" onclick="return fn_click(this);">이미지 미리보기</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_file_sort.html" onclick="return fn_click(this);">졍렬/파일 순서 바꾸기</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_large_file.html" onclick="return fn_click(this);">대용량 설정</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_drop_zone.html" onclick="return fn_click(this);">Drop Zone</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_form_mode.html" onclick="return fn_click(this);">양식모드</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_set_save_folder.html" onclick="return fn_click(this);">저장경로 설정 방법</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_custom_button.html" onclick="return fn_click(this);">커스텀버튼 추가</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_upload_view.html" onclick="return fn_click(this);">편집/보기 모드 동시 사용</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_add_formdata.html" onclick="return fn_click(this);">파라미터 추가</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_set_mark_value.html" onclick="return fn_click(this);" style="font-size:12px;">각 파일에 data 추가하는 방법</a></li>
+                    <li><span>&gt;</span> <a href="html/sample_set_popup_mode.html" onclick="return fn_click(this);" style="font-size:12px;">팝업창이 플러그인에 가려질 때</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <h3 id="contentTitle">Sample 설명</h3>
+                <div class="iframe_box"><iframe id="contentFrame" src="html/sample_description.html" frameborder="0" width="100%" height="100%" style="min-height:900px"></iframe></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

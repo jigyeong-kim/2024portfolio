@@ -1,0 +1,424 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>DEXT5 Developer Manual</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <link href="../css/help.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function heightResize() {
+            $('#lnb').css('height', $(window).height() - 20 + 'px')
+        }
+        $(function () {
+            heightResize();
+        })
+        $(window).resize(heightResize)
+
+        function click_evt(obj) {
+            var elementsA = document.getElementsByTagName('a')
+            var elementsALength = document.getElementsByTagName('a').length;
+
+            for (var idx = 0; idx < elementsALength; idx++) {
+                if (elementsA[idx] == obj)
+                    elementsA[idx].className = "on";
+                else
+                    elementsA[idx].className = "";
+            }
+            var iframeObj = document.getElementById("contentBox");
+            if (obj.href != null && obj.href != undefined && obj.href != '') iframeObj.src = obj.href;
+
+            return false;
+        }
+
+        $(function () {
+            $("ul").css("display", "none");
+            $("#lnb h3").click(function () {
+                if ($("+ul", this).css("display") == "none") {
+                    $("ul").slideUp("fast");
+                    $("+ul", this).slideDown("fast");
+                    $("h3").removeClass("selected");
+                    $(this).addClass("selected");
+                } else if ($("#lnb h3:first")) {
+                    $("ul").css("display", "none");
+                    $("+ul", this).slideUp("fast");
+                    $("h3").removeClass("selected");
+                } else {
+                    $("+ul", this).slideUp("fast");
+                    $(this).addClass("selected");
+                }
+            }).mouseover(function () {
+                $(this).addClass("over");
+            }).mouseout(function () {
+                $(this).removeClass("over");
+            });
+        });
+
+        $(function () {
+            $(".subbox").css("display", "none");
+            $("#lnb ul li h4").click(function () {
+                if ($("+.subbox", this).css("display") == "none") {
+                    $(".subbox").slideUp("fast");
+                    $("+.subbox", this).slideDown("fast");
+                    $("h4").removeClass("selected");
+                    $(this).addClass("selected");
+                } else if ($("#lnb ul li h4:first")) {
+                    $(".subbox").css("display", "none");
+                    $("+.subbox", this).slideUp("fast");
+                    $("h4").removeClass("selected");
+                } else {
+                    $("+.subbox", this).slideUp("fast");
+                    $(this).addClass("selected");
+                }
+            }).mouseover(function () {
+                $(this).addClass("over");
+            }).mouseout(function () {
+                $(this).removeClass("over");
+            });
+        });
+    </script>
+</head>
+<body topmargin="0" leftmargin="0" scroll="no" marginheight="0" marginwidth="0">
+    <h2 class="blind">DEXT5 개발자 매뉴얼</h2>
+    <table style="width: 100%; height: 100%;" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td valign="top" style="width: 230px;height:100%;">
+                    <div id="lnb" class="dext5help_content_left" style="padding:10px;overflow:auto">
+                        <h3 class="title" title="소개"><a onclick="return click_evt(this);">소개</a></h3>
+                        <ul class="help_lst_box">
+                            <li>
+                                <h4 title="설치 및 기본설정"><a href="../dev/config/dext5guideMain.html" onclick="return click_evt(this);">설치 및 기본설정</a></h4>
+                                <ul class="subbox n_subbox"><li></li></ul>
+                            </li>
+                        </ul>
+
+                        <h3 class="title" title="클라이언트 가이드"><a onclick="return click_evt(this);">클라이언트 가이드</a></h3>
+                        <ul class="help_lst_box">
+                            <li>
+                                <h4 title="환경설정파일"><a href="../dev/config/dext5config.html" onclick="return click_evt(this);">환경설정파일</a></h4>
+                                <ul class="subbox n_subbox"><li></li></ul>
+                            </li>
+                            <li>
+                                <h4 class="title" title="Methods">Methods</h4>
+                                <!-- Methods start -->
+                                <ul class="subbox subbox2">
+                                    <li><a href="../dev/api/_m_Dext5Upload.html" onclick="return click_evt(this);" title="Dext5Upload">Dext5Upload</a></li>
+                                    <li><a href="../dev/api/_m_Transfer.html" onclick="return click_evt(this);" title="Transfer">Transfer</a></li>
+                                    <li><a href="../dev/api/_m_AddUploadedFile.html" onclick="return click_evt(this);" title="AddUploadedFile">AddUploadedFile</a></li>
+                                    <li><a href="../dev/api/_m_AddUploadedFileWithGetFileSize.html" onclick="return click_evt(this);" title="AddUploadedFileWithGetFileSize">AddUploadedFileWithGetFileSize</a></li>
+                                    <li><a href="../dev/api/_m_AddUploadedFileEx.html" onclick="return click_evt(this);" title="AddUploadedFileEx">AddUploadedFileEx</a></li>
+                                    <li><a href="../dev/api/_m_AddUploadedFileExWithGetFileSize.html" onclick="return click_evt(this);" title="AddUploadedFileExWithGetFileSize">AddUploadedFileExWithGetFileSize</a></li>
+                                    <li><a href="../dev/api/_m_OpenFileDialog.html" onclick="return click_evt(this);" title="OpenFileDialog">OpenFileDialog</a></li>
+                                    <li><a href="../dev/api/_m_DeleteAllFile.html" onclick="return click_evt(this);" title="DeleteAllFile">DeleteAllFile</a></li>
+                                    <li><a href="../dev/api/_m_DeleteSelectedFile.html" onclick="return click_evt(this);" title="DeleteSelectedFile">DeleteSelectedFile</a></li>
+                                    <li><a href="../dev/api/_m_OpenSelectedFile.html" onclick="return click_evt(this);" title="OpenSelectedFile">OpenSelectedFile</a></li>
+                                    <li><a href="../dev/api/_m_GetTotalFileCount.html" onclick="return click_evt(this);" title="GetTotalFileCount">GetTotalFileCount</a></li>
+                                    <li><a href="../dev/api/_m_GetTotalFileSize.html" onclick="return click_evt(this);" title="GetTotalFileSize">GetTotalFileSize</a></li>
+                                    <li><a href="../dev/api/_m_ResetUpload.html" onclick="return click_evt(this);" title="ResetUpload">ResetUpload</a></li>
+                                    <li><a href="../dev/api/_m_GetNewUploadListForJson.html" onclick="return click_evt(this);" title="GetNewUploadListForJson">GetNewUploadListForJson</a></li>
+                                    <li><a href="../dev/api/_m_GetSelectedNewUploadListForJson.html" onclick="return click_evt(this);" title="GetSelectedNewUploadListForJson">GetSelectedNewUploadListForJson</a></li>
+                                    <li><a href="../dev/api/_m_GetAllFileListForJson.html" onclick="return click_evt(this);" title="GetAllFileListForJson">GetAllFileListForJson</a></li>
+                                    <li><a href="../dev/api/_m_GetSelectedAllFileListForJson.html" onclick="return click_evt(this);" title="GetSelectedAllFileListForJson">GetSelectedAllFileListForJson</a></li>
+                                    <li><a href="../dev/api/_m_GetAllFileMergeListForJson.html" onclick="return click_evt(this);" title="GetAllFileMergeListForJson">GetAllFileMergeListForJson</a></li>
+                                    <li><a href="../dev/api/_m_GetDeleteListForJson.html" onclick="return click_evt(this);" title="GetDeleteListForJson">GetDeleteListForJson</a></li>
+                                    <li><a href="../dev/api/_m_GetNewUploadListForXml.html" onclick="return click_evt(this);" title="GetNewUploadListForXml">GetNewUploadListForXml</a></li>
+                                    <li><a href="../dev/api/_m_GetSelectedNewUploadListForXml.html" onclick="return click_evt(this);" title="GetSelectedNewUploadListForXml">GetSelectedNewUploadListForXml</a></li>
+                                    <li><a href="../dev/api/_m_GetAllFileListForXml.html" onclick="return click_evt(this);" title="GetAllFileListForXml">GetAllFileListForXml</a></li>
+                                    <li><a href="../dev/api/_m_GetSelectedAllFileListForXml.html" onclick="return click_evt(this);" title="GetSelectedAllFileListForXml">GetSelectedAllFileListForXml</a></li>
+                                    <li><a href="../dev/api/_m_GetAllFileMergeListForXml.html" onclick="return click_evt(this);" title="GetAllFileMergeListForXml">GetAllFileMergeListForXml</a></li>
+                                    <li><a href="../dev/api/_m_GetDeleteListForXml.html" onclick="return click_evt(this);" title="GetDeleteListForXml">GetDeleteListForXml</a></li>
+                                    <li><a href="../dev/api/_m_GetNewUploadListForText.html" onclick="return click_evt(this);" title="GetNewUploadListForText">GetNewUploadListForText</a></li>
+                                    <li><a href="../dev/api/_m_GetSelectedNewUploadListForText.html" onclick="return click_evt(this);" title="GetSelectedNewUploadListFoText">GetSelectedNewUploadListForText</a></li>
+                                    <li><a href="../dev/api/_m_GetAllFileListForText.html" onclick="return click_evt(this);" title="GetAllFileListForText">GetAllFileListForText</a></li>
+                                    <li><a href="../dev/api/_m_GetSelectedAllFileListForText.html" onclick="return click_evt(this);" title="GetSelectedAllFileListForText">GetSelectedAllFileListForText</a></li>
+                                    <li><a href="../dev/api/_m_GetAllFileMergeListForText.html" onclick="return click_evt(this);" title="GetAllFileMergeListForText">GetAllFileMergeListForText</a></li>
+                                    <li><a href="../dev/api/_m_GetDeleteListForText.html" onclick="return click_evt(this);" title="GetDeleteListForText">GetDeleteListForText</a></li>
+                                    <li><a href="../dev/api/_m_DownloadFile.html" onclick="return click_evt(this);" title="DownloadFile">DownloadFile</a></li>
+                                    <li><a href="../dev/api/_m_DownloadAllFile.html" onclick="return click_evt(this);" title="DownloadAllFile">DownloadAllFile</a></li>
+                                    <li><a href="../dev/api/_m_SetUploadMode.html" onclick="return click_evt(this);" title="SetUploadMode">SetUploadMode</a></li>
+                                    <li><a href="../dev/api/_m_Show.html" onclick="return click_evt(this);" title="Show">Show</a></li>
+                                    <li><a href="../dev/api/_m_Hidden.html" onclick="return click_evt(this);" title="Hidden">Hidden</a></li>
+                                    <li><a href="../dev/api/_m_SetSkinColor.html" onclick="return click_evt(this);" title="SetSkinColor">SetSkinColor</a></li>
+                                    <li><a href="../dev/api/_m_MoveFile.html" onclick="return click_evt(this);" title="MoveFile">MoveFile</a></li>
+                                    <li><a href="../dev/api/_m_SetFileInfo.html" onclick="return click_evt(this);" title="SetFileInfo">SetFileInfo</a></li>
+                                    <li><a href="../dev/api/_m_AddFormData.html" onclick="return click_evt(this);" title="AddFormData">AddFormData</a></li>
+                                    <li><a href="../dev/api/_m_AddLocalFileObject.html" onclick="return click_evt(this);" title="AddLocalFileObject">AddLocalFileObject</a></li>
+                                    <li><a href="../dev/api/_m_SetSelectItem.html" onclick="return click_evt(this);" title="SetSelectItem">SetSelectItem</a></li>
+                                    <li><a href="../dev/api/_m_SetSelectItemEx.html" onclick="return click_evt(this);" title="SetSelectItemEx">SetSelectItemEx</a></li>
+                                    <li><a href="../dev/api/_m_SetFileMark.html" onclick="return click_evt(this);" title="SetFileMark">SetFileMark</a></li>
+                                    <li><a href="../dev/api/_m_SetSize.html" onclick="return click_evt(this);" title="SetSize">SetSize</a></li>
+                                    <li><a href="../dev/api/_m_GetUploadCompleteState.html" onclick="return click_evt(this);" title="GetUploadCompleteState">GetUploadCompleteState</a></li>
+                                    <li><a href="../dev/api/_m_ResetUploadCompleteState.html" onclick="return click_evt(this);" title="ResetUploadCompleteState">ResetUploadCompleteState</a></li>
+                                    <li><a href="../dev/api/_m_GetUserRuntimeMode.html" onclick="return click_evt(this);" title="GetUserRuntimeMode">GetUserRuntimeMode</a></li>
+                                    <li><a href="../dev/api/_m_SetAllowOrLimitExtension.html" onclick="return click_evt(this);" title="SetAllowOrLimitExtension">SetAllowOrLimitExtension</a></li>
+                                    <li><a href="../dev/api/_m_GetFileSize.html" onclick="return click_evt(this);" title="GetFileSize">GetFileSize</a></li>
+                                    <li><a href="../dev/api/_m_SetMaxOneFileSize.html" onclick="return click_evt(this);" title="SetMaxOneFileSize">SetMaxOneFileSize</a></li>
+                                    <li><a href="../dev/api/_m_SetMaxTotalFileSize.html" onclick="return click_evt(this);" title="SetMaxTotalFileSize">SetMaxTotalFileSize</a></li>
+                                    <li><a href="../dev/api/_m_SetMaxTotalFileCount.html" onclick="return click_evt(this);" title="SetMaxTotalFileCount">SetMaxTotalFileCount</a></li>
+                                    <li><a href="../dev/api/_m_SetConfig.html" onclick="return click_evt(this);" title="SetConfig">SetConfig</a></li>
+                                    <li><a href="../dev/api/_m_AddLocalFileDirectlyEX.html" onclick="return click_evt(this);" title="AddLocalFileDirectlyEX">[PL]AddLocalFileDirectlyEX</a></li>
+                                    <li><a href="../dev/api/_m_AddHttpHeaderEx.html" onclick="return click_evt(this);" title="AddHttpHeaderEx">[PL]AddHttpHeaderEx</a></li>
+                                    <li><a href="../dev/api/_m_DoOpenFileEx.html" onclick="return click_evt(this);" title="DoOpenFileEx">[PL]DoOpenFileEx</a></li>
+                                    <li><a href="../dev/api/_m_DoSaveAndOpenEx.html" onclick="return click_evt(this);" title="DoSaveAndOpenEx">[PL]DoSaveAndOpenEx</a></li>
+                                    <li><a href="../dev/api/_m_DoSaveAndFolderOpenEx.html" onclick="return click_evt(this);" title="DoSaveAndFolderOpenEx">[PL]DoSaveAndFolderOpenEx</a></li>
+                                    <li><a href="../dev/api/_m_DoPrintFileEx.html" onclick="return click_evt(this);" title="DoPrintFileEx">[PL]DoPrintFileEx</a></li>
+                                    <li><a href="../dev/api/_m_GetItemCount.html" onclick="return click_evt(this);" title="GetItemCount">[PL]GetItemCount</a></li>
+                                    <li><a href="../dev/api/_m_SetDefaultSavePath.html" onclick="return click_evt(this);" title="SetDefaultSavePath">[PL]SetDefaultSavePath</a></li>
+                                    <li><a href="../dev/api/_m_SetFolderTransfer.html" onclick="return click_evt(this);" title="SetFolderTransfer">[PL]SetFolderTransfer</a></li>
+                                    <li><a href="../dev/api/_m_SetPopupMode.html" onclick="return click_evt(this);" title="SetPopupMode">[PL]SetPopupMode</a></li>
+                                </ul>
+                                <!-- //Methods end -->
+                            </li>
+                            <li>
+                                <h4 class="title" title="Properties">Properties</h4>
+                                <!-- Properties start -->
+                                <ul class="subbox subbox2">
+                                    <li><a href="../dev/api/_p_AllowedZeroFileSize.html" onclick="return click_evt(this);" title="AllowedZeroFileSize">AllowedZeroFileSize</a></li>
+                                    <li><a href="../dev/api/_p_BorderStyle.html" onclick="return click_evt(this);" title="BorderStyle">BorderStyle</a></li>
+                                    <li><a href="../dev/api/_p_ButtonBarEdit.html" onclick="return click_evt(this);" title="ButtonBarEdit">ButtonBarEdit</a></li>
+                                    <li><a href="../dev/api/_p_ButtonBarView.html" onclick="return click_evt(this);" title="ButtonBarView">ButtonBarView</a></li>
+                                    <li><a href="../dev/api/_p_ButtonBarPosition.html" onclick="return click_evt(this);" title="ButtonBarPosition">ButtonBarPosition</a></li>
+                                    <li><a href="../dev/api/_p_ChunkSize.html" onclick="return click_evt(this);" title="ChunkSize">ChunkSize</a></li>
+                                    <li><a href="../dev/api/_p_CompleteEventResetUse.html" onclick="return click_evt(this);" title="CompleteEventResetUse">CompleteEventResetUse</a></li>
+                                    <li><a href="../dev/api/_p_CustomColor.html" onclick="return click_evt(this);" title="CustomColor">CustomColor</a></li>
+                                    <li><a href="../dev/api/_p_CssRootPath.html" onclick="return click_evt(this);" title="CssRootPath">CssRootPath</a></li>
+                                    <li><a href="../dev/api/_p_CustomWebFileColor.html" onclick="return click_evt(this);" title="CustomWebFileColor">CustomWebFileColor</a></li>
+                                    <li><a href="../dev/api/_p_DevelopLangage.html" onclick="return click_evt(this);" title="DevelopLangage">DevelopLangage</a></li>
+                                    <li><a href="../dev/api/_p_DisableAlertMessage.html" onclick="return click_evt(this);" title="DisableAlertMessage">DisableAlertMessage</a></li>
+                                    <li><a href="../dev/api/_p_DownloadHandlerUrl.html" onclick="return click_evt(this);" title="DownloadHandlerUrl">DownloadHandlerUrl</a></li>
+                                    <li><a href="../dev/api/_p_Extension.html" onclick="return click_evt(this);" title="Extension">Extension</a></li>
+                                    <li><a href="../dev/api/_p_FileMoveContextMenu.html" onclick="return click_evt(this);" title="FileMoveContextMenu">FileMoveContextMenu</a></li>
+                                    <li><a href="../dev/api/_p_FileNameRule.html" onclick="return click_evt(this);" title="FileNameRule">FileNameRule</a></li>
+                                    <li><a href="../dev/api/_p_FolderNameRule.html" onclick="return click_evt(this);" title="FolderNameRule">FolderNameRule</a></li>
+                                    <li><a href="../dev/api/_p_HandlerUrl.html" onclick="return click_evt(this);" title="HandlerUrl">HandlerUrl</a></li>
+                                    <li><a href="../dev/api/_p_HeaderBar.html" onclick="return click_evt(this);" title="HeaderBar">HeaderBar</a></li>
+                                    <li><a href="../dev/api/_p_Height.html" onclick="return click_evt(this);" title="Height">Height</a></li>
+                                    <li><a href="../dev/api/_p_HideContextMenu.html" onclick="return click_evt(this);" title="HideContextMenu">HideContextMenu</a></li>
+                                    <li><a href="../dev/api/_p_HideListInfo.html" onclick="return click_evt(this);" title="HideListInfo">HideListInfo</a></li>
+                                    <li><a href="../dev/api/_p_ImgPreView.html" onclick="return click_evt(this);" title="ImgPreView">ImgPreView</a></li>
+                                    <li><a href="../dev/api/_p_InitXml.html" onclick="return click_evt(this);" title="InitXml">InitXml</a></li>
+                                    <li><a href="../dev/api/_p_Lang.html" onclick="return click_evt(this);" title="Lang">Lang</a></li>
+                                    <li><a href="../dev/api/_p_LargeFiles.html" onclick="return click_evt(this);" title="LargeFiles">LargeFiles</a></li>
+                                    <li><a href="../dev/api/_p_ListViewDbclick.html" onclick="return click_evt(this);" title="ListViewDbclick">ListViewDbclick</a></li>
+                                    <li><a href="../dev/api/_p_ListViewDragAndDrop.html" onclick="return click_evt(this);" title="ListViewDragAndDrop">ListViewDragAndDrop</a></li>
+                                    <li><a href="../dev/api/_p_MaxOneFileSize.html" onclick="return click_evt(this);" title="MaxOneFileSize">MaxOneFileSize</a></li>
+                                    <li><a href="../dev/api/_p_MaxTotalFileCount.html" onclick="return click_evt(this);" title="MaxTotalFileCount">MaxTotalFileCount</a></li>
+                                    <li><a href="../dev/api/_p_MaxTotalFileSize.html" onclick="return click_evt(this);" title="MaxTotalFileSize">MaxTotalFileSize</a></li>
+                                    <li><a href="../dev/api/_p_Mode.html" onclick="return click_evt(this);" title="Mode">Mode</a></li>
+                                    <li><a href="../dev/api/_p_MultiFileSelect.html" onclick="return click_evt(this);" title="MultiFileSelect">MultiFileSelect</a></li>
+                                    <li><a href="../dev/api/_p_RemoveContextItem.html" onclick="return click_evt(this);" title="RemoveContextItem">RemoveContextItem</a></li>
+                                    <li><a href="../dev/api/_p_ResumeDownload.html" onclick="return click_evt(this);" title="ResumeDownload">ResumeDownload</a></li>
+                                    <li><a href="../dev/api/_p_Runtimes.html" onclick="return click_evt(this);" title="Runtimes">Runtimes</a></li>
+                                    <li><a href="../dev/api/_p_ShowEditAlign.html" onclick="return click_evt(this);" title="ShowEditAlign">ShowEditAlign</a></li>
+                                    <li><a href="../dev/api/_p_ShowViewAlign.html" onclick="return click_evt(this);" title="ShowViewAlign">ShowViewAlign</a></li>
+                                    <li><a href="../dev/api/_p_SilentUpload.html" onclick="return click_evt(this);" title="SilentUpload">SilentUpload</a></li>
+                                    <li><a href="../dev/api/_p_SizeColumnWidth.html" onclick="return click_evt(this);" title="SizeColumnWidth">SizeColumnWidth</a></li>
+                                    <li><a href="../dev/api/_p_SkinName.html" onclick="return click_evt(this);" title="SkinName">SkinName</a></li>
+                                    <li><a href="../dev/api/_p_StatusBar.html" onclick="return click_evt(this);" title="StatusBar">StatusBar</a></li>
+                                    <li><a href="../dev/api/_p_UploadHolder.html" onclick="return click_evt(this);" title="UploadHolder">UploadHolder</a></li>
+                                    <li><a href="../dev/api/_p_UploadTransferWindow.html" onclick="return click_evt(this);" title="UploadTransferWindow">UploadTransferWindow</a></li>
+                                    <li><a href="../dev/api/_p_UseAddEvent.html" onclick="return click_evt(this);" title="UseAddEvent">UseAddEvent</a></li>
+                                    <li><a href="../dev/api/_p_UseAfterAddEndTimeEvent.html" onclick="return click_evt(this);" title="UseAfterAddEndTimeEvent">UseAfterAddEndTimeEvent</a></li>
+                                    <li><a href="../dev/api/_p_UseAfterAddEvent.html" onclick="return click_evt(this);" title="UseAfterAddEvent">UseAfterAddEvent</a></li>
+                                    <li><a href="../dev/api/_p_UseDeleteEvent.html" onclick="return click_evt(this);" title="UseDeleteEvent">UseDeleteEvent</a></li>
+                                    <li><a href="../dev/api/_p_UseDownloadEvent.html" onclick="return click_evt(this);" title="UseDownloadEvent">UseDownloadEvent</a></li>
+                                    <li><a href="../dev/api/_p_UseUploadingCancelEvent.html" onclick="return click_evt(this);" title="UseUploadingCancelEvent">UseUploadingCancelEvent</a></li>
+                                    <li><a href="../dev/api/_p_UseViewOrOpenEvent.html" onclick="return click_evt(this);" title="UseViewOrOpenEvent">UseViewOrOpenEvent</a></li>
+                                    <li><a href="../dev/api/_p_UseFileSort.html" onclick="return click_evt(this);" title="UseFileSort">UseFileSort</a></li>
+                                    <li><a href="../dev/api/_p_UserMessage.html" onclick="return click_evt(this);" title="UserMessage">UserMessage</a></li>
+                                    <li><a href="../dev/api/_p_ViewerHandlerUrl.html" onclick="return click_evt(this);" title="ViewerHandlerUrl">ViewerHandlerUrl</a></li>
+                                    <li><a href="../dev/api/_p_Views.html" onclick="return click_evt(this);" title="Views">Views</a></li>
+                                    <li><a href="../dev/api/_p_Width.html" onclick="return click_evt(this);" title="Width">Width</a></li>
+                                    <li><a href="../dev/api/_p_AutomaticConnection.html" onclick="return click_evt(this);" title="AutomaticConnection">[PL]AutomaticConnection</a></li>
+                                    <li><a href="../dev/api/_p_DefaultDownloadPath.html" onclick="return click_evt(this);" title="DefaultDownloadPath">[PL]DefaultDownloadPath</a></li>
+                                    <li><a href="../dev/api/_p_FolderTransfer.html" onclick="return click_evt(this);" title="FolderTransfer">[PL]FolderTransfer</a></li>
+                                    <li><a href="../dev/api/_p_ResumeUpload.html" onclick="return click_evt(this);" title="ResumeUpload">[PL]ResumeUpload</a></li>
+                                    <li><a href="../dev/api/_p_ShowFolderView.html" onclick="return click_evt(this);" title="ShowFolderView">[PL]ShowFolderView</a></li>
+                                    <li><a href="../dev/api/_p_Timeout.html" onclick="return click_evt(this);" title="Timeout">[PL]Timeout</a></li>
+                                </ul>
+                                <!-- //Properties end -->
+                            </li>
+                            <li>
+                                <h4 class="title" title="Events">Events</h4>
+                                <!-- Events start -->
+                                <ul class="subbox subbox2">
+                                    <li><a href="../dev/api/_e_OnCreationComplete.html" onclick="return click_evt(this);" title="OnCreationComplete">OnCreationComplete</a></li>
+                                    <li><a href="../dev/api/_e_BeforeAddItem.html" onclick="return click_evt(this);" title="BeforeAddItem">BeforeAddItem</a></li>
+                                    <li><a href="../dev/api/_e_BeforeDeleteItem.html" onclick="return click_evt(this);" title="BeforeDeleteItem">BeforeDeleteItem</a></li>
+                                    <li><a href="../dev/api/_e_BeforeFileViewOrOpen.html" onclick="return click_evt(this);" title="BeforeFileViewOrOpen">BeforeFileViewOrOpen</a></li>
+                                    <li><a href="../dev/api/_e_UploadingCancel.html" onclick="return click_evt(this);" title="UploadingCancel">UploadingCancel</a></li>
+                                    <li><a href="../dev/api/_e_BeforeFileDownload.html" onclick="return click_evt(this);" title="BeforeFileDownload">BeforeFileDownload</a></li>
+                                    <li><a href="../dev/api/_e_AfterAddItem.html" onclick="return click_evt(this);" title="AfterAddItem">AfterAddItem</a></li>
+                                    <li><a href="../dev/api/_e_AfterAddItemEndTime.html" onclick="return click_evt(this);" title="AfterAddItemEndTime">AfterAddItemEndTime</a></li>
+                                    <li><a href="../dev/api/_e_OnTransfer_Start.html" onclick="return click_evt(this);" title="OnTransfer_Start">OnTransfer_Start</a></li>
+                                    <li><a href="../dev/api/_e_OnTransfer_Complete.html" onclick="return click_evt(this);" title="OnTransfer_Complete">OnTransfer_Complete</a></li>
+                                    <li><a href="../dev/api/_e_OnError.html" onclick="return click_evt(this);" title="OnError">OnError</a></li>
+                                    <li><a href="../dev/api/_e_AfterDownload.html" onclick="return click_evt(this);" title="AfterDownload">[PL]AfterDownload</a></li>
+                                </ul>
+                                <!-- //Events end -->
+                            </li>
+                        </ul>
+                        <h3 class="title" title="서버 가이드(.NET)"><a onclick="return click_evt(this);">서버 가이드(.NET)</a></h3>
+                        <ul class="help_lst_box">
+                            <li>
+                                <h4 class="title" title="Methods">Properties</h4>
+                                <!-- Methods start -->
+                                <ul class="subbox subbox2">
+                                    <li><a href="../dev/server/.NET/_p_SetTempPath.html" onclick="return click_evt(this);" title="SetTempPath">SetTempPath</a></li>
+                                    <li><a href="../dev/server/.NET/_p_SetPhysicalPath.html" onclick="return click_evt(this);" title="SetPhysicalPath">SetPhysicalPath</a></li>
+                                    <li><a href="../dev/server/.NET/_p_SetVirtualPath.html" onclick="return click_evt(this);" title="SetVirtualPath">SetVirtualPath</a></li>
+                                    <li><a href="../dev/server/.NET/_p_SetConfigPhysicalPath.html" onclick="return click_evt(this);" title="SetConfigPhysicalPath">SetConfigPhysicalPath</a></li>
+                                    <li><a href="../dev/server/.NET/_p_SetZipFileName.html" onclick="return click_evt(this);" title="SetZipFileName">SetZipFileName</a></li>
+                                    <li><a href="../dev/server/.NET/_p_SetFileBlackWordList.html" onclick="return click_evt(this);" title="SetFileBlackWordList">SetFileBlackWordList</a></li>
+                                    <li><a href="../dev/server/.NET/_p_SetGarbageCleanDay.html" onclick="return click_evt(this);" title="SetGarbageCleanDay">SetGarbageCleanDay</a></li>
+                                    <li><a href="../dev/server/.NET/_p_SetDownloadRootPath.html" onclick="return click_evt(this);" title="SetDownloadRootPath">SetDownloadRootPath</a></li>
+                                    <li><a href="../dev/server/.NET/_p_SetAllowExtensionSpecialSymbol.html" onclick="return click_evt(this);" title="SetAllowExtensionSpecialSymbol">SetAllowExtensionSpecialSymbol</a></li>
+                                    <li><a href="../dev/server/.NET/_p_SetViewerJsPath.html" onclick="return click_evt(this);" title="SetViewerJsPath">SetViewerJsPath</a></li>
+                                    <li><a href="../dev/server/.NET/_p_SetViewerJs2Path.html" onclick="return click_evt(this);" title="SetViewerJs2Path">SetViewerJs2Path</a></li>
+                                    <li><a href="../dev/server/.NET/_p_SetViewerCssPath.html" onclick="return click_evt(this);" title="SetViewerCssPath">SetViewerCssPath</a></li>
+                                    <li><a href="../dev/server/.NET/_p_SetViewerLoadingImagePath.html" onclick="return click_evt(this);" title="SetViewerLoadingImagePath">SetViewerLoadingImagePath</a></li>
+                                    <li><a href="../dev/server/.NET/_p_SetViewerBrokenImagePath.html" onclick="return click_evt(this);" title="SetViewerBrokenImagePath">SetViewerBrokenImagePath</a></li>
+                                </ul>
+                                <!-- //Methods end -->
+                            </li>
+                            <li>
+                                <h4 class="title" title="Methods">Methods</h4>
+                                <!-- Methods start -->
+                                <ul class="subbox subbox2">
+                                    <li><a href="../dev/server/.NET/_m_SetDebugMode.html" onclick="return click_evt(this);" title="SetDebugMode">SetDebugMode</a></li>
+                                    <li><a href="../dev/server/.NET/_m_SetUploadCheckFileExtension.html" onclick="return click_evt(this);" title="SetUploadCheckFileExtension">SetUploadCheckFileExtension</a></li>
+                                    <li><a href="../dev/server/.NET/_m_SetDownloadCheckFileExtension.html" onclick="return click_evt(this);" title="SetDownloadCheckFileExtension">SetDownloadCheckFileExtension</a></li>
+                                    <li><a href="../dev/server/.NET/_m_SetCustomError.html" onclick="return click_evt(this);" title="SetCustomError">SetCustomError</a></li>
+                                    <li><a href="../dev/server/.NET/_m_SetNetworkCredentials.html" onclick="return click_evt(this);" title="SetNetworkCredentials">SetNetworkCredentials</a></li>
+                                </ul>
+                                <!-- //Methods end -->
+                            </li>
+                            <li>
+                                <h4 class="title" title="Methods">Image Methods</h4>
+                                <!-- Methods start -->
+                                <ul class="subbox subbox2">
+                                    <li><a href="../dev/server/.NET/_im_MakeThumbnail.html" onclick="return click_evt(this);" title="MakeThumbnail">MakeThumbnail</a></li>
+                                    <li><a href="../dev/server/.NET/_im_MakeThumbnailEX.html" onclick="return click_evt(this);" title="MakeThumbnailEX">MakeThumbnailEX</a></li>
+                                    <li><a href="../dev/server/.NET/_im_ConvertImageFormat.html" onclick="return click_evt(this);" title="ConvertImageFormat">ConvertImageFormat</a></li>
+                                    <li><a href="../dev/server/.NET/_im_ConvertImageSize.html" onclick="return click_evt(this);" title="ConvertImageSize">ConvertImageSize</a></li>
+                                    <li><a href="../dev/server/.NET/_im_ConvertImageSizeByPercent.html" onclick="return click_evt(this);" title="ConvertImageSizeByPercent">ConvertImageSizeByPercent</a></li>
+                                    <li><a href="../dev/server/.NET/_im_Rotate.html" onclick="return click_evt(this);" title="Rotate">Rotate</a></li>
+                                    <li><a href="../dev/server/.NET/_im_SetImageWaterMark.html" onclick="return click_evt(this);" title="SetImageWaterMark">SetImageWaterMark</a></li>
+                                    <li><a href="../dev/server/.NET/_im_SetTextWaterMark.html" onclick="return click_evt(this);" title="SetTextWaterMark">SetTextWaterMark</a></li>
+                                    <li><a href="../dev/server/.NET/_im_GetImageSize.html" onclick="return click_evt(this);" title="GetImageSize">GetImageSize</a></li>
+                                    <li><a href="../dev/server/.NET/_im_GetExifData.html" onclick="return click_evt(this);" title="GetExifData">GetExifData</a></li>
+                                </ul>
+                                <!-- //Methods end -->
+                            </li>
+                            <li>
+                                <h4 class="title" title="Events">Events</h4>
+                                <!-- Events start -->
+                                <ul class="subbox subbox2">
+                                    <li><a href="../dev/server/.NET/_e_UploadBeforeInitialize.html" onclick="return click_evt(this);" title="UploadBeforeInitialize">UploadBeforeInitialize</a></li>
+                                    <li><a href="../dev/server/.NET/_e_UploadCompleteBefore.html" onclick="return click_evt(this);" title="UploadCompleteBefore">UploadCompleteBefore</a></li>
+                                    <li><a href="../dev/server/.NET/_e_UploadComplete.html" onclick="return click_evt(this);" title="UploadComplete">UploadComplete</a></li>
+                                    <li><a href="../dev/server/.NET/_e_OpenDownloadBeforeInitialize.html" onclick="return click_evt(this);" title="OpenDownloadBeforeInitialize">OpenDownloadBeforeInitialize</a></li>
+                                    <li><a href="../dev/server/.NET/_e_OpenDownloadComplete.html" onclick="return click_evt(this);" title="OpenDownloadComplete">OpenDownloadComplete</a></li>
+                                </ul>
+                                <!-- //Events end -->
+                            </li>
+                            <li>
+                                <h4 class="title" title="Events">서버 설정 가이드</h4>
+                                <!-- Events start -->
+                                <ul class="subbox subbox2">
+                                    <li><a href="../dev/server/.NET/_sc_MaxRequestLength.html" onclick="return click_evt(this);" title="MaxRequestLength">MaxRequestLength</a></li>
+                                    <li><a href="../dev/server/.NET/_sc_Timeout.html" onclick="return click_evt(this);" title="Timeout">Timeout</a></li>
+                                    <li><a href="../dev/server/.NET/_sc_Cors.html" onclick="return click_evt(this);" title="Cross Origin Resource Sharing(CORS)">Cross Origin Resource Sharing(CORS)</a></li>
+                                </ul>
+                                <!-- //Events end -->
+                            </li>
+                        </ul>
+                        <h3 class="title" title="서버 가이드(JAVA)"><a onclick="return click_evt(this);">서버 가이드(JAVA)</a></h3>
+                        <ul class="help_lst_box">
+                            <li>
+                                <h4 class="title" title="Methods">Methods</h4>
+                                <!-- Methods start -->
+                                <ul class="subbox subbox2">
+                                    <li><a href="../dev/server/JAVA/_m_SetDebugMode.html" onclick="return click_evt(this);" title="SetDebugMode">SetDebugMode</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetTempPath.html" onclick="return click_evt(this);" title="SetTempPath">SetTempPath</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetPhysicalPath.html" onclick="return click_evt(this);" title="SetPhysicalPath">SetPhysicalPath</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetVirtualPath.html" onclick="return click_evt(this);" title="SetVirtualPath">SetVirtualPath</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetConfigPhysicalPath.html" onclick="return click_evt(this);" title="SetConfigPhysicalPath">SetConfigPhysicalPath</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetZipFileName.html" onclick="return click_evt(this);" title="SetZipFileName">SetZipFileName</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetUploadCheckFileExtension.html" onclick="return click_evt(this);" title="SetUploadCheckFileExtension">SetUploadCheckFileExtension</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetFileBlackWordList.html" onclick="return click_evt(this);" title="SetFileBlackWordList">SetFileBlackWordList</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetDownloadCheckFileExtension.html" onclick="return click_evt(this);" title="SetDownloadCheckFileExtension">SetDownloadCheckFileExtension</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetGarbageCleanDay.html" onclick="return click_evt(this);" title="SetGarbageCleanDay">SetGarbageCleanDay</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetDownloadRootPath.html" onclick="return click_evt(this);" title="SetDownloadRootPath">SetDownloadRootPath</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetAllowExtensionSpecialSymbol.html" onclick="return click_evt(this);" title="SetAllowExtensionSpecialSymbol">SetAllowExtensionSpecialSymbol</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetContextPath.html" onclick="return click_evt(this);" title="SetContextPath">SetContextPath</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetStartPhysicalPathSlashAllowed.html" onclick="return click_evt(this);" title="SetStartPhysicalPathSlashAllowed">SetStartPhysicalPathSlashAllowed</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetNtlmAuthentication.html" onclick="return click_evt(this);" title="SetNtlmAuthentication">SetNtlmAuthentication</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetViewerJsPath.html" onclick="return click_evt(this);" title="SetViewerJsPath">SetViewerJsPath</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetViewerJs2Path.html" onclick="return click_evt(this);" title="SetViewerJs2Path">SetViewerJs2Path</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetViewerCssPath.html" onclick="return click_evt(this);" title="SetViewerCssPath">SetViewerCssPath</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetViewerLoadingImagePath.html" onclick="return click_evt(this);" title="SetViewerLoadingImagePath">SetViewerLoadingImagePath</a></li>
+                                    <li><a href="../dev/server/JAVA/_m_SetViewerBrokenImagePath.html" onclick="return click_evt(this);" title="SetViewerBrokenImagePath">SetViewerBrokenImagePath</a></li>
+                                </ul>
+                                <!-- //Methods end -->
+                            </li>
+                            <li>
+                                <h4 class="title" title="Methods">Image Methods</h4>
+                                <!-- Methods start -->
+                                <ul class="subbox subbox2">
+                                    <li><a href="../dev/server/JAVA/_im_MakeThumbnail.html" onclick="return click_evt(this);" title="MakeThumbnail">MakeThumbnail</a></li>
+                                    <li><a href="../dev/server/JAVA/_im_MakeThumbnailEX.html" onclick="return click_evt(this);" title="MakeThumbnailEX">MakeThumbnailEX</a></li>
+                                    <li><a href="../dev/server/JAVA/_im_ConvertImageFormat.html" onclick="return click_evt(this);" title="ConvertImageFormat">ConvertImageFormat</a></li>
+                                    <li><a href="../dev/server/JAVA/_im_ConvertImageSize.html" onclick="return click_evt(this);" title="ConvertImageSize">ConvertImageSize</a></li>
+                                    <li><a href="../dev/server/JAVA/_im_ConvertImageSizeByPercent.html" onclick="return click_evt(this);" title="ConvertImageSizeByPercent">ConvertImageSizeByPercent</a></li>
+                                    <li><a href="../dev/server/JAVA/_im_Rotate.html" onclick="return click_evt(this);" title="Rotate">Rotate</a></li>
+                                    <li><a href="../dev/server/JAVA/_im_SetImageWaterMark.html" onclick="return click_evt(this);" title="SetImageWaterMark">SetImageWaterMark</a></li>
+                                    <li><a href="../dev/server/JAVA/_im_SetTextWaterMark.html" onclick="return click_evt(this);" title="SetTextWaterMark">SetTextWaterMark</a></li>
+                                    <li><a href="../dev/server/JAVA/_im_GetImageSize.html" onclick="return click_evt(this);" title="GetImageSize">GetImageSize</a></li>
+                                    <li><a href="../dev/server/JAVA/_im_GetExifData.html" onclick="return click_evt(this);" title="GetExifData">GetExifData</a></li>
+                                </ul>
+                                <!-- //Methods end -->
+                            </li>
+                            <li>
+                                <h4 class="title" title="Events">Events</h4>
+                                <!-- Events start -->
+                                <ul class="subbox subbox2">
+                                    <li><a href="../dev/server/JAVA/_e_UploadBeforeInitialize.html" onclick="return click_evt(this);" title="UploadBeforeInitialize">UploadBeforeInitialize</a></li>
+                                    <li><a href="../dev/server/JAVA/_e_UploadCompleteBefore.html" onclick="return click_evt(this);" title="UploadCompleteBefore">UploadCompleteBefore</a></li>
+                                    <li><a href="../dev/server/JAVA/_e_UploadComplete.html" onclick="return click_evt(this);" title="UploadComplete">UploadComplete</a></li>
+                                    <li><a href="../dev/server/JAVA/_e_OpenDownloadBeforeInitialize.html" onclick="return click_evt(this);" title="OpenDownloadBeforeInitialize">OpenDownloadBeforeInitialize</a></li>
+                                    <li><a href="../dev/server/JAVA/_e_OpenDownloadComplete.html" onclick="return click_evt(this);" title="OpenDownloadComplete">OpenDownloadComplete</a></li>
+                                </ul>
+                                <!-- //Events end -->
+                            </li>
+                            <li>
+                                <h4 class="title" title="Events">서버 설정 가이드</h4>
+                                <!-- Events start -->
+                                <ul class="subbox subbox2">
+                                    <li><a href="../dev/server/JAVA/_sc_MimeType.html" onclick="return click_evt(this);" title="MimeType">MimeType</a></li>
+                                    <li><a href="../dev/server/JAVA/_sc_MultipartReadAhead.html" onclick="return click_evt(this);" title="Multipart가 설정에 의해 미리 읽히는 경우">Multipart가 설정에 의해 미리 읽히는 경우</a></li>
+                                    <li><a href="../dev/server/JAVA/_sc_Cors.html" onclick="return click_evt(this);" title="Cross Origin Resource Sharing(CORS)">Cross Origin Resource Sharing(CORS)</a></li>
+                                </ul>
+                                <!-- //Events end -->
+                            </li>
+                        </ul>
+                        <h3 class="title" title="기타 가이드"><a onclick="return click_evt(this);">기타 가이드</a></h3>
+                        <ul class="subbox">
+                            <li><a href="../dev/server/ETC/_Sample1.html" onclick="return click_evt(this);" title="서버에서 환경설정 파일 읽기">서버에서 환경설정 파일 읽기</a></li>
+                            <li><a href="../dev/server/ETC/_Sample2.html" onclick="return click_evt(this);" title="파라미터 추가 후 서버에서 받는 방법">파라미터 추가 후 서버에서 받는 방법</a></li>
+                            <li><a href="../dev/server/ETC/_Sample3.html" onclick="return click_evt(this);" title="파일 추가할 때 각 파일에 특정 정보 추가 후 서버에서 받는 방법">파일 추가할 때 각 파일에 특정 정보 추가 후 서버에서 받는 방법</a></li>
+                            <li><a href="../dev/server/ETC/_Sample4.html" onclick="return click_evt(this);" title="파일을 원하는 파일명으로 변환하는 방법">파일을 원하는 파일명으로 변환하는 방법</a></li>
+                            <li><a href="../dev/server/ETC/_Sample5.html" onclick="return click_evt(this);" title="서버 이벤트에서 업로드 된 파일 정보 얻는 방법">서버 이벤트에서 업로드 된 파일 정보 얻는 방법</a></li>
+                            <li><a href="../dev/server/ETC/_Sample6.html" onclick="return click_evt(this);" title="서버 커스텀 다운로드 핸들러에서 커스텀 에러 처리 방법">서버 커스텀 다운로드 핸들러에서 커스텀 에러 처리 방법</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td valign="top" style="height:100%;border-left:1px solid #cacaca">
+                    <iframe name="right" id="contentBox" width="100%" height="100%" src="../dev/config/dext5guideMain.html" frameborder="0" scrolling="auto" style="width: 100%; height: 100%;" title="개발자 APIs 상세 설명"></iframe>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

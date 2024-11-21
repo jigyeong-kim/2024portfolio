@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>DEXT5 Developer Manual</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link href="../../css/help.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="dext5help_content_right">
+<div class="right_con">               
+    <h3 class="title">DEXT5 Upload :: Config :: LargeFiles</h3>
+    <p class="ttl">config.LargeFiles</p>
+    <p class="txt">
+        업로드 기준 파일 크기 이상이면 대용량 텍스트 노출 기능을 설정합니다.
+    </p>
+    <p class="mttl01">remarks</p>               
+    <p class="txt">
+        기본값 "0" 이면 대용량 텍스트 미노출이고, "사용자 설정값"으로 설정시 대용량 텍스트를 노출합니다.<br />
+        파일 단위는 B(byte), KB(kilobyte), MB(megabyte), GB(gigabyte) 으로 설정합니다.<br /><br />
+
+        <span class="txt"><span class="firebrick">Size</span>&nbsp;&nbsp;기준 파일 크기</span><br />
+        <span class="txt"><span class="firebrick">MaxCount</span>&nbsp;&nbsp;최대 파일 개수 제한 값</span><br />
+        <span class="txt"><span class="firebrick">MaxTotalSize</span>&nbsp;&nbsp;총 업로드 된 파일의 용량 값</span><br />
+        <span class="txt"><span class="firebrick">Text</span>&nbsp;&nbsp;대용량 문구 변경 값</span><br />
+        <span class="txt"><span class="firebrick">Color</span>&nbsp;&nbsp;대용량 텍스트 컬러 값</span><br/><br />       
+        
+         
+        setting 항목 중 (최대 파일 개수 제한 값(max_total_file_count), 업로드 된 파일의 용량 제한 값(max_total_file_size))이         
+        대용량 설정 속성 값(최대 파일 개수 제한 값(max_count),총 업로드 된 파일의 용량 제한 값(max_total_size))보다         
+        최우선으로 적용 됩니다.<br/><br />
+        예) 최대 파일 개수 제한 값(max_total_file_count)이 5 이고, 최대 대용량 파일 개수 제한 값(max_count)이 10 이라면
+        최대 파일 개수 제한 값(max_total_file_count)인 5가 우선 적용 됩니다.
+    </p>    
+    <p class="mttl01">sample code</p>             
+    <div class="cord">
+        <pre class="pre">
+&#60;script type="text/javascript" src="Dext5Upload/js/dext5upload.js"&#62;&#60;/script&#62;	
+
+&#60;!-- ..... 생략 ..... --&#62;
+ 
+&#60;div style="width:800px;height:200px"&#62;  
+    &#60;script type="text/javascript"&#62;
+        // 업로드 할 파일 크기가 10MB 이상이면 '대용량2' 라는 텍스트가 노출되어 생성합니다.
+        DEXT5UPLOAD.config.LargeFiles = {                       
+            Size: '10MB',
+            MaxCount: '10',
+            MaxTotalSize: '500MB',
+            Text: '대용량2',
+            Color: '#ff0000'
+        }
+
+        new Dext5Upload("upload1");
+    &#60;/script&#62;
+&#60;/div&#62;
+        </pre>  
+    </div>                   
+    </div>
+</div>
+</body>
+</html>
+

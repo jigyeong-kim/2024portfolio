@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>DEXT5 Developer Manual</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link href="../../css/help.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="dext5help_content_right">
+<div class="right_con">
+    <span class="pl_type">[플러그인 전용]</span>                
+    <h3 class="title">DEXT5 Upload :: OnSortArrowState</h3>
+    <p class="ttl">void d5_event_OnSortArrowState(uploadID, nArrowState, nColumn)</p>
+    <p class="txt">
+        파일 정렬을 발생합니다.
+    </p>
+    <p class="mttl01">return value</p>
+    <p class="txt">
+       없음.
+    </p> 
+    <p class="mttl01">parameters</p>
+    <p class="txt">
+        <span class="firebrick">uploadID</span>&nbsp;&nbsp;적용할 업로드의 id를 의미합니다.<br/>
+        <span class="firebrick">nArrowState</span>&nbsp;&nbsp;1 인 경우 오름차순(▲), 2 인 경우 내림차순(▼)를 의미합니다.<br />
+        <span class="firebrick">nColumn</span>&nbsp;&nbsp;0 인 경우 Name 컬럼, 1 인 경우 Size 컬럼를 의미합니다. 
+    </p>
+    <p class="mttl01">remarks</p>
+    <p class="txt">
+        없음.
+    </p>   
+    <p class="mttl01">sample code</p>             
+    <div class="cord">
+        <pre class="pre">
+&#60;script type="text/javascript" src="Dext5Upload/js/dext5upload.js"&#62;&#60;/script&#62;	
+
+&#60;script type="text/javascript"&#62;
+         d5_event_OnSortArrowState(uploadID, nArrowState, nColumn) {
+        // 파일 정렬 후 처리할 내용
+
+        }
+&#60;/script&#62;
+
+&#60;!-- ..... 생략 ..... --&#62;
+ 
+&#60;div style="width:800px;height:200px"&#62;  
+    &#60;script type="text/javascript"&#62;
+        new Dext5Upload("upload1");
+    &#60;/script&#62;
+&#60;/div&#62;
+        </pre>  
+    </div>                   
+    </div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* reset style [start] */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, big, cite, code,
+del, dfn, em, font, img, ins, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td 
+{ margin: 0; padding: 0;	border:0; line-height: 1.5em; }
+
+body {
+	font-size:75%;
+	line-height:1.8em;
+	color:#545454;
+	font-family:"돋움", Dotum, "굴림", Gulim, "Lucida Grande", Tahoma, Verdana, AppleGothic, UnDotum, sans-serif;
+}
+
+/* Tag Standard ***********************************************************************/
+/* Tag그룹요소 */
+div {  } /* block */ 
+sapn {  } /* inline */
+
+/* Tag표제(Heading)
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; font-weight: normal; font-size: 1em; } */
+
+/* Tag문단(Paragraph) */
+p {  }
+
+/* Tag구문(Construction) */
+strong { font-weight: bold; } /* 강조 */
+em { font-style: normal; } /* 강조 */
+dfn { font-style: normal; } /* 정의 - 용어설명 */
+code {  } /* 컴퓨터코드 */
+samp {  } /* 컴퓨터코드결과출력물 */
+kbd {  } /* 키보드입력 */
+var {  } /* 프로그램변수 */
+cite { font-style: normal; } /* 인용출처 */
+abbr {  } /* 축약어 : <abbr title="reference">ref</abbr>  */ 
+acronym {  } /* 두문자어 : <acronym title="world wide web">www</acronym> */
+blockquote { margin: 0; padding: 0; } /* 인용block */
+q {  } /* 인용inline */
+sup { font-size: .92em; } /* 위첨자 */
+sub { font-size: .92em; } /* 아래첨자 */
+address { font-style: normal; } /* 주소 */
+
+/* Tag기타 */
+pre /* 형식을가지고있는컨텐츠 - 범위를 벗어날때 자동개행 속성 추가 */
+{ margin: 1em 0; 
+white-space: pre-wrap; /* css-3 */ 
+white-space: -moz-pre-wrap; /* Mozilla, since 1999 */ 
+white-space: -pre-wrap; /* Opera 4-6 */ 
+white-space: -o-pre-wrap; /* Opera 7 */ 
+word-wrap: break-word; /* Internet Explorer 5.5+ */ 
+}
+
+ins {  } /* 추가 */
+del { text-decoration: line-through; } /* 삭제 */
+
+/* common */
+ol, ul, li {margin:0; padding:0; list-style:none;}
+table {border-collapse:collapse; border-spacing:0;}
+
+hr {display:none;}
+
+a:link { color:#636363; text-decoration:none; }
+a:visited { color:#636363; text-decoration:none; }
+a:hover { color:#0030AE; text-decoration:underline; }
+a:active { color:#0030AE; text-decoration:underline; }
+
+span.button,
+img.button,
+a.button {
+	cursor:pointer;
+	vertical-align:middle;
+}

@@ -1,0 +1,122 @@
+﻿* DEXT5 Upload가 제공하는 EXIF 필드에 대한 설명입니다. (Exif standard 2.2, JEITA CP-2451)
+
+================================================================================================
+	FieldName						Description
+================================================================================================
+	ImageWidth						Image width
+	ImageHeight						Image height
+	GPSVersionID					GPS tag version
+	GPSAltitudeRef					Altitude reference
+	StripOffsets					Image data location
+	RowsPerStrip					Number of rows per strip
+	StripByteCounts					Bytes per compressed strip
+	PixelXDimension					Valid image width
+	PixelYDimension					Valid image height
+	BitsPerSample					Number of bits per component
+	Compression						Compression scheme
+	PhotometricInterpretation		Pixel composition
+	Orientation						Orientation of image
+	SamplesPerPixel					Number of components
+	PlanarConfiguration				Image data arrangement
+	YCbCrSubSampling				Subsampling ratio of Y to C
+	YCbCrPositioning				Y and C positioning
+	ResolutionUnit					Unit of X and Y resolution
+	TransferFunction				Transfer function
+	ColorSpace						Color space information
+	ExposureProgram					Exposure program
+	ISOSpeedRatings					ISO speed rating
+	MeteringMode					Metering mode
+	LightSource						Light source
+	Flash							Flash
+	SubjectArea						Subject area
+	FocalPlaneResolutionUnit		Focal plane resolution unit
+	SubjectLocation					Subject location
+	SensingMethod					Sensing method
+	CustomRendered					Custom image processing
+	ExposureMode					Exposure mode
+	WhiteBalance					White balance
+	FocalLengthIn35mmFilm			Focal length in 35 mm film
+	SceneCaptureType				Scene capture type
+	Contrast						Contrast
+	Saturation						Saturation
+	Sharpness						Sharpness
+	SubjectDistanceRange			Subject distance range
+	GPSDifferential					GPS differential correction
+	ShutterSpeedValue				Shutter speed
+	BrightnessValue					Brightness
+	ExposureBiasValue				Exposure bias
+	JPEGInterchangeFormat			Offset to JPEG SOI
+	JPEGInterchangeFormatLength		Bytes of JPEG data
+	XResolution						Image resolution in width direction
+	YResolution						Image resolution in height direction
+	WhitePoint						White point chromaticity
+	PrimaryChromaticities			Chromaticities of primaries
+	YCbCrCoefficients				Color space transformation matrix coefficients
+	ReferenceBlackWhite				Pair of black and white reference values
+	CompressedBitsPerPixel			Image compression mode
+	ExposureTime					Exposure time
+	FNumber							F number
+	ApertureValue					Aperture
+	MaxApertureValue				Maximum lens aperture
+	SubjectDistance					Subject distance
+	FocalLength						Lens focal length
+	FlashEnergy						Flash energy
+	FocalPlaneXResolution			Focal plane X resolution
+	FocalPlaneYResolution			Focal plane Y resolution
+	ExposureIndex					Exposure index
+	DigitalZoomRatio				Digital zoom ratio
+	GainControl						Gain control
+	GPSLatitude						Latitude
+	GPSLongitude					Longitude
+	GPSAltitude						Altitude
+	GPSTimeStamp					GPS time (atomic clock)
+	GPSDOP							Measurement precision
+	GPSSpeed						Speed of GPS receiver
+	GPSTrack						Direction of movement
+	GPSImgDirection					Direction of image
+	GPSDestLatitude					Latitude of destination
+	GPSDestLongitude				Longitude of destination
+	GPSDestBearing					Bearing of destination
+	GPSDestDistance					Distance to destination
+	DateTime						File change date and time
+	ImageDescription				Image title
+	Make							Image input equipment manufacturer
+	Model							Image input equipment model
+	Software						Software used
+	Artist							Person who created the image
+	Copyright						Copyright holder
+	RelatedSoundFile				Related audio file
+	DateTimeOriginal				Date and time of original data generation
+	DateTimeDigitized				Date and time of digital data generation
+	SubSecTime						DateTime subseconds
+	SubSecTimeOriginal				DateTimeOriginal subseconds
+	SubSecTimeDigitized				DateTimeDigitized subseconds
+	ImageUniqueID					Unique image ID
+	SpectralSensitivity				Spectral sensitivity
+	GPSLatitudeRef					North or South Latitude
+	GPSLongitudeRef					East or West Longitude
+	GPSSatellites					GPS satellites used for measurement
+	GPSStatus						GPS receiver status
+	GPSMeasureMode					GPS measurement mode
+	GPSSpeedRef						Speed unit
+	GPSTrackRef						Reference for direction of movement
+	GPSImgDirectionRef				Reference for direction of image
+	GPSMapDatum						Geodetic survey data used
+	GPSDestLatitudeRef				Reference for latitude of destination
+	GPSDestLongitudeRef				Reference for longitude of destination
+	GPSDestBearingRef				Reference for bearing of destination
+	GPSDestDistanceRef				Reference for distance to destination
+	GPSDateStamp					GPS date
+	OECF							Optoelectric conversion factor
+	SpatialFrequencyResponse		Spatial frequency response
+	FileSource						File source
+	SceneType						Scene type
+	CFAPattern						CFA pattern
+	DeviceSettingDescription		Device settings description
+	ExifVersion						Exif version
+	FlashpixVersion					Supported Flashpix version
+	ComponentsConfiguration			Meaning of each component
+	MakerNote						Manufacturer notes
+	UserComment						User comments
+	GPSProcessingMethod				Name of GPS processing method
+	GPSAreaInformation				Name of GPS area

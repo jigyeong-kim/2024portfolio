@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>DEXT5 Developer Manual</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link href="../../css/help.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="dext5help_content_right">
+<div class="right_con">               
+    <h3 class="title">DEXT5 Upload :: Config :: DisableAlertMessage</h3>
+    <p class="ttl">config.DisableAlertMessage</p>
+    <p class="txt">
+        업로드 모든 confirm창을 표시하거나 숨기는 기능을 설정합니다.
+    </p>
+    <p class="mttl01">remarks</p>               
+    <p class="txt"> 
+        <span class="txt">
+            <span class="firebrick">DisableDeleteConfirm</span>&nbsp;&nbsp;기본값은 "0" 이고 "모든 confirm창 활성", "1"로 설정시 "모든 confirm창 비활성"입니다.<br/>
+            <span style="padding-left:124px">"2"로 설정시 "선택 항목제거만 confirm창 비활성"이고, "3"로 설정시 "전체 항목제거만 confirm창 비활성"입니다.</span><br />
+        </span><br />
+        <span class="txt">
+            <span class="firebrick">Duplication</span>&nbsp;&nbsp;"파일 추가 중복 시" alert창 비활성합니다.<br />
+            <span style="padding-left:73px">기본값은 "1" 이고, "0"으로 설정시 파일 추가 중복 시 alert창 활성합니다.</span><br />
+        </span><br />
+        <span class="txt">
+            <span class="firebrick">DeleteUnchosen</span>&nbsp;&nbsp;"파일 삭제 시" 선택된 파일이 없을 경우 alert창 비활성합니다.<br />
+            <span style="padding-left:99px">기본값은 "1" 이고, "0"으로 설정시 파일 삭제시 선택된 파일이 없을 경우 alert창 활성합니다.</span><br />
+        </span><br />       
+        <span class="txt">
+            <span class="firebrick">DownloadUnchosen</span>&nbsp;&nbsp;"파일 다운로드 시" 선택된 파일이 없을 경우 alert창 비활성합니다.<br />
+            <span style="padding-left:118px">기본값은 "1" 이고, "0"으로 설정시 파일 삭제시 선택된 파일이 없을 경우 alert창 활성합니다.</span><br />
+        </span><br />      
+        
+        <span class="txt">
+            <span class="firebrick">OpenUnchosen</span>&nbsp;&nbsp;"파일 열기 시" 선택된 파일이 없을 경우 alert창 비활성합니다.<br />
+            <span style="padding-left:94px">기본값은 "1" 이고, "0"으로 설정시 파일 삭제시 선택된 파일이 없을 경우 alert창 활성합니다.</span><br />
+        </span>  
+    </p>    
+    <p class="mttl01">sample code</p>             
+    <div class="cord">
+        <pre class="pre">
+&#60;script type="text/javascript" src="Dext5Upload/js/dext5upload.js"&#62;&#60;/script&#62;	
+
+&#60;!-- ..... 생략 ..... --&#62;
+ 
+&#60;div style="width:800px;height:200px"&#62;  
+    &#60;script type="text/javascript"&#62;
+
+        // 모든 confirm창을 표시하거나 숨기는 기능을 설정합니다.
+        DisableAlertMessage: {
+
+            // 파일 추가 중복 시 alert창 활성으로 설정합니다.
+            Duplication: '0',
+
+            // 파일 삭제 시 alert창 활성으로 설정합니다.
+            DeleteUnchosen: '0',
+
+            // 파일 다운로드 시 alert창 활성으로 설정합니다.
+            DownloadUnchosen: '0',
+
+            // 파일 열기 시 alert창 활성으로 설정합니다.
+            OpenUnchosen: '0',
+
+            // 모든 confirm창 비활성으로 설정합니다.
+            DisableDeleteConfirm: '1'
+    }
+
+        new Dext5Upload("upload1");
+    &#60;/script&#62;
+&#60;/div&#62;
+        </pre>  
+    </div>                   
+    </div>
+</div>
+</body>
+</html>
+

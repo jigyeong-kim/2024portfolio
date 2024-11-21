@@ -1,0 +1,12 @@
+@charset "UTF-8";@font-face{font-family:'Nanum BP';src:url("../font/NanumBarunpen-Bold.eot");src:url("../font/NanumBarunpen-Bold.eot?#iefix") format('embedded-opentype'),
+url("../font/NanumBarunpen-Bold.woff") format('woff'),
+url("../font/NanumBarunpen-Bold.ttf") format('truetype');}
+@font-face{font-family:'SeoulNS';src:url("../font/SeoulNamsanB.eot");src:url("../font/SeoulNamsanB.eot?#iefix") format('embedded-opentype'),
+url("../font/SeoulNamsanB.woff") format('woff'),
+url("../font/SeoulNamsanB.ttf") format('truetype');}
+@font-face{font-family:'NotoKr';font-weight:400;src:url("../font/notokr-regular.eot");src:url("../font/notokr-regular.eot?#iefix") format('embedded-opentype'),
+url("../font/notokr-regular.woff") format('woff'),
+url("../font/notokr-regular.ttf") format('truetype');}
+@font-face{font-family:'NotoKr';font-weight:500;src:url("../font/notokr-medium.eot");src:url("../font/notokr-medium.eot?#iefix") format('embedded-opentype'),
+url("../font/notokr-medium.woff") format('woff'),
+url("../font/notokr-medium.ttf") format('truetype');}

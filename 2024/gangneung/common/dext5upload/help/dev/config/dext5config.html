@@ -1,0 +1,1096 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>DEXT5 Developer Manual</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link href="../../css/help.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="dext5help_content_right">
+<div class="right_con">
+    <div class="sdk_content">
+        <h3 class="title">DEXT5 Upload 환경 설정 파일 (xml)</h3><br />
+        <p class="txt">덱스트5 업로드의 환경 설정 파일로 프로그램의 각 기능에 대한 정의 및 환경을 설정합니다.<br />프로그램 구동을 위한 필수 파일입니다.</p><br />
+        <!-- 환경 설정 파일 개요 -->
+        <table class="h_table"> 
+          <caption>환경 설정 파일 개요</caption>
+          <colgroup>
+           <col style="text-align:center; width:20% !important;" />
+           <col style="text-align:left; width:80% !important;" />
+          </colgroup>          
+          <thead>          
+          <tr>
+              <th colspan="2" >
+                 환경 설정 파일 개요
+              </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <td class="t_bg01">
+                  파일명
+              </td>
+              <td>
+                  dext5upload.config.xml
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg01">
+                  위치
+              </td>
+              <td>
+                  DEXT5 Upload 가 설치된 루트의 config/ 폴더 아래에 위치
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg01">
+                  문서유형
+              </td>
+              <td>
+                 XML 1.0 의 utf-8
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg01">
+                  유의사항
+              </td>
+              <td>
+                 값 입력 시 "<" → "&amp;lt;", ">" → "&amp;gt;", "&" → "&amp;amp;" 와 같이 html entity 형태로 입력해야 합니다.
+              </td>
+          </tr>          
+          </tbody>
+         </table>        
+        <!--//환경 설정 파일 개요 -->  
+        <!-- license -->
+        <table class="h_table h_table2"> 
+          <caption>license</caption>
+          <colgroup>
+           <col style="text-align:center; width:20% !important;" />
+           <col style="text-align:left; width:80% !important;" />
+          </colgroup>
+          <thead>          
+          <tr>
+              <th>
+                 &lt;license /&gt;
+              </th>
+              <th>
+                제품 및 라이센스 관련 정보
+              </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <td class="t_bg">  
+               product_key               
+              </td>
+              <td>
+                제품 구입 당시 발행된 제품 고유 번호입니다.<br /> 제품 고유 번호가 유효하지 않은 경우 기능상 제한을 받을 수 있습니다.
+                <br />
+                제품 고유 번호는 <span class="txt_red2">XXXX-XXXX-XXXX-XXXX</span> 형태로 기술되어야 합니다.
+                <br />
+                제품 테스트를 위한 평가판 <b>제품 고유 번호는 http://www.dext5.com 에서  신청가능</b>합니다.  
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+              license_key
+              </td>
+              <td>
+              제품 라이센스 관리를 위한 암호화된 스트링 값입니다.
+              <br />
+              제품 구입 시 주어집니다.<br /> 이 값이 유효하지 않은 경우 기능상 제한을 받을 수 있습니다.              
+              </td>
+          </tr>                                                
+          </tbody>
+         </table>        
+        <!--//license -->          
+        <!-- 환경설정 -->
+        <table class="h_table h_table2"> 
+          <caption>환경설정</caption>
+          <colgroup>
+           <col style="text-align:center; width:20% !important;" />
+           <col style="text-align:left; width:80% !important;" />
+          </colgroup>
+          <thead>          
+          <tr>
+              <th>
+                 &lt;setting /&gt;
+              </th>
+              <th>
+                업로드 환경 설정
+              </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <td class="t_bg">
+              runtimes
+              </td>
+              <td>
+                업로드 모드를 설정합니다.<br/>
+                (웹표준모드, 플러그인모드 중 선택)<br/><br />
+                html5 설정시 html5 모드가 우선 적용됩니다.<br />
+                ieplugin 설정시 ieplugin 모드가 우선 적용되며, 지원되지 않는 브라우저는 html5 모드가 적용됩니다.<br />(ie 전용 모드)<br />
+                versionieplugin 설정시 적용한 버전 이하에서만 플러그인 모드로 적용됩니다.<br/>
+                예) 9ieplugin 으로 적용하면 ie9 이하 버전에서 플러그인 모드로 적용됩니다.<br />
+                예) "html5" or "ieplugin" or versionieplugin 
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               plugin_version
+              </td>
+              <td> 
+              설정시 cab버전의 값이 우선순위로 적용됩니다.                     
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               width
+              </td>
+              <td> 
+              업로드의 넓이를 설정합니다.<br /><br />
+              넓이는 "px", "%" 모두 가능합니다.<br />
+              기본값은 "800px" 입니다.                           
+              </td>
+          </tr>         
+          <tr>
+              <td class="t_bg">
+               height 
+              </td>
+              <td> 
+              업로드의 높이를 설정합니다.<br /><br />
+              높이는 "px" 만 가능합니다.<br />
+              기본값은 "200px" 입니다.<br />
+              최소 높이값은 "120px" 입니다.              
+              </td>
+          </tr>         
+          <tr>
+              <td class="t_bg t_nline">
+                  skin_name
+              </td>
+              <td>
+              업로드의 스킨 색상을 설정합니다.<br />
+              &lt;skin_name css_root_path="" color1="" color2="" color3="" text_color="" webfile_color=""&gt;blue&lt;/skin_name&gt; <br /><br />                  
+              사용 사이트의 색상 패턴과 조합을 위해서 이 설정을 사용하면 유용할 수 있습니다.<br />
+              색상으로는 blue, brown, darkgray, gold, gray, green, orange, pink, purple, red, silver, yellow 12가지 색상이 있습니다.<br />
+              기본값은 "blue" 입니다.                    
+              </td>
+          </tr>
+              
+          <tr>
+              <td class="t_bg t_nline">
+                  css_root_path
+              </td>
+              <td> 
+              업로드의 스킨 색상 설정시<br/><br />
+              사용자가 만든 css 폴더 경로를 업로드 영역에 설정합니다.<br />
+              dext5upload &gt; css 폴더 안에 존재 하는 파일명은 유지 시켜주셔야 합니다.(파일명 변경 불가) <br/>
+              http://를 포함하는 전체 url을 입력해야 합니다.                            
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               color1
+              </td>
+              <td> 
+              업로드의 스킨 색상 설정시<br/><br />
+              업로드창 (상단/ 하단 / 하단 버튼 바탕색)을 설정합니다.                      
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               color2
+              </td>
+              <td> 
+              업로드의 스킨 색상 설정시<br/><br />
+              업로드창 (상단 / 하단 버튼 텍스트색)을 설정합니다.                      
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               color3
+              </td>
+              <td> 
+              업로드의 스킨 색상 설정시<br/><br />
+              전송창(상단/전체 전송률/전송 용량률/취소 버튼 바탕색)을 설정합니다.                      
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               text_color
+              </td>
+              <td> 
+              업로드의 스킨 색상 설정시<br/><br />
+              메인 전송창(상단 텍스트 색과 하단 버튼 텍스트 색), 전송창 팝업(상단 텍스트 색/ 하단 취소 버튼 텍스트 색)을 설정합니다.                
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               webfile_color
+              </td>
+              <td> 
+              업로드의 스킨 색상 설정시<br/><br />
+              웹경로의 파일(업로드된 파일)의 배경색을 설정합니다.                
+              </td>
+          </tr>         
+          <tr>
+              <td class="t_bg">
+                 lang
+              </td>
+              <td> 
+                  기본 언어를 설정합니다.<br /><br /> 각 문화권(국가)의 고유한 이름을 지정해야 합니다.<br />
+                  ·&nbsp;ko-kr : 한국어 (대한민국)<br/>
+                  ·&nbsp;en-us : 영어 (미국)<br/>
+                  ·&nbsp;zh-cn : 중국어 (중국)<br/>
+                  ·&nbsp;zh-tw : 중국어 (대만) <br/>
+                  ·&nbsp;ja-jp : 일본어 (일본) <br />
+                  기본값은 "ko-kr" 입니다.             
+              </td>
+          </tr> 
+          <tr>
+              <td class="t_bg t_nline">
+                 mode
+              </td>
+              <td>
+              업로드 모드를 설정합니다.<br/>
+              &lt;mode views="list"&gt;upload&lt;/mode&gt; <br /><br />   
+              업로드 모드는 "upload, view, open, download" 입니다.<br /><br />
+              기본값은 "upload" 모드로 설정됩니다.                
+              </td>
+          </tr>      
+          <tr>
+              <td class="t_bg">
+               views
+              </td>
+              <td> 
+              업로드 모드를 설정시<br /><br />
+              파일 목록 보기 형태를 설정합니다.<br />
+              "list"로 설정시 리스트형태로 보기, "thumbs" 로 설정시 썸네일형태로 보기 입니다.          
+              </td>
+          </tr>  
+          <tr>
+              <td class="t_bg t_nline">
+               img_preview
+              </td>
+              <td> 
+                  이미지 미리보기 창 기능을 설정합니다.<br/>
+                  &lt;img_preview width="320px" height="280px"&gt;1&lt;/img_preview&gt; <br /><br />   
+                  기본값은 "0"이고 사용안함, "1"로 설정시 이미지 미리보기 창 사용입니다.    
+              </td>
+          </tr> 
+          <tr>
+              <td class="t_bg t_nline">
+                width
+              </td>
+              <td> 
+              이미지 미리보기 창 설정시<br/><br />
+              이미지 미리보기 창의 넓이를 설정합니다.<br />넓이는 "px"로 가능합니다.<br />
+              기본값은 "320px" 입니다.               
+              </td>
+          </tr>  
+          <tr>
+              <td class="t_bg">
+               height 
+              </td>
+              <td>
+              이미지 미리보기 창 설정시<br/><br /> 
+              이미지 미리보기 창의 높이를 설정합니다.<br />높이는 "px"로 가능합니다.<br />
+              기본값은 "280px" 입니다.              
+              </td>
+          </tr>            
+          <tr>
+              <td class="t_bg t_nline">
+               show_status_bar 
+              </td>
+              <td> 
+              업로드의 상태바를 표시하거나 숨기는 기능을 설정합니다.<br />
+              &lt;show_status_bar show_limit="1" show_status="1"&gt;1&lt;/show_status_bar&gt;<br /><br />
+              사용 용도에 따라서 상태바를 표시하지 않기를 원할 때 사용하면 유용 할 수 있습니다.<br />
+              기본값은 "1" 이고, "0" 으로 설정시 상태바를 표시하지 않습니다.       
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               show_limit 
+              </td>
+              <td> 
+              업로드의 상태바를 설정시<br /><br />
+              "파일 제한" 문구를 표시하거나 숨기는 기능을 설정합니다.<br />
+              기본값은 "1" 이고, "0" 으로 설정시 "파일 제한" 문구를 표시하지 않습니다.       
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               show_status 
+              </td>
+              <td> 
+              업로드의 상태바를 설정시<br /><br />
+              "현재 파일 상태" 문구를 표시하거나 숨기는 기능을 설정합니다.<br />
+              기본값은 "1" 이고, "0" 으로 설정시 현재 파일 상태 문구를 표시하지 않습니다.       
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               show_header_bar 
+              </td>
+              <td> 
+              업로드의 상단을 표시하거나 숨기는 기능을 설정합니다.<br /><br />
+              <!--&lt;show_header_bar header_height="28px"&gt;1&lt;/show_header_bar&gt;<br /><br />-->
+              사용 용도에 따라서 상단을 표시하지 않기를 원할 때 사용하면 유용 할 수 있습니다.<br />
+              기본값은 "1" 이고, "0" 으로 설정시 상단을 표시하지 않습니다.       
+              </td>
+          </tr>        
+          <tr>
+              <td class="t_bg">
+               header_height 
+              </td>
+              <td> 
+              업로드의 상단을 설정시<br /><br />
+              상단 높이를 설정합니다.<br />
+              최소 높이값은 "28px" 이고, "사용자 설정값"으로 설정합니다.       
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               show_button_bar_edit 
+              </td>
+              <td>
+              업로드가 편집모드일 때 버튼바 영역에 노출 할 버튼을 설정합니다.<br /><br />
+              <!--&lt;show_button_bar_edit align="left"&gt;add,send,remove,remove_all&gt;&lt;/show_button_bar_edit&gt;<br /><br />-->
+              버튼 종류는<br />
+              "add : 파일추가, send : 전송하기, remove : 항목삭제, remove_all : 전체삭제, move_first : 맨 앞으로, move_forward : 앞으로, move_back : 뒤로, move_end : 맨 뒤로" 가 있습니다.<br/><br />
+              "빈값"으로 설정시 버튼 영역을 표시하지 않습니다.<br/>
+              (IE 브라우저 모드는 IE10 이상부터 가능합니다. 플러그인 모드는 IE브라우저 모드 상관 없이 사용 가능합니다.) 
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               align 
+              </td>
+              <td> 
+              업로드가 편집모드일 때 버튼바 설정시<br /><br />
+              버튼 위치 정렬을 설정합니다.<br />
+              기본값이 "left" 왼쪽 정렬이고, "right"는 오른쪽 정렬입니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               show_button_bar_view 
+              </td>
+              <td>
+              업로드가 보기모드일 때 버튼바 영역에 노출 할 버튼을 설정합니다.<br/><br />
+              <!--&lt;show_button_bar_view align="left"&gt;open,saveandopen,download,download_all,print&gt;&lt;/show_button_bar_view&gt;<br /><br />-->
+              버튼 종류는<br />
+              "open : 열기, saveandopen : 저장후 열기(플러그인), download : 다운로드, download_all : 전체다운로드, print : 인쇄(플러그인)" 가 있습니다.<br/><br />
+              "빈값"으로 설정시 버튼 영역을 표시하지 않습니다. 
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               align 
+              </td>
+              <td> 
+              업로드가 보기모드일 때 버튼바 설정시<br /><br />
+              버튼 위치 정렬을 설정합니다.<br />
+              기본값이 "left" 왼쪽 정렬이고, "right"는 오른쪽 정렬입니다.
+              </td>
+          </tr>          
+          <tr>
+              <td class="t_bg">
+               button_bar_position 
+              </td>
+              <td>
+              업로드가 편집/보기모드일 때 버튼바 영역 위치를 설정합니다.<br/><br />
+              기본값은 "bottom"(하단) 이고, "top"(상단) 설정시 전송영역 맨 위에 버튼바 영역 위치가 설정됩니다. 
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               border_style 
+              </td>
+              <td>
+              업로드 영역에 추가된 파일들을 구분할 선 스타일을 설정합니다.<br /><br />
+              선 스타일 종류는<br />
+              "실선 : solid, 점선 : dashed, 선없음 : none" 이 있습니다.<br />
+              기본값은 "none" 입니다.
+              </td>
+          </tr>           
+          <tr>
+              <td class="t_bg t_nline">
+               max_one_file_size 
+              </td>
+              <td>
+              업로드할 때 파일당 용량제한을 설정합니다. <br /><br />
+              기본값은 "0" 용량 제한없음이고, "사용자 설정값" 으로 설정합니다.<br/>
+              파일 단위는 B(byte), KB(kilobyte), MB(megabyte), GB(gigabyte) 으로 설정합니다.  
+              </td>
+          </tr>           
+          <tr>
+              <td class="t_bg">
+               unit 
+              </td>
+              <td>
+              한 개 파일의 용량제한을 사용자 설정값으로 설정시<br/><br/>
+              unit 종류를 설정합니다.<br />
+              unit 종류는 "B: byte, KB: kilobyte, MB: megabyte, GB: gigabyte" 입니다.
+              </td>
+          </tr>           
+          <tr>
+              <td class="t_bg t_nline">
+               max_total_file_size 
+              </td>
+              <td>
+              업로드할 때 총 업로드 될 파일의 용량제한을 설정합니다.<br /><br />
+              기본값은 "0" 용량 제한없음이고, "사용자 설정값" 으로 설정합니다. 
+              </td>
+          </tr>           
+          <tr>
+              <td class="t_bg">
+               unit 
+              </td>
+              <td>
+              총 업로드될 파일의 용량제한을 사용자 설정값으로 설정시<br/><br />
+              unit 종류를 설정합니다.<br />
+              unit 종류는 "B: byte, KB: kilobyte, MB: megabyte, GB: gigabyte" 입니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               max_total_file_count 
+              </td>
+              <td>
+              업로드 할 최대 파일 개수 제한값을 설정합니다.<br /><br />
+              기본값은 "0" 제한없음이고, "0 보다 큰 수" 설정시 해당 개수 초과로 첨부 할 수 없습니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               hide_list_info 
+              </td>
+              <td>
+              업로드 편집모드일 때 업로드 영역 중앙에 보여지는 가이드 문구를 표시하거나 숨기는 기능을 설정합니다.<br /><br />
+              기본값은 "0" 이고, "1" 로 설정 시 가이드 문구를 미노출 합니다. 
+              </td>
+          </tr>           
+          <tr>
+              <td class="t_bg t_nline">
+               extension 
+              </td>
+              <td>
+              업로드 할 파일의 확장자를 제한 및 허용으로 설정합니다.<br /><br />
+              설정값에 "빈값"으로 설정되면 파일 확장자를 모두 허용으로 설정됩니다.
+              </td>
+          </tr>          
+          <tr>
+              <td class="t_bg">
+               allow_or_limit 
+              </td>
+              <td>
+              파일 확장자명을 설정시<br/><br/>
+              설정값이 "0" 이면 설정한 파일 확장자명만 "제한"으로 설정되며, "1"로 설정시 "허용"으로 설정됩니다.<br />
+              기본값은 "1" 이고 허용입니다.<br/>
+              설정 후 제한 및 허용할 확장자명을 ","로 구분하여 설정합니다.
+              </td>
+          </tr>          
+          <tr>
+              <td class="t_bg">
+               multi_file_select 
+              </td>
+              <td>
+              업로드에서 파일 추가시 여러개 파일 선택 또는 한개씩만 선택 후 적용하도록 설정합니다.<br /><br /> 
+              기본값은 "1" 이고 여러 개의 파일 선택할 수 있도록 설정합니다. "0" 으로 설정시 한개씩만 설정합니다. 
+              (IE 브라우저는 IE10 이상부터 여러개 파일 선택 설정이 가능합니다. 플러그인 모드는 IE브라우저 버전에 상관 없이 사용 가능합니다.) 
+              </td>
+          </tr>                 
+          <tr>
+              <td class="t_bg">
+               list_view_dbclick 
+              </td>
+              <td>
+              업로드 영역을 더블클릭 이벤트에 의해 파일선택 창이 열리도록 설정합니다.(편집 모드) <br /><br /> 
+              기본값은 "1" 이고 더블클릭 이벤트 적용, "0"으로 설정시 더블클릭 이벤트가 적용되지 않습니다.<br />
+              (IE 브라우저 모드는 IE10 이상부터 가능합니다. 플러그인 모드는 IE브라우저 모드 상관 없이 사용 가능합니다.) 
+              </td>
+          </tr>  
+          <tr>
+              <td class="t_bg">
+               list_view_drag_and_drop 
+              </td>
+              <td>
+              업로드 영역에 드래그 앤 드랍해서 파일추가할 수 있도록 설정합니다.(편집 모드) <br /><br />
+              기본값은 "1" 이고, 드래그 앤 드랍 이벤트를 적용, "0"으로 설정시 드래그 앤 드랍 이벤트가 적용되지 않습니다.<br/>
+              (IE 브라우저 모드는 IE10이상부터 가능합니다. 플러그인 모드는 IE브라우저 모드 상관 없이 사용 가능합니다.) 
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               resume_mode
+              </td>
+              <td>
+              업로드 이어올리기와 이어받기를 설정합니다.<br /><br />
+              파일을 업로드 또는 다운로드 중에 네트워크가 단절되거나 사용자 요청에 의해 중지 되어도 이어올리거나 이어받기가 가능합니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               upload
+              </td>
+              <td>
+              <span class="txt_red">[플러그인 전용]</span><br /> 
+              업로드 이어올리기를 설정합니다.<br /><br />
+              기본값은 "0" 이고, "1"로 설정시 이어올리기가 가능합니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               download
+              </td>
+              <td>
+              업로드 이어받기를 설정합니다.<br /><br />
+              기본값은 "0" 이고, "1"로 설정시 이어받기가 가능합니다.<br/>
+              웹표준모드, 플러그인모드 모두 지원합니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               folder_transfer 
+              </td>
+              <td>
+              <span class="txt_red">[플러그인 전용]</span><br /> 
+              폴더 구조로 업로드를 설정합니다.<br />
+              폴더 상태로 폴더를 추가, 폴더 안에 있는 파일들을 한번에 추가 합니다.<br />
+              기본값은 "0"이고, "1"로 설정시 폴더 구조로 업로드 설정합니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               timeout 
+              </td>
+              <td>
+              <span class="txt_red">[플러그인 전용]</span><br />
+              서버로부터 응답이 지연 되는 경우 이어받기 시도 시간을 설정합니다.<br />
+              기본값은 "0" 이고, 이어받기 시도 시간을 "사용자 설정값"으로 설정합니다.<br />
+              이어받기 시도 시간은 millisecond(시간의 단위)로 설정합니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               automatic_connection  
+              </td>
+              <td>
+              <span class="txt_red">[플러그인 전용]</span><br />
+              업로드/다운로드 시 묻지 않고 계속 업로드/다운로드 시도 사용을 설정합니다.<br />(불안정한 네트워크 환경 발생 시)<br />
+              기본값은 "0"이고, "1"로 설정시 묻지 않고 계속 업로드/다운로드를 시도합니다.<br />
+              &lt;resume_mode upload="1" download="1"&gt;&lt;/resume_mode&gt; upload/download 설정값이 "1" 일 경우 발생합니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               show_folder_view  
+              </td>
+              <td>
+              <span class="txt_red">[플러그인 전용]</span><br />
+              폴더구조 업로드/다운로드 팝업창에서 폴더로 표시할지 파일로 표시할지 설정합니다.<br />
+              기본값은 "1" 이고 폴더로 표시, "0"으로 설정시 파일로 보여집니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               hide_context_menu  
+              </td>
+              <td>
+              업로드 context menu(우 클릭 메뉴) 사용 여부를 설정합니다.<br /><br />
+              기본값은 "0" 사용이고, "1"로 설정시 context menu(우 클릭 메뉴) 미사용을 설정합니다. 
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               use_size_column  
+              </td>
+              <td>
+              업로드 영역 항목 중 파일크기 항목 노출 여부를 설정합니다.<br /><br />
+              설정값 "0" 파일크기 항목 노출안함이고, "1"로 설정시 파일크기 항목을 노출합니다. 
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               remove_context_item  
+              </td>
+              <td>
+              업로드 context menu(우 클릭 메뉴)에서 삭제 할 항목을 설정합니다.<br /><br />
+              삭제 할 항목은,<br />
+              (공통) 파일추가 : add_file / 선택된파일 제거 : remove_current_file / 전체 파일 제거 : remove_all_file / 열기 : open_current_file / 선택된 파일 다운로드 : download_current_file / 전체 다운로드 : download_all_file / 맨 앞으로 : move_first / 앞으로 : move_forward / 뒤로 : move_backward / 맨 뒤로 : move_end<br/>
+              <br />(플러그인 전용) 폴더로 파일 추가 : add_files_from_folder / 폴더추가 : add_folder / 이미지 붙여넣기 : image_paste / 인쇄 : print / 설정 : setting / 다운로드 후 열기 : download_and_open <br /> <br />
+              항목 입력 구분자는 ‘ ,(콤마) ’입니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               large_files  
+              </td>
+              <td>
+              업로드 기준 파일 크기 이상이면 대용량 텍스트 노출 기능을 설정합니다.<br />
+              &lt;large_files unit="MB" max_count="" max_total_size="" color="" text=""&gt;1&lt;/large_files&gt;<br /><br />
+              기본값 "0" 이면 대용량 텍스트 미노출이고, "1"로 설정시 대용량 텍스트를 노출합니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               unit  
+              </td>
+              <td>
+              대용량 노출 기능 설정시<br/><br/>
+              unit 종류를 설정합니다.<br />
+              unit 종류는 "B: byte, KB: kilobyte, MB: megabyte, GB: gigabyte" 입니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               max_count  
+              </td>
+              <td>
+              대용량 노출 기능 설정시<br/><br/>
+              대용량 최대 개수를 제한 설정합니다.<br />
+              "사용자 설정값"으로 설정됩니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               max_total_size  
+              </td>
+              <td>
+              대용량 노출 기능 설정시<br/><br/>
+              대용량 총 사이즈를 제한 설정합니다.<br />
+              "사용자 설정값"으로 설정됩니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               color  
+              </td>
+              <td>
+              대용량 노출 기능 설정시<br/><br/>
+              대용량 텍스트 색을 설정합니다.<br />
+              기본값은 "검정색"이고, "사용자 설정값"으로 색을 설정합니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               text  
+              </td>
+              <td>
+              대용량 노출 기능 설정시<br/><br/>
+              사용자가 원하는 문구로 설정합니다.<br />
+              기본값은 "대용량" 문구이고, "사용자 설정값"으로 설정합니다. 
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               file_sort
+              </td>
+              <td> 
+              파일 정렬 기능을 설정합니다.<br />
+              &lt;file_sort sort_field="1" sort_ascdesc="1" auto_sort="1"&gt;1&lt;/file_sort&gt;<br /><br />
+              설정값 "0" 파일 정렬 기능 사용 안함이고, "1"로 설정시 파일 정렬 기능 사용입니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               sort_field
+              </td>
+              <td> 
+              파일 정렬 기능 설정시<br /><br />
+              정렬 대상 필드를 설정합니다.<br />
+              설정값 "0" Name 필드 정렬이고, "1"로 설정시 Size 필드 정렬입니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+               sort_ascdesc
+              </td>
+              <td> 
+              파일 정렬 기능 설정시<br /><br />
+              정렬 방법을 설정합니다.<br />
+              설정값 "0" 오름차순이고, "1"로 설정시 내림차순입니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               auto_sort
+              </td>
+              <td> 
+              파일 정렬 기능 설정시<br /><br />
+              정렬 옵션을 설정합니다.<br />
+              설정값 "0" 자동정렬 사용 안함이고,<br/> "1"로 설정시 전체 다시 정렬 (새로운 파일이 첨부되었을 경우 정렬 대상, 정렬 방법 옵션으로 전체 다시 정렬),<br/> "2"로 설정시 새로 추가 된 파일만 정렬 (새로 추가되는 파일만을 정렬 대상, 정렬 방법 옵션으로 정렬) 입니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               file_move_context_menu
+              </td>
+              <td> 
+                파일이동 메뉴를 우클릭 메뉴에 추가할지 여부를 설정합니다.<br /><br />
+                기본값은 "0" 추가안함이고, "1"이면 파일 이동 메뉴를 우클릭 메뉴에 추가합니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               complete_event_reset_use
+              </td>
+              <td> 
+                업로드 완료 이벤트에서 ResetUpload API 사용여부를 설정합니다.<br /><br />
+                설정값 "0"은 사용안함이고, "1"로 설정시 사용입니다.
+              </td>
+          </tr>         
+          <tr>
+              <td class="t_bg t_nline">
+               user_message
+              </td>
+              <td> 
+                업로드 편집 모드/ 보기 모드의 버튼 영역 왼쪽 또는 오른쪽에 문구 입력을 설정합니다.<br /><br />
+                버튼 위치가 왼쪽이면 문구 삽입은 오른쪽이 되며, 버튼 위치가 오른쪽이면 문구 삽입은 왼쪽에 위치합니다.<br />
+                기본값은 "0" 사용안함이고, "1"로 설정시 사용입니다.
+              </td>
+          </tr>                     
+          <tr>
+              <td class="t_bg t_nline">
+               edit
+              </td>
+              <td>
+                문구 입력 설정시<br /><br /> 
+                업로드 편집 모드 버튼 영역에 문구를 설정합니다.<br />
+                "사용자 설정값"으로 문구를 입력합니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+                  view
+              </td>
+              <td>
+                문구 입력 설정시<br /><br /> 
+                업로드 보기 모드 버튼 영역에 문구를 설정합니다.<br />
+                "사용자 설정값"으로 문구를 입력합니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+                  disable_alert_message <br />&gt; disable_delete_confirm
+              </td>
+            <td>
+            업로드 모든 confirm창을 표시하거나 숨기는 기능을 설정합니다.<br /><br />
+            기본값은 "0" 모든 confirm창 활성이고, "1"로 설정시 모든 confirm창 비활성입니다.<br />
+            "2"로 설정시 선택 항목제거만 confirm창 비활성이고, "3"로 설정시 전체 항목제거만 confirm창 비활성입니다.
+            </td>
+          </tr>
+          <tr>
+              <td class="t_bg t_nline">
+                   <br />&gt; duplication
+              </td>
+              <td> 
+                파일 추가 중복 시 alert창 비활성합니다.<br /><br />
+                기본값은 "1" 이고, "0"으로 설정시 파일 추가 중복 시 alert창 활성합니다.
+              </td>
+          </tr>
+              <tr>
+                  <td class="t_bg t_nline">
+                      <br /> &gt; delete_unchosen
+                  </td>
+                  <td>
+                      파일 삭제 시 선택된 파일이 없을 경우 alert창 비활성합니다.<br /><br />
+                      기본값은 "1" 이고, "0"으로 설정시 파일 삭제시 선택된 파일이 없을 경우 alert창 활성합니다.
+                  </td>
+              </tr>
+              <tr>
+                  <td class="t_bg t_nline">
+                      <br /> &gt; download_unchosen
+                  </td>
+                  <td>
+                      파일 다운로드 시 선택된 파일이 없을 경우 alert창 비활성합니다.<br /><br />
+                      기본값은 "1" 이고, "0"으로 설정시 파일 삭제시 선택된 파일이 없을 경우 alert창 활성합니다.
+                  </td>
+              </tr>
+              <tr>
+                  <td class="t_bg">
+                      <br /> &gt; open_unchosen
+                  </td>
+                  <td>
+                      파일 열기 시 선택된 파일이 없을 경우 alert창 비활성합니다.<br /><br />
+                      기본값은 "1" 이고, "0"으로 설정시 파일 삭제시 선택된 파일이 없을 경우 alert창 활성합니다.
+                  </td>
+              </tr>
+          <tr>
+              <td class="t_bg">
+               allowed_zero_file_size
+              </td>
+              <td> 
+                0byte의 파일 업로드를 허용할 지 여부를 설정합니다.<br /><br />
+                기본값은 "0" 허용안함이고, "1"로 설정시 허용입니다.
+              </td>
+          </tr>          
+        <tr>
+            <td class="t_bg t_nline">
+                upload_transfer_window <br />&gt; view
+            </td>
+            <td>
+                업로드 전송창 UI 설정합니다.<br /><br />
+                기본값은 "standard" 이고, 축소창은 "light" 입니다. <br />
+                standard 전송창 사이즈는 470 X 260 (픽셀)이고, light 사이즈는 470 X 170 (픽셀) 입니다.
+                사이트 구성에 맞게 전송창을 UI를 설정하시기 바랍니다. 
+            </td>
+        </tr>          
+        <tr>
+            <td class="t_bg t_nline">
+                upload_transfer_window <br />&gt; use_logo_image
+            </td>
+            <td>
+                업로드 전송창 하단 좌측 로고를 표시하거나 숨기는 기능을 설정합니다.<br /><br />
+                기본값은 "0" 로고 미노출이고, "1"로 설정시 로고를 노출 합니다.
+            </td>
+        </tr>
+        <tr>
+            <td class="t_bg t_nline">
+                use_logo_image <br />&gt; logo_path
+            </td>
+            <td>
+                로고를 노출로 설정시<br /><br />
+                로고 이미지가 존재하는 파일경로를 설정합니다.<br />
+                경로 설정시 http:// 부터 전체경로를 설정합니다.<br />
+                기본 노출 이미지는 "DEXT5 Upload" 로고 이미지입니다.<br />
+                로고 이미지 크기는 "100 X 20" 픽셀 단위로 설정하시기 바랍니다.
+            </td>
+        </tr>
+        <tr>
+            <td class="t_bg t_nline">
+                use_logo_image <br />&gt; logo_ver
+            </td>
+            <td>
+                로고를 노출로 설정시<br /><br />
+                설정된 로고 이미지 파일을 수정시 파일명이 같을 경우 1씩 증가시켜 설정합니다.
+            </td>
+        </tr>
+        <tr>
+            <td class="t_bg">
+                upload_transfer_window <br />&gt; silent_upload
+            </td>
+            <td>
+              전송창 노출 여부를 설정합니다.<br /><br />
+              기본값은 "0" 노출이고, "1"로 설정시 미노출입니다.
+            </td>
+        </tr>                                 
+          <tr>
+              <td class="t_bg">
+               use_add_event
+              </td>
+              <td> 
+               업로드 리스트 컨트롤에서 파일 추가 전 이벤트 함수 사용을 설정합니다. <br /><br />
+               기본값은 "1" 사용이고, "0"으로 설정시 이벤트 함수 미사용합니다.
+              </td>
+          </tr>         
+          <tr>
+              <td class="t_bg">
+               use_delete_event
+              </td>
+              <td> 
+               업로드 리스트 컨트롤에서 파일 삭제할 때 이벤트 함수 사용을 설정합니다.<br /><br />
+               기본값은 "1" 사용이고, "0"으로 설정시 이벤트 미사용합니다.
+              </td>
+          </tr> 
+          <tr>
+              <td class="t_bg">
+               use_view_or_open_event
+              </td>
+              <td> 
+               파일 열기 전 이벤트 함수 사용을 설정합니다. <br /><br />
+               기본값은 "1" 사용이고, "0"으로 설정시 이벤트 미사용합니다.
+              </td>
+          </tr> 
+          <tr>
+              <td class="t_bg">
+               use_uploading_cancel_event
+              </td>
+              <td> 
+               업로드 파일 전송 취소 이벤트 함수 사용을 설정합니다.<br /><br />
+               기본값은 "1" 사용이고, "0"으로 설정시 이벤트 미사용합니다.
+              </td>
+          </tr> 
+          <tr>
+              <td class="t_bg">
+               use_download_event
+              </td>
+              <td> 
+               파일 다운로드 전 이벤트 함수 사용을 설정합니다. <br /><br />
+               기본값은 "1" 사용이고, "0"으로 설정시 이벤트 미사용합니다.
+              </td>
+          </tr>
+          <tr>
+              <td class="t_bg">
+               use_after_add_event
+              </td>
+              <td> 
+               업로드 리스트 컨트롤에서 파일추가 후 이벤트 함수 사용을 설정합니다.<br /><br />
+               기본값은 "1" 사용이고, "0"으로 설정시 이벤트 미사용합니다.
+              </td>
+          </tr>          
+          <tr>
+              <td class="t_bg">
+               use_after_add_end_time_event
+              </td>
+              <td> 
+               업로드 리스트 컨트롤에서 모든 파일추가 완료 후 이벤트 함수 사용을 설정합니다.<br /><br />
+               기본값은 "1" 사용이고, "0"으로 설정시 이벤트 미사용합니다.
+              </td>
+          </tr>
+          </tbody>
+         </table>        
+        <!--//환경설정 -->  
+        <!-- 업로드 환경 설정 --> 
+        <table class="h_table h_table2"> 
+          <caption>업로드 환경 설정</caption>
+          <colgroup>
+           <col style="text-align:center; width:20% !important;" />
+           <col style="text-align:left; width:80% !important;" />
+          </colgroup>
+          <thead>          
+          <tr>
+              <th>
+                 &lt;uploader_setting/&gt;
+              </th>
+              <th>
+                제품의 업로드 환경 설정
+              </th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td class="t_bg">
+                    develop_langage
+                </td>
+                <td>
+                   사용중인 사이트의 개발 언어를 설정합니다. <br /><br />
+                    기본값은 "NET" 이고, NET, JAVA 중 하나의 값을 사용합니다. 
+                </td>
+            </tr>
+            <tr>
+                <td class="t_bg">
+                    handler_url
+                </td>
+                <td>
+                    웹에서 RFC 1867 표준에 따르는 POST 방식의 파일 전송을 받아주는 페이지 URL입니다.<br />
+                    이미지 파일 또는 Flash, media 파일 등 서버에 파일이 업로드 되지 않을 경우 이 값의 설정을 확인하세요.<br />
+                    기본값은 "" 입니다.<br />Dext5Upload/handler/ 아래의 각 언어에 맞는 페이지를 호출합니다.<br /> 상대 및 절대 경로 모두를 지원합니다.<br />
+                    각 개발 언어에 맞는 값으로 변경 설정하세요.
+                 </td>
+            </tr>
+            <tr>
+                <td class="t_bg">
+                    viewer_handler_url
+                </td>
+                <td>
+                    보기 경로를 상황에 맞게 개별 Viewer Handler를 구현하여 사용하고자 할 때 설정합니다. <br /><br />
+                    설정하실 때 http:// 부터의 전체경로를 설정합니다.
+                 </td>
+            </tr>
+            <tr>
+                <td class="t_bg">
+                    download_handler_url
+                </td>
+                <td>
+                    사용 용도에 따라서 다운로드 경로를 상황에 맞게 개별 Download Handler를 구현하여 사용하고자 할 때 설정합니다.<br /><br />
+                    설정하실 때 http:// 부터의 전체경로를 설정합니다.
+                 </td>
+            </tr>
+            <tr>
+                <td class="t_bg t_nline">
+                    chunk_size
+                </td>
+                <td>
+                    HTML5가 지원되는 브라우저에서만 설정합니다.<br/>
+                    파일을 전송할때, 분할 전송 크기를 설정합니다.<br /><br />
+                    기본값은 "1MB"(1048576 BYTE)이고, "사용자 설정값" 으로 설정합니다.<br/>
+                    파일 단위는 B(byte), KB(kilobyte), MB(megabyte), GB(gigabyte) 으로 설정합니다. 
+                 </td>
+            </tr>
+            <tr>
+                <td class="t_bg">
+                    unit
+                </td>
+                <td>
+                unit 종류를 설정합니다.<br /><br />
+                unit 종류는 "B: byte, KB: kilobyte, MB: megabyte, GB: gigabyte" 입니다.
+                 </td>
+            </tr>            
+            <tr>
+                <td class="t_bg">
+                    folder_name_rule
+                </td>
+                <td>
+                    dext5handler에서 설정된 폴더 하위들의 저장 체계를 설정합니다.<br /><br /> 
+                    일반 폴더 또는 년월일폴더를 사용할 수 있습니다.<br />
+                    일반폴더는 "사용자 설정값" 형태로 사용할 수 있습니다.<br />
+                    년월일폴더 설정 방법은<br />사용하지 않음 => "/",<br />년도 => "YYYY/",<br />년도/월 => "YYYY/MM/",<br />년도/월/일 => "YYYY/MM/DD/" 중 하나의 값을 사용합니다.<br /><br />
+                    폴더가 존재하지 않으면 자동으로 생성되며, 서버의 날짜가 기준이 됩니다. 
+                 </td>
+            </tr>                         
+            <tr>
+                <td class="t_bg">
+                    file_name_rule
+                </td>
+                <td>
+                    웹에서 등록된 파일의 이름을 지정하는 규칙입니다.<br /><br />
+                    값 지정은 "GUID" 또는 "REALFILENAME" 을 입력합니다.<br />
+                    "REALFILENAME" 의 경우 파일의 실제 파일명으로 생성됩니다.<br />  
+                    기본값은 "REALFILENAME" 입니다.
+                 </td>
+            </tr>
+            <tr>
+                <td class="t_bg">
+                    file_name_rule_ex
+                </td>
+                <td>
+                    업로드 되는 파일명이 중복될 때 파일명 뒤에 기호를 추가하여 생성됩니다.<br /><br />
+                    기호는 "_" 또는 "#" 으로 설정하면 해당 문자가 파일명 뒤에 붙어 저장됩니다.<br />
+                    값을 "i" 로 설정시 파일명 뒤에 "숫자"가 자동 증가합니다.<br />
+                    기본값은 "_" 입니다.
+                 </td>
+            </tr>                     
+        </tbody>
+      </table> 
+      <!-- //업로드 환경 설정 -->
+
+      <!-- add_ext_icon
+        <table class="h_table h_table2"> 
+          <caption>업로드 환경 설정</caption>
+          <colgroup>
+           <col style="text-align:center; width:20% !important;" />
+           <col style="text-align:left; width:80% !important;" />
+          </colgroup>
+          <thead>          
+          <tr>
+              <th>
+                 &lt;add_ext_icon/&gt;
+              </th>
+              <th>
+                제품의 업로드 환경 설정
+              </th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td class="t_bg">
+                    add_ext_icon
+                </td>
+                <td>
+ 
+                </td>
+            </tr>                   
+        </tbody>
+      </table> 
+      <!-- //업로드 환경 설정 -->
+     </div>
+</div>
+</div>
+</body>
+</html>
+

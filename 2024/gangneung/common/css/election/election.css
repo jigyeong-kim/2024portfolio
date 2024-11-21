@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+/* Layout */
+@import url('default.css');
+
+#election {height:550px;padding:10px 10px 10px 20px;background: url(/common/images/election/election_bg.gif) no-repeat;}
+
+#election h1{padding:15px 0;}
+#election h3 {
+    margin: 5px 0;
+    padding: 0 0 0 15px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #0b5fd2;
+    display: block;
+    background: url(/common/images/election/title_bg.gif) no-repeat center left;
+}
+
+#election ul.bu2 { margin: 0 0 0 15px; padding: 0 0 0.5em 0; list-style: none; text-align: left; }
+#election ul.bu2 li { margin: 0; padding: 0 0 0 0.6em;  background: url('/common/images/election/dot.gif') no-repeat 0 0.4em; }
+#election ul.bu2 ul li {padding: 0 0 0 1em;background: url('/common/images/election/dot2.gif') no-repeat 0 0.2em;}
+#election ul.bu2 ul ul li {padding: 0 0 0 1em;background: url('/common/images/election/dot2.gif') no-repeat 0 0.2em; }
+#election ul.bu2 ul, ul.bu ul ul { padding: 0 0 0.5em 0; }
+
+
+#searchbox{margin-left:20px;position:relative;width:395px;padding:10px 0 0 0;background: url(/common/images/election/name_bg.gif) no-repeat;}
+#searchbox .search{padding:5px 0 15px 10px;background: url(/common/images/election/name_bg2.gif) no-repeat left bottom;letter-spacing:-1px}
+* html #searchbox .search{padding:10px 0 28px 10px;}
+#searchbox .search fieldset{background: url(/common/images/election/name_bg1.gif) no-repeat; }
+#searchbox .search p{margin:5px 0}
+#searchbox .search .head{float:left;width:80px;min-width:80px;padding:5px 0 0 0;font-weight:bold;}
+#searchbox .search input.input1{width:120px; height:15px:}
+#searchbox .search input.input2{width:50px;height:15px:}
+
+#searchbox .search .btn_search{position:absolute; left:295px;top:30px}
+
+#election .guide{width:390px;padding:0 0 0 20px;font-size:0.95em;letter-spacing:-0.5px;}
+#election .guide span{color:#f17a06;font-weight:bold;}
+#election .t_title {
+    font-size: 12px;
+    letter-spacing: -1px;
+}
+#objection p {padding: 2px 0;}
+#objection{width:390px;margin:10px 0;padding:10px;background:#e8ebf6;border:solid 1px #d1d6e6;}
+#objection .head{width:80px;float:left;min-width:70px;padding:0 0 0 5px; background: url('/common/images/election/dot.gif') no-repeat 0 0.4em;}
+#objection span{font-size:0.95em}
+#objection .btn_search{margin:20px 0 0 0;text-align:center;}
+#objection  input.sbj{width:280px;height:15px:}
+#objection  input.email{width:200px;height:15px:}
+
+legend {font-size:0;height:0;overflow:hidden;position:absolute;visibility:hidden;width:0;}
+.bottom{height:22px;background: url('/common/images/election/election_bg_bottom.gif') no-repeat;}
+
+.padding_L_10{padding:0 0 0 10px}
+.padding_L_80{padding:0 0 0 80px}
+.padding_L_90{padding:0 0 0 90px}
+.padding_T_10{padding:10px 0 0 0}
+.text_center{text-align:center}
+
+.election_btn {padding:10px 0 0 0}
+.election_btn ul li {float:left;}
+
+.election_day {position:absolute; left:100px;top:20px}
+
+
+.clearfix:after {display:block; clear:both; content:"."; visibility:hidden; height:0;}
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+
+/* 테이블(Table) */
+table caption {display:none;}
+table.table_t1 { border-collapse: collapse; width: 100%; margin: .5em 0px; border-top: 2px solid #84cb71; font-size:12px; width:430px}
+
+table.table_t1 tr {  } /* colgroup 으로 td 스타일제어하려면 tr에 정의  */
+table.table_t1 th, table.table_t1 td { border: 1px solid #badba7; padding: 6px 6px 4px 6px; text-align:center;}
+table.table_t1 thead, table.table_t1 tfoot { background: #f4f4f4; font-weight: normal; }
+table.table_t1 thead th, table.table_t1 tfoot th {background:url(/site/gangbuk/images/sub/table_bg.gif) left 1px repeat-x; color: #434343; font-weight: bold; text-align: center; vertical-align: middle; }
+table.table_t1 thead.alt th, table.table_t1 tfoot.alt th { font-weight: normal; }
+table.table_t1 th { background: #fcfcfc; font-weight: normal; text-align: inherit;text-align:center }
+table.table_t1 tfoot th { background: #f4f4f4; font-weight: bold; text-align: inherit; }
+table.table_t1 tr.alt th { background: #f8f7f3; }
+table.table_t1 tr.alt td { background: #f8f7f3; }
+table.table_t1 th.alt { background: #fff; }

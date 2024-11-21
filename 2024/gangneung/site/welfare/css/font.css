@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* 지우개 */
+@font-face{
+    font-family: 'Jiugae';
+    font-weight: 400;
+    src: url("../font/TTHakgyoansimJiugaeR.woff2") format('woff2'),
+    url("../font/TTHakgyoansimJiugaeR.woff") format('woff');
+}
+
+/* 넥슨 레벨2 */
+@font-face{
+    font-family: 'Nexon2';
+    font-weight: 400;
+    src: url("../font/NEXON_Lv2_Gothic.woff") format('woff');
+}
+@font-face{
+    font-family: 'Nexon2';
+    font-weight: 600;
+    src: url("../font/NEXON_Lv2_Gothic_Bold.woff") format('woff');
+}

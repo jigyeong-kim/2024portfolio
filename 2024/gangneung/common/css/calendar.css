@@ -1,0 +1,24 @@
+body{font-size:12px;}
+a{text-decoration:none}
+.cal_wrap{position:relative;border:1px solid #eee;z-index:1000;}
+.year{height:35px;background:#e56f5d;}
+.year_wrap {position:relative;height:35px;margin-right:24px;font-size:1.1em;color:#fff;font-weight:600;text-align:center;line-height:35px;}
+.year_wrap button{display:inline-block;position:absolute;top:5px;width:24px;height:24px;font-size:0;line-height:0;text-indent:100%}
+.year_wrap button#month_prev{left:5px;background:url('/common/images/board/calendar_btn_prev.png') no-repeat center center}
+.year_wrap button#month_next{right:5px;background:url('/common/images/board/calendar_btn_next.png') no-repeat center center}
+.year_wrap span{margin:0 3px;}
+.cal_area{width:100%;background:#fff;}
+.cal_area table{width:100%;margin:0;padding:0;}
+.cal_area th,.cal_area td {width:32px;height:32px;line-height:32px;padding:0;text-align:center;vertical-align: middle}
+*:first-child+html .cal_area caption{display:none;}
+.cal_area th{background:#f2b7ae;color:#fff;}
+.cal_area td{}
+.cal_area a{display:block;text-align:center}
+.cal_area .sun{color:#f1552b}
+.cal_area .day{color:#222}
+.cal_area .sat{color:#f1552b}
+.cal_area td span{display:inline-block;width:26px;height:26px;line-height:26px;vertical-align:middle}
+.cal_area td.today span{border-radius: 50%;background:#e56f5d;}
+.cal_area td.today a{color:#fff !important;line-height:26px;}
+.close {position:absolute;top:5px;right:5px;width:24px;height:24px;z-index:2001;}
+.close button{display:block;width:24px;height:24px;background: url('/common/images/board/calendar_btn_close.png') no-repeat center 3px;font-size:0;line-height:0;text-indent:100%}
