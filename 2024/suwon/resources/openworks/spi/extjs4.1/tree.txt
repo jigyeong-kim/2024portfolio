@@ -1,0 +1,31 @@
+    <op:jsTag type="spi" items="form,validate, extjs4" />
+    <op:jsTag type="openworks" />
+
+    <script type="text/javascript" src="/resources/openworks/spi/openworks/openworks.tree4.js"></script>
+
+        var TreeConfig = [
+            {
+                TREE_EL_ID : "treeDiv",
+                ROOT_VISIBLE : true,
+                DRAGGABLE : true,
+                TREE_TITLE : "부서 목록",
+                ROOT_TREE_ID : '<%= GlobalConfig.HIGH_TREE_CD %>',
+                ROOT_TREE_TEXT : "부서 목록",
+
+                IS_APPEND_LEAF : true,
+                PARENT_NODE_ID_VAR : "highDeptCd",
+                NODE_ID_VAR : "deptCd",
+                NODE_NM_VAR : "deptNm",
+                NODE_ORDER_VAR : "orderNo",
+
+                TREE_JSON_URL : "INC_deptList.do",
+                VIEW_URL : "INC_deptView.do",
+                INSERT_URL : "ND_insertAction.do",
+                UPDATE_URL : "ND_updateAction.do",
+                DELETE_URL : "ND_deleteAction.do",
+
+                PANEL_SIZE_HEIGHT : 400,
+                PANEL_SIZE_WIDTH : 200,
+                RESIZABLE : false
+            }
+        ];

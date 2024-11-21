@@ -1,0 +1,361 @@
+@charset "utf-8";
+
+/*--------------------------------------------------------------------------
+ * contents
+ *-------------------------------------------------------------------------*/
+
+/* tree구조 */
+.tree_tit {
+    border-color: #99BBE8;
+    color: #fff;
+    font-weight: bold;
+    position:relative;
+    padding:8px 10px;
+    background:url('../images/contents/bg_blue.gif') repeat-x left bottom;
+    border:1px solid #9db2db;
+}
+
+.tree_tit img {
+    position:absolute;
+    right:8px;
+    top:6px;
+}
+
+.panel {
+    border:1px solid #99bbe8;
+    overflow:auto;
+}
+
+.panel .panList {
+    padding:8px 8px;
+}
+
+.panel .panList li {
+    background:url('../images/icon/icon_list.gif') no-repeat 4px 4px;
+    padding:5px 5px 5px 25px;
+    margin-bottom:2px;
+}
+
+.panel .panList input[type='checkbox'] {
+    padding:0 3px 0 2px;
+}
+
+.panel .panList li.check_on {
+    background-color:#e2ebfc;
+}
+
+.tree_num {
+    background-color:#f0f0f0;
+    border:1px solid #e4e4e4;
+    padding:5px 10px;
+    margin-top:5px;
+}
+
+/* 공통코드관리 */
+.cord {
+    width:100%;
+    float:left;
+    margin:15px 0;
+}
+
+.cord .b_list {
+    float:left;
+    width:17%;
+    margin-right:2.5%;
+}
+
+.cord .b_write {
+    float:left;
+    width:61%;
+}
+
+.gray_box {
+    padding:10px 10px;
+    text-align:center;
+}
+
+.ta_gray {
+    border:1px solid #e1e1e1;
+    width:100%;
+}
+
+.ta_gray th {
+    text-align:center;
+    font-weight:bold;
+    background-color:#f1f1f1;
+    height:18px;
+    border-right:1px solid #e1e1e1;
+}
+
+.ta_gray td {
+    text-align:center;
+    height:18px;
+    border-right:1px solid #e1e1e1;
+}
+
+/* 부서등록 */
+.buser {
+    width:100%;
+    margin:15px 0;
+    position:relative;
+    min-height:470px;
+}
+
+.buser .b_list {
+    width:200px;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.buser .b_list_w {
+    width:200px;
+}
+
+.buser .b_list2 {
+    width:200px;
+    position:absolute;
+    left:230px;
+    top:0;
+}
+
+.buser .b_list3 {
+    width:200px;
+    position:absolute;
+    left:500px;
+    top:0;
+}
+
+.buser .b_write {
+    margin-left:240px;
+}
+
+.buser .b_write2 {
+    margin-left:480px;
+}
+
+.buser .b_write3 {
+    margin-left:720px;
+}
+
+.arrow_step {
+    position:absolute;
+    left:210px;
+    top:220px;
+}
+
+.arrow_step2 {
+    position:absolute;
+    left:443px;
+    top:220px;
+}
+
+/* gray 박스 */
+.gray_box_tx {
+    background-color:#f1f1f1;
+    padding:15px 15px;
+    border:1px solid #e1e1e1;
+    margin-bottom:30px;
+}
+
+.blue_box_tx {
+    background-color:#eaeff9;
+    padding:15px 15px;
+    border:1px solid #d1dcf2;
+    margin-bottom:30px;
+}
+
+
+a.b_block {
+    display:block;
+    background-color:#d5ddec;
+    padding:3px 0;
+}
+
+
+/* member */
+.mo_why {
+    border:1px solid #91aad7;
+    position:absolute;
+    right:0px;
+    top:20px;
+    width:300px;
+    background-color:#fff;
+    z-index:1;
+}
+
+.mo_why h5 {
+    background-color:#e7e7e7;
+    padding:8px 10px;
+    font-weight:bold;
+}
+
+.mo_why p {
+    margin:8px 10px;
+    line-height:130%;
+}
+
+.mo_why pre {
+    margin:8px 10px;
+    line-height:130%;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+/* member item ul list */
+.mem_item li {
+    float:left;
+    padding-right:50px;
+    margin-bottom:10px;
+    height:25px;
+}
+
+/* arrow_plus icon */
+.plus {
+    width:50px;
+    float:left;
+    padding-top:250px;
+}
+
+/* calender */
+.c_month {
+    background-color:#9caab9;
+    color:#fff;
+    font-weight:bold;
+    text-align:center;
+    padding:10px 0;
+    font-size:14px;
+}
+
+.calTable {
+    width: 100%;
+    border-top: 1px solid #acbadb;
+    font: 12px/12px Tahoma,Geneva,sans-serif;
+}
+
+.calTable th {
+    background: none repeat scroll 0 0 #c7cfe6;
+    border-bottom: 1px solid #acbadb;   
+    border-right: 1px solid #acbadb;
+    color: #000;
+    height: 16px;
+    line-height: 16px;
+    padding: 7px 0;
+}
+
+.calTable .br_none {
+    border-right: medium none;
+}
+
+.calTable td {
+    border-bottom: 1px solid #E9E9E9;
+    border-right: 1px solid #E9E9E9;
+    line-height: 16px;
+    padding: 2px;
+    height:90px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.calTable .br_none {
+    border-right: medium none;
+}
+
+.calTable span.sun {
+    color: #DF6262;
+    font-weight:bold;
+}
+
+.calTable span.day {
+    color: #000;
+}
+
+.calTable span.sat {
+    color: #1c7ed9;
+}
+
+.calTable span  {
+    display: inline-block;
+    letter-spacing: -1px;
+    margin-bottom: 2px;
+    padding: 2px;
+}
+
+.calTable ul,.calTable ul li {
+    list-style: none outside none;
+    margin:0;
+    padding:0;
+}
+
+.calTable ul {
+    padding-top:8px;
+}
+
+.todaycolor {
+    background-color:#E8F5D4;
+}
+
+.day_num {
+    width:100%;
+    position:relative;
+}
+
+.cal_tx_b {
+    font-weight:bold;
+    position:absolute;
+    right:5px;
+    top:0;
+    font-size:11px;
+}
+
+/* select layer */
+.select_layer_tit {
+    border:1px solid #8A9DCB;
+    height:19px;
+    width:100%;
+    background-color:#fff;
+}
+
+.select_layer_tit .click {
+    position:absolute;
+    right:0px;
+    top:1px;
+}
+
+
+/*  graph detail text */
+.graph_detail_text {
+    float:right;
+    border:3px solid #e1e1e1;
+    padding:10px;
+}
+
+.graph_detail_text  ul li {
+   border-bottom:1px dotted #d5d3d3;
+    padding:6px 0;
+    float:left;
+    width:98%;
+}
+
+.graph_half {
+    border:1px solid #dedede;
+    width:47.5%;
+    padding:10px;
+    float:left;
+    margin:0 0 10px 0;
+}
+
+.graph_half h5 {
+    font-size:11px;
+    margin-bottom:15px;
+}
+
+.graph_half p.sa_i {
+    text-align:center;
+    margin-bottom:10px;
+}
+
+/* 입력폼 유효성 검증 메시지 */
+.valid_message{
+    color:#455b92;font-size:11px;
+}

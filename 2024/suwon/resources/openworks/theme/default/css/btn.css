@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/*--------------------------------------------------------------------------
+ * Button style
+ *-------------------------------------------------------------------------*/
+button {
+    cursor: pointer;
+    line-height: 1;
+    text-decoration: none;
+    margin-left: 2px;
+}
+/* 다크블루(하단) 버튼 */
+button.blue {
+    background-color:#313a5b;
+    border: 1px solid #1f294c;
+    color: #FFFFFF;
+    text-align: center;
+	font-weight:bold;
+	font-size:12px;
+	padding:3px 7px;
+	vertical-align:middle;
+	overflow:visible;
+}
+button.blue:hover,button.w_blue:hover{
+	background-color:#c65742;
+	border: 1px solid #b44e3b;
+}
+
+/* 밝은블루(하단) 버튼 */
+button.w_blue {
+    background-color:#4d5ab6;
+    border: 1px solid #444f9b;
+    color: #FFFFFF;
+    text-align: center;
+	font-size:12px;
+	padding:3px 7px;
+	vertical-align:middle;
+	overflow:visible;
+	font-weight:bold;
+}
+
+/* gray button*/
+button.gray{
+	background-color:#979797;
+    border: 1px solid #7e7e7e;
+    color: #FFFFFF;
+    text-align: center;
+	font-weight:normal;
+	font-size:12px;
+	padding:3px 5px;
+	vertical-align:middle;
+	overflow:visible;
+}
+button.gray:hover{
+	background-color:#979797;
+	border: 1px solid #373737;
+}
+
+button.gray_s{
+	background-color:#979797;
+    border: 1px solid #7e7e7e;
+    color: #FFFFFF;
+    text-align: center;
+	font-weight:normal;
+	font-size:12px;
+	padding:1px 3px;
+	vertical-align:middle;
+	overflow:visible;
+}
+button.gray_s:hover{
+	background-color:#979797;
+	border: 1px solid #373737;
+}
+
+/* (내용단)오렌지 버튼 */
+button.orange,button.orange:hover{
+	background-color:#d57866;
+    border: 1px solid #b7674e;
+    color: #FFFFFF;
+    text-align: center;
+	font-weight:normal;
+	font-size:12px;
+	padding:3px 5px;
+	vertical-align:middle;
+	overflow:visible;
+}
+
+/* (내용단)블루 버튼 */
+button.s_blue,button.s_blue:hover{
+	background-color:#7786b1;
+    border: 1px solid #647299;
+    color: #FFFFFF;
+    text-align: center;
+	font-weight:normal;
+	font-size:12px;
+	padding:3px 5px;
+	margin:1px;
+	vertical-align:middle;
+	overflow:visible;
+}

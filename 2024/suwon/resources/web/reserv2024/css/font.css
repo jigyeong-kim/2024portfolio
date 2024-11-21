@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* Rikodeo */
+@font-face{
+    font-family: 'Rikodeo';
+    font-weight: 400;
+    src: url("../font/TTHakgyoansimRikodeoR.woff2") format('woff2'),
+    url("../font/TTHakgyoansimRikodeoR.woff") format('woff');
+}
+
+/* wanted */
+@font-face{
+    font-family: 'Wanted';
+    font-weight: 300;
+    src: url("../font/WantedSans-Regular.woff2") format('woff2'),
+    url("../font/WantedSans-Regular.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'Wanted';
+    font-weight: 400;
+    src: url("../font/WantedSans-Medium.woff2") format('woff2'),
+    url("../font/WantedSans-Medium.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'Wanted';
+    font-weight: 500;
+    src: url("../font/WantedSans-SemiBold.woff2") format('woff2'),
+    url("../font/WantedSans-SemiBold.woff") format('woff');
+}
+
+@font-face{
+    font-family: 'Wanted';
+    font-weight: 600;
+    src: url("../font/WantedSans-Bold.woff2") format('woff2'),
+    url("../font/WantedSans-Bold.woff") format('woff');
+}

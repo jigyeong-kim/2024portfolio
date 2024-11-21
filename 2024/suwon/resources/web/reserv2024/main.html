@@ -1,0 +1,1855 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10.0, minimum-scale=1.0, user-scalable=yes" />
+    <link rel="shortcut icon" type="image/x-icon" href="/2024/suwon/favicon.ico" />
+    <title>통합예약시스템</title>
+    <script>CTX_PATH = "";</script>
+    <link rel="stylesheet" href="/2024/suwon/resources/web/reserv2024/css/default.css" />
+    <link rel="stylesheet" href="/2024/suwon/resources/web/reserv2024/css/main.css">
+    <link rel="stylesheet" href="/2024/suwon/resources/web/reserv2024/css/font.css">
+
+    <link rel="stylesheet" href="/2024/suwon/resources/common_sw/css/program.css" />
+    <link rel="stylesheet" href="/2024/suwon/resources/common_sw/css/program_media.css" />
+
+    <link rel="stylesheet" href="/2024/suwon/resources/web/reserv2024/css/program_card_list.css">
+
+    <script src="/2024/suwon/resources/common_sw/js/jquery-1.12.4.min.js"></script>
+    <script src="/2024/suwon/resources/common_sw/js/jquery-migrate-1.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/2024/suwon/resources/openworks/spi/jquery/ui/jquery-ui-1.8.18.custom.css" />
+    <script type="text/javascript" src="/2024/suwon/resources/openworks/spi/jquery/ui/jquery-ui-1.8.18.custom.min.js"></script>
+    <script src="/2024/suwon/resources/common_sw/js/jquery.screen.min.js"></script>
+
+    <script src="/2024/suwon/resources/common_sw/js/slick.min.custom.1.6.0.8.js"></script>
+    <script src="/2024/suwon/resources/common_sw/js/slick.extensions.min.js"></script>
+    <!--[if lt IE 9]><script src="/2024/suwon/resources/common_sw/js/html5.js"></script><![endif]-->
+    <script src="/2024/suwon/resources/common_sw/js/jquery.responsive.min.js"></script>
+    <script src="/2024/suwon/resources/common_sw/js/jquery.touchSwipe.min.js"></script>
+    <script src="/2024/suwon/resources/common_sw/js/jquery.slideandswipe.min.js"></script>
+    <script src="/2024/suwon/resources/common_sw/js/jquery.menu.min.js"></script>
+    <script src="/2024/suwon/resources/common_sw/js/program.js"></script>
+    <script src="/2024/suwon/resources/web/common/js/suwon.js"></script>
+    <script src="/2024/suwon/resources/web/reserv2024/js/common.js"></script>
+    <script src="/2024/suwon/resources/web/reserv2024/js/main.js"></script>
+
+    <script type="text/javascript">
+        // (function($){//jquery-ui-1.8.18 버그수정
+        //     if (!$.curCSS){
+        //         $.curCSS = $.css;
+        //     }
+        // })(jQuery);
+        // $.ajaxSetup({
+        //     cache : false
+        //     , timeout : 3000
+        //     , beforeSend : function(){
+        //         try{getDocumentLoader();}catch(e){console.log('document loader error');}
+        //     }
+        //     , complete : function(){
+        //         try{setDocumentLoader('hide');}catch(e){console.log('document loader error');}
+        //     }
+        //     , error : function(jqXHR, exception){
+        //         if(exception === 'parsererror'){
+        //             alert('전송이 실패하였습니다. : parsererror');
+        //         }else if(exception === 'timeout'){
+        //             alert('전송이 실패하였습니다. : timeout');
+        //         }else if(exception === 'abort'){
+        //             alert('전송이 실패하였습니다. : abort');
+        //         }else{
+        //             if(jqXHR.responseText != ''){
+        //                 alert('전송이 실패하였습니다. : ' + jqXHR.responseText);
+        //             }
+        //         }
+        //         try{setDocumentLoader('hide');}catch(e){console.log('document loader error');}
+        //     }
+        // });
+        // $(document).ready(function () {
+        // });
+        // // 로그인 페이지 이동(되돌아올 주소를 포함)
+        // function globalLogin(href) {
+        //     if(href) {
+        //         $("#globalLoginForm").attr("action",href);
+        //     }
+        //     $("#globalLoginForm").attr("target","_self");
+        //     $("#globalLoginForm").submit();
+        // };
+        // var jsReturn = function () {
+        //     var retUrl = $("#globalLoginForm input[name=retUrl]").val();
+        //     if (retUrl != "") {
+        //         document.location.href=retUrl;
+        //     } else {
+        //         document.location.href="/web/reserv/index.do";
+        //     }
+        // };
+        // var jsAuthCheck = function (href) {
+        //
+        //     alert("로그인 후 사용 가능합니다");
+        //     globalLogin('');
+        //     return false;
+        //
+        // };
+    </script>
+
+    <script type="text/javascript" src="/2024/suwon/resources/web/popup/js/jquery.cookie.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        //쿠기이름 가져옴
+        var getCookieName = function(domain, seq) {
+            return "popup_" +  domain + "_" + seq;
+        };
+
+        var jsClose = function(divName) {
+            $("#" + divName).remove();
+        };
+
+        $(document).ready(function(){
+
+        });
+        //]]>
+    </script>
+    <!-- 접속로그 수집영역 START -->
+    <script type="text/javascript">
+        //<![CDATA[
+        var anlzSessionId = 'UDapDCUe8pUG0ncxWfNtR6FAZ8L4oo6TE8mubp6CBiR7xhRazBp4rJDG31lKpQIV.WAS2_servlet_engine1';
+        var anlzClientIp = '';
+        //]]>
+    </script>
+    <script type="text/javascript">
+        //<![CDATA[
+        var anlzSearchEngine = new Array();
+        var anlzMobileOS = new Array();
+
+        anlzSearchEngine.push('daum.net');
+        anlzSearchEngine.push('nate.com');
+        anlzSearchEngine.push('naver.com');
+        anlzSearchEngine.push('bing.com');
+        anlzSearchEngine.push('yahoo.com');
+        anlzSearchEngine.push('yahoo.co.kr');
+        anlzSearchEngine.push('google.com');
+        anlzSearchEngine.push('google.co.kr');
+        anlzMobileOS.push('iPad');
+        anlzMobileOS.push('iPhone');
+        anlzMobileOS.push('Android');
+
+        //]]>
+    </script>
+    <script type="text/javascript">CTX_PATH="";</script>
+    <script type="text/javascript" src="/2024/suwon/resources/web/popup/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/2024/suwon/resources/intra/analyze/tracking/js/detector.js"></script>
+    <script type="text/javascript" src="/2024/suwon/resources/intra/analyze/tracking/js/tracker.js"></script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        $().ready(function(){
+            var logMenuCd = 'sw-reserv';
+            var logMenuYn = 'N';
+            var logMenuURI = "/web/reserv/index.do";
+            var logMenuQueryStr = "";
+            var logMenuGubun = "";
+            var logGubunCd = "";
+            var logSeqNo = "";
+
+
+
+            //인기컨텐츠 로그 기록 (시정소식, 행사/축제, 교육)
+            if(logMenuCd == 'www04-01' || logMenuCd == 'civil_05' || logMenuCd == 'eco06' || logMenuCd == 'welfare05' || logMenuCd == 'culture04'
+                || logMenuCd == 'env_05' || logMenuCd == 'city05' || logMenuCd == 'traffic05' || logMenuCd == 'cityCreate_04' || logMenuCd == 'healthPolicies_04') {
+
+            }
+
+            if(logMenuYn == 'Y') {
+                $.ajax({
+                    type:        "POST",
+                    url:         "/web/popularityContents/ND_logInsert.do",
+                    data:        "menuCd="+logMenuCd+"&menuGubun="+logMenuGubun+"&gubunCd="+logGubunCd+"&seqNo="+logSeqNo+"&queryStr="+encodeURIComponent(logMenuQueryStr),
+                    dataType:    "json",
+                    contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+                    //async:       false,
+                    success:     function(data) {},
+                    error:       function () {}
+                });
+            }
+        });
+        //]]>
+    </script>
+    <!-- 접속로그 수집영역 END   --></head>
+<body id="main">
+<div class="accessibility">
+    <a href="#container">본문 바로가기</a>
+</div>
+<div id="wrapper" class="ctssw-reserv"><!-- 메뉴별 키번호(각 메뉴의 고유넘버) ctsxxx 부여해주세요!!(자리수는 상관없고 각 메뉴마다 구분만 되면 됩니다. 게시판페이지, 프로그램페이지 포함) -->
+
+    <header id="header">
+        <div class="header_box">
+            <div class="body_wrap clearfix">
+                <div class="gnb">
+                    <div class="body_wrap clearfix">
+                        <div class="site">
+                            <ul class="site_list">
+                                <li class="site_item"><a href="https://www.suwon.go.kr/index.do" target="_blank" title="새창" class="site_anchor" rel="nofollow">수원시청</a></li>
+                                <li class="site_item"><a href="https://tv.suwon.go.kr/" target="_blank" title="새창" class="site_anchor" rel="nofollow">수원ITV</a></li>
+                                <li class="site_item"><a href="https://news.suwon.go.kr/" target="_blank" title="새창" class="site_anchor" rel="nofollow">e-뉴스</a></li>
+                            </ul>
+                        </div>
+                        <div class="right_box">
+                            <div class="weatherbox dust1 clearfix">
+                                <a href="http://www.kma.go.kr/weather/main_all.jsp?myPointCode=4111356000&stncd=119&x=13&y=7" target="_blank" title="새창열림" class="weather" rel="nofollow">
+                                    <span class="icon" title="맑음">맑음</span>
+                                    <span class="textbox">
+                                            <span class="text">맑음</span>
+                                            <span class="temperature">0℃</span>
+                                        </span>
+                                </a>
+                                <a href="http://www.suwon.go.kr/web/safesuwon/air/PD_index.do" target="_blank" title="새창열림" class="dust" rel="nofollow">
+                                    <span class="text">미세먼지</span>
+                                    <em>좋음</em>
+                                    <span class="icon" title="좋음">좋음</span>
+                                </a>
+                            </div>
+                            <div class="link">
+                                <ul class="clearfix">
+                                    <li><a href="#none" class="transnoti" onclick="globalLogin('');return false;" rel="nofollow">로그인</a></li>
+                                    <li><a href="/web/register/BD_index.do" target="_blank" title="새창열림" class="transnoti" rel="nofollow">회원가입</a></li>
+                                    <li class="falilysite"><a href="#" class="transnoti" rel="nofollow">패밀리사이트</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="familybigbox">
+                    <div class="body_wrap">
+                        <div class="layerbox">
+                            <div class="titlebox clearfix">
+                                <h2><img src="/2024/suwon/resources/web/reserv2024/images/familytitle.png" alt="패밀리사이트" /></h2>
+                            </div>
+                            <div class="listbox">
+                                <ul class="clearfix">
+                                    <li><a href="https://www.suwon.go.kr/index.do" target="_blank" title="새창" rel="nofollow">수원시청</a></li>
+                                    <li><a href="https://tv.suwon.go.kr/" target="_blank" title="새창" rel="nofollow">수원ITV</a></li>
+                                    <li><a href="https://news.suwon.go.kr/" target="_blank" title="새창" rel="nofollow">e-뉴스</a></li>
+                                    <li><a href="https://sscf2016.or.kr/" target="_blank" title="새창" rel="nofollow">수원도시재단</a></li>
+                                    <li><a href="https://www.suwon.go.kr/visitsuwon/" target="_blank" title="새창" rel="nofollow">수원관광</a></li>
+                                    <li><a href="http://www.suwonlib.go.kr/" target="_blank" title="새창" rel="nofollow">수원시도서관</a></li>
+                                    <li><a href="http://council.suwon.go.kr/" target="_blank" title="새창" rel="nofollow">수원시의회</a></li>
+                                    <li><a href="http://www.suwon.go.kr/bike/" target="_blank" title="새창" rel="nofollow">수원 바이크 반디클</a></li>
+                                    <li><a href="http://www.scc.or.kr/" target="_blank" title="새창" rel="nofollow">수원컨벤션센터</a></li>
+                                    <li><a href="https://health.suwon.go.kr/sub.asp?page_code=sub050601" target="_blank" title="새창" rel="nofollow">수원시 치매안심센터</a></li>
+                                    <li><a href="http://www.suwon.go.kr/web/airforce/index.do" target="_blank" title="새창" rel="nofollow">경기국제공항 건설 사업</a></li>
+                                    <li><a href="http://news.suwon.go.kr/ebook/home/index.php" target="_blank" title="새창" rel="nofollow">e-book 자료홍보관</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="closebox"><div class="inner">패밀리사이트<button type="button" class="close" title="닫기">닫기</button></div></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="logo">
+            <div class="body_wrap">
+                <a class="logo_anchor" href="/web/reserv/index.do">수원특례시 SUWON SPECIAL CITY 통합예약시스템</a>
+            </div>
+        </div>
+        <div class="ssm-overlay ssm-toggle-nav"></div>
+        <div class="lnbbox">
+            <div class="floatbox left">
+                통합예약시스템
+            </div>
+            <div class="lnb_topbox">
+                <div class="body_wrap">
+                    <div class="gnb btnbox">
+                        <ul class="clearfix">
+                            <li><a href="#none" class="transnoti" onclick="globalLogin('');return false;" rel="nofollow">로그인</a></li>
+                            <li><a href="/web/register/BD_index.do" target="_blank" title="새창열림" class="transnoti" rel="nofollow">회원가입</a></li>
+                            <li class="falilysite"><a href="#" class="transnoti" rel="nofollow">패밀리사이트</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav" data-menu-type="1" data-menu-top-background="full" data-menu-bottom-background="full">
+                <h2 class="skip">메뉴</h2>
+                <div class="depth1 clearfix" data-menu-depth="1">
+                    <ul class="depth1_list clearfix" data-menu-list="1">
+                        <li class="depth1_item">
+                            <a href="/web/reserv/edu/list.do"  class="depth1_text" data-menu-text="1"><span>교육·강좌·체험</span></a>
+                        </li>
+                        <li class="depth1_item">
+                            <a href="/web/reserv/faci/list.do"  class="depth1_text" data-menu-text="1"><span>공공시설</span></a>
+                        </li>
+                        <li class="depth1_item">
+                            <a href="/web/reserv/faci/sportslist.do"  class="depth1_text" data-menu-text="1"><span>체육시설</span></a>
+                        </li>
+                        <li class="depth1_item">
+                            <a href="/web/reserv/share/hometoollist.do"  class="depth1_text" data-menu-text="1"><span>장비대여</span></a>
+                        </li>
+                        <li class="depth1_item">
+                            <a href="/web/reserv/preBooking/BD_list.do"  class="depth1_text" data-menu-text="1"><span>사전상담예약</span></a>
+                        </li>
+                        <li class="depth1_item">
+                            <a href="/web/board/BD_board.list.do?bbsCd=1362"  class="depth1_text" data-menu-text="1"><span>공지사항</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="" class="lnb_close ssm-toggle-nav">주메뉴 닫기</a>
+        </div>
+        <div class="search">
+            <div class="body_wrap">
+                <button class="search_open form_popup_btn" title="통합검색 열기">통합검색 열기</button>
+            </div>
+        </div>
+        <div class="sitemap">
+            <div class="body_wrap">
+                <button class="lnb_open ssm-toggle-nav" title="사이트메뉴 열기">사이트메뉴열기</button>
+                <button type="button" class="sitemap_close" title="사이트맵 닫기">사이트맵 닫기</button>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <div class="form_popup">
+        <div class="popup_title">
+            상세검색
+            <span class="close_btn"><a href="#"><img src="/2024/suwon/resources/web/reserv2024/images/close_btn.png" alt="닫기"> </a></span>
+        </div>
+        <div class="acco_box">
+            <form id="totalDetailSearchForm" name="totalDetailSearchForm" class="form cf" action="/web/reserv/totalsearch.do" method="get">
+                <fieldset>
+                    <legend>통합예약 상세검색 폼</legend>
+                    <ul class="accordion">
+                        <li class="item">
+                            <h2 class="accordionTitle"><a href="#none">서비스 선택<span class="accIcon"><span class="q_cateCode_text"></span></span></a></h2>
+                            <div class="text">
+                                <section class="res_board plan cf">
+                                    <h2 class="skip">검색</h2>
+                                    <ul class="list clearfix">
+                                        <li>
+                                            <a href="#" title="하위메뉴 열림"><span>교육·강좌·체험</span></a>
+                                            <div class="tabcontent">
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_all" value="" checked><label class="four col" for="q_categoryCode_tedu_all">전체</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_76" value="76"><label class="four col" for="q_categoryCode_tedu_76" style="letter-spacing:-2px;">취미·문학·예술</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_77" value="77"><label class="four col" for="q_categoryCode_tedu_77" style="letter-spacing:-2px;">건강·스포츠</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_78" value="78"><label class="four col" for="q_categoryCode_tedu_78" style="letter-spacing:-2px;">어학·외국어</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_79" value="79"><label class="four col" for="q_categoryCode_tedu_79">IT강좌</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_87" value="87"><label class="four col" for="q_categoryCode_tedu_87">환경</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_81" value="81"><label class="four col" for="q_categoryCode_tedu_81">답사·체험</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_82" value="82"><label class="four col" for="q_categoryCode_tedu_82" style="letter-spacing:-2px;">창업·직업교육</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_83" value="83"><label class="four col" for="q_categoryCode_tedu_83" style="letter-spacing:-2px;">청소년·어린이</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_84" value="84"><label class="four col" for="q_categoryCode_tedu_84" style="letter-spacing:-2px;">인문학·독서</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_80" value="80"><label class="four col" for="q_categoryCode_tedu_80">시민교육</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_85" value="85"><label class="four col" for="q_categoryCode_tedu_85">주민센터교육</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>공공시설</span></a>
+                                            <div class="tabcontent">
+                                                <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_all" value="" checked><label class="four col" for="q_cateCode_tfaci_all">전체</label>
+                                                <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_1216" value="1216"><label class="four col" for="q_cateCode_tfaci_1216">강당</label>
+                                                <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_1217" value="1217"><label class="four col" for="q_cateCode_tfaci_1217">회의실</label>
+                                                <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_1242" value="1242"><label class="four col" for="q_cateCode_tfaci_1242">대회의실</label>
+                                                <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_1243" value="1243"><label class="four col" for="q_cateCode_tfaci_1243">중회의실</label>
+                                                <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_1282" value="1282"><label class="four col" for="q_cateCode_tfaci_1282">공원</label>
+                                                <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_1429" value="1429"><label class="four col" for="q_cateCode_tfaci_1429">어린이공원</label>
+                                                <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_1430" value="1430"><label class="four col" for="q_cateCode_tfaci_1430">소공원</label>
+                                                <!-- <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_1434" value="1434"><label class="four col" for="q_cateCode_tfaci_1434">공연장</label> -->
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>체육시설</span></a>
+                                            <div class="tabcontent">
+                                                <input type="checkbox" name="q_sfaci_cateCode" id="q_cateCode_tsfaci_all" value="" checked><label class="four col" for="q_cateCode_tsfaci_all">전체</label>
+                                                <input type="checkbox" name="q_sfaci_cateCode" id="q_cateCode_tsfaci_1228" value="1228"><label class="four col" for="q_cateCode_tsfaci_1228">축구·풋살장</label>
+                                                <input type="checkbox" name="q_sfaci_cateCode" id="q_cateCode_tsfaci_1241" value="1241"><label class="four col" for="q_cateCode_tsfaci_1241">테니스장</label>
+                                                <input type="checkbox" name="q_sfaci_cateCode" id="q_cateCode_tsfaci_1244" value="1244"><label class="four col" for="q_cateCode_tsfaci_1244">배드민턴장</label>
+                                                <input type="checkbox" name="q_sfaci_cateCode" id="q_cateCode_tsfaci_1249" value="1249"><label class="four col" for="q_cateCode_tsfaci_1249">탁구장</label>
+                                                <input type="checkbox" name="q_sfaci_cateCode" id="q_cateCode_tsfaci_1250" value="1250"><label class="four col" for="q_cateCode_tsfaci_1250">족구장</label>
+                                                <input type="checkbox" name="q_sfaci_cateCode" id="q_cateCode_tsfaci_1355" value="1355"><label class="four col" for="q_cateCode_tsfaci_1355">기타체육시설</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>장비대여</span></a>
+                                            <div class="tabcontent">
+                                                <input type="checkbox" name="q_share_cateCode" id="q_cateCode_tshare_all" value="" checked><label class="four col" for="q_cateCode_tshare_all">전체</label>
+                                                <input type="checkbox" name="q_share_cateCode" id="q_cateCode_tshare_2001" value="2001"><label class="four col" for="q_cateCode_tshare_2001">가정용공구</label>
+                                                <input type="checkbox" name="q_share_cateCode" id="q_cateCode_tshare_2002" value="2002"><label class="four col" for="q_cateCode_tshare_2002">재활의료장비</label>
+                                                <input type="checkbox" name="q_share_cateCode" id="q_cateCode_tshare_2003" value="2003"><label class="four col" for="q_cateCode_tshare_2003">라돈측정기</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>사전상담예약</span></a>
+                                            <div class="tabcontent">
+                                                <input type="checkbox" name="q_pre_bookingTypes" id="q_pre_bookingTypes_all" value="" checked><label class="four col" for="q_pre_bookingTypes_all">전체</label>
+                                                <input type="checkbox" name="q_pre_bookingTypes" id="q_pre_bookingTypes_1003" value="1003"><label class="four col" for="q_pre_bookingTypes_1003">상담예약</label>
+                                                <input type="checkbox" name="q_pre_bookingTypes" id="q_pre_bookingTypes_1002" value="1002"><label class="four col" for="q_pre_bookingTypes_1002">방문예약</label>
+                                                <input type="checkbox" name="q_pre_bookingTypes" id="q_pre_bookingTypes_1004" value="1004"><label class="four col" for="q_pre_bookingTypes_1004">체험·프로그램</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <script>tabOn('.res_board',1,'text');</script>
+                                </section>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <h2 class="accordionTitle"><a href="#none">지역선택<span class="accIcon"><span class="q_guCode_text"></span></span></a></h2>
+                            <div class="text">
+                                <div class="tabcontent">
+                                    <section class="area_board plan cf">
+                                        <input type="checkbox" name="q_to_guCode" id="q_guCode_tgu_all" value="" checked ><label class="four col" for="q_guCode_tgu_all">전체</label>
+                                        <input type="checkbox" name="q_to_guCode" id="q_guCode_tgu_112" value="112"><label class="four col" for="q_guCode_tgu_112">장안구</label>
+                                        <input type="checkbox" name="q_to_guCode" id="q_guCode_tgu_113" value="113"><label class="four col" for="q_guCode_tgu_113">권선구</label>
+                                        <input type="checkbox" name="q_to_guCode" id="q_guCode_tgu_114" value="114"><label class="four col" for="q_guCode_tgu_114">팔달구</label>
+                                        <input type="checkbox" name="q_to_guCode" id="q_guCode_tgu_115" value="115"><label class="four col" for="q_guCode_tgu_115">영통구</label>
+                                    </section>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <h2 class="accordionTitle"><a href="#none">신청기간<span class="accIcon"><span class="q_startDt_text"></span></span></a></h2>
+                            <div class="text">
+                                <input type="hidden" name="q_startDt" id="q_startDt_t" value="" />
+                                <div class="calender_box">
+                                    <div class="datepicker_ui"></div>
+                                </div>
+                                <!--calender_box END-->
+                                <div class="calender_txt">
+                                    <ul class="info_list">
+                                        <li class="list1">예약가능</li>
+                                        <li class="list2">날짜선택</li>
+                                        <li><em>※</em> 대여를 원하는 날짜를 선택하세요</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="popup_button">
+                        <input type="submit" class="popup_submit" value="상세검색">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="container">
+        <main>
+            <div class="rowgroup1">
+                <div class="body_wrap">
+                    <div class="search_con">
+                        <div class="search_wrap">
+                            <div class="search_title">
+                                빠르고 간편하게! <span><em class="type1">수원시</em> <em class="type2">통합예약서비스</em></span>
+                            </div>
+                            <div class="search_box">
+                                <div class="search_box_wrap">
+                                    <form name="totalSearchForm" action="totalsearch.do" method="get">
+                                        <fieldset>
+                                            <legend>통합검색</legend>
+                                            <select name="" id="" class="p-input search_select search_item" title="검색영역선택">
+                                                <option value="">통합검색</option>
+                                                <option value="">교욱강좌·체험</option>
+                                                <option value="">공공시설</option>
+                                                <option value="">체육시설</option>
+                                            </select>
+                                            <span class="search_input search_item">
+                                                <input type="text" title="검색어" placeholder="검색어를 입력해주세요." class="search_query" name="q_searchVal">
+                                            </span>
+                                            <span class="search_button search_item">
+                                                <input type="submit" class="search_submit" value="검색">
+                                            </span>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my_reserve_wrap">
+                            <a href="" class="my_reserve_btn">
+                                <span>나의 예약</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rowgroup2">
+                <div class="body_wrap">
+                    <div class="notice_wrap">
+                        <div class="notice_search_wrap">
+
+                            <ul class="notice_tab">
+                                <li class="notice_tab_item">
+                                    <!-- 선택된 항목에 active 클래스 추가 -->
+                                    <button type="button" class="notice_btn active" title="기관 검색 선택됨">
+                                        <span>기관 검색</span>
+                                    </button>
+                                </li>
+                                <li class="notice_tab_item">
+                                    <button type="button" class="notice_btn ">
+                                        <span>분류/지역 검색</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <!-- 선택된 항목에 active 클래스 추가 -->
+                            <div class="notice_con org_search_con active" title="기관 검색 열림">
+                                <ul class="notice_org">
+                                    <li class="org_item org_all">
+                                        <span class="all_text">
+                                            기관별
+                                            <input type="checkbox" id="o1_all" name="o1">
+                                            <label for="o1_all">전체 선택</label>
+                                        </span>
+                                    </li>
+                                    <li class="org_item">
+                                        <input type="checkbox" id="o1_1" name="o1">
+                                        <label for="o1_1"><span class="label_text">서울대학교 수목원</span></label>
+                                    </li>
+                                    <li class="org_item">
+                                        <input type="checkbox" id="o1_2" name="o1">
+                                        <label for="o1_2"><span class="label_text">광교산림욕장</span></label>
+                                    </li>
+                                    <li class="org_item">
+                                        <input type="checkbox" id="o1_3" name="o1">
+                                        <label for="o1_3"><span class="label_text">서울대학교 수목원</span></label>
+                                    </li>
+                                    <li class="org_item">
+                                        <input type="checkbox" id="o1_4" name="o1">
+                                        <label for="o1_4"><span class="label_text">서울대학교 수목원</span></label>
+                                    </li>
+                                    <li class="org_item">
+                                        <input type="checkbox" id="o1_5" name="o1">
+                                        <label for="o1_5"><span class="label_text">서울대학교 수목원</span></label>
+                                    </li>
+                                    <li class="org_item">
+                                        <input type="checkbox" id="o1_6" name="o1">
+                                        <label for="o1_6"><span class="label_text">서울대학교 수목원</span></label>
+                                    </li>
+                                    <li class="org_item">
+                                        <input type="checkbox" id="o1_7" name="o1">
+                                        <label for="o1_7"><span class="label_text">서울대학교 수목원</span></label>
+                                    </li>
+                                    <li class="org_item">
+                                        <input type="checkbox" id="o1_8" name="o1">
+                                        <label for="o1_8"><span class="label_text">서울대학교 수목원</span></label>
+                                    </li>
+                                    <li class="org_item">
+                                        <input type="checkbox" id="o1_9" name="o1">
+                                        <label for="o1_9"><span class="label_text">서울대학교 수목원</span></label>
+                                    </li>
+                                    <li class="org_item">
+                                        <input type="checkbox" id="o1_10" name="o1">
+                                        <label for="o1_10"><span class="label_text">서울대학교 수목원</span></label>
+                                    </li>
+                                    <li class="org_item">
+                                        <input type="checkbox" id="o1_11" name="o1">
+                                        <label for="o1_11"><span class="label_text">서울대학교 수목원</span></label>
+                                    </li>
+                                    <li class="org_item">
+                                        <input type="checkbox" id="o1_12" name="o1">
+                                        <label for="o1_12"><span class="label_text">서울대학교 수목원</span></label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="notice_con place_search_con ">
+                                <div class="place_wrap">
+                                    <ul class="place_tab_wrap">
+                                        <li class="place_tab_item">
+                                            <!-- 선택된 항목에 active 클래스 추가 -->
+                                            <button type="button" class="place_btn active" title="교육/강좌/체험 선택됨">교육/강좌/체험</button>
+                                        </li>
+                                        <li class="place_tab_item">
+                                            <button type="button" class="place_btn">공공시설</button>
+                                        </li>
+                                        <li class="place_tab_item">
+                                            <button type="button" class="place_btn">체육시설</button>
+                                        </li>
+                                        <li class="place_tab_item">
+                                            <button type="button" class="place_btn">장비대여</button>
+                                        </li>
+                                        <li class="place_tab_item">
+                                            <button type="button" class="place_btn">사전상담예</button>
+                                        </li>
+                                    </ul>
+                                    <!-- 선택된 항목에 active 클래스 추가 -->
+                                    <div class="place_tab_con active" title="교육/강좌/체험 열림">
+                                        <ul class="category_list">
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p1_1" name="p1">
+                                                <label for="p1_1">1취미문화(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p1_2" name="p1">
+                                                <label for="p1_2">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p1_3" name="p1">
+                                                <label for="p1_3">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p1_4" name="p1">
+                                                <label for="p1_4">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p1_5" name="p1">
+                                                <label for="p1_5">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p1_6" name="p1">
+                                                <label for="p1_6">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p1_7" name="p1">
+                                                <label for="p1_7">취미문화예술(68)</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="place_tab_con">
+                                        <ul class="category_list">
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p2_1" name="p2">
+                                                <label for="p2_1">2취미문화(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p2_2" name="p2">
+                                                <label for="p2_2">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p2_3" name="p2">
+                                                <label for="p2_3">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p2_4" name="p2">
+                                                <label for="p2_4">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p2_5" name="p2">
+                                                <label for="p2_5">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p2_6" name="p2">
+                                                <label for="p2_6">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p2_7" name="p2">
+                                                <label for="p2_7">취미문화예술(68)</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="place_tab_con">
+                                        <ul class="category_list">
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p3_1" name="p3">
+                                                <label for="p3_1">3취미문화(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p3_2" name="p3">
+                                                <label for="p3_2">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p3_3" name="p3">
+                                                <label for="p3_3">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p3_4" name="p3">
+                                                <label for="p3_4">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p3_5" name="p3">
+                                                <label for="p3_5">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p3_6" name="p3">
+                                                <label for="p3_6">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p3_7" name="p3">
+                                                <label for="p3_7">취미문화예술(68)</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="place_tab_con">
+                                        <ul class="category_list">
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p4_1" name="p4">
+                                                <label for="p4_1">4취미문화(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p4_2" name="p4">
+                                                <label for="p4_2">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p4_3" name="p4">
+                                                <label for="p4_3">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p4_4" name="p4">
+                                                <label for="p4_4">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p4_5" name="p4">
+                                                <label for="p4_5">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p4_6" name="p4">
+                                                <label for="p4_6">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p4_7" name="p4">
+                                                <label for="p4_7">취미문화예술(68)</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="place_tab_con">
+                                        <ul class="category_list">
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p5_1" name="p5">
+                                                <label for="p5_1">5취미문화(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p5_2" name="p5">
+                                                <label for="p5_2">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p5_3" name="p5">
+                                                <label for="p5_3">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p5_4" name="p5">
+                                                <label for="p5_4">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p5_5" name="p5">
+                                                <label for="p5_5">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p5_6" name="p5">
+                                                <label for="p5_6">취미문화예술(68)</label>
+                                            </li>
+                                            <li class="category_item">
+                                                <input type="checkbox" id="p5_7" name="p5">
+                                                <label for="p5_7">취미문화예술(68)</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="place_map_wrap">
+                                    <div class="place_map_con">
+                                        <img src="/2024/suwon/resources/web/reserv2024/images/main/map_img.png" class="map_img" usemap="#image-map">
+
+                                        <map name="image-map">
+                                            <area alt="장안구" title="장안구" coords="142,0,150,5,157,6,162,10,163,16,160,23,162,28,166,33,168,40,170,50,172,57,170,67,164,73,162,80,163,89,161,94,165,102,164,110,152,114,144,123,135,119,125,125,113,118,97,124,94,117,87,115,77,119,79,125,71,126,65,121,63,110,59,102,55,96,54,93,60,84,61,66,65,58,61,50,65,44,69,37,79,42,84,45,97,39,97,32,110,26,115,22,123,22,132,11,132,3,137,1" shape="poly">
+                                            <area alt="영통구" title="영통구" coords="174,58,179,62,186,66,194,65,201,67,204,77,204,83,201,88,206,91,203,97,205,104,231,111,237,104,243,100,248,100,249,108,247,115,249,125,241,124,234,129,226,132,221,134,218,138,217,143,212,150,215,155,221,162,230,161,237,159,243,154,244,163,240,169,235,175,240,177,240,183,238,188,234,198,224,198,216,201,213,207,215,212,202,222,192,228,187,222,182,227,181,218,177,213,168,213,174,203,172,196,176,190,172,184,166,183,170,175,173,164,164,160,170,154,167,146,179,145,178,134,176,129,177,124,171,129,176,120,171,116,174,111,165,110,166,101,161,95,165,89,162,81,164,72,171,66,173,61" shape="poly">
+                                            <area alt="팔달구" title="팔달구" coords="88,114,77,119,80,124,84,129,91,128,94,130,91,133,93,135,90,141,92,146,101,141,109,156,110,160,114,166,117,164,122,165,124,162,126,160,133,162,133,165,134,165,137,166,147,166,161,170,159,175,167,179,173,163,163,160,170,155,167,152,169,150,168,146,173,144,179,146,178,136,175,129,177,123,171,128,175,122,176,120,171,116,174,110,167,110,152,113,147,120,145,123,136,118,125,123,114,117,98,123,94,116" shape="poly">
+                                            <area alt="권선구" title="권선구" coords="54,91,47,92,42,90,38,94,25,96,22,92,20,93,14,90,10,91,9,95,13,99,20,103,19,106,17,109,11,111,8,119,3,123,3,127,2,131,2,134,2,136,3,141,3,144,0,148,3,151,4,151,2,155,4,159,4,163,6,168,6,170,10,173,14,177,15,181,31,177,36,180,35,185,39,189,39,195,45,198,46,203,47,207,47,211,54,216,62,220,65,229,68,233,75,231,79,230,84,226,87,227,90,224,94,225,98,228,104,230,107,232,109,238,112,238,117,230,119,232,121,234,124,236,132,238,140,239,145,241,148,235,147,230,156,231,155,224,160,224,165,219,169,218,168,212,174,203,171,196,176,189,172,182,166,183,167,179,161,177,158,173,160,169,152,167,146,165,133,166,132,161,126,159,123,165,116,163,113,165,109,161,109,155,101,141,92,145,90,140,93,135,91,132,95,128,92,126,84,128,80,123,71,126,65,121,66,115,63,114,66,108,60,101" shape="poly">
+                                        </map>
+                                    </div>
+                                    <ul class="place_btn_wrap">
+                                        <li class="place_btn_item p1">
+                                            <button type="button" class="place_btn">
+                                                <span class="num">23건</span>
+                                                <span class="title">장안구</span>
+                                            </button>
+                                        </li>
+                                        <li class="place_btn_item p2">
+                                            <button type="button" class="place_btn">
+                                                <span class="num">23건</span>
+                                                <span class="title">영통구</span>
+                                            </button>
+                                        </li>
+                                        <li class="place_btn_item p3">
+                                            <button type="button" class="place_btn">
+                                                <span class="num">23건</span>
+                                                <span class="title">팔달구</span>
+                                            </button>
+                                        </li>
+                                        <li class="place_btn_item p4">
+                                            <button type="button" class="place_btn">
+                                                <span class="num">23건</span>
+                                                <span class="title">권선구</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="notice_slide_wrap">
+                            <div class="notice_slide">
+                                <div class="notice_item">
+                                    <a href="">
+                                        <div class="notice_tag">
+                                            <span class="type1">대기접수</span>
+                                            <span class="type2">답사·체험</span>
+                                            <span class="type3">접수중</span>
+                                            <span class="type4">시민교육</span>
+                                        </div>
+                                        <div class="notice_title">
+                                            서울대학교 수원수목원 생태프로그램 나와 닮은 여름나무 서울대학교 수원수목원 생태프로그램 나와 닮은 여름나무
+                                        </div>
+                                        <ul class="notice_info">
+                                            <li class="info_item">
+                                                접수 : 2024-06-24 ~ 2024-07-30
+                                            </li>
+                                            <li class="info_item">
+                                                교육 : 2024-06-24 ~ 2024-07-30
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </div>
+                                <div class="notice_item">
+                                    <a href="">
+                                        <div class="notice_tag">
+                                            <span class="type1">대기접수</span>
+                                            <span class="type4">시민교육</span>
+                                        </div>
+                                        <div class="notice_title">
+                                            서울대학교 수원수목원 생태프로그램 나와 닮은 여름나무
+                                        </div>
+                                        <ul class="notice_info">
+                                            <li class="info_item">
+                                                접수 : 2024-06-24 ~ 2024-07-30
+                                            </li>
+                                            <li class="info_item">
+                                                교육 : 2024-06-24 ~ 2024-07-30
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </div>
+                                <div class="notice_item">
+                                    <a href="">
+                                        <div class="notice_tag">
+                                            <span class="type3">접수중</span>
+                                            <span class="type4">시민교육</span>
+                                        </div>
+                                        <div class="notice_title">
+                                            서울대학교 수원수목원 생태프로그램 나와 닮은 여름나무 서울대학교 수원수목원 생태프로그램 나와 닮은 여름나무
+                                        </div>
+                                        <ul class="notice_info">
+                                            <li class="info_item">
+                                                접수 : 2024-06-24 ~ 2024-07-30
+                                            </li>
+                                            <li class="info_item">
+                                                교육 : 2024-06-24 ~ 2024-07-30
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </div>
+                                <div class="notice_item">
+                                    <a href="">
+                                        <div class="notice_tag">
+                                            <span class="type1">대기접수</span>
+                                            <span class="type2">답사·체험</span>
+                                        </div>
+                                        <div class="notice_title">
+                                            서울대학교 수원수목원 생태프로그램 나와 닮은 여름나무
+                                        </div>
+                                        <ul class="notice_info">
+                                            <li class="info_item">
+                                                접수 : 2024-06-24 ~ 2024-07-30
+                                            </li>
+                                            <li class="info_item">
+                                                교육 : 2024-06-24 ~ 2024-07-30
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </div>
+                                <div class="notice_item">
+                                    <a href="">
+                                        <div class="notice_tag">
+                                            <span class="type1">대기접수</span>
+                                            <span class="type2">답사·체험</span>
+                                            <span class="type3">접수중</span>
+                                            <span class="type4">시민교육</span>
+                                        </div>
+                                        <div class="notice_title">
+                                            서울대학교 수원수목원 생태프로그램 나와 닮은 여름나무
+                                        </div>
+                                        <ul class="notice_info">
+                                            <li class="info_item">
+                                                접수 : 2024-06-24 ~ 2024-07-30
+                                            </li>
+                                            <li class="info_item">
+                                                교육 : 2024-06-24 ~ 2024-07-30
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </div>
+                                <div class="notice_item">
+                                    <a href="">
+                                        <div class="notice_tag">
+                                            <span class="type1">대기접수</span>
+                                            <span class="type2">답사·체험</span>
+                                            <span class="type3">접수중</span>
+                                            <span class="type4">시민교육</span>
+                                        </div>
+                                        <div class="notice_title">
+                                            서울대학교 수원수목원 생태프로그램 나와 닮은 여름나무
+                                        </div>
+                                        <ul class="notice_info">
+                                            <li class="info_item">
+                                                접수 : 2024-06-24 ~ 2024-07-30
+                                            </li>
+                                            <li class="info_item">
+                                                교육 : 2024-06-24 ~ 2024-07-30
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="notice_control">
+                                <div class="notice_dots"></div>
+                                <button type="button" class="prev_btn">이전</button>
+                                <button type="button" class="next_btn">다음</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rowgroup3">
+                <div class="body_wrap">
+                    <div class="service_title">
+                        예약서비스
+                    </div>
+                    <div class="service_tab_wrap">
+                        <div class="service_tab">
+                            <ul class="service_tab_list">
+                                <li class="service_tab_item">
+                                    <!-- 선택된 항목에 active 클래스 추가 -->
+                                    <button type="button" class="service_tab_btn active" title="교육/강좌/체험 선택됨">교육/강좌/체험</button>
+                                </li>
+                                <li class="service_tab_item">
+                                    <button type="button" class="service_tab_btn">공공시설</button>
+                                </li>
+                                <li class="service_tab_item">
+                                    <button type="button" class="service_tab_btn">체육시설</button>
+                                </li>
+                                <li class="service_tab_item">
+                                    <button type="button" class="service_tab_btn">사전상담예약</button>
+                                </li>
+                            </ul>
+                            <a href="" class="view_more">더보기</a>
+                        </div>
+                        <!-- 선택된 항목에 active 클래스 추가 -->
+                        <div class="service_con active" title="교육/강좌/체험 열림">
+                            <div class="service_slide_wrap">
+                                <div class="service_slide">
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                <img src="/2024/suwon/resources/web/reserv2024/images/main/service_img.png" alt="이미지 대체텍스트">
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                1 곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                <img src="/2024/suwon/resources/web/reserv2024/images/main/service_img.png" alt="이미지 대체텍스트">
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당) 곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00 평일 09:00~18:00 평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당) 곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00 평일 09:00~18:00 평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당) 곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00 평일 09:00~18:00 평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service_con">
+                            <div class="service_slide_wrap">
+                                <div class="service_slide">
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                <img src="/2024/suwon/resources/web/reserv2024/images/main/service_img.png" alt="이미지 대체텍스트">
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                2 곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                <img src="/2024/suwon/resources/web/reserv2024/images/main/service_img.png" alt="이미지 대체텍스트">
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당) 곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00 평일 09:00~18:00 평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                <img src="/2024/suwon/resources/web/reserv2024/images/main/service_img.png" alt="이미지 대체텍스트">
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당) 곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00 평일 09:00~18:00 평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당) 곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00 평일 09:00~18:00 평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service_con">
+                            <div class="service_slide_wrap">
+                                <div class="service_slide">
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                <img src="/2024/suwon/resources/web/reserv2024/images/main/service_img.png" alt="이미지 대체텍스트">
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                3 곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                <img src="/2024/suwon/resources/web/reserv2024/images/main/service_img.png" alt="이미지 대체텍스트">
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당) 곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00 평일 09:00~18:00 평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당) 곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00 평일 09:00~18:00 평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당) 곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00 평일 09:00~18:00 평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service_con">
+                            <div class="service_slide_wrap">
+                                <div class="service_slide">
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                4 곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당) 곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00 평일 09:00~18:00 평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당) 곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00 평일 09:00~18:00 평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="service_item">
+                                        <a href="">
+                                            <div class="service_img">
+                                                
+                                            </div>
+                                            <div class="service_state">
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                                <span class="type1">예약가능</span>
+                                                <span class="type2">공공시설</span>
+                                                <span class="type3">유료</span>
+                                                <span class="type4">사전상담예약</span>
+                                                <span class="type5">체험</span>
+                                            </div>
+                                            <div class="service_slide_title">
+                                                곡선동 행정복지센터 고렴홀(4층 강당) 곡선동 행정복지센터 고렴홀(4층 강당)
+                                            </div>
+                                            <ul class="service_time">
+                                                <li class="time_item">
+                                                    평일 09:00~18:00 평일 09:00~18:00 평일 09:00~18:00
+                                                </li>
+                                                <li class="time_item">
+                                                    평일 09:00~18:00
+                                                </li>
+                                            </ul>
+                                            <div class="service_info">
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                                <span>권선구</span>
+                                                <span>50명 가능</span>
+                                                <span>강당</span>
+                                                <span>15,000원</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer id="footer">
+        <div class="body_wrap">
+            <div class="footer_box clearfix">
+                <div class="footer_con">
+                    <div class="footer_nav">
+                        <ul class="clearfix">
+                            <li><a href="https://www.suwon.go.kr/index.do" target="_blank" title="새창열림">수원시청</a></li>
+                            <li><a href="https://www.suwon.go.kr/sw-www/sw-www_09/sw-www_09_02.jsp" target="_blank" title="새창열림">저작권정책</a></li>
+                            <li class="privacy"><a href="https://www.suwon.go.kr/sw-www/sw-www_09/sw-www_09_01.jsp" target="_blank" title="새창열림">개인정보 처리방침</a></li>
+                            <li><a href="https://www.suwon.go.kr/sw-www/www05/www05-01/www05-01-18.jsp" target="_blank" title="새창열림">찾아오시는 길</a></li>
+                            <li><a href="https://www.suwon.go.kr/sw-www/www05/www05-02/www05-02-02.jsp" target="_blank" title="새창열림">청사안내</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_info">
+                        <address>
+                            <span>(우편번호:16490) 경기도 수원시 팔달구 효원로 241(인계동)</span>
+                            <span>수원시 휴먼콜센터 1899-3300, 031-228-2114</span>
+                        </address>
+                        <p class="copyright"><em>COPYRIGHT</em> <span>2021 SUWON SPECIAL CITY. ALL RIGHTS RESERVED.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>
+<div class="mask"></div>
+
+<!--구글 추적코드 등-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LYP27H7VGF"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LYP27H7VGF');
+</script>
+<!--구글 추적코드 등 E-->
+
+</body>
+</html>

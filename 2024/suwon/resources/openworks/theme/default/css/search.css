@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/*--------------------------------------------------------------------------
+ * search
+ *-------------------------------------------------------------------------*/
+
+div.search{
+	clear:both;
+	border:1px solid #dddddd;
+	background-color:#f9f9f9;
+	text-align:center;
+	padding:10px 10px;
+	margin-bottom:15px;
+}

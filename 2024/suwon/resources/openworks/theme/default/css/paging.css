@@ -1,0 +1,95 @@
+﻿@charset "utf-8";
+
+/*--------------------------------------------------------------------------
+ * paging
+ *-------------------------------------------------------------------------*/
+
+.paging{
+	text-align:center;
+	margin:24px 0;
+	width:100%;
+	position:relative;
+	font-family:verdana,Gulim,Dotum,Arial;
+}
+.paging a{
+	border:1px solid #aaaaaa;
+	height:18px;
+	display:inline-block;
+	margin-right:2px;
+	padding:2px 8px;
+}
+.paging a:hover,.paging span{
+	border:1px solid #aaaaaa;
+	height:18px;
+	display:inline-block;
+	background-color:#7e8fbd;
+	color:#FFF;
+	font-weight:normal;
+	text-decoration:none;
+	margin-right:2px;
+	padding:2px 8px;
+}
+.paging a.btn{
+	border:none;
+	padding:0;
+}
+
+/* button location */
+.paging a.p_gray{
+	border:1px solid #aaaaaa;
+	height:18px;
+	display:inline-block;
+	margin-right:2px;
+	padding:2px 8px;
+	background-color:#dddddd;
+}
+.paging a.p_gray:hover{
+	border:1px solid #000;
+	color:#000;
+}
+
+
+/* left button */
+.paging p.b_left{
+	left:0;
+	top:0;
+	position:absolute;
+}
+/* right button*/
+.paging p.b_right{
+	right:0;
+	top:0;
+	position:absolute;
+}
+
+.paging fieldset{	
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+
+/* comment paging */
+.comment_paging {
+	float:left;
+	width:100%;
+	text-align:center;
+	margin:20px 0 30px 0;
+	position:relative;
+}
+.comment_paging a{
+	color:#000;
+}
+.comment_paging a:hover{
+	color:#1244e3;
+}
+.comment_paging a.on{
+	color:#1244e3;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.comment_paging img{
+	position:absolute;
+	right:0;
+	top:0;
+}

@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/*--------------------------------------------------------------------------
+ * View Page
+ *-------------------------------------------------------------------------*/
+
+.boardView{
+	border-bottom:1px solid #d0d0d0;
+	width:100%;
+}
+.boardView th{
+	border-top:1px solid #8a9dcb;
+	border-bottom:1px solid #8a9dcb;
+	background-color:#d5dbec;
+	padding:10px 10px;
+	text-align:left;
+	font-size:13px;
+	width:100%;
+}
+
+/* 공개여부 */
+.boardView th a.public{
+	font-weight:normal;
+	color:#4260a7;
+	text-decoration:underline;
+	background:url('../images/icon/icon_public.gif') no-repeat left top;
+	padding:1px 0 5px 22px;
+	font-size:12px;
+}
+
+/* 내용헤더정보 */
+.boardView td.info{
+	background-color:#edf2fe;
+	padding:12px 10px;
+	text-align:right;
+}
+.boardView .con_info{
+	float:left;
+}
+.boardView .con_info dl dt{
+	background:url('../images/icon/icon_dot_black.gif') no-repeat left center;
+	color:#747474;
+	float:left;
+	padding:0 10px 0 7px;
+	margin-left:22px;
+}
+.boardView .con_info dl dd{
+	float:left;
+	color:#000;
+}
+.boardView .star{
+	float:right;
+	width:99%;
+	margin-top:5px;
+}
+
+/* 컨텐츠내용 */
+.boardView td.con{
+	padding:20px 10px;
+}
+
+/* 태그 */
+.boardView .tag{
+	margin:15px 0 5px;
+}
+.boardView .tag a{
+	color:#577fb2;
+}
+
+/* 첨부파일 */
+.boardView td.file{
+	background-color:#f3f3f3;
+	padding:12px 10px;
+}
+.boardView td.file div{
+	width:85px;
+	color:#000;
+	font-weight:bold;
+	float:left;
+	text-align:center;
+}
+.boardView td.file ul{
+	float:left;
+}
+.boardView td.file ul li{
+	padding-bottom:5px;
+}
+.boardView td.file a{color:#000;}
+
+/* 버튼 */
+.btn_r{
+	text-align:right;
+	margin:17px 0 35px;
+}
+.btn_r ul li{
+	display:inline;
+}
+
+/* 이전글 다음글 */
+dl.prev-next{
+	border-top:1px solid #8a9dcb;
+	border-bottom:1px solid #8a9dcb;
+	float:left;
+	width:100%;
+}
+dl.prev-next dt{
+	float:left;
+	font-weight:bold;
+	line-height:20px;
+	padding:6px 0;
+	text-align:center;
+}
+dl.prev-next dt.prev{
+	background-color:#d5dbec;
+	color:#35537e;
+	width:10%;
+}
+dl.prev-next dt.next{
+	background-color:#d5dbec;
+	border-bottom:1px solid #d3d3d3;
+	color:#35537e;
+	width:10%;
+}
+dl.prev-next dd{
+	float:left;
+	line-height:20px;
+	padding:6px 10px;
+	width:88%;
+}
+dl.prev-next dd.next{
+	border-bottom:1px solid #d3d3d3;
+}
+
+dl.prev-next dd span.t_lock{
+	background:url('../images/icon/icon_public.gif') left no-repeat;
+	padding: 1px 0 1px 10px;
+}
+dl.prev-next dd span.t_file {
+	background: url("../images/icon/icon_file.gif") no-repeat left top transparent;
+	color: #5367a0;
+	font-size: 11px;
+	margin-left: 5px;
+	padding: 2px 2px 5px 20px;
+}
+dl.prev-next dd span.t_reply {
+	background: url("../images/icon/icon_reply.gif") no-repeat scroll left top transparent;
+	color: #5367a0;
+	font-size: 11px;
+	margin-left: 5px;
+	padding: 2px 2px 5px 20px;
+}

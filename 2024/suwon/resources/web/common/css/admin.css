@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+body{max-width:900px;margin:0 auto; font-family:'굴림', Gulim, AppleGothic, sans-serif; font-size:14px; line-height:24px; color:#333;}
+div, ul, dl, p, td, th {font-family:'굴림', Gulim, AppleGothic, sans-serif; font-size:100%;}
+div, ul, li, dl, dt, dd, p, input, textarea, select, h1, h2, h3, h4, em, address, fieldset, form, iframe, object{margin:0; padding:0;}
+img, fieldset, iframe{border:none;}
+
+table{clear:both; border-collapse:collapse;}
+table th, td {padding:7px 3px 5px 7px}
+table th {background-color:#eee;		}
+
+
+caption {font-weight:bold;background-color:#ddd;	padding:6px 0 4px 6px;margin-bottom:3px;text-align:left;border:0px solid #0e402c;	}
+a{color:#333;text-decoration:none;}
+a:hover{color:#999}
+em, address{font-style:normal;}
+
+hr.hr01 {height:1px;	border-bottom:2px dotted #228b22      ;	margin:14px 0;			}
+hr.hr02 {height:2px;	border-bottom:2px dotted #228b22      ;	margin:14px 0;			}
+hr.hr03 {height:2px;	border-bottom:2px dotted #d2691e      ;	margin:14px 0;			}
+hr.hr04 {height:1px;	border-bottom:2px dotted #d2691e      ;	margin:14px 0;			}
+
+/*input, textarea, select {font-size:12px;	border:#abadb3 solid 1px; color:#707070;}*/
+input {margin-top:-2px;border:1px solid #b1b3b8;}
+textarea {border:1px solid #b1b3b8;}
+select {border:#b1b3b8 solid 1px; font-size:12px;}
+.in_te {padding:2px 0 0 2px}
+
+
+
+
+#header{position:relative;clear:both;	height:35px;}
+#header	h1{padding:6px 0 0 16px;float:left;		}
+#header	.log {float:right;padding:25px 20px 0 0}
+#header	.log img {margin-top:-2px}
+
+h3.title_main {	clear:both;	letter-spacing:-.2em;font-size:130%;	padding:7px 0 5px 24px;background:#dcf1e9 url(http://img.suwon.go.kr/admin/bu_box02.gif) 7px center no-repeat;	margin-bottom:10px;color:#044417}
+h5 {font-size:100%;	margin:5px 0;}
+
+.line01 {border-bottom:1px solid #666;	height:1px;	}
+img.vm {vertical-align:middle;	}
+
+.box01 {padding:5px; border:#abadb3 solid 1px; color:#707070;}
+
+.box02 {border:1px solid #e3da94 ;	padding:7px;background-color:#fcfce7  ;		}
+.box02 ul {margin-bottom:10px}
+.box02 ul li.kang {font-weight:bold;	color:green;	}
+.box02 ul li {margin:0 0 2px 0;}
+
+.box03 {border:1px solid #e3da94 ;	padding:3px 3px 1px 5px;background-color:#fcfce7  ;		}
+
+
+#leftwrap{float:left;padding:0 0 0 10px;			}
+	.leftm {width:100%}
+	.leftm a {text-decoration:none;	}
+	.leftm img {vertical-align:middle;	}
+	.leftm ul {}
+	.leftm li{list-style-type:none;}
+	.leftm li {background-color:#c5e7da;margin:0 0 3px 0;	padding:5px 0 2px 6px;	font-weight:bold;	letter-spacing:-0.05em;}
+	.leftm li img.dot {margin-bottom:2px}
+	.leftm li a:hover {color:#369c75;	}
+	.leftm li ul {background-color:#f7f7f7;margin:3px 0 2px -6px;	padding-top:5px;	}
+	.leftm li ul li {padding:3px 0 1px 22px;	background:url(http://img.suwon.go.kr/com/bu_arrow02.gif) 15px 7px no-repeat;margin:0; }
+	.leftm li ul li a {color:#245b53;font-weight:normal;	 }
+	.leftm li ul li ul {margin-top:0px;padding-top:4px;}
+	.leftm li ul li ul li {border-bottom:1px solid #ddd;	background:url(http://img.suwon.go.kr/com/bu_dot01.gif) 2px 7px no-repeat;padding-left:8px;	margin-left:6px;	}
+	.leftm li ul li ul li a { color:#777;		}
+
+
+
+
+
+
+
+/* �뗮꽣 */
+#footer{position:relative; clear:both; padding:10px 0 20px 0; text-align:center;}
+* html #footer { width:100%;}
+#footer address{font-family:verdana; font-size:85%; color:#444;	margin-top:0px;}
+
+
+
+/* �섏씠吏��섎쾭留�- ��*/
+table.Nnavi{height:13px;border-collapse:collapse;margin:0 auto;	margin-top:15px;	margin-bottom:15px;}
+table.Nnavi td{padding:0;border-right:1px solid #dddddd;font-weight:bold;border-top:0;border-bottom:0;border-left:0;}
+table.Nnavi td.pgRR{border-right:0}
+table.Nnavi a{	font-family:�뗭�;text-decoration:none;padding:2px 6px 0 8px;color:#333333;	display:block}
+table.Nnavi a:hover{background-color:#F7F7F7;}
+table.Nnavi .pgLL a, table.Nnavi .pgL a, table.Nnavi .pgR a, table.Nnavi .pgRR a{font-weight:normal}
+table.Nnavi .pgLL a:hover, table.Nnavi .pgL a:hover, table.Nnavi .pgR a:hover, table.Nnavi .pgRR a:hover{background-color:#ffffff}
+table.Nnavi .pgLL img, table.Nnavi .pgL img, table.Nnavi .pgR img, table.Nnavi .pgRR img{border:0;margin-bottom:1px;}
+table.Nnavi .pgLL img, table.Nnavi .pgL img{margin:0 5px 2px 0;}
+table.Nnavi .pgRR img, table.Nnavi .pgR img{margin:0 0  2px 5px;	}
+table.Nnavi .on, table.Nnavi .on a, table.Nnavi .on a:visited {color:#FF8400; padding:2px 8px 2px 8px;	}
+* html body table.Nnavi a{width:1em} table.Nnavi .pgLL a, table.Nnavi .pgL a, table.Nnavi .pgR a, table.Nnavi .pgRR a{width:auto}
+
+
+/* 濡쒓렇��*/
+.login_header {background:url(http://img.suwon.go.kr/admin/login_bg.jpg) 0 0 repeat-x;	height:83px;	}
+.login_cont {text-align:center;	margin-bottom:10px;}
+.login_cont .loginbox {	width:616px;	margin:0 auto;text-align:left;	}
+.login_cont h1 {margin:35px 0 15px 0;	}
+.login_cont h4 {font-size:120%;	font-family:dotum;	margin:0 0 2px 3px;	letter-spacing:-0.1em;padding:0;	}
+.login_cont h5 {margin:0 0 5px 0;	}
+.logform {border:3px solid #4586bf;	clear:both;	padding:8px 0 20px 0;	text-align:center;	}
+.logform dl {	padding-top:10px;	width:60%;	margin:0 auto;		}
+.logform dt {	float:left;	padding-top:10px;			}
+.logform dt input {	border:1px solid #c0c0c0;	height:20px;	padding:2px 0 0 2px;		}
+.logform dt img.tt {margin:4px 5px 0px 0;}
+.logform dd {	float:left;	padding-top:10px;}
+.logform dd.rock {	padding-top:0px;}
+.logform dd input.lgbt {margin:1px 0 0 5px;	}
+.logform ul {background:url(http://img.suwon.go.kr/member/log_line.gif) center 0 no-repeat;	padding:15px 0 0 0;	clear:both;		}
+.logform ul li {letter-spacing:-.05em;	color:#666;	font-size:90%;	}

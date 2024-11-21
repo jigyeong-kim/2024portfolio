@@ -1,0 +1,76 @@
+﻿@charset "utf-8";
+
+/*--------------------------------------------------------------------------
+ * Login Page
+ *-------------------------------------------------------------------------*/
+html{
+/* 	height:100%; */
+/* 	width:100%; */
+	margin: 0;
+}
+
+body {
+    font-family: Gulim,Dotum,Arial,AppleGothic,Sans-serif;
+    font-size: 12px;
+    background: #FFF;
+	color: #595959;
+	margin: 0;
+    padding: 0;
+/* 	height:100%; */
+}
+
+* {
+    margin: 0;
+	padding: 0;
+}
+
+caption, input, select, textarea, caption, p, pre, li, dl {
+    font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+}
+
+ul, ol {list-style:none;}
+
+img {border: 0 none;max-width:100%;}
+
+a:link, a:visited {
+    color: #404040;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #404040;
+    font-weight:bold;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout:fixed;
+}
+
+td, p {
+    text-align: justify;
+    word-wrap:break-word;
+}
+
+address, caption, cite, code, dfn, var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+caption {
+	width:0;
+	height:0;
+	line-height:0;
+	overflow:hidden;
+	visibility:hidden;
+	font-size:0;
+}
+
+
+hr {display: none;}
+

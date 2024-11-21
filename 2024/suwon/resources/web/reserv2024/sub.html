@@ -1,0 +1,675 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10.0, minimum-scale=1.0, user-scalable=yes" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <title>
+        통합예약시스템 서브</title>
+    <script>CTX_PATH = "";</script>
+    <link rel="stylesheet" href="/resources/web/reserv2024/css/default.css" />
+    <link rel="stylesheet" href="/resources/web/reserv2024/css/sub.css">
+
+    <link rel="stylesheet" href="/resources/common_sw/css/program.css" />
+    <link rel="stylesheet" href="/resources/common_sw/css/program_media.css" />
+
+    <link rel="stylesheet" href="/resources/web/reserv2024/css/program_card_list.css">
+
+    <script src="/resources/common_sw/js/jquery-1.12.4.min.js"></script>
+    <script src="/resources/common_sw/js/jquery-migrate-1.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/resources/openworks/spi/jquery/ui/jquery-ui-1.8.18.custom.css" />
+    <script type="text/javascript" src="/resources/openworks/spi/jquery/ui/jquery-ui-1.8.18.custom.min.js"></script>
+    <script src="/resources/common_sw/js/jquery.screen.min.js"></script>
+
+    <script src="/resources/common_sw/js/slick.min.custom.1.6.0.8.js"></script>
+    <script src="/resources/common_sw/js/slick.extensions.min.js"></script>
+    <!--[if lt IE 9]><script src="/resources/common_sw/js/html5.js"></script><![endif]-->
+    <script src="/resources/common_sw/js/jquery.responsive.min.js"></script>
+    <script src="/resources/common_sw/js/jquery.touchSwipe.min.js"></script>
+    <script src="/resources/common_sw/js/jquery.slideandswipe.min.js"></script>
+    <script src="/resources/common_sw/js/jquery.menu.min.js"></script>
+    <script src="/resources/common_sw/js/program.js"></script>
+    <script src="/resources/web/common/js/suwon.js"></script>
+    <script src="/resources/web/reserv2024/js/common.js"></script>
+    <script src="/resources/web/reserv2024/js/sub.js"></script>
+
+    <script type="text/javascript">
+        // (function($){//jquery-ui-1.8.18 버그수정
+        //     if (!$.curCSS){
+        //         $.curCSS = $.css;
+        //     }
+        // })(jQuery);
+        // $.ajaxSetup({
+        //     cache : false
+        //     , timeout : 3000
+        //     , beforeSend : function(){
+        //         try{getDocumentLoader();}catch(e){console.log('document loader error');}
+        //     }
+        //     , complete : function(){
+        //         try{setDocumentLoader('hide');}catch(e){console.log('document loader error');}
+        //     }
+        //     , error : function(jqXHR, exception){
+        //         if(exception === 'parsererror'){
+        //             alert('전송이 실패하였습니다. : parsererror');
+        //         }else if(exception === 'timeout'){
+        //             alert('전송이 실패하였습니다. : timeout');
+        //         }else if(exception === 'abort'){
+        //             alert('전송이 실패하였습니다. : abort');
+        //         }else{
+        //             if(jqXHR.responseText != ''){
+        //                 alert('전송이 실패하였습니다. : ' + jqXHR.responseText);
+        //             }
+        //         }
+        //         try{setDocumentLoader('hide');}catch(e){console.log('document loader error');}
+        //     }
+        // });
+        // $(document).ready(function () {
+        //     $('.tabcontent > div table').wrap('<div class="scroll_table"/>').addClass('table table_packed');
+        // });
+        // // 로그인 페이지 이동(되돌아올 주소를 포함)
+        // function globalLogin(href) {
+        //     if(href) {
+        //         $("#globalLoginForm").attr("action",href);
+        //     }
+        //     $("#globalLoginForm").attr("target","_self");
+        //     $("#globalLoginForm").submit();
+        // };
+        // var jsReturn = function () {
+        //     var retUrl = $("#globalLoginForm input[name=retUrl]").val();
+        //     if (retUrl != "") {
+        //         document.location.href=retUrl;
+        //     } else {
+        //         document.location.href="/web/reserv/index.do";
+        //     }
+        // };
+        // var jsAuthCheck = function (href) {
+        //
+        //     alert("로그인 후 사용 가능합니다");
+        //     globalLogin('');
+        //     return false;
+        //
+        // };
+    </script>
+
+    <script>
+        $().ready(function (){
+            $("#listForm input[name=q_searchVal]").bind("keypress", {}, enterEvent);
+            $("#listForm input[type=submit]").bind("click", {}, jsSearch);
+        });
+        var enterEvent = function(e){
+            if(e.keyCode == 13){
+                $("#listForm input[name=q_currPage]").val('1');
+            }
+        };
+        var jsSearch = function(){
+            $("#listForm input[name=q_currPage]").val('1');
+        };
+        var jsMovePage = function(page){
+            var p = 1;
+            if(page == 'page'){
+                p = $('input[name=page]').val();
+            }else{
+                p = page;
+            }
+            $("#listForm input[name=q_currPage]").val(p);
+            $("#listForm").submit();
+        };
+    </script>
+    <!-- 접속로그 수집영역 START -->
+    <script type="text/javascript">
+        //<![CDATA[
+        var anlzSessionId = '3wXVEoQfIADAS12ctlzPUk151Iqma6JafsaPTHVW9GFrKRFMzYU9BRVKc1DOtDpQ.WAS2_servlet_engine1';
+        var anlzClientIp = '';
+        //]]>
+    </script>
+    <script type="text/javascript">
+        //<![CDATA[
+        var anlzSearchEngine = new Array();
+        var anlzMobileOS = new Array();
+
+        anlzSearchEngine.push('daum.net');
+        anlzSearchEngine.push('nate.com');
+        anlzSearchEngine.push('naver.com');
+        anlzSearchEngine.push('bing.com');
+        anlzSearchEngine.push('yahoo.com');
+        anlzSearchEngine.push('yahoo.co.kr');
+        anlzSearchEngine.push('google.com');
+        anlzSearchEngine.push('google.co.kr');
+        anlzMobileOS.push('iPad');
+        anlzMobileOS.push('iPhone');
+        anlzMobileOS.push('Android');
+
+        //]]>
+    </script>
+    <script type="text/javascript">CTX_PATH="";</script>
+    <script type="text/javascript" src="/resources/web/popup/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/resources/intra/analyze/tracking/js/detector.js"></script>
+    <script type="text/javascript" src="/resources/intra/analyze/tracking/js/tracker.js"></script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        $().ready(function(){
+            var logMenuCd = 'sw-reserv-08';
+            var logMenuYn = 'N';
+            var logMenuURI = "/web/reserv/preBooking/BD_list.do";
+            var logMenuQueryStr = "";
+            var logMenuGubun = "";
+            var logGubunCd = "";
+            var logSeqNo = "";
+
+
+
+            //인기컨텐츠 로그 기록 (시정소식, 행사/축제, 교육)
+            if(logMenuCd == 'www04-01' || logMenuCd == 'civil_05' || logMenuCd == 'eco06' || logMenuCd == 'welfare05' || logMenuCd == 'culture04'
+                || logMenuCd == 'env_05' || logMenuCd == 'city05' || logMenuCd == 'traffic05' || logMenuCd == 'cityCreate_04' || logMenuCd == 'healthPolicies_04') {
+
+            }
+
+            if(logMenuYn == 'Y') {
+                $.ajax({
+                    type:        "POST",
+                    url:         "/web/popularityContents/ND_logInsert.do",
+                    data:        "menuCd="+logMenuCd+"&menuGubun="+logMenuGubun+"&gubunCd="+logGubunCd+"&seqNo="+logSeqNo+"&queryStr="+encodeURIComponent(logMenuQueryStr),
+                    dataType:    "json",
+                    contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+                    //async:       false,
+                    success:     function(data) {},
+                    error:       function () {}
+                });
+            }
+        });
+        //]]>
+    </script>
+    <!-- 접속로그 수집영역 END   --></head>
+<body id="sub">
+<div class="accessibility">
+    <a href="#container">본문 바로가기</a>
+</div>
+<div id="wrapper" class="ctssw-reserv-08"><!-- 메뉴별 키번호(각 메뉴의 고유넘버) ctsxxx 부여해주세요!!(자리수는 상관없고 각 메뉴마다 구분만 되면 됩니다. 게시판페이지, 프로그램페이지 포함) -->
+
+    <header id="header">
+        <div class="header_box">
+            <div class="body_wrap clearfix">
+                <div class="gnb">
+                    <div class="body_wrap clearfix">
+                        <div class="site">
+                            <ul class="site_list">
+                                <li class="site_item"><a href="https://www.suwon.go.kr/index.do" target="_blank" title="새창" class="site_anchor" rel="nofollow">수원시청</a></li>
+                                <li class="site_item"><a href="https://tv.suwon.go.kr/" target="_blank" title="새창" class="site_anchor" rel="nofollow">수원ITV</a></li>
+                                <li class="site_item"><a href="https://news.suwon.go.kr/" target="_blank" title="새창" class="site_anchor" rel="nofollow">e-뉴스</a></li>
+                            </ul>
+                        </div>
+                        <div class="right_box">
+                            <div class="weatherbox dust1 clearfix">
+                                <a href="http://www.kma.go.kr/weather/main_all.jsp?myPointCode=4111356000&stncd=119&x=13&y=7" target="_blank" title="새창열림" class="weather" rel="nofollow">
+                                    <span class="icon" title="맑음">맑음</span>
+                                    <span class="textbox">
+                                            <span class="text">맑음</span>
+                                            <span class="temperature">0℃</span>
+                                        </span>
+                                </a>
+                                <a href="http://www.suwon.go.kr/web/safesuwon/air/PD_index.do" target="_blank" title="새창열림" class="dust" rel="nofollow">
+                                    <span class="text">미세먼지</span>
+                                    <em>좋음</em>
+                                    <span class="icon" title="좋음">좋음</span>
+                                </a>
+                            </div>
+                            <div class="link">
+                                <ul class="clearfix">
+                                    <li><a href="#none" class="transnoti" onclick="globalLogin('');return false;" rel="nofollow">로그인</a></li>
+                                    <li><a href="/web/register/BD_index.do" target="_blank" title="새창열림" class="transnoti" rel="nofollow">회원가입</a></li>
+                                    <li class="falilysite"><a href="#" class="transnoti" rel="nofollow">패밀리사이트</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="familybigbox">
+                    <div class="body_wrap">
+                        <div class="layerbox">
+                            <div class="titlebox clearfix">
+                                <h2><img src="/resources/web/reserv2024/images/familytitle.png" alt="패밀리사이트" /></h2>
+                            </div>
+                            <div class="listbox">
+                                <ul class="clearfix">
+                                    <li><a href="https://www.suwon.go.kr/index.do" target="_blank" title="새창" rel="nofollow">수원시청</a></li>
+                                    <li><a href="https://tv.suwon.go.kr/" target="_blank" title="새창" rel="nofollow">수원ITV</a></li>
+                                    <li><a href="https://news.suwon.go.kr/" target="_blank" title="새창" rel="nofollow">e-뉴스</a></li>
+                                    <li><a href="https://sscf2016.or.kr/" target="_blank" title="새창" rel="nofollow">수원도시재단</a></li>
+                                    <li><a href="https://www.suwon.go.kr/visitsuwon/" target="_blank" title="새창" rel="nofollow">수원관광</a></li>
+                                    <li><a href="http://www.suwonlib.go.kr/" target="_blank" title="새창" rel="nofollow">수원시도서관</a></li>
+                                    <li><a href="http://council.suwon.go.kr/" target="_blank" title="새창" rel="nofollow">수원시의회</a></li>
+                                    <li><a href="http://www.suwon.go.kr/bike/" target="_blank" title="새창" rel="nofollow">수원 바이크 반디클</a></li>
+                                    <li><a href="http://www.scc.or.kr/" target="_blank" title="새창" rel="nofollow">수원컨벤션센터</a></li>
+                                    <li><a href="https://health.suwon.go.kr/sub.asp?page_code=sub050601" target="_blank" title="새창" rel="nofollow">수원시 치매안심센터</a></li>
+                                    <li><a href="http://www.suwon.go.kr/web/airforce/index.do" target="_blank" title="새창" rel="nofollow">경기국제공항 건설 사업</a></li>
+                                    <li><a href="http://news.suwon.go.kr/ebook/home/index.php" target="_blank" title="새창" rel="nofollow">e-book 자료홍보관</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="closebox"><div class="inner">패밀리사이트<button type="button" class="close" title="닫기">닫기</button></div></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="logo">
+            <div class="body_wrap">
+                <a class="logo_anchor" href="/web/reserv/index.do">수원특례시 SUWON SPECIAL CITY 통합예약시스템</a>
+            </div>
+        </div>
+        <div class="ssm-overlay ssm-toggle-nav"></div>
+        <div class="lnbbox">
+            <div class="floatbox left">
+                통합예약시스템
+            </div>
+            <div class="lnb_topbox">
+                <div class="body_wrap">
+                    <div class="gnb btnbox">
+                        <ul class="clearfix">
+                            <li><a href="#none" class="transnoti" onclick="globalLogin('');return false;" rel="nofollow">로그인</a></li>
+                            <li><a href="/web/register/BD_index.do" target="_blank" title="새창열림" class="transnoti" rel="nofollow">회원가입</a></li>
+                            <li class="falilysite"><a href="#" class="transnoti" rel="nofollow">패밀리사이트</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <nav class="nav" data-menu-type="1" data-menu-top-background="full" data-menu-bottom-background="full">
+                <h2 class="skip">메뉴</h2>
+                <div class="depth1 clearfix" data-menu-depth="1">
+                    <ul class="depth1_list clearfix" data-menu-list="1">
+                        <li class="depth1_item">
+                            <a href="/web/reserv/edu/list.do"  class="depth1_text" data-menu-text="1"><span>교육·강좌·체험</span></a>
+                        </li>
+                        <li class="depth1_item">
+                            <a href="/web/reserv/faci/list.do"  class="depth1_text" data-menu-text="1"><span>공공시설</span></a>
+                        </li>
+                        <li class="depth1_item">
+                            <a href="/web/reserv/faci/sportslist.do"  class="depth1_text" data-menu-text="1"><span>체육시설</span></a>
+                        </li>
+                        <li class="depth1_item">
+                            <a href="/web/reserv/share/hometoollist.do"  class="depth1_text" data-menu-text="1"><span>장비대여</span></a>
+                        </li>
+                        <li class="depth1_item">
+                            <a href="/web/reserv/preBooking/BD_list.do"  class="depth1_text" data-menu-text="1"><span>사전상담예약</span></a>
+                        </li>
+                        <li class="depth1_item">
+                            <a href="/web/board/BD_board.list.do?bbsCd=1362"  class="depth1_text" data-menu-text="1"><span>공지사항</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="" class="lnb_close ssm-toggle-nav">주메뉴 닫기</a>
+        </div>
+        <div class="search">
+            <div class="body_wrap">
+                <button class="search_open form_popup_btn" title="통합검색 열기">통합검색 열기</button>
+            </div>
+        </div>
+        <div class="sitemap">
+            <div class="body_wrap">
+                <button class="lnb_open ssm-toggle-nav" title="사이트메뉴 열기">사이트메뉴열기</button>
+                <button type="button" class="sitemap_close" title="사이트맵 닫기">사이트맵 닫기</button>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <div class="form_popup">
+        <div class="popup_title">
+            상세검색
+            <span class="close_btn"><a href="#"><img src="/resources/web/reserv2024/images/close_btn.png" alt="닫기"> </a></span>
+        </div>
+        <div class="acco_box">
+            <form id="totalDetailSearchForm" name="totalDetailSearchForm" class="form cf" action="/web/reserv/totalsearch.do" method="get">
+                <fieldset>
+                    <legend>통합예약 상세검색 폼</legend>
+                    <ul class="accordion">
+                        <li class="item">
+                            <h2 class="accordionTitle"><a href="#none">서비스 선택<span class="accIcon"><span class="q_cateCode_text"></span></span></a></h2>
+                            <div class="text">
+                                <section class="res_board plan cf">
+                                    <h2 class="skip">검색</h2>
+                                    <ul class="list clearfix">
+                                        <li>
+                                            <a href="#"><span>교육·강좌·체험</span></a>
+                                            <div class="tabcontent">
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_all" value="" checked><label class="four col" for="q_categoryCode_tedu_all">전체</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_76" value="76"><label class="four col" for="q_categoryCode_tedu_76" style="letter-spacing:-2px;">취미·문학·예술</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_77" value="77"><label class="four col" for="q_categoryCode_tedu_77" style="letter-spacing:-2px;">건강·스포츠</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_78" value="78"><label class="four col" for="q_categoryCode_tedu_78" style="letter-spacing:-2px;">어학·외국어</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_79" value="79"><label class="four col" for="q_categoryCode_tedu_79">IT강좌</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_87" value="87"><label class="four col" for="q_categoryCode_tedu_87">환경</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_81" value="81"><label class="four col" for="q_categoryCode_tedu_81">답사·체험</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_82" value="82"><label class="four col" for="q_categoryCode_tedu_82" style="letter-spacing:-2px;">창업·직업교육</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_83" value="83"><label class="four col" for="q_categoryCode_tedu_83" style="letter-spacing:-2px;">청소년·어린이</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_84" value="84"><label class="four col" for="q_categoryCode_tedu_84" style="letter-spacing:-2px;">인문학·독서</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_80" value="80"><label class="four col" for="q_categoryCode_tedu_80">시민교육</label>
+                                                <input type="checkbox" name="q_edu_categoryCode" id="q_categoryCode_tedu_85" value="85"><label class="four col" for="q_categoryCode_tedu_85">주민센터교육</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>공공시설</span></a>
+                                            <div class="tabcontent">
+                                                <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_all" value="" checked><label class="four col" for="q_cateCode_tfaci_all">전체</label>
+                                                <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_1216" value="1216"><label class="four col" for="q_cateCode_tfaci_1216">강당</label>
+                                                <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_1217" value="1217"><label class="four col" for="q_cateCode_tfaci_1217">회의실</label>
+                                                <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_1242" value="1242"><label class="four col" for="q_cateCode_tfaci_1242">대회의실</label>
+                                                <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_1243" value="1243"><label class="four col" for="q_cateCode_tfaci_1243">중회의실</label>
+                                                <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_1282" value="1282"><label class="four col" for="q_cateCode_tfaci_1282">공원</label>
+                                                <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_1429" value="1429"><label class="four col" for="q_cateCode_tfaci_1429">어린이공원</label>
+                                                <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_1430" value="1430"><label class="four col" for="q_cateCode_tfaci_1430">소공원</label>
+                                                <!-- <input type="checkbox" name="q_faci_cateCode" id="q_cateCode_tfaci_1434" value="1434"><label class="four col" for="q_cateCode_tfaci_1434">공연장</label> -->
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>체육시설</span></a>
+                                            <div class="tabcontent">
+                                                <input type="checkbox" name="q_sfaci_cateCode" id="q_cateCode_tsfaci_all" value="" checked><label class="four col" for="q_cateCode_tsfaci_all">전체</label>
+                                                <input type="checkbox" name="q_sfaci_cateCode" id="q_cateCode_tsfaci_1228" value="1228"><label class="four col" for="q_cateCode_tsfaci_1228">축구·풋살장</label>
+                                                <input type="checkbox" name="q_sfaci_cateCode" id="q_cateCode_tsfaci_1241" value="1241"><label class="four col" for="q_cateCode_tsfaci_1241">테니스장</label>
+                                                <input type="checkbox" name="q_sfaci_cateCode" id="q_cateCode_tsfaci_1244" value="1244"><label class="four col" for="q_cateCode_tsfaci_1244">배드민턴장</label>
+                                                <input type="checkbox" name="q_sfaci_cateCode" id="q_cateCode_tsfaci_1249" value="1249"><label class="four col" for="q_cateCode_tsfaci_1249">탁구장</label>
+                                                <input type="checkbox" name="q_sfaci_cateCode" id="q_cateCode_tsfaci_1250" value="1250"><label class="four col" for="q_cateCode_tsfaci_1250">족구장</label>
+                                                <input type="checkbox" name="q_sfaci_cateCode" id="q_cateCode_tsfaci_1355" value="1355"><label class="four col" for="q_cateCode_tsfaci_1355">기타체육시설</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>장비대여</span></a>
+                                            <div class="tabcontent">
+                                                <input type="checkbox" name="q_share_cateCode" id="q_cateCode_tshare_all" value="" checked><label class="four col" for="q_cateCode_tshare_all">전체</label>
+                                                <input type="checkbox" name="q_share_cateCode" id="q_cateCode_tshare_2001" value="2001"><label class="four col" for="q_cateCode_tshare_2001">가정용공구</label>
+                                                <input type="checkbox" name="q_share_cateCode" id="q_cateCode_tshare_2002" value="2002"><label class="four col" for="q_cateCode_tshare_2002">재활의료장비</label>
+                                                <input type="checkbox" name="q_share_cateCode" id="q_cateCode_tshare_2003" value="2003"><label class="four col" for="q_cateCode_tshare_2003">라돈측정기</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>사전상담예약</span></a>
+                                            <div class="tabcontent">
+                                                <input type="checkbox" name="q_pre_bookingTypes" id="q_pre_bookingTypes_all" value="" checked><label class="four col" for="q_pre_bookingTypes_all">전체</label>
+                                                <input type="checkbox" name="q_pre_bookingTypes" id="q_pre_bookingTypes_1003" value="1003"><label class="four col" for="q_pre_bookingTypes_1003">상담예약</label>
+                                                <input type="checkbox" name="q_pre_bookingTypes" id="q_pre_bookingTypes_1002" value="1002"><label class="four col" for="q_pre_bookingTypes_1002">방문예약</label>
+                                                <input type="checkbox" name="q_pre_bookingTypes" id="q_pre_bookingTypes_1004" value="1004"><label class="four col" for="q_pre_bookingTypes_1004">체험·프로그램</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <script>tabOn('.res_board',1,'text');</script>
+                                </section>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <h2 class="accordionTitle"><a href="#none">지역선택<span class="accIcon"><span class="q_guCode_text"></span></span></a></h2>
+                            <div class="text">
+                                <div class="tabcontent">
+                                    <section class="area_board plan cf">
+                                        <input type="checkbox" name="q_to_guCode" id="q_guCode_tgu_all" value="" checked ><label class="four col" for="q_guCode_tgu_all">전체</label>
+                                        <input type="checkbox" name="q_to_guCode" id="q_guCode_tgu_112" value="112"><label class="four col" for="q_guCode_tgu_112">장안구</label>
+                                        <input type="checkbox" name="q_to_guCode" id="q_guCode_tgu_113" value="113"><label class="four col" for="q_guCode_tgu_113">권선구</label>
+                                        <input type="checkbox" name="q_to_guCode" id="q_guCode_tgu_114" value="114"><label class="four col" for="q_guCode_tgu_114">팔달구</label>
+                                        <input type="checkbox" name="q_to_guCode" id="q_guCode_tgu_115" value="115"><label class="four col" for="q_guCode_tgu_115">영통구</label>
+                                    </section>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <h2 class="accordionTitle"><a href="#none">신청기간<span class="accIcon"><span class="q_startDt_text"></span></span></a></h2>
+                            <div class="text">
+                                <input type="hidden" name="q_startDt" id="q_startDt_t" value="" />
+                                <div class="calender_box">
+                                    <div class="datepicker_ui"></div>
+                                </div>
+                                <!--calender_box END-->
+                                <div class="calender_txt">
+                                    <ul class="info_list">
+                                        <li class="list1">예약가능</li>
+                                        <li class="list2">날짜선택</li>
+                                        <li><em>※</em> 대여를 원하는 날짜를 선택하세요</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="popup_button">
+                        <input type="submit" class="popup_submit" value="상세검색">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <header class="sub_head has_back_img">
+        <div class="body_wrap">
+            <div class="sub_title has_notice_link">
+                <h2>사전상담예약</h2>
+                <div class="breadcrumbs notice_link">
+                    <ol class="breadcrumbs_list clearfix">
+                        <li class="breadcrumbs_item"><a class="breadcrumbs_anchor" href="/web/board/BD_board.list.do?bbsCd=1362&q_ctgCd=1005">공지사항</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="addons">
+                <ul class="addons_list clearfix">
+                    <li class="addons_item share">
+                        <button type="button" class="addons_button share_open" title="공유하기">공유하기</button>
+                        <div class="share_panel">
+                            <h3 class="skip">공유하기</h3>
+                            <ul class="share_list clearfix">
+                                <li class="share_item n1"><a href="#" title="새창" class="share_anchor" onclick="subShareToFaceBook(this);">페이스북</a></li>
+                                <li class="share_item n2"><a href="#" title="새창" class="share_anchor" onclick="subShareToTwitter(this);">트위터</a></li>
+                                <!-- <li class="share_item n3"><a href="#" title="새창" class="share_anchor" onclick="subShareToKakaoStory(this);">카카오스토리</a></li> -->
+                                <li class="share_item n4"><a href="#" title="새창" class="share_anchor" onclick="subShareToKakaoTalk(this);">카카오톡</a></li>
+                                <li class="share_item url"><a href="#" class="share_anchor" onclick="subShareToLink(this);">URL<span class="skip">복사</span></a></li>
+                            </ul>
+                            <button type="button" class="share_close" title="닫기">닫기</button>
+                        </div>
+                    </li>
+                    <li class="addons_item print"><button type="button" onclick="subShareToPrint(this);" class="addons_button" title="인쇄하기">인쇄하기</button></li>
+                </ul>
+            </div>
+
+            <div class="sub_lnb">
+                <nav class="sub_menu">
+                    <h2 class="skip">주메뉴</h2>
+                    <button type="button" class="sub_lnb_more" title="열기">카테고리</button>
+                    <div class="layer">
+                        <ul>
+                            <li><a href="BD_list.do">전체</a></li>
+                            <li><a href="BD_list.do?q_bookingType=1003">상담예약</a></li>
+                            <li><a href="BD_list.do?q_bookingType=1002">방문예약</a></li>
+                            <li><a href="BD_list.do?q_bookingType=1004">체험·프로그램</a></li>
+                        </ul>
+                    </div>
+                    <div class="s_depth s_depth1">
+                        <ul class="s_depth_list s_depth1_list clearfix">
+                            <li class="s_depth_item s_depth1_item "><a href="BD_list.do" class="s_depth_text s_depth1_text">전체</a></li>
+                            <li class="s_depth_item s_depth1_item "><a href="BD_list.do?q_bookingType=1003" class="s_depth_text s_depth1_text">상담예약</a></li>
+                            <li class="s_depth_item s_depth1_item active"><a href="BD_list.do?q_bookingType=1002" class="s_depth_text s_depth1_text">방문예약</a></li>
+                            <li class="s_depth_item s_depth1_item "><a href="BD_list.do?q_bookingType=1004" class="s_depth_text s_depth1_text">체험·프로그램</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div class="body_wrap clearfix">
+            <main class="colgroup">
+                <article>
+                    <div id="contents_box">
+
+                        <div class="sw_sns_outer">
+                            <!--SNS 연계 S-->
+                            <!--SNS 연계 E-->
+                        </div>
+
+                        <div class="sw_kogl_outer margin_t_30">
+                            <!--공공누리 S-->
+                            <div id="koglView" class="kogl_wrap">
+                                <!-- 공공누리 제4유형 : 출처표시 + 상업적이용금지 + 변경금지 -->
+                                <a href="http://www.kogl.or.kr/open/info/license_info/all.do" target="_blank" title="새창열림">
+                                    <img src="/resources/web/common/images/img_opentype04.jpg" alt="공공누리 공공저작물 자유이용허락-출처표시,상업용금지,변경금지" />
+                                </a>
+                                <span class="txt"><strong>수원시청</strong>이 창작한 <strong>사전상담예약</strong> 저작물은 "공공누리" 출처표시-상업적이용금지-변경금지 조건에 따라 이용 할 수 있습니다.</span>
+                            </div>
+                            <script type="text/javascript">
+                                //<![CDATA[
+                                $(document).ready(function(){
+                                    var koglStyle = '';
+                                    koglStyle += '<style type="text/css">';
+                                    koglStyle += ' .kogl_wrap {display:none;clear:both;overflow:hidden;margin-top:10px;padding:10px;border:1px solid #b2b2b2;background-color:#fff;}';
+                                    koglStyle += ' .kogl_wrap a {float:left;margin-right:10px;}';
+                                    koglStyle += ' .kogl_wrap span {line-height:20px;}';
+                                    koglStyle += '@media all and (max-width:500px){';
+                                    koglStyle += ' .kogl_wrap a {width:100%;display:block;margin-right:0;float:none;clear:both;text-align:center;}';
+                                    koglStyle += ' .kogl_wrap span {display:block;clear:both;line-height:20px;}';
+                                    koglStyle += '}';
+                                    koglStyle += '</style>';
+                                    $('head').append(koglStyle);
+                                    var koglData = {};
+                                    var koglHTML = '';
+                                    var insertPositionId = '';
+                                    var insertAB = '';
+
+                                    koglData = {domainCd:'1', menuType:'url', menuCode:'sw-reserv-08'};
+                                    insertPositionId = '#su_table_btn_area2';
+                                    insertAB = 'before';
+
+                                    if($.trim($('#koglView').html()) != ''){
+                                        if(insertPositionId != '' && $(insertPositionId).length > 0){
+                                            if(insertPositionId == '#su_table_area_view'){
+                                                if($('#su_write_pageing').length > 0){
+                                                    insertPositionId = '#su_write_pageing';
+                                                    insertAB = 'after';
+                                                }else if($('#su_table_area_view').length == 0){
+                                                    insertPositionId = '#table_area_view';
+                                                }
+                                            }
+                                            if(insertAB == '' || insertAB == 'append'){
+                                                $(insertPositionId).append($('#koglView'));
+                                            }else if(insertAB == 'after'){
+                                                $('#koglView').insertAfter(insertPositionId);
+                                            }else if(insertAB == 'before'){
+                                                $('#koglView').insertBefore(insertPositionId);
+                                            }
+                                        }else{
+                                            $('#print_area').append($('#koglView'));
+                                        }
+                                        $('#koglView').show();
+                                    }
+                                });
+                                //]]>
+                            </script><!--공공누리 E-->
+                        </div>
+
+                        <div class="sw_satisfaction_outer">
+                            <!--satisfaction_survey S-->
+                            <!--// 만족도 조사 및 담당부서 둘다 노출 -->
+
+                            <div class="satisfaction">
+                                <p class="skip">콘텐츠 만족도 조사</p>
+                                <div class="satisfaction_list clearfix">
+                                    <p class="question">이 페이지에서 제공하는 정보에 대하여 어느 정도 만족하셨습니까?</p>
+                                    <form id="frmSatisfy" name="frmSatisfy" method="post" action="/web/satisfy/ND_InsertAction.do" onsubmit="return js_Submit();">
+                                        <input type="hidden" name="menuCode" value="sw-reserv-08"/>
+                                        <input type="hidden" name="domainCd" value="1"/>
+                                        <fieldset>
+                                            <legend>만족도 조사</legend>
+                                            <div class="input_radio">
+                                                <input type="radio" id="itemNo_5" name="itemNo" value="5" checked="checked"/> <label for="itemNo_5">매우만족</label>
+                                                <input type="radio" id="itemNo_4" name="itemNo" value="4" /> <label for="itemNo_4">만족</label>
+                                                <input type="radio" id="itemNo_3" name="itemNo" value="3" /> <label for="itemNo_3">보통</label>
+                                                <input type="radio" id="itemNo_2" name="itemNo" value="2" /> <label for="itemNo_2">불만족</label>
+                                                <input type="radio" id="itemNo_1" name="itemNo" value="1" /> <label for="itemNo_1">매우불만족</label>
+                                            </div>
+                                            <div class="opinion">
+                                                <span class="aa"><input type="submit" value="평가하기" /></span>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                            <script>
+                                var js_Submit = function() {
+                                    /* var itemNoVal = $("#frmSatisfy input[name='itemNo']:checked").val();
+                                    if(!itemNoVal) {
+                                        alert("만족도 항목을 선택하세요.");
+                                        return false;
+                                    }
+
+                                    if(itemNoVal == "2" || itemNoVal == "1") {
+                                        var comments = $.trim($("#frmSatisfy #comments").val());
+                                        if(comments == "" || comments.length <= 10) {
+                                            alert("불만족 사유를 10자 이상으로 등록하여 주세요.");
+                                            return false;
+                                        }
+                                    } */
+                                    $.ajax({
+                                        url   : $("#frmSatisfy").attr("action"),
+                                        type     : "POST",
+                                        dataType : "json",
+                                        data	 : $("#frmSatisfy").serialize(),
+                                        success  : function(response){
+                                            if(response.result) {
+                                                alert("만족도 평가를 등록하였습니다.");
+                                                location.reload();
+                                            } else {
+                                                alert(response.message);
+                                            }
+                                        }
+                                    });
+                                    return false;
+                                };
+                            </script>
+                            <!--satisfaction_survey E-->
+                        </div>
+
+                    </div>
+                </article>
+            </main>
+        </div><!--body_wrap-->
+    </div><!-- //#contents -->
+
+    <footer id="footer">
+        <div class="body_wrap">
+            <div class="footer_box clearfix">
+                <div class="footer_con">
+                    <div class="footer_nav">
+                        <ul class="clearfix">
+                            <li><a href="https://www.suwon.go.kr/index.do" target="_blank" title="새창열림">수원시청</a></li>
+                            <li><a href="https://www.suwon.go.kr/sw-www/sw-www_09/sw-www_09_02.jsp" target="_blank" title="새창열림">저작권정책</a></li>
+                            <li class="privacy"><a href="https://www.suwon.go.kr/sw-www/sw-www_09/sw-www_09_01.jsp" target="_blank" title="새창열림">개인정보 처리방침</a></li>
+                            <li><a href="https://www.suwon.go.kr/sw-www/www05/www05-01/www05-01-18.jsp" target="_blank" title="새창열림">찾아오시는 길</a></li>
+                            <li><a href="https://www.suwon.go.kr/sw-www/www05/www05-02/www05-02-02.jsp" target="_blank" title="새창열림">청사안내</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_info">
+                        <address>
+                            <span>(우편번호:16490) 경기도 수원시 팔달구 효원로 241(인계동)</span>
+                            <span>수원시 휴먼콜센터 1899-3300, 031-228-2114</span>
+                        </address>
+                        <p class="copyright"><em>COPYRIGHT</em> <span>2021 SUWON SPECIAL CITY. ALL RIGHTS RESERVED.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</div>
+<div class="mask"></div>
+
+<!--구글 추적코드 등-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LYP27H7VGF"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LYP27H7VGF');
+</script>
+<!--구글 추적코드 등 E-->
+
+</body>
+</html>

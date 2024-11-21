@@ -1,0 +1,17 @@
+@charset "UTF-8";
+body{position:relative;font-size:16px;line-height:1.5em;color:#666;font-family:NotoKr,"Apple SD Gothic Neo","애플 SD 산돌고딕 Neo","Malgun Gothic","맑은 고딕","돋움",Dotum,Helvetica,Tahoma,sans-serif;background-color:#fff;}
+/* 본문바로가기  */
+.accessibility {overflow:hidden;position:relative;z-index:1000;width:100%;}
+.accessibility a{display:block;overflow:hidden;height:1px;width:1px;margin:0 -1px -1px 0;font-size:0;line-height:0;text-align:center}
+.accessibility a:focus, #accessibility a:hover, #accessibility a:active {width:auto;height:20px;margin:0;padding:8px 0 0 15px;background:#20262c;font-size:12px;font-weight:700;line-height:1;color:#fff;}
+
+a:link{text-decoration:none; color:#333333;}
+a:visited {text-decoration:none; color:#333333;}
+a:hover {text-decoration:underline; }
+a:active {text-decoration:underline;}
+a span{cursor:pointer;}
+a:hover{text-decoration:underline;}
+button{cursor:pointer; font-family:'NotoKr','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;}
+input{font-family:'NotoKr','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;}
+input[type="submit"]{cursor:pointer;}
+

@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+body {
+    background:#cfcfcf url("../images/bg_gray.jpg") no-repeat top center;
+    font-family: Dotum,Gulim,Arial,AppleGothic,Sans-serif;
+    font-size: 12px;
+}
+
+* {
+    font-family: Dotum,Gulim,Arial,AppleGothic,Sans-serif;
+    margin: 0;
+	padding: 0;
+}
+
+div.wrap{
+	height:100%;
+	width:100%;	
+	height:auto !important; height:100%; min-height:100%;
+}
+
+
+/* top-bottom img */
+div.wrap .top_img{
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+div.wrap .bottom_img{
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+
+
+
+/* login_contents */
+div.con_all{
+	padding-top:125px;
+	width:650px;
+	margin:0 auto;
+}
+
+div.con_all .pad_t25{padding-top:25px;}
+
+div.con_all .login{
+	border:1px solid #000;
+	background-color:#fff;
+	padding:35px 25px 35px 20px;
+	margin:40px 0 40px 0;
+	float:left;
+	width:605px;
+}
+
+div.con_all .login img{float:left;padding-top:20px;}
+
+div.con_all .login fieldset{
+	width:310px;
+	position:relative;
+	float:right;
+	border:0 none;
+}
+
+div.con_all .login fieldset legend {
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+
+div.con_all .login fieldset p{
+	padding-left:78px;	
+}
+
+div.con_all .login fieldset p label{font-weight:normal;/*vertical-align:middle;*/}
+
+div.con_all .login dl{
+	height:90px;
+}
+
+div.con_all .login dt{
+    clear: both;
+    float: left;
+    height: 30px;
+	padding-top:10px;
+    width: 80px;
+	font-size:14px;
+}
+
+div.con_all .login dd {
+	float: left;
+    width: 160px;
+	height: 40px;
+}
+
+div.con_all .login input.txt {
+    border: 1px solid #9e9e9e;
+	background-color:#e5e5e5;
+	font-size:15px;
+    margin-bottom: 6px;
+    vertical-align: -2px;
+    width: 135px;
+	padding:8px;
+	margin:0;
+}
+
+div.con_all .login input.txt[type="text"]:hover{
+	border: 1px solid #3399ff;
+	background-color:#fff;
+}
+div.con_all .login input.txt[type="text"]:focus{
+	border: 1px solid #3399ff;
+	background-color:#feffe0;
+}
+
+div.con_all .login label {
+    color: #000;
+	font-weight:bold;
+    display: inline-block;
+    margin-bottom: 6px;
+    padding-left: 6px;
+}
+
+div.con_all .login .btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/*  copyright */
+div.con_all p{
+	clear:both;
+	font-size:90%;
+	line-height:160%;
+	color:#9d9c9c;
+}
+
+div.con_all p span{color:#5f5f5f;}

@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+@import url("common.css");
+@import url("layout.css");
+@import url("contents.css");
+@import url("default.css");
+@import url("btn.css");
+@import url("tab.css");
+
+@import url("form.css");
+@import url("list.css");
+@import url("paging.css");
+@import url("search.css");
+@import url("bbs.css");
+@import url("view.css");
+@import url("write.css");
+
+@import url("popup.css");
+
+/** 프린트시 안보이는 Elements 설정 */
+.printHide {display:none;}
+
+#contents_area { min-width:auto !important; }
+
+ul.loc_m,
+button {
+	display: none;
+}

@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+body {background:#e2e2e2;color:#000000;}
+a,
+a:link,
+a:visited,
+a:hover {color:#000000 !important;}
+#contents_area {width:95%;max-width:900px;margin:0 auto;font-size:14px;line-height:24px;border:2px solid #c2c2c2;border-radius:10px;z-index:10;}
+#contents_area a:hover {font-weight:normal;}
+#contents_area h3 {background-position:10px 50%;background-color:#efefef;padding:10px 0 10px 30px;border:2px solid #e2e2e2;border-radius:10px;}
+.boardWrite {line-height:24px;}
+.boardList {line-height:24px;}
+.paging {line-height:18px;}
+
+.headerWrap {margin:0 auto 10px auto;padding:10px 0 10px 0;background:#ffffff;border-bottom:2px solid #c2c2c2;position:relative;z-index:12;}
+.headerInner {width:95%;max-width:900px;margin:0 auto;}
+
+.mw900px {max-width:900px !important;}
+.mw95per {max-width:95% !important;}
+
+.ffMG {font-family:'맑은 고딕', '맑은고딕', 'MalgunGothic', 'Malgun Gothic', '굴림', Gulim, '돋움', Dotum, Arial, AppleGothic, Sans-serif !important;}
+.ffHG {font-family:'휴먼 고딕', '휴먼고딕', 'HumanGothic', 'Human Gothic', '굴림', Gulim, '돋움', Dotum, Arial, AppleGothic, Sans-serif !important;}
+.ffNG {font-family:'나눔 고딕', '나눔고딕', 'NanumGothic', 'Nanum Gothic', '굴림', Gulim, '돋움', Dotum, Arial, AppleGothic, Sans-serif !important;}
+.ffGU {font-family:'굴림', Gulim, '돋움', Dotum, Arial, AppleGothic, Sans-serif !important;}
+.ffDO {font-family:'돋움', Dotum, '굴림', Gulim, Arial, AppleGothic, Sans-serif !important;}
+.ffHM {font-family:'휴먼명조', '굴림', Gulim, '돋움', Dotum, Arial, AppleGothic, Sans-serif !important;}
+.ffBT {font-family:'바탕체', '굴림', Gulim, '돋움', Dotum, Arial, AppleGothic, Sans-serif !important;}
+.ffSS {font-family:'#신세나루', '굴림', Gulim, '돋움', Dotum, Arial, AppleGothic, Sans-serif !important;}
+
+.fs10 {font-size:10px !important;line-height:20px !important;}
+.fs11 {font-size:11px !important;line-height:21px !important;}
+.fs12 {font-size:12px !important;line-height:22px !important;}
+.fs13 {font-size:13px !important;line-height:23px !important;}
+.fs14 {font-size:14px !important;line-height:24px !important;}
+.fs15 {font-size:15px !important;line-height:25px !important;}
+.fs16 {font-size:16px !important;line-height:26px !important;}
+.fs17 {font-size:17px !important;line-height:27px !important;}
+.fs18 {font-size:18px !important;line-height:28px !important;}
+.fs19 {font-size:19px !important;line-height:29px !important;}
+.fs20 {font-size:20px !important;line-height:30px !important;}
+.fs21 {font-size:21px !important;line-height:31px !important;}
+.fs22 {font-size:22px !important;line-height:32px !important;}
+.fs23 {font-size:23px !important;line-height:33px !important;}
+.fs24 {font-size:24px !important;line-height:34px !important;}
+
+/* Select */
+.select{ position:relative; line-height:normal; display:inline-block; *display:inline; vertical-align:middle; background:#fff; *zoom:1;}
+.select *{ margin:0; padding:0; cursor:pointer;}
+.select .myValue{ position:relative; z-index:2; left:0; top:0; border:1px solid #bababa; color:#666; line-height:19px; _line-height:normal; text-align:left; overflow:visible; background:transparent;}
+.select .myValue.selected{ font-weight:normal;}
+.select.open .myValue,
+.select .myValue.outLine{ border:1px solid #999;}
+.select button.myValue{ height:21px; width:100%; text-indent:5px; *text-indent:0; *padding-left:5px;}
+.select div.myValue{ height:19px; text-indent:8px;}
+.select .ctrl{ position:absolute; top:0; right:0; width:18px; height:19px; border:1px solid #bababa; border-left:1px solid #eaeaea; background:#fff;}
+.select .arrow{ position:absolute; width:0; height:0; top:9px; right:6px; line-height:0; font-size:0; border-top:3px solid #999; border-left:3px solid #fff; border-right:3px solid #fff;}
+.select ul{ top:20px; left:0; width:100%; list-style:none; border:0; border-top:1px solid #bababa; border-bottom:1px solid #bababa; background:#fff; overflow:hidden;}
+.select ul.aList{ display:none;}
+.select.open ul.aList{ display:block;}
+.select ul.iList{ left:-2000%;}
+.select.open ul.iList{ left:0;}
+.select li{ position:relative; overflow:hidden; white-space:nowrap; height:18px; border-left:1px solid #bababa; border-right:1px solid #bababa;}
+.select li input.option{ position:absolute; width:100%; height:20px; line-height:20px;}
+.select li label{ position:absolute; left:0; top:0; width:100%; text-indent:8px; *text-indent:6px; height:18px; line-height:18px; color:#767676; background:#fff;}
+.select li a{ display:block; text-indent:8px; *text-indent:6px; height:18px; line-height:18px; color:#767676; background:#fff; text-decoration:none;}
+.select li.hover *{ background:#999; color:#fff;}

@@ -1,0 +1,170 @@
+﻿@charset "utf-8";
+
+/*--------------------------------------------------------------------------
+ * list
+ *-------------------------------------------------------------------------*/
+
+.boardList{
+	clear:both;
+	width:100%;
+    min-width : 350px;
+	border-right:1px solid #ffffff;
+	line-height:140%;
+}
+.boardList th{
+	background-color:#c7cfe6;
+	border-top:1px solid #8a9dcb;
+	border-bottom:1px solid #a2b2d7;
+	border-right:1px solid #acbadb;
+	height:33px;
+	color:#000;
+    font-weight: bold;
+    text-align: center;
+}
+.boardList td{
+	border-right:1px solid #d3d3d3;
+	border-bottom:1px solid #d3d3d3;
+	padding:3px 10px;
+	text-align:center;
+	height:30px;
+}
+.boardList td.faq{
+	width:90%;
+	background-color:whitesmoke;
+	padding:20px 20px 20px 0px;
+	text-align:left;
+	border-right:none;
+}
+.boardList td.faq_left{
+	background-color:whitesmoke;
+	border-right:none;
+}
+.boardList th.lr_none,.boardList td.lr_none,
+.boardList th:last-child,.boardList td:last-child{border-right:none;}
+
+/* 제목태그 마우스 오버 변환색상 */
+.boardList th.m_over{
+	background-color:#a8b4d8;
+}
+
+/* align left*/
+.boardList td.tx_l{
+	text-align:left;
+}
+
+.boardList td.tx_r{
+    text-align:right;
+}
+
+/* line yellow */
+.boardList tr.bg_yellow{
+	background-color:#fcfadd;
+}
+
+/* 체크박스체크됐을때_블루 */
+.boardList tr.bg_blue{
+	background-color:#dfeaf3;
+}
+
+/* line gray */
+.boardList tr.bg_gray{
+    background-color:#ebebeb;
+    font-weight:bold;
+}
+
+.boardList tr.bg_dark_red{
+ background-color:#f9f9f9;
+}
+
+.boardList tr.bg_light_red{
+ background-color:#FFB4B4;
+}
+
+
+/* -----리스트에서 게시글, 파일과 댓글, 새글표시 아이콘----- */
+/* 게시글 수 */
+a.t_article, span.t_article{
+	background:url('../images/icon/icon_list.gif') no-repeat left top;
+	padding:2px 2px 5px 20px;
+	color:#3f579c;
+	font-size:11px;
+	margin-left:5px;
+}
+/* 첨부파일 수 */
+a.t_file, span.t_file{
+	background:url('../images/icon/icon_file.gif') no-repeat left top;
+	padding:2px 2px 5px 20px;
+	color:#3f579c;
+	font-size:11px;
+	margin-left:5px;
+}
+
+/* 댓글 수 */
+a.t_reply, span.t_reply{
+	background:url('../images/icon/icon_reply.gif') no-repeat left top;
+	padding:2px 2px 5px 20px;
+	color:#3f579c;
+	font-size:11px;
+	margin-left:5px;
+}
+
+/* 새글 알림 */
+span.t_new{
+	background:url('../images/icon/icon_new.gif') no-repeat left top;
+	padding:0px 2px 2px 20px;
+}
+
+/* 비공개글 */
+span.t_lock{
+	background:url('../images/icon/icon_public.gif') left no-repeat;
+	padding: 1px 0 1px 10px;
+}
+
+/* 비공개글 */
+span.t_lock2{
+    background:url('../images/icon/table_bbs_ico_lock.gif') left no-repeat;
+    padding: 1px 0 1px 10px;
+}
+
+/* 사용 / 미사용 전환 */
+.icon-use{ 
+    background:url('../images/icon/icon_chk_blue.png') no-repeat 0 1px;
+    padding-top:1px; 
+    padding-left:15px; 
+    vertical-align:text-bottom;
+    height: 20px;
+}
+.icon-not-use{ 
+    background:url('../images/icon/icon_cancel_red.png') no-repeat 0 1px;
+    padding-top:1px; 
+    padding-left:15px;
+    vertical-align:text-bottom;
+    height: 20px;
+}
+
+/*table_dark_red*/
+.boardList .table_dark_red {
+	width: 100%;
+	border-right: 1px solid #ffffff;
+}
+
+.boardList .table_dark_red th {
+	background-color: #f1e9ea;
+	height: 28px;
+	border-top: 1px solid #f1e9ea;
+	border-bottom: 1px solid #f1e9ea;
+	border-right: 1px solid #f1e9ea;
+}
+
+.boardList .table_dark_red td {
+	height: 28px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	text-align: left;
+	background:#fff;
+}
+
+.boardList .table_dark_red td.lr_none {
+	border-right: none;
+}

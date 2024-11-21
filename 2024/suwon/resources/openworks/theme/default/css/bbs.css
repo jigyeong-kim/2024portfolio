@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/*--------------------------------------------------------------------------
+ * BBS List
+ *-------------------------------------------------------------------------*/
+
+.h4_r{
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+
+/* comment */
+.comment{
+	margin:0 0 10px 0;
+}
+.star_smile{
+	float:left;
+	width:100%;
+	margin:0 0 5px 0;
+}
+.star_smile span.divStar{
+	width:120px;
+	float:left;
+}
+.star_smile ul{
+	float:left;
+}
+.star_smile ul li{
+	display:inline;
+}
+.star_smile p{
+	float:right;
+	width:180px;
+	padding-right:20px;
+	text-align:right;
+}
+.comment_area ul.list{
+	margin-top:15px;
+	width:100%;
+}
+.comment_area ul.list li{
+	position:relative;
+	border-bottom:1px dotted #cbcbcb;
+	padding:8px 8px;
+	font-size:11px;
+}
+.comment_area ul.list li span.btn{
+	position:absolute;
+	right:6px;
+	top:5px;
+}
+.comment_area ul.list li.bg_gray{
+	background-color:#f3f3f3;
+}
