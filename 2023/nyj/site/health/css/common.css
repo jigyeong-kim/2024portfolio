@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+#header .menu.eachdown .depth1_list .depth1_item{min-width: auto;}
+@media all and (min-width: 1501px){
+    #header .menu.eachdown .depth1_list .depth1_item{padding: 0 50px 0 30px;}
+}
+
+@media all and (max-width: 1500px) and (min-width: 1201px){
+    #header .menu.eachdown .depth1_list .depth1_item{padding: 0 25px 0 20px;}
+}
