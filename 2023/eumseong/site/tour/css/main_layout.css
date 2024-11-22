@@ -51,7 +51,7 @@
 }
 
 .rowgroup1 .visual_box{position: relative;height: 940px;border-bottom-right-radius: 400px;overflow: hidden;}
-.rowgroup1 .visual_box .visual_item{padding-left: calc((100% - 1660px) / 2);height: 940px;background: url("/2023/eumseong/site/tour/images/main/visual_img1.png") no-repeat center right;background-size: cover;}
+.rowgroup1 .visual_box .visual_item{padding-left: calc((100% - 1660px) / 2);height: 940px;background: url("/2024portfolio/2023/eumseong/site/tour/images/main/visual_img1.png") no-repeat center right;background-size: cover;}
 .rowgroup1 .visual_box .slick-active .visual_item{animation: bg 2.5s linear both;}
 
 .rowgroup1 .visual_box .visual_item .visual_wrap{position: absolute;width: 830px;/*bottom: 103px;*/top: 564px;}
@@ -73,15 +73,15 @@
 .rowgroup1 .visual_box .slick-current .visual_item .visual_info:before, .rowgroup1 .visual_box .slick-active .visual_item .visual_info:before{animation: visual_ani2 700ms 2000ms ease-in-out both;}
 
 
-.rowgroup1 .visual_box .visual_item .visual_info:after{display: block;position: absolute;right: 50px;top: -55px;width: 114px;height: 113px;background: url("/2023/eumseong/site/tour/images/main/visual_map1.png") no-repeat center;}
+.rowgroup1 .visual_box .visual_item .visual_info:after{display: block;position: absolute;right: 50px;top: -55px;width: 114px;height: 113px;background: url("/2024portfolio/2023/eumseong/site/tour/images/main/visual_map1.png") no-repeat center;}
 .rowgroup1 .visual_box .slick-active .visual_item .visual_info:after{animation: visual_ani3 800ms 3100ms ease-in-out both;}
 
-.rowgroup1 .visual_box .visual_item .visual_info.info_map2:after{background-image: url("/2023/eumseong/site/tour/images/main/visual_map2.png");}
-.rowgroup1 .visual_box .visual_item .visual_info.info_map3:after{background-image: url("/2023/eumseong/site/tour/images/main/visual_map3.png");}
-.rowgroup1 .visual_box .visual_item .visual_info.info_map4:after{background-image: url("/2023/eumseong/site/tour/images/main/visual_map4.png");}
-.rowgroup1 .visual_box .visual_item .visual_info.info_map5:after{background-image: url("/2023/eumseong/site/tour/images/main/visual_map5.png");}
-.rowgroup1 .visual_box .visual_item .visual_info.info_map6:after{background-image: url("/2023/eumseong/site/tour/images/main/visual_map6.png");}
-.rowgroup1 .visual_box .visual_item .visual_info.info_map7:after{background-image: url("/2023/eumseong/site/tour/images/main/visual_map7.png");}
+.rowgroup1 .visual_box .visual_item .visual_info.info_map2:after{background-image: url("/2024portfolio/2023/eumseong/site/tour/images/main/visual_map2.png");}
+.rowgroup1 .visual_box .visual_item .visual_info.info_map3:after{background-image: url("/2024portfolio/2023/eumseong/site/tour/images/main/visual_map3.png");}
+.rowgroup1 .visual_box .visual_item .visual_info.info_map4:after{background-image: url("/2024portfolio/2023/eumseong/site/tour/images/main/visual_map4.png");}
+.rowgroup1 .visual_box .visual_item .visual_info.info_map5:after{background-image: url("/2024portfolio/2023/eumseong/site/tour/images/main/visual_map5.png");}
+.rowgroup1 .visual_box .visual_item .visual_info.info_map6:after{background-image: url("/2024portfolio/2023/eumseong/site/tour/images/main/visual_map6.png");}
+.rowgroup1 .visual_box .visual_item .visual_info.info_map7:after{background-image: url("/2024portfolio/2023/eumseong/site/tour/images/main/visual_map7.png");}
 
 
 .rowgroup1 .visual_box .visual_item .visual_info .info_item{position: relative;}
@@ -89,7 +89,7 @@
 .rowgroup1 .visual_box .slick-active .visual_item .visual_info .info_item.info_address{animation-delay: 2800ms;}
 
 .rowgroup1 .visual_box .visual_item .visual_info a.info_item{color: #fff;}
-.rowgroup1 .visual_box .visual_item .visual_info a.info_item:before{display: block;position: absolute;top: 1px;right: 0;width: 20px;height: 20px;background: url("/2023/eumseong/site/tour/images/main/visual_info.png") no-repeat;}
+.rowgroup1 .visual_box .visual_item .visual_info a.info_item:before{display: block;position: absolute;top: 1px;right: 0;width: 20px;height: 20px;background: url("/2024portfolio/2023/eumseong/site/tour/images/main/visual_info.png") no-repeat;}
 .rowgroup1 .visual_box .visual_item .visual_info .info_address:before{right: auto;left: 0;background-position-x: -20px;}
 
 .rowgroup1 .visual_box .visual_item .visual_info .info_title{float:left;max-width: 50%;padding-right: 25px;}
@@ -99,7 +99,7 @@
 
 .rowgroup1 .visual_box .visual_con .visual_weather{position: relative;margin-bottom: 42px;}
 .rowgroup1 .visual_box .visual_con .visual_weather .weather_icon{position: absolute;top: 0;left: -80px;width: 60px;height: 60px;border: 1px solid rgba(255, 255, 255, 0.4);border-radius: 50%;box-sizing: border-box;font-size: 0;line-height: 0;}
-.rowgroup1 .visual_box .visual_con .visual_weather .weather_icon:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: url("/2023/eumseong/site/tour/images/main/weather_icon.png") no-repeat;}
+.rowgroup1 .visual_box .visual_con .visual_weather .weather_icon:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: url("/2024portfolio/2023/eumseong/site/tour/images/main/weather_icon.png") no-repeat;}
 
 .rowgroup1 .visual_box .visual_con .visual_weather .weather_icon.w2:before{background-position-x: -60px;}
 .rowgroup1 .visual_box .visual_con .visual_weather .weather_icon.w3:before{background-position-x: -120px;}
@@ -127,7 +127,7 @@
 .rowgroup1 .visual_box .visual_con .visual_control{font-size: 0;line-height: 0;}
 .rowgroup1 .visual_box .visual_con .visual_control .control_item{width: 20px;height: 20px;margin-right: 7px;vertical-align: top;border: none;}
 
-.rowgroup1 .visual_box .visual_con .visual_control .control_item:not(.visual_num){background: url("/2023/eumseong/site/tour/images/main/visual_arrow.png") no-repeat;}
+.rowgroup1 .visual_box .visual_con .visual_control .control_item:not(.visual_num){background: url("/2024portfolio/2023/eumseong/site/tour/images/main/visual_arrow.png") no-repeat;}
 .rowgroup1 .visual_box .visual_con .visual_control .visual_arrow.next_btn{background-position-x: -20px;}
 
 .rowgroup1 .visual_box .visual_con .visual_control .visual_num{font-size: 12px;line-height: 22px;color: #fff;font-family: 'SBAggro';text-align: center;}
@@ -251,11 +251,11 @@
 .rowgroup2 .guide_wrap .guide_item .guide_link .guide_img{display: block;position: absolute;left: 0;top: 0;width: 90px;height: 90px;z-index: 1;background: #fff;box-shadow: 18px 28px 50px 0 rgba(43, 63, 122, 0.1);border-radius: 28px;transition: background 250ms ease-in-out;background-size: 200%;overflow: hidden;}
 .rowgroup2 .guide_wrap .guide_item .guide_link .guide_img:after{display: block;position: absolute;top: 0;left:0;width: 100%;height: 100%;background: linear-gradient(to top, rgb(66,101,207), rgb(34,182,157), rgb(34,182,157));opacity: 0;background-position: center top;background-size: auto 200%;}
 
-.rowgroup2 .guide_wrap .guide_item .guide_link .guide_img:before{display: block;position: absolute;top: 5px;left: 5px;width: calc(100% - 10px);height: calc(100% - 10px);background: url("/2023/eumseong/site/tour/images/main/guide_img1.png") no-repeat;border-radius: 25px;z-index: 1;}
-.rowgroup2 .guide_wrap .guide_item.g2 .guide_link .guide_img:before{background-image: url("/2023/eumseong/site/tour/images/main/guide_img2.png");}
-.rowgroup2 .guide_wrap .guide_item.g3 .guide_link .guide_img:before{background-image: url("/2023/eumseong/site/tour/images/main/guide_img3.png");}
-.rowgroup2 .guide_wrap .guide_item.g4 .guide_link .guide_img:before{background-image: url("/2023/eumseong/site/tour/images/main/guide_img4.png");}
-.rowgroup2 .guide_wrap .guide_item.g5 .guide_link .guide_img:before{background-image: url("/2023/eumseong/site/tour/images/main/guide_img5.png");}
+.rowgroup2 .guide_wrap .guide_item .guide_link .guide_img:before{display: block;position: absolute;top: 5px;left: 5px;width: calc(100% - 10px);height: calc(100% - 10px);background: url("/2024portfolio/2023/eumseong/site/tour/images/main/guide_img1.png") no-repeat;border-radius: 25px;z-index: 1;}
+.rowgroup2 .guide_wrap .guide_item.g2 .guide_link .guide_img:before{background-image: url("/2024portfolio/2023/eumseong/site/tour/images/main/guide_img2.png");}
+.rowgroup2 .guide_wrap .guide_item.g3 .guide_link .guide_img:before{background-image: url("/2024portfolio/2023/eumseong/site/tour/images/main/guide_img3.png");}
+.rowgroup2 .guide_wrap .guide_item.g4 .guide_link .guide_img:before{background-image: url("/2024portfolio/2023/eumseong/site/tour/images/main/guide_img4.png");}
+.rowgroup2 .guide_wrap .guide_item.g5 .guide_link .guide_img:before{background-image: url("/2024portfolio/2023/eumseong/site/tour/images/main/guide_img5.png");}
 
 .rowgroup2 .guide_wrap .guide_item .guide_con{padding: 15px 0;font-size: 16px;line-height: 28px;color: #757b8e;letter-spacing: 0;}
 .rowgroup2 .guide_wrap .guide_item .guide_con em{width: 100%;margin-bottom: 5px;font-weight: 500;font-size: 18px;color: #26293d;}
@@ -319,23 +319,23 @@
 
 .rowgroup3 .festival_list .festival_item{position: relative;padding-left: calc(100% - 845px);}
 .rowgroup3 .festival_list .festival_item .festival_con{position: absolute;left: 0;width: calc(100% - 995px);padding-top: 180px;padding-left: 40px;font-size: 20px;line-height: 36px;letter-spacing: 0;font-family: 'CoreDream';font-weight: 400;color: #757b8e;word-break: keep-all;}
-.rowgroup3 .festival_list .festival_item .festival_con .festival_title{width: 449px;height: 73px;margin-bottom: 35px;background: url("/2023/eumseong/site/tour/images/main/festival_title1.png") no-repeat;font-size: 0;line-height: 0;opacity: 0;transform: translateY(50px);transition: 1000ms opacity, 1000ms transform;}
+.rowgroup3 .festival_list .festival_item .festival_con .festival_title{width: 449px;height: 73px;margin-bottom: 35px;background: url("/2024portfolio/2023/eumseong/site/tour/images/main/festival_title1.png") no-repeat;font-size: 0;line-height: 0;opacity: 0;transform: translateY(50px);transition: 1000ms opacity, 1000ms transform;}
 .rowgroup3 .festival_list .slick-current .festival_item .festival_con .festival_title, .rowgroup3 .festival_list .slick-active .festival_item .festival_con .festival_title, .rowgroup3 .festival_list .slick-current .festival_item .festival_con p, .rowgroup3 .festival_list .slick-active .festival_item .festival_con p, .rowgroup3 .festival_list .slick-current .festival_item .festival_info, .rowgroup3 .festival_list .festival_item .slick-active .festival_info{opacity: 1;transform: translateY(0);}
 
 .rowgroup3 .festival_list .festival_item .festival_con p{word-break: keep-all;opacity: 0;transform: translateY(50px);transition: 1000ms opacity, 1000ms transform;transition-delay: 500ms;}
 
 .rowgroup3 .festival_list .festival_item .festival_info{padding: 75px 0 0 255px;opacity: 0;transform: translateY(50px);transition: 1000ms opacity, 1000ms transform;transition-delay: 1000ms;}
 .rowgroup3 .festival_list .festival_item .festival_info .info_item{position: relative;margin-bottom: 10px;padding-left: 35px;font-size: 18px;line-height: 30px;color: #26293d;font-weight: 500;}
-.rowgroup3 .festival_list .festival_item .festival_info .info_item:before{display: block;position: absolute;top: 2px;left: 0;width: 26px;height: 26px;border-radius: 50%;background: #3f65d9 url("/2023/eumseong/site/tour/images/main/festival_icon.png") no-repeat;}
+.rowgroup3 .festival_list .festival_item .festival_info .info_item:before{display: block;position: absolute;top: 2px;left: 0;width: 26px;height: 26px;border-radius: 50%;background: #3f65d9 url("/2024portfolio/2023/eumseong/site/tour/images/main/festival_icon.png") no-repeat;}
 .rowgroup3 .festival_list .festival_item .festival_info .info_item.place:before{background-position-x: -26px;}
 .rowgroup3 .festival_list .festival_item .festival_info .info_item .info_title{color: #3f65d9;}
 
 .rowgroup3 .festival_list .festival_item .festival_img{position: relative;width: 664px;height: 665px;background-size: cover;border-radius: 335px 335px 60px 200px}
 .rowgroup3 .festival_list .festival_item .festival_img .festival_more{display: table;position: absolute;bottom: 100px;left: -105px;width: 170px;height: 170px;font-size: 18px;line-height: 30px;font-weight: 500;letter-spacing: 0;color: #fff;text-align: center;/*border-radius: 50%;background-image: linear-gradient(315deg, rgb(66,101,207), rgb(34,182,157));*//*backdrop-filter:contrast(4) blur(20px);transition: background-image 500ms ease-in-out;*/}
-.rowgroup3 .festival_list .festival_item .festival_img .festival_more:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;border-radius: 50%;background: url("/2023/eumseong/site/tour/images/main/festival_btn.png") no-repeat;background-size: contain;text-decoration: none;}
+.rowgroup3 .festival_list .festival_item .festival_img .festival_more:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;border-radius: 50%;background: url("/2024portfolio/2023/eumseong/site/tour/images/main/festival_btn.png") no-repeat;background-size: contain;text-decoration: none;}
 
 .rowgroup3 .festival_list .festival_item .festival_img .festival_more span{display: table-cell;position: relative;vertical-align: middle;}
-.rowgroup3 .festival_list .festival_item .festival_img .festival_more span:after{display: inline-block;position: relative;width: 20px;height: 30px;margin-left: 10px;background:url("/2023/eumseong/site/tour/images/main/festival_icon2.png") no-repeat center;vertical-align: top;}
+.rowgroup3 .festival_list .festival_item .festival_img .festival_more span:after{display: inline-block;position: relative;width: 20px;height: 30px;margin-left: 10px;background:url("/2024portfolio/2023/eumseong/site/tour/images/main/festival_icon2.png") no-repeat center;vertical-align: top;}
 
 .rowgroup3 .festival_waiting_slide{position: absolute;top: 243px;left: calc(100% - 182px);width: 422px;z-index: 49;}
 
@@ -404,7 +404,7 @@
     .rowgroup3 .festival_list .festival_item .festival_img .festival_more:hover{text-decoration: none;transform: translateY(-10px);transition: transform 250ms linear;}
 
     .rowgroup3 .festival_list .festival_item .festival_img .festival_more:hover:before{}
-    /*.rowgroup3 .festival_list .festival_item .festival_img .festival_more:hover:before{background-image: url("/2023/eumseong/site/tour/images/main/festival_btn.png");background-size: contain;transition: background-image 500ms ease-in-out;text-decoration: none; background-blend-mode: multiply;}*/
+    /*.rowgroup3 .festival_list .festival_item .festival_img .festival_more:hover:before{background-image: url("/2024portfolio/2023/eumseong/site/tour/images/main/festival_btn.png");background-size: contain;transition: background-image 500ms ease-in-out;text-decoration: none; background-blend-mode: multiply;}*/
 
     /*.rowgroup3 .festival_list .festival_item .festival_img .festival_more:hover{transition: background-image 500ms ease-in-out;text-decoration: none; background-blend-mode: multiply;opacity: 0.8;backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);}*/
 
@@ -640,7 +640,7 @@
 .rowgroup5 .notice_more{position: absolute;top: 0;right: 0;padding: 15px 27px;border-radius: 30px;font-size: 16px;line-height: 28px;letter-spacing: 0;color: #26293d;border: 1px solid #d5d7dd;box-sizing: border-box;}
 
 .rowgroup5 .notice_more span{position: relative;padding-right: 35px;}
-.rowgroup5 .notice_more span:before{display: block;position: absolute;top: calc(50% - 2px);right: 0;width: 18px;height: 4px;background: url("/2023/eumseong/site/tour/images/main/notice_more.png") no-repeat;}
+.rowgroup5 .notice_more span:before{display: block;position: absolute;top: calc(50% - 2px);right: 0;width: 18px;height: 4px;background: url("/2024portfolio/2023/eumseong/site/tour/images/main/notice_more.png") no-repeat;}
 
 .rowgroup5 .short_box{display: inline-block;width: 585px;vertical-align: top;}
 .rowgroup5 .short_box .main_title{margin-bottom: 38px;}
@@ -652,7 +652,7 @@
 .rowgroup5 .short_list .short_item .short_link:after{display: block;position: absolute;top:1px;left: 1px;width: calc(100% - 2px);height: calc(100% - 2px);background-color: #fff;border-radius: 17px 100px 17px 17px;z-index: -1;}
 
 .rowgroup5 .short_list .short_item .short_link span{position: relative;width: 100%;padding: 202px 0 70px;}
-.rowgroup5 .short_list .short_item .short_link span:before{display: block;position: absolute;top: 65px;left: calc(50% - 55px);width: 110px;height: 90px;background: url("/2023/eumseong/site/tour/images/main/short_icon.png") no-repeat;}
+.rowgroup5 .short_list .short_item .short_link span:before{display: block;position: absolute;top: 65px;left: calc(50% - 55px);width: 110px;height: 90px;background: url("/2024portfolio/2023/eumseong/site/tour/images/main/short_icon.png") no-repeat;}
 .rowgroup5 .short_list .short_item:nth-child(2) .short_link span:before{background-position-x: -110px;}
 
 @media all and (max-width: 1400px) {

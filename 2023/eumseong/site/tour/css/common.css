@@ -20,7 +20,7 @@
 
 html:not(.fixed):not(.lnb_open):not(.search_open) body[data-transparent="Y"] #header .header_top .right_area .family_box{background-color: #fff;color: #26293d;}
 html:not(.fixed):not(.lnb_open) #header .header_top .right_area .family_btn{color: #26293d;}
-html:not(.fixed):not(.lnb_open) #header .header_top .right_area .family_btn:before{background-image: url("/2023/eumseong/site/tour/images/common/family_icon.png");background-position: 0 0;}
+html:not(.fixed):not(.lnb_open) #header .header_top .right_area .family_btn:before{background-image: url("/2024portfolio/2023/eumseong/site/tour/images/common/family_icon.png");background-position: 0 0;}
 
 body[data-transparent="Y"] #container{background-color: #fff;}
 
