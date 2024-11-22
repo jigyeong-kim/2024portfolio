@@ -2,14 +2,25 @@
     width:100%;
     height:100%;
   }
+  #menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 70;
+    padding: 0;
+    margin: 0;
+  }
+
   #menu li {
-    display: inline-block;
     margin: 10px;
     color: #000;
     background: #fff;
     background: rgba(255, 255, 255, 0.5);
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    list-style: none;
+    text-align: right;
   }
   #menu li.active {
     background: #666;
@@ -19,6 +30,7 @@
   #menu li a {
     text-decoration: none;
     color: #000;
+    text-align: center;
   }
   #menu li.active a:hover {
     color: #000;
@@ -33,16 +45,6 @@
   }
   #menu li.active a {
     color: #fff;
-  }
-  #menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 40px;
-    z-index: 70;
-    width: 100%;
-    padding: 0;
-    margin: 0;
   }
   
   .section {font-size: 3vw; text-align:center}
@@ -60,3 +62,10 @@
     height: 100%;  
   }
   
+  .swiper-slide img{width: 100%;max-width: 90%;height: 100%;object-fit: contain;}
+
+  h1{font-size: 80px;word-break: keep-all;}
+
+  @media all and (max-width: 1000px) {
+    h1{font-size: 2em;}
+  }

@@ -237,7 +237,7 @@ $(document).ready(function() {
 
     // Fullpage 초기화
     $('#fullpage').fullpage({
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#7BAABE'],
+        sectionsColor: ['#1bbc9b', '#4BBFC3', 'rgb(201 165 210)', '#7BAABE'],
         anchors: ['sec1', 'sec2', 'sec3', 'sec4'],
         menu: '#menu',
         scrollingSpeed: 1000,
