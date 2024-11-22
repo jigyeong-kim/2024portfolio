@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 /* Layout */
-@import url('/2023/nyj/common/css/default.css');
-@import url('2023/nyj/common/css/layout.css');
-@import url('/2023/nyj/site/public/css/common.css');
-@import url('/2023/nyj/site/public/css/sub_layout.css');
-@import url('/2023/nyj/common/css/program.css');
-@import url('/2023/nyj/site/public/css/template.css');
+@import url('/2024portfolio/2023/nyj/common/css/default.css');
+@import url('/2024portfolio/2023/nyj/common/css/layout.css');
+@import url('/2024portfolio/2023/nyj/site/public/css/common.css');
+@import url('/2024portfolio/2023/nyj/site/public/css/sub_layout.css');
+@import url('/2024portfolio/2023/nyj/common/css/program.css');
+@import url('/2024portfolio/2023/nyj/site/public/css/template.css');
 @import url('sub_content.css');

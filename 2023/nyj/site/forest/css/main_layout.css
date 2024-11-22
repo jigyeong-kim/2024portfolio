@@ -3,7 +3,7 @@
 
 /* (주)한신정보기술 김지경 - 2023.08 */
 
-body.forest #header .header_box .logo a .logo_image{width: 125px;background-image: url("../images/main/logo.png") !important;}
+body.forest #header .header_box .logo a .logo_image{width: 125px;background-image: url("/2024portfolio/2023/nyj/site/forest/images/main/logo.png") !important;}
 #header .header_top .header_link .link_item:last-child{margin-right: 0;}
 
 @media all and (max-width: 1200px) {
@@ -11,7 +11,7 @@ body.forest #header .header_box .logo a .logo_image{width: 125px;background-imag
 }
 
 @media all and (min-width: 1001px) {
-    body.forest #header:hover .header_box .logo a .logo_image{background-image: url("../images/main/logo2.png") !important;}
+    body.forest #header:hover .header_box .logo a .logo_image{background-image: url("/2024portfolio/2023/nyj/site/forest/images/main/logo2.png") !important;}
 }
 
 @media all and (max-width: 1000px) {
@@ -65,7 +65,7 @@ body.forest #header .header_box .logo a .logo_image{width: 125px;background-imag
 
 /* visual_text */
 .rowgroup1 .visual_wrap .visual_content .visual_text{padding-top: 340px;margin-bottom: 100px;font-size: 20px;line-height: 32px;letter-spacing: -0.035em;font-weight: 500;color: #fffefe;}
-.rowgroup1 .visual_wrap .visual_content .visual_text .visual_title{width: 464px;height: 76px;margin-bottom: 33px;background: url("../images/main/visual_title.png") no-repeat;font-size: 0;line-height: 0;animation: to_right 1s ease-in-out both;opacity: 0;}
+.rowgroup1 .visual_wrap .visual_content .visual_text .visual_title{width: 464px;height: 76px;margin-bottom: 33px;background: url("/2024portfolio/2023/nyj/site/forest/images/main/visual_title.png") no-repeat;font-size: 0;line-height: 0;animation: to_right 1s ease-in-out both;opacity: 0;}
 .rowgroup1 .visual_wrap .visual_content .visual_text p{opacity: 0;animation: to_right 1s ease-in-out both;animation-delay: 0.5s;}
 
 /* visual_control */
@@ -76,17 +76,17 @@ body.forest #header .header_box .logo a .logo_image{width: 125px;background-imag
 .rowgroup1 .visual_wrap .visual_content .visual_control .visual_dot .slick-dots li button{width: 10px;height: 10px;background-color: rgba(255, 255, 255, 0.5);border-radius: 50%;}
 .rowgroup1 .visual_wrap .visual_content .visual_control .visual_dot .slick-dots li.slick-active button{background-color: #fff;}
 
-.rowgroup1 .visual_wrap .visual_content .visual_control button.auto{display: inline-block;vertical-align: middle;width: 34px;height: 34px;background: url("../images/main/visual_arrow.png") no-repeat;}
+.rowgroup1 .visual_wrap .visual_content .visual_control button.auto{display: inline-block;vertical-align: middle;width: 34px;height: 34px;background: url("/2024portfolio/2023/nyj/site/forest/images/main/visual_arrow.png") no-repeat;}
 .rowgroup1 .visual_wrap .visual_content .visual_control button.auto.slick-play{background-position-x: -34px;}
 
 /* .visual_weather */
 .rowgroup1 .visual_wrap .visual_content .visual_weather{position: absolute;top: 380px;right: 0;opacity: 0;animation: to_opacity 1s ease-in-out both;animation-delay: 1s;}
 .rowgroup1 .visual_wrap .visual_content .visual_weather .weather_link{position: relative;font-size: 0;line-height: 0;vertical-align: top;}
-.rowgroup1 .visual_wrap .visual_content .visual_weather .weather_link:before{display: block;position: absolute;top: calc(100% + 13px);left: 80px;width: 20px;height: 20px;background: url("../images/main/weather_more.png") no-repeat;}
+.rowgroup1 .visual_wrap .visual_content .visual_weather .weather_link:before{display: block;position: absolute;top: calc(100% + 13px);left: 80px;width: 20px;height: 20px;background: url("/2024portfolio/2023/nyj/site/forest/images/main/weather_more.png") no-repeat;}
 
 .rowgroup1 .visual_wrap .visual_content .visual_weather .weather_link:after{display: block;position: absolute;top: calc(100% + 24px);left: 115px;width: 400px;height: 1px;background-color: #fff;opacity: 0.25;}
 .rowgroup1 .visual_wrap .visual_content .visual_weather span{vertical-align: middle;font-size: 16px;line-height: 26px;color: #fff;letter-spacing: -0.035em;}
-.rowgroup1 .visual_wrap .visual_content .visual_weather .weather_icon{width: 60px;height: 60px;margin-right: 20px;border-radius: 50%;background: rgba(255, 255, 255, 0.15) url("../images/main/weather_icon.png") no-repeat;font-size: 0;line-height: 0;}
+.rowgroup1 .visual_wrap .visual_content .visual_weather .weather_icon{width: 60px;height: 60px;margin-right: 20px;border-radius: 50%;background: rgba(255, 255, 255, 0.15) url("/2024portfolio/2023/nyj/site/forest/images/main/weather_icon.png") no-repeat;font-size: 0;line-height: 0;}
 .rowgroup1 .visual_wrap .visual_content .visual_weather .temperature{margin-right: 30px;}
 .rowgroup1 .visual_wrap .visual_content .visual_weather .temperature em{font-size: 24px;font-weight: 600;}
 .rowgroup1 .visual_wrap .visual_content .visual_weather .dust_gage em{display: block;width: 100%;opacity: 0.8;}
@@ -96,12 +96,12 @@ body.forest #header .header_box .logo a .logo_image{width: 125px;background-imag
 .rowgroup1 .visual_wrap .visual_content .visual_reserve:before{display: block;position: absolute;top: 0;left: -70px;width: calc(100% + 300px);height: 100%;border-top-left-radius: 100px;background-color: rgba(144, 209, 3, 0.4);z-index: -1;opacity: 0;animation: to_top 0.7s 2s ease-in-out both;}
 .rowgroup1 .visual_wrap .visual_content .visual_reserve .reserve_title{position: relative;display: table;width: 100%;height: 95px;padding: 20px 50% 20px 64px;font-size: 28px;line-height: 36px;letter-spacing: -0.035em;font-weight: 700;color: #fffefe;opacity: 0;animation: to_top 0.7s 2.5s ease-in-out both;word-break: keep-all;}
 .rowgroup1 .visual_wrap .visual_content .visual_reserve .reserve_title span{display: table-cell;position: relative;width: 100%;height: 55px;vertical-align: middle;}
-.rowgroup1 .visual_wrap .visual_content .visual_reserve .reserve_title span:before{display: block;position: absolute;top: 0;left: -60px;width: 54px;height: 53px;background: url("../images/main/reserve_icon.png") no-repeat;}
+.rowgroup1 .visual_wrap .visual_content .visual_reserve .reserve_title span:before{display: block;position: absolute;top: 0;left: -60px;width: 54px;height: 53px;background: url("/2024portfolio/2023/nyj/site/forest/images/main/reserve_icon.png") no-repeat;}
 .rowgroup1 .visual_wrap .visual_content .visual_reserve .reserve_title .my_reserve_btn{position: absolute;top: calc(50% - 27px);right: 0;height: 55px;padding: 0 50px 0 60px;background-color: #fff;border-radius:  28px;font-weight: 600;font-size: 20px;line-height: 55px;letter-spacing: -0.035em;color: #29322c;opacity: 0;animation: to_top 0.7s 2.8s ease-in-out both;}
 
 .rowgroup1 .visual_wrap .visual_content .visual_reserve .reserve_title .my_reserve_btn em{color: #326e55;}
-.rowgroup1 .visual_wrap .visual_content .visual_reserve .reserve_title .my_reserve_btn:before{display: block;position: absolute;top: calc(50% - 15px);left: 24px;width: 30px;height: 30px;background: url("../images/main/my_reserve_icon.png") no-repeat;}
-.rowgroup1 .visual_wrap .visual_content .visual_reserve .reserve_title .my_reserve_btn:after{display: block;position: absolute;top: calc(50% - 15px);right: 17px;width: 30px;height: 30px;background: url("../images/main/my_reserve_icon.png") no-repeat;background-position-x: -30px;}
+.rowgroup1 .visual_wrap .visual_content .visual_reserve .reserve_title .my_reserve_btn:before{display: block;position: absolute;top: calc(50% - 15px);left: 24px;width: 30px;height: 30px;background: url("/2024portfolio/2023/nyj/site/forest/images/main/my_reserve_icon.png") no-repeat;}
+.rowgroup1 .visual_wrap .visual_content .visual_reserve .reserve_title .my_reserve_btn:after{display: block;position: absolute;top: calc(50% - 15px);right: 17px;width: 30px;height: 30px;background: url("/2024portfolio/2023/nyj/site/forest/images/main/my_reserve_icon.png") no-repeat;background-position-x: -30px;}
 
 .rowgroup1 .visual_wrap .visual_content .visual_reserve .reserve_list{position: relative;padding: 25px 0 30px 20px;font-size: 0;line-height: 0;}
 .rowgroup1 .visual_wrap .visual_content .visual_reserve .reserve_list:before{display: block;position: absolute;top: 0;left: -220px;width: calc(100% + 450px);height: 100%;border-top-left-radius: 150px;background-color: rgba(0, 46, 5, 0.7);z-index: -1;opacity: 0;animation: to_top 0.7s 3.5s ease-in-out both;}
@@ -123,7 +123,7 @@ body.forest #header .header_box .logo a .logo_image{width: 125px;background-imag
 
     /*.rowgroup1 .visual_wrap .visual_content .visual_reserve .reserve_list .reserve_item a:hover{background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAAXNSR0IArs4c6QAAABRJREFUGFdj/P///39GRkZGBiAAACoKBAKhNJfcAAAAAElFTkSuQmCC") repeat-x bottom;}*/
     .rowgroup1 .visual_wrap .visual_content .visual_reserve .reserve_list .reserve_item a:hover:before{display: block;position: absolute;bottom: 0;left: 15px;width: calc(100% - 15px);height: 1px;background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAAXNSR0IArs4c6QAAABRJREFUGFdj/P///39GRkZGBiAAACoKBAKhNJfcAAAAAElFTkSuQmCC") repeat-x bottom;}
-    .rowgroup1 .visual_wrap .visual_content .visual_reserve .reserve_list .reserve_item a:hover:after{display: block;position: absolute;top: calc(50% - 4px);right: 0;width: 14px;height: 8px;background: url("../images/main/reserve_icon2.png") no-repeat;}
+    .rowgroup1 .visual_wrap .visual_content .visual_reserve .reserve_list .reserve_item a:hover:after{display: block;position: absolute;top: calc(50% - 4px);right: 0;width: 14px;height: 8px;background: url("/2024portfolio/2023/nyj/site/forest/images/main/reserve_icon2.png") no-repeat;}
 }
 
 @media all and (max-width: 1000px) {
@@ -207,7 +207,7 @@ body.forest #header .header_box .logo a .logo_image{width: 125px;background-imag
 /* 공용 */
 .main_title{font-size: 30px;line-height: 44px;font-weight: 700;letter-spacing: -0.035em;color: #000;}
 .more_view{position: absolute;font-size: 0;line-height: 0;}
-.more_view .more_btn{width: 20px;height: 20px;border-radius: 7px;border: 2px solid #000;background: #fff url("../images/main/more_btn.png") no-repeat -2px -2px;box-sizing: border-box;vertical-align: top;}
+.more_view .more_btn{width: 20px;height: 20px;border-radius: 7px;border: 2px solid #000;background: #fff url("/2024portfolio/2023/nyj/site/forest/images/main/more_btn.png") no-repeat -2px -2px;box-sizing: border-box;vertical-align: top;}
 
 .rowgroup_ani.scroll_ani{opacity: 0;}
 .rowgroup_ani.scroll_ani[data-on="on"]{animation: to_top 0.8s 0.3s ease-in-out both;}
@@ -239,7 +239,7 @@ body.forest #header .header_box .logo a .logo_image{width: 125px;background-imag
 
 .rowgroup2 .notice_wrap .notice_item .notice_link .notice_date{position: absolute;top: 23px;right: 10px;font-size: 15px;line-height: 25px;letter-spacing: 0;color: #666;}
 
-.rowgroup2 .notice_wrap .notice_item .notice_link .new_icon{display: inline-block;position: absolute;right: 0;top: 0;width: 18px;height: 25px;font-size: 0;line-height: 0;background: url("../images/main/notice_new.png") no-repeat center;vertical-align: top;}
+.rowgroup2 .notice_wrap .notice_item .notice_link .new_icon{display: inline-block;position: absolute;right: 0;top: 0;width: 18px;height: 25px;font-size: 0;line-height: 0;background: url("/2024portfolio/2023/nyj/site/forest/images/main/notice_new.png") no-repeat center;vertical-align: top;}
 
 .rowgroup2 .notice_wrap .notice_item.first_item{border-top-color: rgba(0, 0, 0, 0.4);}
 .rowgroup2 .notice_wrap .notice_item.first_item .notice_link .notice_title{margin-bottom: 10px;font-weight: 500;font-size: 20px;vertical-align: top;}
@@ -248,18 +248,18 @@ body.forest #header .header_box .logo a .logo_image{width: 125px;background-imag
 
 /* 바로가기 */
 @keyframes bird_ani {
-    0%{background-image: url("../images/main/bird_img1.png");}
-    50%{background-image: url("../images/main/bird_img2_1.png");}
-    60%{background-image: url("../images/main/bird_img1.png");}
-    80%{background-image: url("../images/main/bird_img2_1.png");}
-    100%{background-image: url("../images/main/bird_img1.png");}
+    0%{background-image: url("/2024portfolio/2023/nyj/site/forest/images/main/bird_img1.png");}
+    50%{background-image: url("/2024portfolio/2023/nyj/site/forest/images/main/bird_img2_1.png");}
+    60%{background-image: url("/2024portfolio/2023/nyj/site/forest/images/main/bird_img1.png");}
+    80%{background-image: url("/2024portfolio/2023/nyj/site/forest/images/main/bird_img2_1.png");}
+    100%{background-image: url("/2024portfolio/2023/nyj/site/forest/images/main/bird_img1.png");}
 }
 
 @font-face{
     font-family:'Bombaram';
     font-weight: 400;
-    src:url("../font/HSBomBaram3Regular.woff2") format('woff2'),
-    url("../font/HSBomBaram3Regular.woff") format('woff');
+    src:url("/2024portfolio/2023/nyj/site/forest/font/HSBomBaram3Regular.woff2") format('woff2'),
+    url("/2024portfolio/2023/nyj/site/forest/font/HSBomBaram3Regular.woff") format('woff');
 }
 
 .rowgroup2 .shortcut_wrap{position: absolute;right: 0;top: 145px;}
@@ -273,13 +273,13 @@ body.forest #header .header_box .logo a .logo_image{width: 125px;background-imag
 .rowgroup2 .shortcut_wrap .shortcut_item.item2 .shortcut_link{background-color: #457f67;transition: all 250ms ease-in-out;}
 .rowgroup2 .shortcut_wrap .shortcut_item.item3 .shortcut_link{background-color: #383838;transition: background-color 250ms ease-in-out;}
 
-.rowgroup2 .shortcut_wrap .shortcut_item .shortcut_link:before{display: block;position: absolute;bottom: 0;right: 0;width: 90px;height: 96px;background: url("../images/main/shortcut_bg1.png") no-repeat;}
-.rowgroup2 .shortcut_wrap .shortcut_item.item2 .shortcut_link:before{background-image: url("../images/main/shortcut_bg2.png");}
-.rowgroup2 .shortcut_wrap .shortcut_item.item3 .shortcut_link:before{background-image: url("../images/main/shortcut_bg3.png");}
+.rowgroup2 .shortcut_wrap .shortcut_item .shortcut_link:before{display: block;position: absolute;bottom: 0;right: 0;width: 90px;height: 96px;background: url("/2024portfolio/2023/nyj/site/forest/images/main/shortcut_bg1.png") no-repeat;}
+.rowgroup2 .shortcut_wrap .shortcut_item.item2 .shortcut_link:before{background-image: url("/2024portfolio/2023/nyj/site/forest/images/main/shortcut_bg2.png");}
+.rowgroup2 .shortcut_wrap .shortcut_item.item3 .shortcut_link:before{background-image: url("/2024portfolio/2023/nyj/site/forest/images/main/shortcut_bg3.png");}
 
 .rowgroup2 .shortcut_wrap .shortcut_item .shortcut_link span{position: relative;padding-top: 42px;}
 
-.rowgroup2 .shortcut_wrap .shortcut_item .shortcut_link span:before{display: block;position: absolute;top: 0;left: calc(50% - 15px);width: 30px;height: 30px;background: url("../images/main/shortcut_icon.png") no-repeat;opacity: 0;}
+.rowgroup2 .shortcut_wrap .shortcut_item .shortcut_link span:before{display: block;position: absolute;top: 0;left: calc(50% - 15px);width: 30px;height: 30px;background: url("/2024portfolio/2023/nyj/site/forest/images/main/shortcut_icon.png") no-repeat;opacity: 0;}
 .rowgroup2 .shortcut_wrap .shortcut_item.item2 .shortcut_link span:before{background-position-x: -30px;}
 .rowgroup2 .shortcut_wrap .shortcut_item.item3 .shortcut_link span:before{background-position-x: -60px;}
 
@@ -386,12 +386,12 @@ body.forest #header .header_box .logo a .logo_image{width: 125px;background-imag
 
 /* tour_guide */
 .rowgroup3{position: relative;padding-top: 235px;margin-bottom: 90px;}
-.rowgroup3:before{display: block;position: absolute;top: 20px;right: calc(50% - 750px);width: 1710px;height: 515px;background: url("../images/main/row3_bg.png") no-repeat center top;z-index: -1;opacity: 0;}
+.rowgroup3:before{display: block;position: absolute;top: 20px;right: calc(50% - 750px);width: 1710px;height: 515px;background: url("/2024portfolio/2023/nyj/site/forest/images/main/row3_bg.png") no-repeat center top;z-index: -1;opacity: 0;}
 
 .rowgroup3.scroll_ani[data-on="on"]:before{opacity: 1;transition: opacity 1s 0.5s ease-in-out;}
 
 .rowgroup3 .tour_guide{position: relative;margin-right: calc(100% - 750px);padding-left: 170px;opacity: 0;}
-.rowgroup3 .tour_guide:before{display: block;position: absolute;bottom: 10px;right: -280px;width: 269px;height: 151px;background: url("../images/main/row3_bg2.png") no-repeat;}
+.rowgroup3 .tour_guide:before{display: block;position: absolute;bottom: 10px;right: -280px;width: 269px;height: 151px;background: url("/2024portfolio/2023/nyj/site/forest/images/main/row3_bg2.png") no-repeat;}
 
 .rowgroup3.scroll_ani[data-on="on"] .tour_guide{opacity: 1;animation:  to_top 1s 1s ease-in-out both;}
 
@@ -409,7 +409,7 @@ body.forest #header .header_box .logo a .logo_image{width: 125px;background-imag
 .rowgroup3 .guide_info .guide_item{display: inline-block;width: 100%;margin-bottom: 12px;}
 .rowgroup3 .guide_info .guide_item.col2{width: 50%;}
 .rowgroup3 .guide_info .guide_item .title{display: inline-block;position: relative;width: 75px;padding-right: 20px;font-size: 18px;line-height: 26px;letter-spacing: -0.035em;font-weight: 500;color: #222;vertical-align: top;}
-.rowgroup3 .guide_info .guide_item .title:before{display: block;position: absolute;top: 7px;right: 10px;width: 7px;height: 11px;background: url("../images/main/guide_arrow.png") no-repeat;}
+.rowgroup3 .guide_info .guide_item .title:before{display: block;position: absolute;top: 7px;right: 10px;width: 7px;height: 11px;background: url("/2024portfolio/2023/nyj/site/forest/images/main/guide_arrow.png") no-repeat;}
 .rowgroup3 .guide_info .guide_item .text{display: inline-block;font-size: 18px;line-height: 26px;letter-spacing: -0.035em;color: #222;font-weight: 400;vertical-align: top;}
 .rowgroup3 .guide_info .guide_item .text .slash{margin: 0;font-size: 12px;color: #8e8e8e;vertical-align: middle;}
 .rowgroup3 .guide_info .guide_item .text em{margin-top: 6px;font-size: 16px;font-weight: 300;}
@@ -517,17 +517,17 @@ body.forest #header .header_box .logo a .logo_image{width: 125px;background-imag
 /* rowgroup4 */
 /* 홍보갤러리 */
 .rowgroup4{position: relative;padding-bottom: 150px;}
-.rowgroup4:before{display: block;position: absolute;bottom: 0;left: calc(50% + 663px);width: 298px;height: 136px;background: url("../images/main/row4_bg.png") no-repeat;}
+.rowgroup4:before{display: block;position: absolute;bottom: 0;left: calc(50% + 663px);width: 298px;height: 136px;background: url("/2024portfolio/2023/nyj/site/forest/images/main/row4_bg.png") no-repeat;}
 .rowgroup4 .main_title{margin-bottom: 24px;}
 
 .rowgroup4 .gallery_wrap{position: relative;}
 
 .rowgroup4 .gallery_wrap:before, .rowgroup4 .gallery_wrap:after{display: block;position: absolute;bottom: 256px;left: calc(50% + 287px);width: 673px;height: 173px;opacity: 0;z-index: -1;}
 
-.rowgroup4 .gallery_wrap:before{background: url("../images/main/gallery_bg.png") no-repeat;}
+.rowgroup4 .gallery_wrap:before{background: url("/2024portfolio/2023/nyj/site/forest/images/main/gallery_bg.png") no-repeat;}
 .rowgroup4.scroll_ani[data-on="on"] .gallery_wrap:before{animation: to_bottom 2s 1.5s ease-in-out;}
 
-.rowgroup4 .gallery_wrap:after{background: url("../images/main/gallery_bg2.png") no-repeat;}
+.rowgroup4 .gallery_wrap:after{background: url("/2024portfolio/2023/nyj/site/forest/images/main/gallery_bg2.png") no-repeat;}
 .rowgroup4.scroll_ani[data-on="on"] .gallery_wrap:after{opacity: 1;transition: opacity 1.5s 2.5s ease-in-out;}
 
 
@@ -553,16 +553,16 @@ body.forest #header .header_box .logo a .logo_image{width: 125px;background-imag
 .rowgroup4 .gallery_wrap .gallery_nav .nav_list .nav_img{position: relative;border-radius: 20px;overflow: hidden;transition: border-radius 150ms ease-in-out;background-color: #000;}
 .rowgroup4 .gallery_wrap .gallery_nav .nav_list .nav_img img{width: 300px;opacity: 0.7;transition: opacity 100ms ease-in-out;}
 .rowgroup4 .gallery_wrap .gallery_nav .nav_list .nav_img .nav_title{position: absolute;bottom: 24px;left: 0;width: 100%;padding: 0 70px 0 30px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;color: #fff;font-size: 18px;line-height: 30px;font-weight: 500;opacity: 0;transition: opacity 0.3s ease-in-out;}
-.rowgroup4 .gallery_wrap .gallery_nav .nav_list .nav_item .nav_more_btn{position: absolute;bottom: 0;right: 0;width: 40px;height: 40px;border-radius: 50%;font-size: 0;line-height: 0;transition: opacity 100ms ease-in-out;opacity: 0;background: rgba(255, 255, 255, 0.9) url("../images/main/more_btn2.png") no-repeat center;}
+.rowgroup4 .gallery_wrap .gallery_nav .nav_list .nav_item .nav_more_btn{position: absolute;bottom: 0;right: 0;width: 40px;height: 40px;border-radius: 50%;font-size: 0;line-height: 0;transition: opacity 100ms ease-in-out;opacity: 0;background: rgba(255, 255, 255, 0.9) url("/2024portfolio/2023/nyj/site/forest/images/main/more_btn2.png") no-repeat center;}
 
 .rowgroup4 .gallery_wrap .gallery_control{position: absolute;bottom: 0;width: 100%;text-align: center;font-size: 0;line-height: 0;}
-.rowgroup4 .gallery_wrap .gallery_control button{width: 40px;height: 16px;background: url("../images/main/gallery_arrow.png") no-repeat;vertical-align: top;}
+.rowgroup4 .gallery_wrap .gallery_control button{width: 40px;height: 16px;background: url("/2024portfolio/2023/nyj/site/forest/images/main/gallery_arrow.png") no-repeat;vertical-align: top;}
 .rowgroup4 .gallery_wrap .gallery_control .slick-arrow.next{transform: rotate(180deg);}
 .rowgroup4 .gallery_wrap .gallery_control .slick-pause{background-position-x: -80px;}
 .rowgroup4 .gallery_wrap .gallery_control .slick-play{background-position-x: -120px;}
 
 .rowgroup4 .gallery_wrap .gallery_more{position: absolute;bottom: 280px;right: 0;z-index: 50;}
-.rowgroup4 .gallery_wrap .gallery_more .more_btn{width: 30px;height: 30px;border: none;border-radius: 10px;background: url("../images/main/more_btn3.png") no-repeat;}
+.rowgroup4 .gallery_wrap .gallery_more .more_btn{width: 30px;height: 30px;border: none;border-radius: 10px;background: url("/2024portfolio/2023/nyj/site/forest/images/main/more_btn3.png") no-repeat;}
 
 @media all and (max-width: 1500px) {
     .rowgroup4:before{left: calc(50% + 455px);}
@@ -645,4 +645,4 @@ body.forest #header .header_box .logo a .logo_image{width: 125px;background-imag
 
 /* footer */
 #footer .footer_address .footer_link .link_item.point_link a{color: #14936a;}
-#footer .footer_address .footer_link .link_item.point_link a:before{background-image: url("../images/main/footer_icon.png");}
+#footer .footer_address .footer_link .link_item.point_link a:before{background-image: url("/2024portfolio/2023/nyj/site/forest/images/main/footer_icon.png");}

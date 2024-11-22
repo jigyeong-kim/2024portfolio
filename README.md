@@ -18,6 +18,7 @@ https://jigyeong-kim.github.io/2024portfolio/2024/cheongju/site/cj10th/sub.html
 
 음성군청
 https://jigyeong-kim.github.io/2024portfolio/2023/eumseong/site/public/sub_type3.html
+https://jigyeong-kim.github.io/2024portfolio/2023/eumseong/site/public/template.html
 https://jigyeong-kim.github.io/2024portfolio/2023/eumseong/site/english/main.html
 https://jigyeong-kim.github.io/2024portfolio/2023/eumseong/site/forest/main.html
 https://jigyeong-kim.github.io/2024portfolio/2023/eumseong/site/tour/main.html
