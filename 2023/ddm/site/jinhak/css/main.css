@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 /* Layout */
-@import url('/2023/ddm/common/css/default.css');
-@import url('/2023/ddm/common/css/font.css');
-@import url('/2023/ddm/common/css/remixicon.css');
-@import url('/2023/ddm/common/css/layout.css');
-@import url('/2023/ddm/site/public/css/common.css');
+@import url('/2024portfolio/2023/ddm/common/css/default.css');
+@import url('/2024portfolio/2023/ddm/common/css/font.css');
+@import url('/2024portfolio/2023/ddm/common/css/remixicon.css');
+@import url('/2024portfolio/2023/ddm/common/css/layout.css');
+@import url('/2024portfolio/2023/ddm/site/public/css/common.css');
 @import url('common.css');
 @import url('main_layout.css');

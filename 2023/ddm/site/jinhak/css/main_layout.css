@@ -30,11 +30,11 @@
 .rowgroup1 .visual_box:after{display: block;position: absolute;right: 0;bottom: 0;width: 1212px;height: calc(100% - 374px);background-color: #fff;border-top-right-radius: 130px;z-index: -1;}
 
 .rowgroup1 .visual_box .box_wrap{position: relative;padding-right: 45px;}
-.rowgroup1 .visual_box .box_wrap:before{display: block;position: absolute;left: -255px;top: 0;width: 438px;height: 535px;background: url("/2023/ddm/site/jinhak/images/main/visual_item2.png") no-repeat;z-index: -1;}
-.rowgroup1 .visual_box .box_wrap:after{display: block;position: absolute;right: 0;top: 0;width: 448px;height: 213px;background: url("/2023/ddm/site/jinhak/images/main/visual_item1.png") no-repeat;z-index: -1;}
+.rowgroup1 .visual_box .box_wrap:before{display: block;position: absolute;left: -255px;top: 0;width: 438px;height: 535px;background: url("/2024portfolio/2023/ddm/site/jinhak/images/main/visual_item2.png") no-repeat;z-index: -1;}
+.rowgroup1 .visual_box .box_wrap:after{display: block;position: absolute;right: 0;top: 0;width: 448px;height: 213px;background: url("/2024portfolio/2023/ddm/site/jinhak/images/main/visual_item1.png") no-repeat;z-index: -1;}
 
 .rowgroup1 .visual_box .visual_text{padding-top: 80px;padding-bottom: 64px;font-size: 19px;line-height: 25px;color: #000;word-break: keep-all;animation: to_top .6s ease-in-out forwards;animation-delay: .2s;opacity: 0;}
-.rowgroup1 .visual_box .visual_text .visual_title{width: 378px;height: 44px;margin-bottom: 20px;font-size: 0;line-height: 0;background: url("/2023/ddm/site/jinhak/images/main/visual_title.png") no-repeat;background-size: contain;}
+.rowgroup1 .visual_box .visual_text .visual_title{width: 378px;height: 44px;margin-bottom: 20px;font-size: 0;line-height: 0;background: url("/2024portfolio/2023/ddm/site/jinhak/images/main/visual_title.png") no-repeat;background-size: contain;}
 .rowgroup1 .visual_box .visual_text p{word-break: keep-all;}
 
 .rowgroup1 .visual_box .visual_wrap{position: relative;margin-bottom: 77px;animation: to_top .6s ease-in-out forwards;animation-delay: .8s;opacity: 0;}
@@ -51,7 +51,7 @@
 .rowgroup1 .visual_box .slide_control{position: absolute;bottom: 0;right: 0;}
 .rowgroup1 .visual_box .slide_control .controls{font-size: 0;line-height: 0;}
 .rowgroup1 .visual_box .slide_control .controls button{position: relative;width: 52px;height: 52px;vertical-align: top;}
-.rowgroup1 .visual_box .slide_control .controls button:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: url("/2023/ddm/site/jinhak/images/main/btn_icon.png") no-repeat;}
+.rowgroup1 .visual_box .slide_control .controls button:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: url("/2024portfolio/2023/ddm/site/jinhak/images/main/btn_icon.png") no-repeat;}
 .rowgroup1 .visual_box .slide_control .controls .next:before{background-position-x: -52px;}
 .rowgroup1 .visual_box .slide_control .controls .auto:before{background-position-x: -156px;}
 .rowgroup1 .visual_box .slide_control .controls .auto.slick-play:before{background-position-x: -104px;}
@@ -80,12 +80,12 @@
 .rowgroup1 .visual_info_box .visual_info:last-child{padding-bottom: 0;border-bottom: 0;}
 
 .rowgroup1 .visual_info_box .visual_info .info_title{display: block;position: relative;padding-left: 35px;margin-bottom: 10px;font-weight: 700;font-size: 21px;line-height: 25px;letter-spacing: -0.025em;color: #ffd52c;}
-.rowgroup1 .visual_info_box .visual_info .info_title:before{display:block;position: absolute;top: 0;left: 0;width: 25px;height: 25px;background: url("/2023/ddm/site/jinhak/images/main/info_icon.png") no-repeat;}
+.rowgroup1 .visual_info_box .visual_info .info_title:before{display:block;position: absolute;top: 0;left: 0;width: 25px;height: 25px;background: url("/2024portfolio/2023/ddm/site/jinhak/images/main/info_icon.png") no-repeat;}
 .rowgroup1 .visual_info_box .visual_info:nth-child(2) .info_title:before{background-position-x: -25px;}
 .rowgroup1 .visual_info_box .visual_info:nth-child(3) .info_title:before{background-position-x: -50px;}
 
 .rowgroup1 .visual_info_box .visual_info .info_title a{position: relative;padding-right: 40px;color: #ffd52c;}
-.rowgroup1 .visual_info_box .visual_info .info_title a:after{display:block;position: absolute;top: -3px;right: 0;width: 30px;height: 30px;border-radius: 8px;background: #000 url("/2023/ddm/site/jinhak/images/main/info_icon.png") no-repeat -73px center;}
+.rowgroup1 .visual_info_box .visual_info .info_title a:after{display:block;position: absolute;top: -3px;right: 0;width: 30px;height: 30px;border-radius: 8px;background: #000 url("/2024portfolio/2023/ddm/site/jinhak/images/main/info_icon.png") no-repeat -73px center;}
 
 .rowgroup1 .visual_info_box .visual_info .info_list li{line-height: 25px;font-size: 15px;color: rgba(255, 255, 255, 0.5);font-weight: 500;}
 .rowgroup1 .visual_info_box .visual_info .info_list .title{width: 85px;font-size: 16px;color: #fff;}
@@ -214,7 +214,7 @@
 .rowgroup2 .reserve_search .select_wrap button{width: 100%;text-align: left;}
 
 .rowgroup2 .reserve_search .select_box{position: relative;padding: 25px 30px;font-weight: 600;color: #000;text-align: left;z-index: 1;}
-.rowgroup2 .reserve_search .select_box:before{display: block;position: absolute;top: calc(50% - 4px);right: 30px;width: 13px;height: 8px;background: url("/2023/ddm/site/jinhak/images/main/select_arrow.png") no-repeat;}
+.rowgroup2 .reserve_search .select_box:before{display: block;position: absolute;top: calc(50% - 4px);right: 30px;width: 13px;height: 8px;background: url("/2024portfolio/2023/ddm/site/jinhak/images/main/select_arrow.png") no-repeat;}
 
 .rowgroup2 .reserve_search .select_box span{width: 100%;font-weight: 400;color: rgba(0, 0, 0, 0.5);}
 
@@ -228,7 +228,7 @@
 
 .rowgroup2 .reserve_search .search_btn{position: absolute;top: 0;right: 0;}
 .rowgroup2 .reserve_search .search_btn button{position: relative;width: 106px;height: 106px;background: linear-gradient(145deg, rgb(159,46,117), rgb(63,67,138));border-radius: 25px;}
-.rowgroup2 .reserve_search .search_btn button:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: url("/2023/ddm/site/jinhak/images/main/search_icon.png") no-repeat center;}
+.rowgroup2 .reserve_search .search_btn button:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: url("/2024portfolio/2023/ddm/site/jinhak/images/main/search_icon.png") no-repeat center;}
 
 @media all and (max-width: 1430px) {
     .rowgroup2 .main_title{position: relative;margin-bottom: 35px;}
@@ -327,7 +327,7 @@
 .rowgroup3 .program_box .slide_control{position: absolute;top: 0;right: 30px;}
 .rowgroup3 .program_box .slide_control .controls{font-size: 0;line-height: 0;}
 .rowgroup3 .program_box .slide_control .controls button, .rowgroup3 .program_box .slide_control .controls a{position: relative;width: 52px;height: 52px;vertical-align: top;}
-.rowgroup3 .program_box .slide_control .controls button:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: url("/2023/ddm/site/jinhak/images/main/btn_icon.png") no-repeat;}
+.rowgroup3 .program_box .slide_control .controls button:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: url("/2024portfolio/2023/ddm/site/jinhak/images/main/btn_icon.png") no-repeat;}
 .rowgroup3 .program_box .slide_control .controls .next:before{background-position-x: -52px;}
 .rowgroup3 .program_box .slide_control .controls .auto:before{background-position-x: -260px;}
 .rowgroup3 .program_box .slide_control .controls .auto.slick-play:before{background-position-x: -208px;}
@@ -337,7 +337,7 @@
 .rowgroup3 .program_box .slide_control .controls button + button:after{display: block;position: absolute;top: calc(50% - 11px);left: 0;width: 1px;height: 22px;background-color: #c2c3c4;}
 
 .rowgroup3 .program_box .slide_control .controls .more_btn{margin-left: 7px;background: linear-gradient(145deg, rgb(159,46,117), rgb(63,67,138));border-radius: 50%;}
-.rowgroup3 .program_box .slide_control .controls .more_btn:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: url("/2023/ddm/site/jinhak/images/main/btn_icon.png") no-repeat;background-position-x: -312px;}
+.rowgroup3 .program_box .slide_control .controls .more_btn:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: url("/2024portfolio/2023/ddm/site/jinhak/images/main/btn_icon.png") no-repeat;background-position-x: -312px;}
 
 /* 팝업 */
 .rowgroup3 .popup_box{position: absolute;top: 0;right: 0;width: 336px;opacity: 0;}
@@ -348,7 +348,7 @@
 .rowgroup3 .popup_box .popup_slide{background: linear-gradient(145deg, rgba(159,46,117,1) 0%, rgba(63,67,138,1) 100%);border-radius: 70px;}
 
 .rowgroup3 .popup_box .popup_list{position: relative;padding: 60px 80px 43px;}
-.rowgroup3 .popup_box .popup_list .slick-arrow{position: absolute;top: calc(50% - 25px);font-size: 0;line-height: 0;width: 52px;height: 52px;background: rgba(255, 255, 255, 0.2) url("/2023/ddm/site/jinhak/images/main/btn_icon.png") no-repeat;background-position-y: -52px;border-radius: 26px;border: 2px solid transparent;box-sizing: border-box;}
+.rowgroup3 .popup_box .popup_list .slick-arrow{position: absolute;top: calc(50% - 25px);font-size: 0;line-height: 0;width: 52px;height: 52px;background: rgba(255, 255, 255, 0.2) url("/2024portfolio/2023/ddm/site/jinhak/images/main/btn_icon.png") no-repeat;background-position-y: -52px;border-radius: 26px;border: 2px solid transparent;box-sizing: border-box;}
 .rowgroup3 .popup_box .popup_list .slick-arrow:hover{border-color: #fff;}
 .rowgroup3 .popup_box .popup_list .slick-arrow.slick-prev{left: 16px;background-position-x: -106px;}
 .rowgroup3 .popup_box .popup_list .slick-arrow.slick-next{right: 16px;background-position-x: -156px;}
@@ -460,9 +460,9 @@
 .rowgroup4 .media_slide .slide_item .more_btn{position: absolute;bottom: 0;left: calc(50% - 80px);width: 160px;padding: 15px 5px 10px;text-align: center;}
 .rowgroup4 .media_slide .slide_item .more_btn:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 240%;background: linear-gradient(145deg, rgba(159,46,117,1) 0%, rgba(63,67,138,1) 100%);border-radius: 50% 50% 0 0;}
 .rowgroup4 .media_slide .slide_item .more_btn span{position: relative;padding-right: 24px;z-index: 1;font-size: 16px;line-height: 22px;color: #fff;font-weight: 500;}
-.rowgroup4 .media_slide .slide_item .more_btn span:before{display: block;position: absolute;top: calc(50% - 6px);right: 0;width: 13px;height: 12px;background: url("/2023/ddm/site/jinhak/images/main/more_btn.png") no-repeat;}
+.rowgroup4 .media_slide .slide_item .more_btn span:before{display: block;position: absolute;top: calc(50% - 6px);right: 0;width: 13px;height: 12px;background: url("/2024portfolio/2023/ddm/site/jinhak/images/main/more_btn.png") no-repeat;}
 
-.rowgroup4 .media_slide .slick-arrow{position: absolute;top: calc(50% - 23px);width: 30px;height: 46px;background: url("/2023/ddm/site/jinhak/images/main/media_arrow.png") no-repeat;font-size: 0;line-height: 0;}
+.rowgroup4 .media_slide .slick-arrow{position: absolute;top: calc(50% - 23px);width: 30px;height: 46px;background: url("/2024portfolio/2023/ddm/site/jinhak/images/main/media_arrow.png") no-repeat;font-size: 0;line-height: 0;}
 .rowgroup4 .media_slide .slick-arrow.slick-prev{left: -48px;}
 .rowgroup4 .media_slide .slick-arrow.slick-next{right: -48px;background-position-x: -30px;}
 
@@ -477,11 +477,11 @@
 .rowgroup4 .notice_box .notice_item .notice_title{width: calc(100% - 100px);height: 100%;vertical-align: top;}
 .rowgroup4 .notice_box .notice_item .notice_title .notice_text{max-width: calc(100% - 70px);max-height: 76px;vertical-align: top;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 .rowgroup4 .notice_box .notice_item .notice_title .new_icon{position: relative;width: 30px;height: 30px;margin-left: 10px;border-radius: 50%;font-size: 0;line-height: 0;background: linear-gradient(135deg, rgb(156,47,118), rgb(74,65,136));vertical-align: middle;}
-.rowgroup4 .notice_box .notice_item .notice_title .new_icon:before{display: block;position: absolute;top: calc(50% - 5px);left: calc(50% - 5px);width: 10px;height: 10px;background: url("/2023/ddm/site/jinhak/images/main/new_icon.png") no-repeat;}
+.rowgroup4 .notice_box .notice_item .notice_title .new_icon:before{display: block;position: absolute;top: calc(50% - 5px);left: calc(50% - 5px);width: 10px;height: 10px;background: url("/2024portfolio/2023/ddm/site/jinhak/images/main/new_icon.png") no-repeat;}
 .rowgroup4 .notice_box .notice_item .notice_date{position: absolute;right: 0;color: rgba(0, 0, 0, 0.5);vertical-align: top;}
 
 .rowgroup4 .notice_box .more_btn{position: absolute;top: 0;right: 0;width: 52px;height: 52px;background: linear-gradient(145deg, rgb(159,46,117), rgb(63,67,138));border-radius: 50%;font-size: 0;line-height: 0;}
-.rowgroup4 .notice_box .more_btn:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: url("/2023/ddm/site/jinhak/images/main/btn_icon.png") no-repeat;background-position-x: -312px;}
+.rowgroup4 .notice_box .more_btn:before{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: url("/2024portfolio/2023/ddm/site/jinhak/images/main/btn_icon.png") no-repeat;background-position-x: -312px;}
 
 @media all and (max-width: 1200px) {
     .rowgroup4 .media_box{left: 3%;}
@@ -547,7 +547,7 @@
 /* 포토갤러리 */
 
 .rowgroup5{position: relative;}
-.rowgroup5:before{display: block;position: absolute;bottom: 0;right: 0;width: 50%;height: 463px;background: url("/2023/ddm/site/jinhak/images/main/row_bg.png") no-repeat;z-index: -1;}
+.rowgroup5:before{display: block;position: absolute;bottom: 0;right: 0;width: 50%;height: 463px;background: url("/2024portfolio/2023/ddm/site/jinhak/images/main/row_bg.png") no-repeat;z-index: -1;}
 
 .rowgroup5 .photo_box{position: relative;padding: 77px 230px 65px 0;margin-right: 150px;opacity: 0;}
 .rowgroup5[data-on="on"] .photo_box{animation: to_right .6s ease-in-out forwards;animation-delay: .5s;}
@@ -565,7 +565,7 @@
 
 .rowgroup5 .photo_box .slide_control{position: absolute;right: 95px;top: 175px;}
 .rowgroup5 .photo_box .slide_control .controls{font-size: 0;line-height: 0;}
-.rowgroup5 .photo_box .slide_control button, .rowgroup5 .photo_box .slide_control a{display: block;position: relative;width: 65px;height: 65px;margin-bottom: 10px;font-size: 0;line-height: 0;background: url("/2023/ddm/site/jinhak/images/main/photo_btn.png") no-repeat;}
+.rowgroup5 .photo_box .slide_control button, .rowgroup5 .photo_box .slide_control a{display: block;position: relative;width: 65px;height: 65px;margin-bottom: 10px;font-size: 0;line-height: 0;background: url("/2024portfolio/2023/ddm/site/jinhak/images/main/photo_btn.png") no-repeat;}
 
 .rowgroup5 .photo_box .slide_control .next{background-position-x: -65px;}
 .rowgroup5 .photo_box .slide_control .arrow + .arrow:before{display: block;position: absolute;top: 0;left: calc(50% - 16px);width: 33px;height: 1px;background-color: rgba(255, 255, 255, 0.5);}

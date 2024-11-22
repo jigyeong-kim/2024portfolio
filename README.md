@@ -24,6 +24,12 @@ https://jigyeong-kim.github.io/2024portfolio/2023/eumseong/site/forest/main.html
 https://jigyeong-kim.github.io/2024portfolio/2023/eumseong/site/tour/main.html
 
 남양주
-https://jigyeong-kim.github.io/2024portfolio/2023/nyj/site/public/main_visual.html
+https://jigyeong-kim.github.io/2024portfolio/2023/nyj/site/public/sub.html
+https://jigyeong-kim.github.io/2024portfolio/2023/nyj/site/public/sub_wide.html
+https://jigyeong-kim.github.io/2024portfolio/2023/nyj/site/public/sub_visual.html
+https://jigyeong-kim.github.io/2024portfolio/2023/nyj/site/public/sub_visual_wide.html
 https://jigyeong-kim.github.io/2024portfolio/2023/nyj/site/forest/main.html
 https://jigyeong-kim.github.io/2024portfolio/2023/nyj/site/health/main.html
+
+동대문 교육지원센터
+
