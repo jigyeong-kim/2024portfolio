@@ -32,4 +32,4 @@ https://jigyeong-kim.github.io/2024portfolio/2023/nyj/site/forest/main.html
 https://jigyeong-kim.github.io/2024portfolio/2023/nyj/site/health/main.html
 
 동대문 교육지원센터
-
+https://jigyeong-kim.github.io/2024portfolio/2023/ddm/site/jinhak/main.html
