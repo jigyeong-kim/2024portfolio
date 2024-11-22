@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FullPage Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.16/fullpage.min.css">
-  <style>
-    section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-      color: #fff;
-    }
-    #section1 { background: #1abc9c; }
-    #section2 { background: #3498db; }
-    #section3 { background: #9b59b6; }
-    #section4 { background: #e74c3c; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Fullpage Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.css" />
+    <link rel="stylesheet" href="/2024portfolio/index/css/index.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js"></script>
 </head>
 <body>
-  <div id="fullpage">
-    <section id="section1">Welcome to My Portfolio</section>
-    <section id="section2">About Me</section>
-    <section id="section3">My Work</section>
-    <section id="section4">Contact</section>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.16/fullpage.min.js"></script>
-  <script>
-    new fullpage('#fullpage', {
-      autoScrolling: true,
-      navigation: true,
-      navigationPosition: 'right',
-      navigationTooltips: ['Home', 'About', 'Work', 'Contact'],
-      showActiveTooltip: true,
-      anchors: ['home', 'about', 'work', 'contact'],
-    });
-  </script>
+    <ul id="menu">
+        <li data-menuanchor="sec1" class="active"><a href="#sec1">Home</a></li>
+        <li data-menuanchor="sec2"><a href="#sec2">2024</a></li>
+        <li data-menuanchor="sec3"><a href="#sec3">2023</a></li>
+        <li data-menuanchor="sec4"><a href="#sec4">contact</a></li>
+    </ul>
+    
+    <div id="fullpage">
+        <div class="section sec1 active">
+            <h1>Welcome</h1>
+        </div>
+        <div class="section sec2">
+            <!-- <h1>2024 Project</h1> -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><h1>Section2</h1>Slide 1</div>
+                    <div class="swiper-slide"><h1>Section2</h1>Slide 2</div>
+                    <div class="swiper-slide"><h1>Section2</h1>Slide 3</div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="section sec3">
+            <h1>2023 Project</h1>
+<!--         
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><h1>Section2</h1>Slide 1</div>
+                    <div class="swiper-slide"><h1>Section2</h1>Slide 2</div>
+                    <div class="swiper-slide"><h1>Section2</h1>Slide 3</div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>   -->
+        </div>
+        <div class="section sec4">
+            <h1>Section4</h1>
+        </div>   
+    </div>
+    <script src="/2024portfolio/index/js/index.js"></script>
 </body>
 </html>
