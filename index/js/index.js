@@ -203,6 +203,24 @@ $(document).ready(function() {
             },
             mousewheel: true,
             on: {
+                touchStart: function (e) {
+                    startX = e.touches ? e.touches[0].clientX : e.clientX; // 터치 또는 마우스 X 좌표
+                    startY = e.touches ? e.touches[0].clientY : e.clientY; // 터치 또는 마우스 Y 좌표
+                },
+                touchMove: function (e) {
+                    var currentX = e.touches ? e.touches[0].clientX : e.clientX; // 현재 X 좌표
+                    var currentY = e.touches ? e.touches[0].clientY : e.clientY; // 현재 Y 좌표
+
+                    // 수직 움직임이 더 큰 경우 Swiper 이동 비활성화
+                    if (Math.abs(currentY - startY) > Math.abs(currentX - startX)) {
+                        this.allowTouchMove = false; // Swiper 슬라이드 이동 비활성화
+                    } else {
+                        this.allowTouchMove = true; // Swiper 슬라이드 이동 활성화
+                    }
+                },
+                touchEnd: function () {
+                    this.allowTouchMove = true; // 종료 후 Swiper 이동 활성화
+                },
                 slideChange: function() {
                     var idx = this.activeIndex;
                     var length = this.slides.length;
@@ -221,16 +239,16 @@ $(document).ready(function() {
                         $.fn.fullpage.setAllowScrolling(true);
                     }
                 },
-                touchStart: function(e) {
-                    startY = e.touches.startY;
-                },
-                touchEnd: function(e) {
-                    if (startY - 10 > e.changedTouches[0].clientY) {
-                        this.slideNext();
-                    } else if (startY + 10 < e.changedTouches[0].clientY) {
-                        this.slidePrev();
-                    }
-                }
+                // touchStart: function(e) {
+                //     startY = e.touches.startY;
+                // },
+                // touchEnd: function(e) {
+                //     if (startY - 10 > e.changedTouches[0].clientY) {
+                //         this.slideNext();
+                //     } else if (startY + 10 < e.changedTouches[0].clientY) {
+                //         this.slidePrev();
+                //     }
+                // }
             }
         });
 
