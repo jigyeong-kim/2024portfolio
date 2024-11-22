@@ -16,3 +16,5 @@ https://jigyeong-kim.github.io/2024portfolio/2024/suwon/resources/web/reserv2024
 청주시 통합 10주년 
 https://jigyeong-kim.github.io/2024portfolio/2024/cheongju/site/cj10th/sub.html
 
+음성군청
+https://jigyeong-kim.github.io/2024portfolio/2023/eumseong/site/english/main.html
