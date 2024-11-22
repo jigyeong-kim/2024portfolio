@@ -75,7 +75,7 @@ h5, .h5{font-size:22px;color:#1d2f9b;line-height:36px;}
 .warning{position:relative;padding-left:27px;font-size:15px;color:#45484e;line-height:26px;letter-spacing:-0.04em;font-weight:400;font-family:'Score';box-sizing:border-box;}
 .warning:before, .warning:after{display:block;position:absolute;top:3px;left:0;width:20px;height:20px;content:'';box-sizing:border-box;}
 .warning:before{border-radius:50%;box-shadow:0px 3px 1px 0px rgba(49, 122, 215, 0.2);}
-.warning:after{background:url(../images/template/warning_icons.png) no-repeat left top;}
+.warning:after{background:url('/2024portfolio/2023/nyj/site/public/images/template/warning_icons.png') no-repeat left top;}
 .warning.type2:before,
 .warning.type3:before{box-shadow:0px 3px 1px 0px rgba(255, 152, 141, 0.3);}
 .warning.type2:after{background-position:-20px 0;}
@@ -391,7 +391,7 @@ h5, .h5{font-size:22px;color:#1d2f9b;line-height:36px;}
 
 /* 버튼 및 링크모음 시작 */
 .nyj_link{display:inline-block;position:relative;padding-right:28px;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
-.nyj_link:before{display:block;position:absolute;top:3px;right:0;width:22px;height:22px;background-color:#eceff2;background-image:url(../images/template/only_link_icon.png);background-repeat:no-repeat;background-position:center center;border-radius:8px;content:'';box-sizing:border-box;}
+.nyj_link:before{display:block;position:absolute;top:3px;right:0;width:22px;height:22px;background-color:#eceff2;background-image:url('/2024portfolio/2023/nyj/site/public/images/template/only_link_icon.png');background-repeat:no-repeat;background-position:center center;border-radius:8px;content:'';box-sizing:border-box;}
 .nyj_link .nyj_link_text{display:inline-block;position:relative;font-size:16px;color:#1b224e;line-height:26px;letter-spacing:-0.02em;font-weight:400;font-family:'Score';text-decoration:underline;text-underline-position:under;vertical-align:top;box-sizing:border-box;}
 @media screen and (max-width:1000px) {
     .nyj_link .nyj_link_text{font-size:15px;}
@@ -580,7 +580,7 @@ h5, .h5{font-size:22px;color:#1d2f9b;line-height:36px;}
 }
 
 /* 탭메뉴 새창 */
-.tab_wrap .tab_list .tab_item .tab_link[target="_blank"] .new_icon{display: inline-block;width: 28px;height: 28px;margin-left: 5px;background: #eaebed url("/site/public/images/sub/tab_icon.png") no-repeat;border-radius: 50%;vertical-align: middle;}
+.tab_wrap .tab_list .tab_item .tab_link[target="_blank"] .new_icon{display: inline-block;width: 28px;height: 28px;margin-left: 5px;background: #eaebed url("/2024portfolio/2023/nyj/site/public/images/sub/tab_icon.png") no-repeat;border-radius: 50%;vertical-align: middle;}
 .tab_wrap .tab_list .tab_item .tab_link[target="_blank"]:hover .new_icon{background-position-x: -28px;}
 
 /* 가운데 정렬 탭 */
