@@ -72,7 +72,7 @@
                 Mytitle = $this.attr('alt'),
                 $thisBtn = $this.parents('.place_map_con').siblings('.place_btn_wrap').find('.place_btn_item').eq(thisIndex).find('.place_btn');
             console.log(thisIndex);
-            $this.parent('map').siblings('img').attr('src', '/2024/suwon/resources/web/reserv2024/images/main/map_img' + (thisIndex + 1) + '.png');
+            $this.parent('map').siblings('img').attr('src', '/2024portfolio/2024/suwon/resources/web/reserv2024/images/main/map_img' + (thisIndex + 1) + '.png');
             $thisBtn.attr('title', Mytitle + ' 선택됨').parent('.place_btn_item').addClass('active').siblings('.place_btn_item').removeClass('active').find('.place_btn').removeAttr('title');
         });
 
@@ -83,7 +83,7 @@
                 $img = $this.parents('.place_btn_wrap').siblings('.place_map_con').find('img');
 
             $this.attr('title', Mytitle + ' 선택됨').parent('.place_btn_item').addClass('active').siblings('.place_btn_item').removeClass('active').find('.place_btn').removeAttr('title');
-            $img.attr('src', '/2024/suwon/resources/web/reserv2024/images/main/map_img' + thisIndex + '.png');
+            $img.attr('src', '/2024portfolio/2024/suwon/resources/web/reserv2024/images/main/map_img' + thisIndex + '.png');
         });
 
         // rowgroup2 슬라이드
