@@ -195,6 +195,7 @@ $(document).ready(function() {
             effect: 'fade',
             freeMode: false,
             speed: 1000,
+            allowTouchMove: true,
             pagination: {
                 el: $(element).find('.swiper-pagination')[0], // 해당 컨테이너의 페이지네이션
                 clickable: true
