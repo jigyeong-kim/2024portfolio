@@ -50,13 +50,13 @@ html:not(.fixed):not(.lnb_open):not(.search_open) body[data-transparent="Y"] #he
 }
 
 @media all and (min-width: 1001px) {
-    #header .logo .image{background-image: url("/2023/eumseong/site/english/images/common/logo.png");}
-    html:not(.fixed):not(.lnb_open):not(.search_open) body[data-transparent="Y"] #header .logo .image{background-image:url("/2023/eumseong/site/english/images/common/logo_bk.png");}
+    #header .logo .image{background-image: url("/2024portfolio/2023/eumseong/site/english/images/common/logo.png");}
+    html:not(.fixed):not(.lnb_open):not(.search_open) body[data-transparent="Y"] #header .logo .image{background-image:url("/2024portfolio/2023/eumseong/site/english/images/common/logo_bk.png");}
 
     .lnb .menu .depth1_text > span{font-family: 'Nexen', 'SBAggro', 'NotoKr', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;transform: skew(-0.1deg);}
 }
 
 @media all and (max-width: 1000px) {
-    body.main.visualtype3[data-transparent="Y"] #header .logo .image{background-image: url("/2023/eumseong/site/english/images/common/logo_bk.png");}
-    body.sub.visualtype3[data-transparent="Y"] #header .logo .image{background-image: url("/2023/eumseong/site/english/images/common/logo.png");}
+    body.main.visualtype3[data-transparent="Y"] #header .logo .image{background-image: url("/2024portfolio/2023/eumseong/site/english/images/common/logo_bk.png");}
+    body.sub.visualtype3[data-transparent="Y"] #header .logo .image{background-image: url("/2024portfolio/2023/eumseong/site/english/images/common/logo.png");}
 }

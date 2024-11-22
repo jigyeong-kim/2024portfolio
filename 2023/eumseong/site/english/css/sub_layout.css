@@ -1,29 +1,29 @@
 @charset "UTF-8";
 
 body.visualtype3 .sub_visual:before {
-    background-image: url("/2023/eumseong/site/english/images/sub/sub_visual1.png");
+    background-image: url("/2024portfolio/2023/eumseong/site/english/images/sub/sub_visual1.png");
 }
 
 body.visualtype3[data-menu-index="1"] .sub_visual:before{
-    background-image: url("/2023/eumseong/site/english/images/sub/sub_visual1.png");
+    background-image: url("/2024portfolio/2023/eumseong/site/english/images/sub/sub_visual1.png");
 }
 
 body.visualtype3[data-menu-index="2"] .sub_visual:before {
-    background-image: url("/2023/eumseong/site/english/images/sub/sub_visual2.png");
+    background-image: url("/2024portfolio/2023/eumseong/site/english/images/sub/sub_visual2.png");
 }
 
 body.visualtype3[data-menu-index="3"] .sub_visual:before {
-    background-image: url("/2023/eumseong/site/english/images/sub/sub_visual3.png");
+    background-image: url("/2024portfolio/2023/eumseong/site/english/images/sub/sub_visual3.png");
 }
 
 body.visualtype3[data-menu-index="4"] .sub_visual:before {
-    background-image: url("/2023/eumseong/site/english/images/sub/sub_visual4.png");
+    background-image: url("/2024portfolio/2023/eumseong/site/english/images/sub/sub_visual4.png");
 }
 
 body.visualtype3[data-menu-index="5"] .sub_visual:before {
-    background-image: url("/2023/eumseong/site/english/images/sub/sub_visual5.png");
+    background-image: url("/2024portfolio/2023/eumseong/site/english/images/sub/sub_visual5.png");
 }
 
 body.visualtype3[data-menu-index="6"] .sub_visual:before {
-    background-image: url("/2023/eumseong/site/english/images/sub/sub_visual6.png");
+    background-image: url("/2024portfolio/2023/eumseong/site/english/images/sub/sub_visual6.png");
 }

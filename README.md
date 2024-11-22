@@ -12,3 +12,7 @@ https://jigyeong-kim.github.io/2024portfolio/2024/gangneung/site/welfare/main.ht
 
 수원통합예약
 https://jigyeong-kim.github.io/2024portfolio/2024/suwon/resources/web/reserv2024/main.html
+
+청주시 통합 10주년 
+https://jigyeong-kim.github.io/2024portfolio/2024/cheongju/site/cj10th/sub.html
+
