@@ -316,6 +316,131 @@
 //     });
 // });
 
+// $(document).ready(function () {
+//     // Swiper 인스턴스 배열
+//     var swipers = [];
+//     var startY = 0;
+
+//     // Swiper 초기화
+//     $(".swiper-container").each(function (index, element) {
+//         var swiperInstance = new Swiper(element, {
+//             slidesPerView: 1,
+//             effect: 'fade',
+//             freeMode: false,
+//             speed: 1000,
+//             allowTouchMove: true,
+//             simulateTouch: true,
+//             pagination: {
+//                 el: $(element).find('.swiper-pagination')[0], // 해당 컨테이너의 페이지네이션
+//                 clickable: true,
+//             },
+//             mousewheel: true,
+//             on: {
+//                 touchStart: function (e) {
+//                     startX = e.touches ? e.touches[0].clientX : e.clientX; // 터치 또는 마우스 X 좌표
+//                     startY = e.touches ? e.touches[0].clientY : e.clientY; // 터치 또는 마우스 Y 좌표
+//                 },
+//                 touchMove: function (e) {
+//                     var currentX = e.touches ? e.touches[0].clientX : e.clientX; // 현재 X 좌표
+//                     var currentY = e.touches ? e.touches[0].clientY : e.clientY; // 현재 Y 좌표
+
+//                     if ($(window).width() > 1000) {
+//                         // 1000px 이상에서는 Swiper의 기본 동작 유지
+//                         if (Math.abs(currentY - startY) > Math.abs(currentX - startX)) {
+//                             this.allowTouchMove = false; // 수직 이동 감지 시 비활성화
+//                         } else {
+//                             this.allowTouchMove = true; // 수평 이동 감지 시 활성화
+//                         }
+//                     } else {
+//                         // 1000px 이하에서는 수직 드래그 시 페이지 스크롤 허용
+//                         this.allowTouchMove = false;
+//                         $('html, body').stop().animate({
+//                             scrollTop: $(window).scrollTop() + (startY - currentY),
+//                         }, 0); // 수직 스크롤 동작
+//                     }
+//                 },
+//                 touchEnd: function () {
+//                     this.allowTouchMove = true; // 종료 후 Swiper 동작 복원
+//                 },
+//                 slideChange: function () {
+//                     var idx = this.activeIndex;
+//                     var length = this.slides.length;
+
+//                     // 첫 슬라이드와 마지막 슬라이드가 아닐 때 fullpage 스크롤 비활성화
+//                     if (idx !== 0 && idx !== length - 1) {
+//                         $.fn.fullpage.setAllowScrolling(false);
+//                     }
+//                 },
+//                 slideChangeTransitionEnd: function () {
+//                     var idx = this.activeIndex;
+//                     var length = this.slides.length;
+
+//                     // 첫 슬라이드와 마지막 슬라이드일 때 fullpage 스크롤 활성화
+//                     if (idx === 0 || idx === length - 1) {
+//                         $.fn.fullpage.setAllowScrolling(true);
+//                     }
+//                 },
+//             },
+//         });
+
+//         swipers.push(swiperInstance); // Swiper 인스턴스를 배열에 추가
+//     });
+
+//     // Fullpage 초기화
+//     $('#fullpage').fullpage({
+//         sectionsColor: ['#1bbc9b', '#4BBFC3', 'rgb(201 165 210)', '#7BAABE'],
+//         anchors: ['sec1', 'sec2', 'sec3', 'sec4'],
+//         menu: '#menu',
+//         scrollingSpeed: 1000,
+//         onLeave: function (origin, destination, direction) {
+//             $('#fullpage').on('scroll touchmove mousewheel', function (event) {
+//                 event.preventDefault();
+//                 event.stopPropagation();
+//                 return false;
+//             });
+
+//             swipers.forEach(function (swiperInstance) {
+//                 swiperInstance.mousewheel.disable();
+//             });
+//         },
+//         afterLoad: function (anchorLink, index) {
+//             $('#fullpage').off('scroll touchmove mousewheel');
+
+//             swipers.forEach(function (swiperInstance) {
+//                 swiperInstance.mousewheel.enable();
+//             });
+
+//             if (!$(".slide_sec").hasClass("active")) {
+//                 $.fn.fullpage.setAllowScrolling(true);
+//             }
+//         },
+//     });
+
+//     // 초기화 후 상태 동기화
+//     $(".swiper-container").each(function (index, element) {
+//         var swiperInstance = swipers[index];
+//         var idx = swiperInstance.activeIndex;
+//         var length = swiperInstance.slides.length;
+
+//         if (idx === 0 || idx === length - 1) {
+//             $.fn.fullpage.setAllowScrolling(true);
+//         } else {
+//             $.fn.fullpage.setAllowScrolling(false);
+//         }
+//     });
+
+//     // 키보드 이벤트로 모든 Swiper 인스턴스를 제어
+//     $(document).on('keydown', function (e) {
+//         swipers.forEach(function (swiperInstance) {
+//             if (e.key === 'ArrowRight') {
+//                 swiperInstance.slideNext();
+//             } else if (e.key === 'ArrowLeft') {
+//                 swiperInstance.slidePrev();
+//             }
+//         });
+//     });
+// });
+
 $(document).ready(function () {
     // Swiper 인스턴스 배열
     var swipers = [];
@@ -331,18 +456,18 @@ $(document).ready(function () {
             allowTouchMove: true,
             simulateTouch: true,
             pagination: {
-                el: $(element).find('.swiper-pagination')[0], // 해당 컨테이너의 페이지네이션
+                el: $(element).find('.swiper-pagination')[0],
                 clickable: true,
             },
             mousewheel: true,
             on: {
                 touchStart: function (e) {
-                    startX = e.touches ? e.touches[0].clientX : e.clientX; // 터치 또는 마우스 X 좌표
-                    startY = e.touches ? e.touches[0].clientY : e.clientY; // 터치 또는 마우스 Y 좌표
+                    startX = e.touches ? e.touches[0].clientX : e.clientX;
+                    startY = e.touches ? e.touches[0].clientY : e.clientY;
                 },
                 touchMove: function (e) {
-                    var currentX = e.touches ? e.touches[0].clientX : e.clientX; // 현재 X 좌표
-                    var currentY = e.touches ? e.touches[0].clientY : e.clientY; // 현재 Y 좌표
+                    var currentX = e.touches ? e.touches[0].clientX : e.clientX;
+                    var currentY = e.touches ? e.touches[0].clientY : e.clientY;
 
                     if ($(window).width() > 1000) {
                         // 1000px 이상에서는 Swiper의 기본 동작 유지
@@ -352,7 +477,7 @@ $(document).ready(function () {
                             this.allowTouchMove = true; // 수평 이동 감지 시 활성화
                         }
                     } else {
-                        // 1000px 이하에서는 수직 드래그 시 페이지 스크롤 허용
+                        // 1000px 이하에서는 Swiper 내부에서 페이지 스크롤 허용
                         this.allowTouchMove = false;
                         $('html, body').stop().animate({
                             scrollTop: $(window).scrollTop() + (startY - currentY),
@@ -366,24 +491,28 @@ $(document).ready(function () {
                     var idx = this.activeIndex;
                     var length = this.slides.length;
 
-                    // 첫 슬라이드와 마지막 슬라이드가 아닐 때 fullpage 스크롤 비활성화
-                    if (idx !== 0 && idx !== length - 1) {
-                        $.fn.fullpage.setAllowScrolling(false);
+                    if ($(window).width() > 1000) {
+                        // 첫 슬라이드와 마지막 슬라이드가 아닐 때 Fullpage 스크롤 비활성화
+                        if (idx !== 0 && idx !== length - 1) {
+                            $.fn.fullpage.setAllowScrolling(false);
+                        }
                     }
                 },
                 slideChangeTransitionEnd: function () {
                     var idx = this.activeIndex;
                     var length = this.slides.length;
 
-                    // 첫 슬라이드와 마지막 슬라이드일 때 fullpage 스크롤 활성화
-                    if (idx === 0 || idx === length - 1) {
-                        $.fn.fullpage.setAllowScrolling(true);
+                    if ($(window).width() > 1000) {
+                        // 첫 슬라이드와 마지막 슬라이드일 때 Fullpage 스크롤 활성화
+                        if (idx === 0 || idx === length - 1) {
+                            $.fn.fullpage.setAllowScrolling(true);
+                        }
                     }
                 },
             },
         });
 
-        swipers.push(swiperInstance); // Swiper 인스턴스를 배열에 추가
+        swipers.push(swiperInstance);
     });
 
     // Fullpage 초기화
@@ -393,25 +522,33 @@ $(document).ready(function () {
         menu: '#menu',
         scrollingSpeed: 1000,
         onLeave: function (origin, destination, direction) {
-            $('#fullpage').on('scroll touchmove mousewheel', function (event) {
-                event.preventDefault();
-                event.stopPropagation();
-                return false;
-            });
+            if ($(window).width() > 1000) {
+                // 1000px 이상에서는 Fullpage 기본 동작 유지
+                $('#fullpage').on('scroll touchmove mousewheel', function (event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    return false;
+                });
 
-            swipers.forEach(function (swiperInstance) {
-                swiperInstance.mousewheel.disable();
-            });
+                swipers.forEach(function (swiperInstance) {
+                    swiperInstance.mousewheel.disable();
+                });
+            } else {
+                // 1000px 이하에서는 Fullpage 스크롤 허용
+                $.fn.fullpage.setAllowScrolling(true);
+            }
         },
         afterLoad: function (anchorLink, index) {
             $('#fullpage').off('scroll touchmove mousewheel');
 
-            swipers.forEach(function (swiperInstance) {
-                swiperInstance.mousewheel.enable();
-            });
+            if ($(window).width() > 1000) {
+                swipers.forEach(function (swiperInstance) {
+                    swiperInstance.mousewheel.enable();
+                });
 
-            if (!$(".slide_sec").hasClass("active")) {
-                $.fn.fullpage.setAllowScrolling(true);
+                if (!$(".slide_sec").hasClass("active")) {
+                    $.fn.fullpage.setAllowScrolling(true);
+                }
             }
         },
     });
@@ -422,10 +559,12 @@ $(document).ready(function () {
         var idx = swiperInstance.activeIndex;
         var length = swiperInstance.slides.length;
 
-        if (idx === 0 || idx === length - 1) {
-            $.fn.fullpage.setAllowScrolling(true);
-        } else {
-            $.fn.fullpage.setAllowScrolling(false);
+        if ($(window).width() > 1000) {
+            if (idx === 0 || idx === length - 1) {
+                $.fn.fullpage.setAllowScrolling(true);
+            } else {
+                $.fn.fullpage.setAllowScrolling(false);
+            }
         }
     });
 
