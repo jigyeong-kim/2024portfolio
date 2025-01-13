@@ -105,9 +105,9 @@ button, a{cursor: pointer;color: #000;}
 body{position: relative;}
 .header_box{position: fixed;width: 100%;z-index: 100;animation: ani1 1s ease-in-out;}
 .header_box .logo{padding: 20px 50px;font-size: 20px;transition: color 500ms ease-in-out;}
-.header_box .contact_wrap{position: absolute;top: 0;right: 0;}
-.header_box .contact_wrap .contact_btn{padding: 20px 50px;transition: all 500ms ease-in-out;text-shadow: 0 0 7px pink;animation: ani3 2s ease-in-out infinite;}
-.header_box .contact_wrap .contact_btn:hover{color: #fff;background-color: #000;border-radius: 35px;}
+.header_box .contact_wrap{position: absolute;top: 10px;right: 30px;}
+.header_box .contact_wrap .contact_btn{padding: 10px 20px;transition: all 500ms ease-in-out;text-shadow: 0 0 7px pink;animation: ani3 2s ease-in-out infinite;border-radius: 35px;}
+.header_box .contact_wrap .contact_btn:hover{color: #fff;background-color: #000;}
 
 .header_box.on .logo, .header_box.on .contact_wrap .contact_btn{color: #fff;}
 
@@ -184,7 +184,8 @@ section{padding: 0 50px;}
 
     section{padding: 0 5%;}
     .header_box .logo{padding: 20px 5%;}
-    .header_box .contact_wrap .contact_btn{padding: 15px 20px;}
+    .header_box .contact_wrap{top: 10px;right: 10px;}
+    .header_box .contact_wrap .contact_btn{padding: 5px 10px;}
     .header_box .contact_box{padding: 30px 5%;}
     .header_box .contact_box .contact_message{font-size: 80px;line-height: 80px;}
     .header_box .contact_box .contact_list{bottom: 30px;}
