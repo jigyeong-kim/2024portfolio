@@ -106,7 +106,8 @@ body{position: relative;}
 .header_box{position: fixed;width: 100%;z-index: 100;animation: ani1 1s ease-in-out;}
 .header_box .logo{padding: 20px 50px;font-size: 20px;transition: color 500ms ease-in-out;}
 .header_box .contact_wrap{position: absolute;top: 0;right: 0;}
-.header_box .contact_wrap .contact_btn{padding: 20px 50px;transition: color 500ms ease-in-out;text-shadow: 0 0 7px pink;animation: ani3 2s ease-in-out infinite;}
+.header_box .contact_wrap .contact_btn{padding: 20px 50px;transition: all 500ms ease-in-out;text-shadow: 0 0 7px pink;animation: ani3 2s ease-in-out infinite;}
+.header_box .contact_wrap .contact_btn:hover{color: #fff;background-color: #000;border-radius: 35px;}
 
 .header_box.on .logo, .header_box.on .contact_wrap .contact_btn{color: #fff;}
 
@@ -193,7 +194,7 @@ section{padding: 0 50px;}
 
     .sec1 .visual_wrap{bottom: 30px;}
     .sec1 .visual_wrap .visual_title{font-size: 100px;line-height: 100px;}
-    .sec1 .scroll_arrow{bottom: 15px;}
+    .sec1 .scroll_arrow{bottom: 5px;}
 
     .sec2 .object_title{font-size: 60px;line-height: 70px;}
 
